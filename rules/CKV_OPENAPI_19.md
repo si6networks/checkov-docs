@@ -9,6 +9,8 @@ OAuth2 scopes referenced in the global security requirement that are undefined o
 For Swagger 2.0 documents, every OAuth2 scope referenced in the root-level `security` field must correspond to a scope actually declared in the matching `securityDefinitions` entry's `scopes` map — undeclared scopes indicate a broken or meaningless access-control declaration.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `security` (document root), cross-checked against `securityDefinitions`.
 

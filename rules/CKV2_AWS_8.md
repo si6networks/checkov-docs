@@ -9,6 +9,8 @@ Missing a backup plan for an RDS cluster threatens data availability and recover
 This check ensures that every `aws_rds_cluster` resource is included in at least one AWS Backup selection, so it is covered by a centrally managed backup plan.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `aws_rds_cluster`, connected via an `aws_backup_selection` resource.
 

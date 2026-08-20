@@ -8,6 +8,8 @@ Omitting the Node authorizer removes the restriction limiting kubelets to only t
 This check fails a `kube-apiserver` container manifest unless its `--authorization-mode` argument's comma-separated list includes `Node`, the authorization mode that specifically governs kubelet requests to the API server.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

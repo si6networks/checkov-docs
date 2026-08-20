@@ -8,6 +8,8 @@ Allowing inbound access from 0.0.0.0/0 on port 21 (FTP control) exposes a legacy
 This check fails any NCloud Network ACL rule (`ncloud_network_acl_rule`) that permits inbound traffic on port 21 (FTP control channel) from the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_network_acl_rule`
 - **Check type:** resource (subclass of the shared `NACLInboundCheck` base check, parameterized with `port=21`)

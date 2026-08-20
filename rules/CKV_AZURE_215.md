@@ -8,6 +8,8 @@ An API Management backend reachable over plain HTTP transmits request/response d
 Ensures that an Azure API Management backend is configured to communicate with its backend service over HTTPS rather than plaintext HTTP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_api_management_backend` — inspects the `url` attribute
 
 ## Why it matters

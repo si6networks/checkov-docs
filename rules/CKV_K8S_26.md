@@ -8,6 +8,8 @@ Binding a container port directly to the host bypasses the Service/network-polic
 This check fails any container port definition that includes `hostPort`, because binding a container port directly to a specific port on the node reduces scheduling flexibility and exposes the container's service to anything on the node's network.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `PodTemplate`, `Deployment`, `DeploymentConfig`, `ReplicaSet`, `ReplicationController`, `StatefulSet`, `DaemonSet`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`

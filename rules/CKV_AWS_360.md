@@ -9,6 +9,8 @@ An overly short backup retention window is primarily an availability/recoverabil
 This check ensures that an Amazon DocumentDB cluster's automated backup retention period is set to at least 7 days, rather than left at the 1-day default or configured with an insufficient window.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::DocDB::DBCluster` (property `BackupRetentionPeriod`), `aws_docdb_cluster` (attribute `backup_retention_period`)

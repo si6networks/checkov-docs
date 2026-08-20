@@ -8,6 +8,8 @@ The check enforces CMK usage on S3 object copy operations rather than the presen
 This check requires that an `aws_s3_object_copy` resource specify a customer-managed KMS key (`kms_key_id`) so the copied object is encrypted at rest with a key your organization controls, rather than an AWS-managed key or SSE-S3.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_object_copy`
 - **Check type:** resource (attribute-value check)

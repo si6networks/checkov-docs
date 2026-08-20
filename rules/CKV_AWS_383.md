@@ -9,6 +9,8 @@ A Bedrock agent without an associated guardrail configuration lacks automated co
 This check ensures every Amazon Bedrock agent has a guardrail configuration associated with it, so the agent's inputs/outputs are filtered by Bedrock Guardrails rather than running unconstrained.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_bedrockagent_agent`
 

@@ -8,6 +8,8 @@ Elasticsearch/OpenSearch domains frequently index sensitive application and log 
 This check ensures Amazon Elasticsearch Service / OpenSearch Service domains have encryption at rest enabled.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Elasticsearch::Domain` (CloudFormation); `aws_elasticsearch_domain`, `aws_opensearch_domain` (Terraform)
 

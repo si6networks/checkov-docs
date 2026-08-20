@@ -9,6 +9,8 @@ Missing S3 event notifications reduces operational visibility into bucket activi
 This check requires every `aws_s3_bucket` to have a connected `aws_s3_bucket_notification` resource, so that object-level events (creation, deletion, restore) trigger downstream notifications (SNS, SQS, Lambda, EventBridge).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_bucket` (must be connected to `aws_s3_bucket_notification`)
 

@@ -8,6 +8,8 @@ Assigning public IP addresses to AKS node pool nodes exposes the underlying Kube
 This check ensures the default node pool of an Azure Kubernetes Service (AKS) cluster is not configured to assign public IP addresses directly to individual worker nodes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` resource, `default_node_pool` block, attributes `enable_node_public_ip` / `node_public_ip_enabled`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ An Azure Container Instance group not deployed into a virtual network typically 
 This check verifies that an Azure Container Instances (ACI) container group is deployed into a virtual network subnet rather than using default networking with a public/platform-managed IP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_container_group` (inspects `subnet_ids`)
 
 ## Why it matters

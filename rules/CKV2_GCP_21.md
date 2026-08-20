@@ -8,6 +8,8 @@ Vertex AI notebook disks lacking a customer-managed key still receive Google-man
 This check ensures that Vertex AI (Notebooks) instance disks are encrypted using a customer-managed encryption key (CMEK) rather than relying solely on Google's default encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_notebooks_instance`
 

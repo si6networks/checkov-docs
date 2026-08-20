@@ -9,6 +9,8 @@ Allowing a TLS version below 1.2 (or leaving it unenforced) on a MariaDB server 
 This check ensures an Azure Database for MariaDB server both enforces SSL for client connections and, if a minimum TLS version is explicitly set, requires TLS 1.2 rather than an older, weaker version.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (implemented as a graph-based check, not a Python resource check)
 - **Resource type:** `azurerm_mariadb_server`
 

@@ -8,6 +8,8 @@ This enforces customer-managed (vs. AWS-managed) KMS keys for FSx Windows file s
 This check requires that an `aws_fsx_windows_file_system` resource specify a customer-managed KMS key (`kms_key_id`) for at-rest encryption instead of relying on the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_fsx_windows_file_system`
 - **Check type:** resource (attribute-value check)

@@ -9,6 +9,8 @@ Leaving local (key-based) authentication enabled on an Event Grid Topic allows e
 This check ensures an Azure Event Grid Topic disables local (key-based) authentication, requiring all publishers to authenticate via Azure Active Directory instead.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform (`azurerm` provider), ARM templates, Bicep (compiled to ARM)
 - **Resource types:**
   - ARM: `Microsoft.EventGrid/topics`

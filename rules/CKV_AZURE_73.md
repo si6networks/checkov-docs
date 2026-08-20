@@ -9,6 +9,8 @@ Unencrypted Automation account variables can expose configuration data (potentia
 This check ensures Azure Automation Account variable assets (bool, string, int, datetime) are stored with encryption enabled rather than in plaintext.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_automation_variable_bool`, `azurerm_automation_variable_datetime`, `azurerm_automation_variable_int`, `azurerm_automation_variable_string`
 - **ARM/Bicep**: `Microsoft.Automation/automationAccounts/variables`
 

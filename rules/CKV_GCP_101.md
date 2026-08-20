@@ -9,6 +9,8 @@ A publicly accessible Artifact Registry repository can leak proprietary containe
 This check ensures that IAM bindings/members applied to a Google Artifact Registry repository do not grant access to the public principals `allUsers` or `allAuthenticatedUsers`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource types**: `google_artifact_registry_repository_iam_member`, `google_artifact_registry_repository_iam_binding`
 

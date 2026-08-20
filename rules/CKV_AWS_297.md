@@ -8,6 +8,8 @@ This check verifies EventBridge Scheduler schedules use a customer-managed KMS k
 This check ensures that an `aws_scheduler_schedule` resource specifies a `kms_key_arn`, so the schedule's target payload/configuration is encrypted with a customer-managed KMS key rather than the AWS-owned default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_scheduler_schedule`
 

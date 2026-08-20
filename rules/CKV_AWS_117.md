@@ -9,6 +9,8 @@ A Lambda function running outside a VPC lacks network segmentation controls (sec
 Fails when a Lambda function is not attached to a VPC (i.e., has no `vpc_config`/`VpcConfig` set), leaving it running in AWS's default Lambda network rather than a customer-controlled VPC.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_lambda_function` resource.
 - **CloudFormation/SAM**: `AWS::Lambda::Function`, `AWS::Serverless::Function`.
 

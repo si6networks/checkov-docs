@@ -8,6 +8,8 @@ WorkSpaces user volumes hold end-user files and application data; leaving them u
 This check verifies that an Amazon WorkSpaces workspace has its user (D:) volume encryption enabled.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_workspaces_workspace`) and CloudFormation (`AWS::WorkSpaces::Workspace`).
 
 ## Why it matters

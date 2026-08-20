@@ -8,6 +8,8 @@ A firewall rule that allows ingress on all ports/protocols from unrestricted sou
 This check flags `google_compute_firewall` ingress rules that allow all protocols/ports from any source (`0.0.0.0/0` or `::/0`), unless the rule is disabled, is an egress rule, or explicitly denies (rather than allows) all traffic.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, specifically the `google_compute_firewall` resource.
 
 ## Why it matters

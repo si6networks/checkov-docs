@@ -9,6 +9,8 @@ Data Factory is encrypted at rest by default; the absence of a customer-managed 
 This check ensures an Azure Data Factory has a customer-managed key configured via a linked Key Vault service, instead of relying solely on Microsoft-managed encryption keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_data_factory`, connected via `azurerm_data_factory_linked_service_key_vault`.
 

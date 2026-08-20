@@ -8,6 +8,8 @@ Short flow log retention limits the ability to investigate and reconstruct netwo
 This check verifies that Network Watcher NSG Flow Logs are both enabled and configured with a log retention period of at least 90 days (or unlimited retention), ensuring sufficient historical network traffic data is available for investigations.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM templates, Bicep (Bicep compiles to ARM, so it's covered by the ARM check)
 - **Resource types:**
   - Terraform: `azurerm_network_watcher_flow_log`

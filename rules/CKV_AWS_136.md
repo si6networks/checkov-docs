@@ -9,6 +9,8 @@ ECR repositories without KMS encryption still get default AES-256 encryption at 
 This check requires ECR repositories to explicitly set their encryption configuration to `KMS` rather than relying on the default `AES256` (Amazon S3-managed) encryption.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** Terraform (AWS provider), CloudFormation
 - **Resource types:** `aws_ecr_repository` (Terraform), `AWS::ECR::Repository` (CloudFormation)
 

@@ -9,6 +9,8 @@ Stateful vs. stateless ingress rules affect how return traffic and connection tr
 This check ensures that ingress rules within an OCI VCN security list (`oci_core_security_list`) are explicitly marked `stateless = true`, rather than left as stateful (the default).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_security_list`
 

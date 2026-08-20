@@ -8,6 +8,8 @@ This verifies use of a customer-managed KMS key for EBS snapshot copies rather t
 This check requires that an `aws_ebs_snapshot_copy` resource specify a customer-managed KMS key (`kms_key_id`) so the copied snapshot is encrypted with a key your organization controls.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ebs_snapshot_copy`
 - **Check type:** resource (attribute-value check)

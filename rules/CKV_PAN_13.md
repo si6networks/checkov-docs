@@ -8,6 +8,8 @@ Configuring the IPsec profile to use the AH protocol (which provides authenticat
 This check ensures PAN-OS IPsec crypto profiles do not configure the legacy Authentication Header (AH) protocol, which provides no payload confidentiality (no encryption) for tunnel traffic.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 Terraform resources `panos_ipsec_crypto_profile` and `panos_panorama_ipsec_crypto_profile`, and Ansible task `tasks.paloaltonetworks.panos.panos_ipsec_profile` (Python resource check for Terraform, graph-based JSON policy for Ansible).
 
 ## Why it matters

@@ -9,6 +9,8 @@ Granting a role that can impersonate or manage other service accounts at project
 This check fails when a `google_project_iam_member` or `google_project_iam_binding` resource grants a project-level role that allows impersonating, creating, or managing service accounts (or other high-privilege service-agent/admin roles), since such roles let a principal act as, or escalate to, other identities in the project.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource types:** `google_project_iam_member`, `google_project_iam_binding`
 - **Check type:** resource check

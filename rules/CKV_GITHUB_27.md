@@ -8,6 +8,8 @@ A default repository permission above read effectively grants every organization
 This check enforces that the GitHub organization's default repository base permission for all members is set to `read` (or left unset, which defaults conservatively), rather than a more permissive level like `write` or `admin`.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated against the `default_repository_permission` field of the organization settings.
 
 ## Why it matters

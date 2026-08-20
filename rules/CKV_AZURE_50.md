@@ -9,6 +9,8 @@ Allowing VM extension operations lets anyone with sufficient Azure RBAC rights i
 This check verifies that Azure Virtual Machines have `allowExtensionOperations` (VM extension operations) disabled, preventing arbitrary VM extensions from being installed on the instance.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_linux_virtual_machine`, `azurerm_windows_virtual_machine`
 - **ARM templates**: `Microsoft.Compute/virtualMachines`
 - **Bicep**: `Microsoft.Compute/virtualMachines`

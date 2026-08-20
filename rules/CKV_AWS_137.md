@@ -9,6 +9,8 @@ An Elasticsearch/OpenSearch domain deployed outside a VPC gets a public network 
 This check requires Elasticsearch/OpenSearch domains to set a `vpc_options` block, placing the domain's network endpoint inside a VPC rather than exposing it on the public internet-facing endpoint.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource types:** `aws_elasticsearch_domain`, `aws_opensearch_domain`
 

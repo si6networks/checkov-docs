@@ -9,6 +9,8 @@ Missing backup policy on a block volume is primarily an availability/data-durabi
 This check verifies that every OCI Block Storage block volume (`oci_core_volume`) is associated with a backup policy, so the volume's data is regularly backed up.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_volume`
 

@@ -9,6 +9,8 @@ Pinning to a mutable @dev orb tag breaks the immutability guarantee of the CI su
 This check fails a CircleCI pipeline configuration if it references an orb tagged with the `@dev` volatility label, which points at a mutable, in-development release rather than a pinned, immutable version.
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 Applies to CircleCI Pipeline configuration files (`.circleci/config.yml`), specifically the top-level `orbs` block, where each entry is a string of the form `namespace/orb-name@version-or-tag`.
 
 ## Why it matters

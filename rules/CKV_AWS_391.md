@@ -8,6 +8,8 @@ Combining a commonly-used, guessable Redshift master username with public access
 This check flags Redshift clusters that combine a commonly-guessed master username (`awsuser`, `administrator`, or `admin`) with public accessibility, since the combination makes credential-guessing/brute-force attacks against an internet-reachable database trivially easier.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_redshift_cluster`
 

@@ -9,6 +9,8 @@ Disabled enhanced health reporting reduces operational visibility into environme
 This check ensures Elastic Beanstalk environments are configured with "Enhanced" health reporting (via `HealthStreamingEnabled`), rather than the basic health reporting system, so operational teams get detailed, near-real-time health and causal data.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_elastic_beanstalk_environment`
 

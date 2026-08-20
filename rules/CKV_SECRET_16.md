@@ -9,6 +9,8 @@ A leaked Square OAuth secret or access token exposes payment-processing APIs, cu
 This check scans file contents for hardcoded Square OAuth application secrets (and related Square API access tokens), flagging static payment-platform credentials committed directly into source or config files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (application config, YAML/JSON, `.env` files, scripts, CI pipeline definitions, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched credential string within a file; findings are reported at the file/line level.
 

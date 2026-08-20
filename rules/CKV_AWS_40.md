@@ -8,6 +8,8 @@ Attaching IAM policies directly to users instead of groups/roles increases the c
 This check ensures IAM policies are never attached directly to individual IAM users; instead they should be attached to IAM groups or roles, reducing the complexity (and error-proneness) of access management.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource/entity types:**
   - CloudFormation: `AWS::IAM::Policy` (inspects the `Properties/Users` list)

@@ -8,6 +8,8 @@ Deploying into the default namespace is primarily an organizational hygiene issu
 This check fails any namespaced Kubernetes resource that either omits `metadata.namespace` or sets it to `default`, because relying on the `default` namespace mixes unrelated workloads together and undermines namespace-based isolation and RBAC scoping.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`, `Service`, `Secret`, `ServiceAccount`, `Role`, `RoleBinding`, `ConfigMap`, `Ingress`
 - **Resource/entity types (Terraform):** the corresponding `kubernetes_*` resources (`kubernetes_pod`, `kubernetes_deployment`, `kubernetes_daemonset`, `kubernetes_stateful_set`, `kubernetes_replication_controller`, `kubernetes_job`, `kubernetes_cron_job`, `kubernetes_service`, `kubernetes_secret`, `kubernetes_service_account`, `kubernetes_role_binding`, `kubernetes_config_map`, `kubernetes_ingress`, and their `_v1` variants)

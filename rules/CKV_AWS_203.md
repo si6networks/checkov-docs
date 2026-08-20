@@ -8,6 +8,8 @@ An FSx for OpenZFS file system without CMK encryption at rest leaves stored file
 Ensures that an Amazon FSx for OpenZFS file system specifies a customer-managed KMS key (CMK) for encryption, rather than relying on the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_fsx_openzfs_file_system` — inspects the `kms_key_id` attribute.
 
 ## Why it matters

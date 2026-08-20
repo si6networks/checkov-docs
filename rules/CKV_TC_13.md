@@ -9,6 +9,8 @@ Embedding Tencent Cloud API secret ID/key directly in instance user data exposes
 This check ensures that the user-data / cloud-init payload of a Tencent Cloud CVM instance does not embed Tencent Cloud API secret ID/key credentials in plaintext.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_instance` (Tencent Cloud provider), specifically the `user_data` and `user_data_raw` attributes.
 
 ## Why it matters

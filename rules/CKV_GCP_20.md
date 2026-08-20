@@ -8,6 +8,8 @@ Without master authorized networks restricting source IPs, the GKE control plane
 This check fails when a `google_container_cluster` does not configure a `master_authorized_networks_config` block at all — i.e., the control plane has no IP allowlist restricting who can reach the Kubernetes API server.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource

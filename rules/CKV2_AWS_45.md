@@ -8,6 +8,8 @@ A disabled or partially-scoped AWS Config recorder removes the account's ability
 This check fails when an AWS Config configuration recorder either isn't actually turned on (`aws_config_configuration_recorder_status.is_enabled` isn't `true`) or is scoped to record only a subset of resource types instead of all supported resource types (`recording_group.all_supported` is `false`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_config_configuration_recorder`, `aws_config_configuration_recorder_status`
 

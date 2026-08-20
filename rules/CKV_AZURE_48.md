@@ -9,6 +9,8 @@ Enabling public network access on a MariaDB server exposes the database endpoint
 This check verifies that an Azure Database for MariaDB server has public network access disabled, so the database is only reachable via private connectivity (VNet service endpoints, VNet rules, or Private Link) rather than the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mariadb_server`
 - **ARM templates**: `Microsoft.DBforMariaDB/servers`
 - **Bicep**: `Microsoft.DBforMariaDB/servers`

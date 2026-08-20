@@ -8,6 +8,8 @@ Without Defender for SQL, attacks against a high-value data store such as SQL in
 This check fails when the Azure Security Center (Microsoft Defender for Cloud) pricing tier for the "SqlServers" resource type is not set to "Standard", meaning Defender for SQL is not enabled for the subscription's Azure SQL database servers.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, for the resource type `azurerm_security_center_subscription_pricing`.
 
 ## Why it matters

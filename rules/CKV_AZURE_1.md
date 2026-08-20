@@ -8,6 +8,8 @@ Allowing password-based (basic) authentication on a VM instead of requiring SSH 
 This check ensures that Azure Linux virtual machines require SSH key–based authentication instead of allowing password (basic) authentication for login.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_virtual_machine`, `azurerm_linux_virtual_machine`
 - **ARM/Bicep**: `Microsoft.Compute/virtualMachines`
 

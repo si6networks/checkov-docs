@@ -9,6 +9,8 @@ Missing Stackdriver logging on a Data Fusion instance reduces visibility into pi
 This check ensures that a `google_data_fusion_instance` resource has `enable_stackdriver_logging` set to `true`, so Cloud Data Fusion pipeline execution logs are shipped to Cloud Logging (Stackdriver).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_data_fusion_instance`
 - **Attribute inspected**: `enable_stackdriver_logging`

@@ -8,6 +8,8 @@ Missing a Glue security configuration means data processed by crawlers, dev endp
 Ensures that AWS Glue crawlers, dev endpoints, and jobs have a Glue Security Configuration attached, so that data at rest and in transit within the Glue component is encrypted.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_glue_crawler`, `aws_glue_dev_endpoint`, `aws_glue_job` — inspects the `security_configuration` attribute.
 - **CloudFormation**: `AWS::Glue::Crawler`, `AWS::Glue::DevEndpoint`, `AWS::Glue::Job` — inspects `Properties/CrawlerSecurityConfiguration` (Crawler) or `Properties/SecurityConfiguration` (DevEndpoint, Job).
 

@@ -8,6 +8,8 @@ A ClusterRole permitted to approve CertificateSigningRequests can mint arbitrary
 This check flags any `ClusterRole` that grants permission to approve `CertificateSigningRequest` objects — either via `update`/`patch` on the `certificatesigningrequests/approval` subresource or via `approve` on the `signers` resource in the `certificates.k8s.io` API group.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests of `kind: ClusterRole`. Inspects the role's `rules` for either of two failing patterns:
 1. `apiGroups: [certificates.k8s.io]`, `verbs: [update, patch]`, `resources: [certificatesigningrequests/approval]`
 2. `apiGroups: [certificates.k8s.io]`, `verbs: [approve]`, `resources: [signers]`

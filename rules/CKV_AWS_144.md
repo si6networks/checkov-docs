@@ -8,6 +8,8 @@ This check addresses data durability/disaster-recovery posture (cross-region rep
 This check verifies that an S3 bucket has a cross-region (or same-region) replication rule configured and enabled, so objects are automatically copied to a second bucket.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `aws_s3_bucket` (legacy inline `replication_configuration` block) and the standalone `aws_s3_bucket_replication_configuration` resource (introduced with the AWS provider v4 refactor of the S3 bucket resource).
 
 ## Why it matters

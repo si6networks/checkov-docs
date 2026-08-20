@@ -9,6 +9,8 @@ A KMS key with no explicit key policy falls back to permissive default behavior 
 This check requires every `aws_kms_key` to have an explicit key policy defined — either inline via the `policy` attribute or via a connected `aws_kms_key_policy` resource — rather than relying on the provider's implicit default policy.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_kms_key` (satisfied by an inline `policy` attribute OR a connection to `aws_kms_key_policy`)
 

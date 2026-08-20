@@ -8,6 +8,8 @@ Rules that can trigger duplicate pipelines mainly waste CI resources and cause c
 This check flags GitLab CI job `rules` blocks that would trigger the same job for both a `merge_request_event` and a `push` event on the same underlying change, causing duplicate ("double") pipeline runs.
 
 ## Applicability
+**Checkov framework(s):** `gitlab_ci`
+
 Applies to GitLab CI pipeline configuration (`gitlab_ci` IaC type, check type `jobs`), evaluated against a job's `rules` array (entity `*.rules`).
 
 ## Why it matters

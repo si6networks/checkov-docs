@@ -9,6 +9,8 @@ Leaving the HTTP endpoint enabled only permits optional plaintext delivery of CD
 This check ensures that an Azure CDN endpoint does not allow plaintext HTTP delivery of content, requiring `is_http_allowed` to be set to `false`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_cdn_endpoint`
 

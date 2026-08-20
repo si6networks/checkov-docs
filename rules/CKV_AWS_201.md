@@ -8,6 +8,8 @@ MemoryDB clusters without KMS CMK encryption at rest leave cached application an
 Ensures that an Amazon MemoryDB for Redis cluster specifies a customer-managed KMS key (CMK) for at-rest encryption, rather than relying on the AWS-managed default key or leaving encryption unspecified.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_memorydb_cluster` — inspects the `kms_key_arn` attribute.
 
 ## Why it matters

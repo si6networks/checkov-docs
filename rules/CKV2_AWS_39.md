@@ -8,6 +8,8 @@ Missing DNS query logging removes visibility into potentially malicious or anoma
 This check ensures that Route 53 public hosted zones have DNS query logging enabled via a connected `aws_route53_query_log` resource, so that queries against the zone are recorded.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_route53_zone` (connected `aws_route53_query_log`)
 - **Category:** Logging

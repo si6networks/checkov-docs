@@ -8,6 +8,8 @@ A network interface with a public IP directly exposes the attached VM's services
 This graph-based check verifies that Azure Network Interface (NIC) resources are not directly associated with a Public IP Address resource, keeping the attached VM reachable only over private networking.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource types:** `azurerm_network_interface` (checked for connections to `azurerm_public_ip`)
 

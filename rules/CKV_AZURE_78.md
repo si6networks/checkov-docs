@@ -9,6 +9,8 @@ Enabling unencrypted FTP deployment on an app service allows credentials and dep
 This check ensures Azure App Service's FTP/FTPS deployment state is set to `Disabled` or `FtpsOnly` — never left allowing plain unencrypted FTP.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`
 - **ARM/Bicep**: `Microsoft.Web/sites`
 

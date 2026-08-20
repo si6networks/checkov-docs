@@ -9,6 +9,8 @@ A Linux VM without an SSH key configured is left relying on (or defaulting towar
 This check ensures that Linux Azure Virtual Machines and VM Scale Sets are configured with an SSH public key for authentication, rather than relying only on password-based login.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_linux_virtual_machine`, `azurerm_linux_virtual_machine_scale_set` (`admin_ssh_key[0].public_key`).
 - **ARM/Bicep**: `Microsoft.Compute/virtualMachines`, `Microsoft.Compute/virtualMachineScaleSets` (`properties.osProfile.linuxConfiguration.ssh.publicKeys[0].path` / VMSS equivalent).
 

@@ -8,6 +8,8 @@ A BigQuery dataset ACL granting access to allUsers or allAuthenticatedUsers expo
 This check fails when a `google_bigquery_dataset` grants access to `allUsers` or `allAuthenticatedUsers` in its `access` block, which would make the dataset readable by anyone on the internet (or any Google account holder), respectively.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_bigquery_dataset`
 - **Check type:** resource

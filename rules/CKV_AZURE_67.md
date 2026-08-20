@@ -8,6 +8,8 @@ Running an older but still-supported HTTP version is a protocol hygiene/best-pra
 This check fails when an Azure Function App does not have HTTP/2 enabled in its site configuration, leaving the app running on the older HTTP/1.1 protocol.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_function_app`, `azurerm_function_app_slot`), ARM templates, and Bicep, for the resource types `Microsoft.Web/sites` and `Microsoft.Web/sites/slots`.
 
 ## Why it matters

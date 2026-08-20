@@ -9,6 +9,8 @@ Without a private endpoint, an Azure MySQL Flexible Server is reachable over the
 This check verifies that every Azure Database for MySQL Flexible Server has an associated Private Endpoint, so the database is not reachable only through public networking paths.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_mysql_flexible_server` (must be connected to an `azurerm_private_endpoint` resource)
 
 This is a graph-based connection check.

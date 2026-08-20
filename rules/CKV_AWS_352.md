@@ -8,6 +8,8 @@ A Network ACL rule that allows ingress on all ports removes subnet-level network
 Checks that Network ACL ingress rules do not fail to specify a `from_port`, which the check treats as a proxy for a rule that isn't scoped to a specific port range.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_network_acl_rule`
 

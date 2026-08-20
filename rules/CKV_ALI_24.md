@@ -8,6 +8,8 @@ Failing to enforce MFA for RAM logins removes a critical second authentication f
 This check verifies that Alibaba Cloud RAM security preferences enforce multi-factor authentication (MFA) for user login.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_security_preference`
 

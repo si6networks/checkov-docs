@@ -8,6 +8,8 @@ Missing read-request logging for Table service reduces audit visibility but does
 This check verifies that every Azure Storage Table is linked, through its parent storage account, to a Log Analytics storage-insights configuration that captures read-request logs for the Table service.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource types involved:** `azurerm_storage_table`, `azurerm_storage_account`, `azurerm_log_analytics_storage_insights`
 

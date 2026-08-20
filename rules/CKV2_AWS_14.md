@@ -9,6 +9,8 @@ An IAM group with no members is an unused artifact and organizational hygiene is
 This check ensures that every IAM group defined in Terraform actually has at least one IAM user assigned to it via an `aws_iam_group_membership` resource.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_iam_group` resources, evaluated in connection with `aws_iam_group_membership` (which itself connects to `aws_iam_user`).
 
 ## Why it matters

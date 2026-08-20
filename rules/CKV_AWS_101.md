@@ -8,6 +8,8 @@ Missing Neptune audit logging removes visibility into queries and administrative
 This check ensures that Amazon Neptune DB clusters have `audit` CloudWatch log exports enabled so that database access and query activity is captured.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::Neptune::DBCluster` resources.
 - **Terraform**: `aws_neptune_cluster` resources.
 

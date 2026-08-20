@@ -8,6 +8,8 @@ Allowing DES/3DES or 128/192/256-bit CBC-mode (or null) encryption in IPsec cryp
 This check ensures PAN-OS IPsec crypto profiles do not use weak or deprecated encryption algorithms (DES, 3DES, AES-CBC variants, or "null"/no encryption) for IPsec tunnel encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resources `panos_ipsec_crypto_profile` and `panos_panorama_ipsec_crypto_profile`.
 
 ## Why it matters

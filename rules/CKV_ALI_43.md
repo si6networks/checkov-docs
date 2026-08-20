@@ -8,6 +8,8 @@ A MongoDB instance whitelisting 0.0.0.0/0 is directly reachable from the entire 
 This check ensures that an Alibaba Cloud ApsaraDB for MongoDB instance's IP whitelist does not include `0.0.0.0` or `0.0.0.0/0`, which would allow connections from any address on the internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_mongodb_instance`
 

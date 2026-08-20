@@ -9,6 +9,8 @@ Kendra indexes are already encrypted at rest by default even without a CMK, so t
 This check ensures that an Amazon Kendra index's server-side encryption configuration specifies a KMS key ID, rather than relying on AWS's default (unspecified/AWS-owned) encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_kendra_index`
 
 ## Why it matters

@@ -8,6 +8,8 @@ An imagePullPolicy other than Always is primarily an operational-consistency con
 This check ensures containers using a mutable image reference (no digest, and a tag other than `latest`) explicitly set `imagePullPolicy: Always`, so the node always pulls the current image rather than reusing a potentially stale locally cached copy.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes** manifests: workload kinds with a container spec — `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`.
 - **Terraform**: `kubernetes_deployment`, `kubernetes_deployment_v1`, `kubernetes_pod`, `kubernetes_pod_v1` resources.
 Inspects each container's `image` and `imagePullPolicy` fields.

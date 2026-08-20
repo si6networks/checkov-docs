@@ -8,6 +8,8 @@ Without Azure AD authentication, SQL Server relies solely on SQL login/password 
 This check verifies that an Azure SQL logical server has Azure Active Directory administration configured, rather than relying solely on SQL (username/password) authentication.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** ARM templates, Bicep (compiles to ARM), and Terraform (two separate check implementations)
 - **Resource/entity types involved:** `Microsoft.Sql/servers` (ARM/Bicep), `azurerm_mssql_server` (Terraform)
 

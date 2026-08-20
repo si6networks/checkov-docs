@@ -9,6 +9,8 @@ Disabled compute instance monitoring reduces visibility into resource health and
 This check ensures that OCI compute instances (`oci_core_instance`) have the built-in monitoring agent enabled so host metrics are collected.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_instance`
 

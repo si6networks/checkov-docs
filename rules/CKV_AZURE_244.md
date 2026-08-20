@@ -9,6 +9,8 @@ Enabling local (SFTP/username-password) users on Azure Storage bypasses Azure AD
 This check ensures Azure Storage accounts do not have local user (SFTP-style) authentication enabled unless it is genuinely needed, favoring Azure AD/RBAC-based access instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_storage_account` resources — inspects `local_user_enabled`, with conditional logic also referencing `is_hns_enabled`.
 
 ## Why it matters

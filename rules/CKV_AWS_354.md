@@ -8,6 +8,8 @@ Performance Insights data can include captured SQL text and parameter values tha
 When RDS/Aurora Performance Insights is enabled, requires that it be encrypted using a customer-managed KMS key (`performance_insights_kms_key_id`) rather than the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource types**: `aws_db_instance`, `aws_rds_cluster_instance`
 

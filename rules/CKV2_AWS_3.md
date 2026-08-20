@@ -8,6 +8,8 @@ GuardDuty not being enabled removes a key threat-detection capability across the
 This check ensures that an `aws_guardduty_detector` is not only enabled (`enable = true`) but also connected to an `aws_guardduty_organization_configuration` that auto-enables GuardDuty for the AWS Organization's member accounts, so coverage extends organization-wide rather than to a single account/region only.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_guardduty_detector`, `aws_guardduty_organization_configuration`
 - **Check type:** Graph-based connection + attribute check

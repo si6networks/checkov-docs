@@ -9,6 +9,8 @@ Lacking Route 53 domain transfer lock enables unauthorized or fraudulent domain 
 This check ensures a Route 53 registered domain has the registry `transfer_lock` protection enabled to prevent unauthorized transfer of the domain to another registrar.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_route53domains_registered_domain`
 

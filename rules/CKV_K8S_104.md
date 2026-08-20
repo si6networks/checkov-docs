@@ -8,6 +8,8 @@ Without configured encryption providers, Kubernetes Secrets are stored as plaint
 This check ensures the Kubernetes API server is started with `--encryption-provider-config`, enabling encryption-at-rest for Secrets (and any other configured resource types) stored in etcd.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Applies to Kubernetes manifests defining container specs for workload kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — relevant specifically to the static Pod manifest running `kube-apiserver`, since the check looks for the `kube-apiserver` command.
 
 ## Why it matters

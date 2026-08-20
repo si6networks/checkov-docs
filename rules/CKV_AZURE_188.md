@@ -9,6 +9,8 @@ Using a non-standard (e.g., free) SKU is mainly a feature/capacity and support-t
 This check ensures Azure App Configuration stores use the `standard` SKU rather than the `free` tier, since several important security controls (private networking, customer-managed keys, purge protection) require the standard tier.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_app_configuration`
 

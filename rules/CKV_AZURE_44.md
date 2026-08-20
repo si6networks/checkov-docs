@@ -9,6 +9,8 @@ Allowing TLS versions below 1.2 for storage account traffic permits use of depre
 This check verifies that an Azure Storage Account enforces a minimum TLS version of 1.2 (or 1.3 for Terraform) for all client connections, rejecting older, weaker TLS protocol versions.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_storage_account`
 - **ARM templates**: `Microsoft.Storage/storageAccounts`
 - **Bicep**: `Microsoft.Storage/storageAccounts`

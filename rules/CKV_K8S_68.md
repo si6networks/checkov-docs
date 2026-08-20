@@ -8,6 +8,8 @@ Anonymous authentication enabled on the API server allows unauthenticated reques
 This check fails a manifest that runs `kube-apiserver` (typically a self-hosted/static-pod control-plane manifest) unless the container's `command` list includes the literal argument `--anonymous-auth=false`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` invokes `kube-apiserver` — applies broadly to `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet` (i.e., any workload kind that can host a container), because this is a container-level check, not restricted to a specific control-plane kind. In practice it only fires on manifests that actually launch the API server binary (e.g., a kubeadm/self-managed static pod spec for `kube-apiserver`, or a Helm chart that renders one).
 
 ## Why it matters

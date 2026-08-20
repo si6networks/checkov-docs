@@ -9,6 +9,8 @@ Kubernetes worker nodes without an assigned security group are subject to broade
 This check fails when a Yandex Managed Service for Kubernetes node group's instance template network interface does not have `security_group_ids` set.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_kubernetes_node_group`
 

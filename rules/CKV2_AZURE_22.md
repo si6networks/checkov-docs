@@ -8,6 +8,8 @@ Relying on platform-managed keys instead of a customer-managed key for Cognitive
 This check verifies that an Azure Cognitive Services account is linked to a customer-managed key (CMK) resource, which in turn is linked to a Key Vault key, rather than relying solely on Microsoft-managed encryption keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource types involved:** `azurerm_cognitive_account`, `azurerm_cognitive_account_customer_managed_key`, `azurerm_key_vault_key`
 

@@ -9,6 +9,8 @@ Disabling VPC flow logs/intranode visibility on a GKE cluster removes visibility
 This check fails when a `google_container_cluster` (GKE cluster) does not have `enable_intranode_visibility` set to `true`, meaning traffic between pods on the same node is not visible to VPC flow logging and network policy enforcement points.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource value check (Kubernetes category)

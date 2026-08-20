@@ -8,6 +8,8 @@ A hardcoded OCI private key password in the Terraform provider configuration exp
 This check fails when the Oracle Cloud Infrastructure (OCI) Terraform `provider` block contains a non-empty, hardcoded `private_key_password` value instead of sourcing it securely.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Entity:** the `oci` provider block
 - **Check type:** provider check

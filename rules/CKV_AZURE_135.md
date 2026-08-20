@@ -8,6 +8,8 @@ Like its Front Door counterpart, this check verifies the Application Gateway WAF
 This check ensures an Azure Application Gateway WAF policy uses the OWASP managed rule set (version 3.1 or 3.2) with the Log4Shell-detecting rule (`944240`, in rule group `REQUEST-944-APPLICATION-ATTACK-JAVA`) not disabled.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies` resources.
 - **Terraform**: `azurerm_web_application_firewall_policy` resource.
 - **Bicep**: compiles to the same ARM resource type.

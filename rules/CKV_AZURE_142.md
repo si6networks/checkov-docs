@@ -8,6 +8,8 @@ Leaving local authentication enabled on a Machine Learning Compute Cluster keeps
 This check ensures an Azure Machine Learning Compute Cluster has local (SSH/key-based) authentication disabled, requiring Azure AD-based identity for management access instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_machine_learning_compute_cluster` resource, attribute `local_auth_enabled`.
 
 ## Why it matters

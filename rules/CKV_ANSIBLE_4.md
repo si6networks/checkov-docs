@@ -8,6 +8,8 @@ Disabling SSL verification (sslverify) for yum has the same effect as disabling 
 This check ensures that Ansible `yum` tasks do not disable SSL verification of the repository server via the `sslverify` parameter.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Applies to Ansible playbooks/roles, specifically any task using the `ansible.builtin.yum` module (or its short alias `yum`), including tasks nested inside `block:` structures up to four levels deep and tasks under `tasks:` blocks.
 
 ## Why it matters

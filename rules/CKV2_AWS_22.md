@@ -8,6 +8,8 @@ Console access for programmatic IAM users needlessly expands the credential atta
 This check flags any `aws_iam_user` that has an associated `aws_iam_user_login_profile`, meaning the user has been granted AWS Management Console (password-based) login access, rather than being restricted to programmatic (API key) access.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_iam_user` (the entity being validated), `aws_iam_user_login_profile` (the connected resource whose presence causes failure)
 - **Check type:** Graph-based connection check

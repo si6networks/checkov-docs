@@ -8,6 +8,8 @@ RSASHA1 is a weak signing algorithm for DNSSEC keys that is more susceptible to 
 This check fails when a `google_dns_managed_zone`'s DNSSEC `default_key_specs` block uses the `rsasha1` algorithm for its signing keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dns_managed_zone`
 - **Check type:** resource

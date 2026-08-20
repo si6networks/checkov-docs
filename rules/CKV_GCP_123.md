@@ -9,6 +9,8 @@ Defining node pools inline in the cluster resource is an operational/maintainabi
 This check fails when a `google_container_cluster` resource defines an inline `node_pool` block instead of managing node pools as separate `google_container_node_pool` resources, unless the default node pool is being explicitly removed (`remove_default_node_pool = true`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource (negative value check)

@@ -9,6 +9,8 @@ Relying on external (non-local/on-premises) DNS servers for a VNET can route int
 This check ensures that any custom DNS server IP configured on a virtual network falls within the VNet's own address space, rather than pointing to an external/on-premises DNS server.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform (`azurerm` provider), ARM templates, Bicep (compiled to ARM)
 - **Resource types:**
   - ARM: `Microsoft.Network/virtualNetworks`

@@ -9,6 +9,8 @@ A hard-coded secret or API key value baked into an SSM Parameter Store resource 
 This check flags AWS Systems Manager Parameter Store (`AWS::SSM::Parameter`) resources whose name suggests it holds a secret/API key and whose static `Value` contains what looks like a real, hard-coded credential rather than a dynamic reference.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`
+
 - **IaC framework:** CloudFormation
 - **Resource type:** `AWS::SSM::Parameter`
 

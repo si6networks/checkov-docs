@@ -8,6 +8,8 @@ Without a managed identity, the Recovery Services vault must rely on stored cred
 This check verifies that an Azure Recovery Services Vault (used for Azure Backup and Site Recovery) has a managed identity configured, rather than relying on other credential mechanisms for its automation and cross-resource operations.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_recovery_services_vault`
 

@@ -8,6 +8,8 @@ Without API Gateway access logging, there is no record of requests to investigat
 This check fails when an API Gateway stage (REST API or HTTP API/apigatewayv2) does not have an access log destination configured, meaning per-request access logs are not being delivered anywhere.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::ApiGateway::Stage`, `AWS::Serverless::Api` (CloudFormation/SAM), `aws_api_gateway_stage`, `aws_apigatewayv2_stage` (Terraform)
 - **Check type:** resource

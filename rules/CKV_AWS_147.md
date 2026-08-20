@@ -8,6 +8,8 @@ CodeBuild artifacts can include build outputs, dependency caches, or embedded co
 This check verifies that an `aws_codebuild_project` resource specifies an `encryption_key` for its build artifacts, unless the project defines no artifacts at all.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `aws_codebuild_project` resource.
 
 ## Why it matters

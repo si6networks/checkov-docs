@@ -9,6 +9,8 @@ The apt-get --force-yes flag disables package signature validation and permits d
 This check verifies that `apt-get` invocations in a Dockerfile do not use the `--force-yes` flag, which disables package signature validation and allows downgrades/broken installs.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: any `RUN` instruction.
 
 This is a graph-based check using regex matching against the `RUN` instruction's command text.

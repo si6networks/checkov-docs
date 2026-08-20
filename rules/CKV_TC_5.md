@@ -9,6 +9,8 @@ Placing instances in the default VPC forgoes network segmentation from other wor
 This check ensures that Tencent Cloud CVM instances are placed in a purpose-built VPC/subnet rather than the account's default VPC or subnet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_instance` (Tencent Cloud provider).
 
 ## Why it matters

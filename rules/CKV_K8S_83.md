@@ -8,6 +8,8 @@ Disabling the NamespaceLifecycle admission controller allows objects to be creat
 This check verifies that a self-managed `kube-apiserver` container explicitly enables the `NamespaceLifecycle` admission controller via `--enable-admission-plugins`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant specifically to the container spec of a self-hosted `kube-apiserver` static pod/manifest, not to ordinary application workloads.
 
 ## Why it matters

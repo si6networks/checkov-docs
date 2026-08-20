@@ -9,6 +9,8 @@ An operation that accepts HTTP Basic auth transmits reversible base64-encoded cr
 For Swagger 2.0 documents, no operation's `security` requirement should resolve (via `securityDefinitions`) to a scheme with `type: basic` — this checks usage at the operation level, complementing CKV_OPENAPI_13 which checks the scheme definitions.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `paths` (each operation's `security` field, resolved against `securityDefinitions`).
 

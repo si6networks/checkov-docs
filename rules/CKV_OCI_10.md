@@ -8,6 +8,8 @@ An Object Storage bucket configured for public read (or read-without-list) acces
 This check fails an OCI `oci_objectstorage_bucket` resource if its `access_type` is set to a value that grants public read access (`ObjectRead` or `ObjectReadWithoutList`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `oci_objectstorage_bucket`
 - **Check type:** resource (negative value check)

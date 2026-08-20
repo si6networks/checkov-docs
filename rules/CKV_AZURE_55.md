@@ -8,6 +8,8 @@ Leaving Defender for Servers off removes threat-detection coverage for compute w
 This check fails when the Azure Security Center (Microsoft Defender for Cloud) pricing tier for the "VirtualMachines" resource type is not set to "Standard", meaning Defender for Servers is not enabled for the subscription.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, for the resource type `azurerm_security_center_subscription_pricing`.
 
 ## Why it matters

@@ -9,6 +9,8 @@ API Gateway caching is a performance/cost optimization; disabling it has no mean
 Fails when an API Gateway (REST API) stage does not have response caching enabled.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_api_gateway_stage` resource.
 - **CloudFormation/SAM**: `AWS::ApiGateway::Stage`, `AWS::Serverless::Api`.
 

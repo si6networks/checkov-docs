@@ -9,6 +9,8 @@ Missing deletion protection on a Bigtable instance is primarily an availability/
 This check requires `google_bigtable_instance` resources to explicitly set `deletion_protection = true`, so that Terraform will refuse to delete the Bigtable instance (and the data stored in it) without an explicit, separate change.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_bigtable_instance`
 - **Check type:** resource (value check)

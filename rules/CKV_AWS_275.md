@@ -9,6 +9,8 @@ A data-source lookup of AdministratorAccess is almost always a precursor to atta
 This check flags Terraform `data "aws_iam_policy"` data sources that reference the AWS-managed `AdministratorAccess` policy by name or ARN, discouraging its use even as a referenced/looked-up policy within configuration.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: data source `aws_iam_policy`
 
 ## Why it matters

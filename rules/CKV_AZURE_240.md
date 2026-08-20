@@ -9,6 +9,8 @@ Relying on Microsoft-managed keys instead of a customer-managed key for Synapse 
 This check ensures an Azure Synapse Analytics workspace is encrypted using a customer-managed key (CMK) stored in Azure Key Vault, rather than relying solely on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_synapse_workspace` resources — inspects `customer_managed_key[0].key_name` (any non-empty value accepted).
 - **ARM/Bicep**: `Microsoft.Synapse/workspaces` — inspects `properties.encryption` for the presence of a `cmk` key.
 

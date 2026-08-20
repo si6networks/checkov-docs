@@ -8,6 +8,8 @@ MySQL data is already encrypted at rest by default in Azure, so missing infrastr
 This check verifies that an Azure Database for MySQL server has infrastructure-level (double) encryption enabled, adding a second layer of encryption underneath the standard service-level encryption.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mysql_server` (inspects `infrastructure_encryption_enabled`)
 - **ARM templates**: `Microsoft.DBforMySQL/flexibleServers` (inspects `properties.dataencryption`)
 - **Bicep**: resources compiling to the above ARM type

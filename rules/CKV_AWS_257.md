@@ -9,6 +9,8 @@ Allowing CodeCommit merges with fewer than two approvals weakens code-review gov
 This check ensures that an AWS CodeCommit approval rule template requires a minimum of 2 approvals (`NumberOfApprovalsNeeded >= 2`) before a pull request can be merged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_codecommit_approval_rule_template`
 

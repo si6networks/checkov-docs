@@ -9,6 +9,8 @@ Leaving the container running as root significantly increases the blast radius o
 This check ensures that the final `USER` instruction in a Dockerfile does not set the container's runtime user to `root`, so containers built from the image do not run as the root user by default.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **IaC framework**: Dockerfile
 - **Instruction inspected**: `USER`
 - Only the *last* `USER` instruction in the Dockerfile is evaluated (a Dockerfile may switch users multiple times, e.g., to `root` for installing packages and back to a non-root user before `CMD`/`ENTRYPOINT` — only the final, effective one matters for runtime).

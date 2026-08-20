@@ -9,6 +9,8 @@ A publicly accessible MWAA (managed Airflow) webserver exposes a powerful workfl
 This check requires Amazon Managed Workflows for Apache Airflow (MWAA) environments to either omit `webserver_access_mode` (which defaults to private) or explicitly set it to `PRIVATE_ONLY`, preventing the Airflow web UI from being reachable over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_mwaa_environment`
 

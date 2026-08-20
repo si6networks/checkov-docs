@@ -9,6 +9,8 @@ Without network isolation, a malicious or supply-chain-compromised model/contain
 This check ensures that an Amazon SageMaker Model resource has network isolation enabled, preventing the model's training/inference containers from making any outbound network calls.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::SageMaker::Model` (property `EnableNetworkIsolation`), `aws_sagemaker_model` (attribute `enable_network_isolation`)

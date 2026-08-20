@@ -8,6 +8,8 @@ Allowing connections below TLS 1.2 exposes database traffic (often carrying cred
 This check fails when an Azure Database for MySQL server does not enforce TLS 1.2 as its minimum TLS version, allowing clients to negotiate weaker, deprecated TLS protocol versions.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_mysql_server`), ARM templates, and Bicep, for the resource type `Microsoft.DBforMySQL/servers`.
 
 ## Why it matters

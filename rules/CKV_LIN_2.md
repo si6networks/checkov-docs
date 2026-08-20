@@ -9,6 +9,8 @@ Instances left without a key-based `authorized_keys` entry fall back to password
 This check ensures that a Linode Compute Instance (`linode_instance`) has at least one SSH key configured via the `authorized_keys` attribute, so the server can be accessed with key-based authentication instead of falling back to a generated or unmanaged root password.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `linode_instance`
 - **Check type:** resource-configuration attribute check

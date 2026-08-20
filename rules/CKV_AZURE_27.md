@@ -9,6 +9,8 @@ Not routing threat-detection alerts to the service's co-administrators/owners is
 This check ensures an Azure SQL Server's threat-detection security alert policy is configured to also email the subscription's service administrators and co-administrators, not just a custom recipient list.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.Sql/servers/databases` (nested `securityAlertPolicies`), `azurerm_mssql_server_security_alert_policy`
 

@@ -8,6 +8,8 @@ A CloudTrail not enabled across all regions leaves API activity in non-configure
 This check verifies that a CloudTrail trail has `IsMultiRegionTrail`/`is_multi_region_trail` set to `true`, so that API activity is logged across all AWS regions rather than only the region where the trail was created.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::CloudTrail::Trail`, property `Properties/IsMultiRegionTrail`.
 - **Terraform**: `aws_cloudtrail` resource, attribute `is_multi_region_trail`.
 

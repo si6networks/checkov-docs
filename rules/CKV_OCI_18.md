@@ -9,6 +9,8 @@ A password policy allowing shorter than 14 characters weakens resistance to brut
 This check ensures that the OCI IAM authentication policy (`oci_identity_authentication_policy`) enforces a minimum password length of at least 14 characters for local (non-federated) IAM users.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_identity_authentication_policy`
 

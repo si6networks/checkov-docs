@@ -9,6 +9,8 @@ Setting a minimum node count above zero for an ML compute cluster is primarily a
 This check ensures that an Azure Machine Learning compute cluster's `scale_settings.min_node_count` is set to `0`, so that the cluster scales down to zero nodes (rather than always keeping compute nodes idle and running) when not in use.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_machine_learning_compute_cluster`
 

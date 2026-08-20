@@ -9,6 +9,8 @@ A disabled GuardDuty detector silently blinds the account to the threat-detectio
 This check ensures that an `aws_guardduty_detector` resource is actively enabled rather than provisioned in a disabled state.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_guardduty_detector`
 

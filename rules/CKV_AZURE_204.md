@@ -9,6 +9,8 @@ Enabling public network access exposes the Service Bus namespace's endpoint to t
 This check ensures an Azure Service Bus namespace has `public_network_access_enabled` set to `false`, requiring access through private endpoints/networks rather than the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_servicebus_namespace`
 

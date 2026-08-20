@@ -9,6 +9,8 @@ A NACL rule open to 0.0.0.0/0 on the FTP control port exposes every host in the 
 This check ensures that no AWS Network ACL (NACL) rule allows unrestricted (`0.0.0.0/0`) inbound access to TCP port 21 (FTP control port).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_network_acl` (inline `ingress` blocks) and `aws_network_acl_rule` (standalone rule resources)
 

@@ -9,6 +9,8 @@ A disabled KMS key breaks decrypt/encrypt operations for dependent resources (an
 This check ensures that an AWS KMS (Key Management Service) key resource is not left in a disabled state, which would make it unusable for encryption or decryption operations.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_kms_key`
 

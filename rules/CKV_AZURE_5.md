@@ -9,6 +9,8 @@ Without Kubernetes RBAC enabled, AKS falls back to coarse, overly permissive aut
 This check verifies that an Azure Kubernetes Service (AKS) cluster has Kubernetes Role-Based Access Control (RBAC) enabled, rather than relying on legacy or absent authorization models.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster`
 - **ARM templates**: `Microsoft.ContainerService/managedClusters`
 - **Bicep**: `Microsoft.ContainerService/managedClusters`

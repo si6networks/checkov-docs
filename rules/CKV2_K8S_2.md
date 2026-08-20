@@ -9,6 +9,8 @@ Create access to `pods/exec` or `nodes/proxy` gives a subject the ability to exe
 This check flags RBAC Roles/ClusterRoles bound to a ServiceAccount or Node that grant `create` (or `*`) verb permission on the `nodes/proxy` or `pods/exec` sub-resources, since either permission lets the bound identity execute arbitrary commands inside pods or proxy raw requests to kubelet.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests. Applies to `Role`, `ClusterRole`, `RoleBinding`, and `ClusterRoleBinding` resource kinds, evaluated as a connected RBAC graph.
 
 ## Why it matters

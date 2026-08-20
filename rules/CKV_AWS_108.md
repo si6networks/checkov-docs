@@ -8,6 +8,8 @@ This check (via Cloudsplaining) flags IAM policies that permit actions enabling 
 This check uses the `cloudsplaining` policy-analysis engine to ensure IAM policies do not grant broad, unrestricted permissions to actions that can be used to exfiltrate data out of the AWS account (e.g. copying S3 objects out, creating public snapshots, sharing resources cross-account).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_iam_policy_document` data source (analyzed via the underlying compiled policy JSON).
 - **CloudFormation**: `AWS::IAM::Group`, `AWS::IAM::ManagedPolicy`, `AWS::IAM::Policy`, `AWS::IAM::Role`, `AWS::IAM::User` resources containing inline or attached IAM policy documents.
 

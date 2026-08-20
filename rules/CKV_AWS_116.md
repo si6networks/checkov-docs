@@ -9,6 +9,8 @@ Lacking a Dead Letter Queue only affects reliability of failed asynchronous invo
 Fails when a Lambda function does not have a Dead Letter Queue (an SQS queue or SNS topic) configured to capture failed asynchronous invocation events.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_lambda_function` resource.
 - **CloudFormation/SAM**: `AWS::Lambda::Function`, `AWS::Serverless::Function`.
 

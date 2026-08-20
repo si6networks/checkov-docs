@@ -8,6 +8,8 @@ A WAFv2 Web ACL without logging configured undermines the ability to investigate
 This check ensures that every `aws_wafv2_web_acl` has a connected `aws_wafv2_web_acl_logging_configuration`, so that the requests WAF inspects and the actions it takes are actually logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_wafv2_web_acl` (connected `aws_wafv2_web_acl_logging_configuration`)
 - **Check type:** Graph-based connection check

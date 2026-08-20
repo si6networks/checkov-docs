@@ -8,6 +8,8 @@ Missing --peer-cert-file/--peer-key-file leaves etcd's inter-node replication tr
 This check verifies that the `etcd` server has both `--peer-cert-file` and `--peer-key-file` configured, enabling TLS encryption for the peer-to-peer traffic between etcd cluster members.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `etcd` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `etcd` component in a multi-member (HA) etcd cluster (CIS Kubernetes Benchmark section 2).
 
 ## Why it matters

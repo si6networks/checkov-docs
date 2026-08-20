@@ -9,6 +9,8 @@ Using an unpinned `latest` base image tag risks unreviewed/unexpected upstream c
 This check ensures that every `FROM` instruction in a Dockerfile pins the base image to a specific, immutable version tag rather than relying on the implicit or explicit `:latest` tag (or an untagged reference).
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **IaC framework**: Dockerfile
 - **Instruction inspected**: `FROM`
 - Applies to every `FROM` line in a Dockerfile, including multi-stage builds.

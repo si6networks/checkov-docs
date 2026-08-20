@@ -9,6 +9,8 @@ Missing HEALTHCHECK instructions mainly affect availability and incident detecti
 This check requires that a Dockerfile includes a `HEALTHCHECK` instruction so the container runtime can determine whether the running container is actually healthy, not merely alive.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — this check applies to the Dockerfile as a whole (`supported_instructions = ("*",)`, i.e. it inspects the complete parsed instruction set) looking specifically for a `HEALTHCHECK` instruction anywhere in the file.
 
 ## Why it matters

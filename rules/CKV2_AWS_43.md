@@ -8,6 +8,8 @@ An S3 ACL granting access to the 'All Authenticated AWS Users' group exposes buc
 This check fails when an `aws_s3_bucket_acl` grants access to the `AuthenticatedUsers` predefined group, which is any AWS account holder worldwide — not just users within your own account or organization.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_s3_bucket_acl`
 

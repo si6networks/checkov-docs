@@ -9,6 +9,8 @@ Missing 'Send Alerts To' configuration only delays awareness of SQL security eve
 This check ensures that an Azure SQL Server's threat-detection security alert policy has at least one recipient email address configured, so detected threats are actually delivered to someone.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.Sql/servers/databases` (nested `securityAlertPolicies`), `azurerm_mssql_server_security_alert_policy`
 

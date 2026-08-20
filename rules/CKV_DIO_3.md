@@ -9,6 +9,8 @@ Setting a Spaces bucket ACL to public-read exposes its entire object contents to
 This check ensures a DigitalOcean Spaces bucket's ACL is not set to `public-read`, preventing the bucket's contents from being publicly listable/readable by default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resource type `digitalocean_spaces_bucket` (DigitalOcean provider). Specifically inspects the `acl` attribute.
 
 ## Why it matters

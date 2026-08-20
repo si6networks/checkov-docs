@@ -9,6 +9,8 @@ An explicitly empty 'security' array on an operation (with no global fallback) d
 Every operation in the OpenAPI document must be covered by a non-empty `security` requirement — either declared explicitly on the operation itself, or inherited from a non-empty global `security` field — so that no endpoint is left unauthenticated by omission.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 and OpenAPI 3.x — generic, version-agnostic check).
 - **Entity:** `security` at both the document root and the per-operation level, evaluated alongside `paths`.
 

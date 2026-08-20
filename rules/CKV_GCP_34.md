@@ -9,6 +9,8 @@ An instance-level override that disables OS Login undermines the project-wide ac
 This check fails when an individual GCE instance sets `metadata.enable-oslogin = false`, overriding the project-wide OS Login setting and reverting that specific instance to metadata/SSH-key-based access.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_compute_instance`, `google_compute_instance_from_template`, and `google_compute_instance_template`.
 
 ## Why it matters

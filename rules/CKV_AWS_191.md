@@ -8,6 +8,8 @@ ElastiCache replication groups often cache session tokens or application data, a
 This check requires that an `aws_elasticache_replication_group` resource specify a customer-managed KMS key (`kms_key_id`) for at-rest encryption instead of the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_elasticache_replication_group`
 - **Check type:** resource (attribute-value check)

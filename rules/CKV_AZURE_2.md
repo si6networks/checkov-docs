@@ -9,6 +9,8 @@ Managed disks hold VM OS/application data and secrets, and while Azure applies p
 This check ensures Azure managed disks have disk encryption enabled (either via a disk encryption set, encryption settings block, or, for ARM templates, an `encryption`/`encryptionSettings(Collection)` property), so data at rest on the disk is protected.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM templates, Bicep (Bicep compiles to ARM JSON and is evaluated by the same ARM check)
 - **Resource types:** `azurerm_managed_disk` (Terraform), `Microsoft.Compute/disks` (ARM/Bicep)
 

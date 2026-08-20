@@ -9,6 +9,8 @@ Assigning a public IP directly to a compute instance exposes every open port and
 This check ensures that Tencent Cloud CVM (Cloud Virtual Machine) instances are not directly assigned a public IP address.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_instance` (Tencent Cloud provider).
 
 ## Why it matters

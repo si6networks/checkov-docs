@@ -8,6 +8,8 @@ Allowing a load balancer listener to negotiate below TLS 1.2 permits use of depr
 This check ensures that ALB/NLB listeners configured for TLS/HTTPS termination use a security policy that enforces TLS 1.2 or higher, rather than allowing older, weaker protocol versions.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::ElasticLoadBalancingV2::Listener` resources.
 - **Terraform**: `aws_lb_listener` and `aws_alb_listener` resources (evaluated via a graph-based policy that also inspects connected `aws_lb` resources for Gateway Load Balancer type).
 

@@ -8,6 +8,8 @@ A Cosmos DB account without virtual network filtering or IP restrictions is reac
 This check verifies that an Azure Cosmos DB account either has public network access disabled, or — if public access is enabled and multi-region writes are on — has network restrictions (a VNet filter or IP range filter) configured so it isn't openly reachable from any address.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_cosmosdb_account` (inspects `public_network_access_enabled`, `is_virtual_network_filter_enabled`, `virtual_network_rule`, `ip_range_filter`)
 - **ARM templates**: `Microsoft.DocumentDB/databaseAccounts` (inspects `properties.enableMultipleWriteLocations`, `properties.isVirtualNetworkFilterEnabled`, `properties.virtualNetworkRules`, `properties.ipRules`)
 - **Bicep**: resources compiling to `Microsoft.DocumentDB/databaseAccounts`

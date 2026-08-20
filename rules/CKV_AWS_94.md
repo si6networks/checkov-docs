@@ -9,6 +9,8 @@ Disabling encryption on the Glue Data Catalog leaves metadata about data sources
 This check fails unless an AWS Glue Data Catalog encryption settings resource has *both* connection-password encryption enabled *and* at-rest encryption (SSE-KMS) enabled for the catalog.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_glue_data_catalog_encryption_settings` resource — inspects `data_catalog_encryption_settings[0].encryption_at_rest` and `.connection_password_encryption`.
 - **CloudFormation**: `AWS::Glue::DataCatalogEncryptionSettings` resource — inspects `Properties.DataCatalogEncryptionSettings.EncryptionAtRest` and `.ConnectionPasswordEncryption`.
 

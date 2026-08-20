@@ -9,6 +9,8 @@ Missing a two-reviewer approval gate on pull requests weakens code-review contro
 This check ensures that every Azure DevOps Git repository has a branch policy requiring at least two approving reviewers before a pull request can be completed.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (Azure DevOps provider). Applies to `azuredevops_git_repository` resources, verified in connection with an `azuredevops_branch_policy_min_reviewers` resource.
 
 ## Why it matters

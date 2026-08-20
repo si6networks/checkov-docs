@@ -9,6 +9,8 @@ DynamoDB global table replicas hold full copies of potentially sensitive applica
 This check ensures that a DynamoDB global table replica (`aws_dynamodb_table_replica`) specifies a customer-managed KMS key ARN for encrypting the replicated table data.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_dynamodb_table_replica`
 
 ## Why it matters

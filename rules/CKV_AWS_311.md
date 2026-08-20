@@ -9,6 +9,8 @@ Unencrypted CodeBuild S3 logs risk exposing build output and diagnostic data at 
 This check ensures that when an AWS CodeBuild project writes its build logs to S3, encryption of those logs is not explicitly disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_codebuild_project`
 

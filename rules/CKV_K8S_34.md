@@ -9,6 +9,8 @@ Tiller ran as a highly privileged, unauthenticated-by-default in-cluster service
 This check flags workloads that deploy the Tiller component (Helm v2's server-side agent) based on its image name or characteristic labels.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: container-level check across kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`.
 

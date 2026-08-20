@@ -8,6 +8,8 @@ This check governs Terraform's create_before_destroy lifecycle ordering for API 
 This check ensures that an `aws_api_gateway_deployment` resource enables the `create_before_destroy` lifecycle setting, so that redeployments create the new deployment before destroying the old one.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_api_gateway_deployment`
 

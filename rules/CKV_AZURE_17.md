@@ -9,6 +9,8 @@ Missing mutual TLS client certificate validation removes a defense-in-depth auth
 This check ensures that an Azure App Service / Web App requires and enforces incoming client TLS certificates (mutual TLS) rather than accepting connections without client-side certificate verification.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`.
 - **ARM/Bicep**: `Microsoft.Web/sites`.
 

@@ -8,6 +8,8 @@ A single-instance App Service Plan has no failover capacity, so an unplanned int
 Ensures that an Azure App Service (Web App) is configured with more than one worker/instance so it can tolerate a single-instance failure without downtime.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_service_plan` (checks the `worker_count` attribute)
 - **ARM**: `Microsoft.Web/sites`, `Microsoft.Web/sites/slots` (checks `properties.siteConfig.numberOfWorkers`)
 - **Bicep**: compiles to the same ARM resource types above and is covered by the ARM check

@@ -8,6 +8,8 @@ An API server missing --tls-cert-file/--tls-private-key-file may serve the Kuber
 This check ensures the Kubernetes API server (`kube-apiserver`) is started with both `--tls-cert-file` and `--tls-private-key-file` arguments set to non-empty values, enabling TLS for its serving endpoint.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Applies to Kubernetes manifests defining container specs for workload kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice this check is meaningful only for the static Pod manifest that runs `kube-apiserver` itself (typically `/etc/kubernetes/manifests/kube-apiserver.yaml` on control-plane nodes), since it specifically looks for the `kube-apiserver` command inside a container's `command` list.
 
 ## Why it matters

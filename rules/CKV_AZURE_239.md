@@ -9,6 +9,8 @@ Storing the SQL administrator login password directly in the Synapse Workspace r
 This check ensures the SQL administrator login password for an Azure Synapse Analytics workspace is never set as a plaintext/inline value in the IaC configuration itself.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_synapse_workspace` resources — flags presence of the `sql_administrator_login_password` attribute.
 - **ARM/Bicep**: `Microsoft.Synapse/workspaces` — flags presence of `properties.sqlAdministratorLoginPassword`.
 

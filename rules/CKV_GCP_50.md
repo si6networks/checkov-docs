@@ -9,6 +9,8 @@ Leaving MySQL's local_infile flag on allows LOAD DATA LOCAL INFILE, which combin
 This check fails when a `google_sql_database_instance` running MySQL has the `local_infile` database flag explicitly set to `on`, since this flag enables client-side `LOAD DATA LOCAL INFILE` which can be abused to read arbitrary local files.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `MYSQL`
 - **Check type:** resource check

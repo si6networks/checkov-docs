@@ -9,6 +9,8 @@ A relative WORKDIR is a build-portability and clarity issue with no direct explo
 This check fails a Dockerfile if any `WORKDIR` instruction uses a relative path instead of an absolute path (or a recognized variable/Windows-drive form).
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — specifically the `WORKDIR` instruction.
 
 ## Why it matters

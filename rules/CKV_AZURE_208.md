@@ -9,6 +9,8 @@ Fewer than 3 replicas is purely an availability/SLA gap for index-update operati
 This check ensures an Azure Cognitive Search service is provisioned with at least 3 replicas, the minimum required by Microsoft to receive an SLA guarantee for index update (write) operations.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:** `azurerm_search_service` (Terraform), `Microsoft.Search/searchServices` (ARM/Bicep)
 

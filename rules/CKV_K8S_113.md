@@ -8,6 +8,8 @@ Binding the controller-manager to an address other than 127.0.0.1 exposes its un
 This check verifies that `kube-controller-manager` binds its (unauthenticated, non-HTTPS-secured legacy) HTTP endpoint to the loopback address `127.0.0.1` rather than a routable/external interface.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `kube-controller-manager` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `kube-controller-manager` control-plane component.
 
 ## Why it matters

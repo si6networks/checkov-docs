@@ -8,6 +8,8 @@ Without node-to-node encryption, traffic between Elasticsearch/OpenSearch cluste
 This check verifies that a multi-node Elasticsearch/OpenSearch domain has node-to-node (in-transit) encryption enabled, so that data replicated and communicated between the cluster's data nodes is encrypted rather than sent in plaintext.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::Elasticsearch::Domain`, property `Properties/NodeToNodeEncryptionOptions/Enabled`.
 - **Terraform**: `aws_elasticsearch_domain` and `aws_opensearch_domain` resources, block `node_to_node_encryption { enabled = ... }`.
 

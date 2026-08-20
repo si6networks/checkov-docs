@@ -9,6 +9,8 @@ Granting organization-wide service-account impersonation/management rights allow
 This check fails when a `google_organization_iam_member` or `google_organization_iam_binding` resource grants a role that lets the bound principal impersonate or manage all service accounts across the entire organization.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_organization_iam_member` and `google_organization_iam_binding`.
 
 **Note on source:** Checkov implements this as `GoogleOrgImpersonationRoles`, a thin subclass of the shared `AbsGoogleImpersonationRoles` base class. The abstract base class's implementation was not included in the extracted source set for this doc; the description of its evaluation logic below is inferred from the check's name/class hierarchy and the closely related project-level check CKV_GCP_41, which enumerates `roles/iam.serviceAccountUser` and `roles/iam.serviceAccountTokenCreator` as the impersonation-enabling roles it targets.

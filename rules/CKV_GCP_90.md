@@ -8,6 +8,8 @@ Dataflow jobs are encrypted by default, so lacking a CMK reduces customer contro
 This check requires `google_dataflow_job` Terraform resources to set `kms_key_name`, so that data processed and staged by the Dataflow job is encrypted at rest with a customer-managed Cloud KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dataflow_job`
 - **Check type:** resource (attribute-value check)

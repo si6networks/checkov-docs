@@ -8,6 +8,8 @@ An RDS cluster without KMS customer-managed-key encryption leaves data at rest w
 This check requires that `aws_rds_cluster` resources set `kms_key_id` to a customer-managed KMS key (CMK), rather than relying on the AWS-managed default RDS key (or leaving encryption unconfigured).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_rds_cluster`
 

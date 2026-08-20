@@ -8,6 +8,8 @@ Missing query logging on a Postgres RDS cluster removes an audit trail useful fo
 This check ensures that an Aurora PostgreSQL RDS cluster (`aws_rds_cluster` with `engine = "aurora-postgresql"`) is attached to a parameter group that configures `log_statement` and `log_min_duration_statement`, so that database queries are actually logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_rds_cluster` (engine `aurora-postgresql`), connected `aws_rds_cluster_parameter_group`
 - **Check type:** Graph-based connection + attribute check

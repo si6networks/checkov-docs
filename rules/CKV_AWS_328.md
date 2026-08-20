@@ -8,6 +8,8 @@ Running an ALB/ELB in 'monitor' mode instead of defensive/strictest desync mitig
 This check requires that Application/Classic Load Balancers (`aws_lb`, `aws_alb`, `aws_elb`) set `desync_mitigation_mode` to `defensive` or `strictest`, rather than the weaker `monitor` mode.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource types:** `aws_lb`, `aws_alb`, `aws_elb`
 

@@ -9,6 +9,8 @@ A high-entropy base64 string flags likely hardcoded secret material, but as a ge
 This check flags strings that look like base64-encoded blobs with unusually high Shannon entropy — a strong statistical signal that the string is a secret (key, token, password) rather than ordinary text or config data.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 This is a built-in Checkov **secrets scanning** check (framework: `secrets`) that runs against any text file scanned in a repository or directory scan — YAML/JSON configs, IaC templates, shell scripts, Dockerfiles, netplan/cloud-init files, application source, etc. It is content-based, not tied to a specific resource type ("entities": `secrets`).
 
 ## Why it matters

@@ -8,6 +8,8 @@ Insufficient CloudWatch log retention risks losing forensic and audit evidence n
 This check requires that `aws_cloudwatch_log_group` resources set `retention_in_days` to either `0` (never expire) or a value of `365` or more, ensuring logs are kept for at least a year.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_cloudwatch_log_group`
 

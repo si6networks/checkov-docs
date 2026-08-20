@@ -9,6 +9,8 @@ Not emitting object storage events limits downstream event-driven security autom
 This check ensures that an OCI Object Storage bucket (`oci_objectstorage_bucket`) is configured to emit object-level events (create, update, delete) to the OCI Events service.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_objectstorage_bucket`
 

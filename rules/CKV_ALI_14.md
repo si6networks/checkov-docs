@@ -9,6 +9,8 @@ Not requiring numeric characters in RAM account passwords modestly reduces passw
 This check verifies that an Alibaba Cloud RAM account password policy requires at least one numeric character in user passwords, increasing password complexity and resistance to guessing attacks.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_account_password_policy`
 - **Category:** IAM

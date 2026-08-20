@@ -8,6 +8,8 @@ The Verified badge is a trust/branding signal for consumers of the org's public 
 This check enforces that a GitHub organization has completed GitHub's organization verification process, which cryptographically links the org to a verified company domain and displays a "Verified" badge.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated against the organization profile setting `is_verified`.
 
 ## Why it matters

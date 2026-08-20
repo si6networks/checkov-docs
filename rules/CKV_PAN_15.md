@@ -8,6 +8,8 @@ Enabling User-ID on a zone without a restrictive Include ACL lets the firewall a
 This check ensures that whenever User-ID is enabled on a PAN-OS Security Zone, an Include ACL restricting which source subnets User-ID actively maps to usernames is also defined, so that user mapping doesn't apply indiscriminately to every host in the zone.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 Terraform resources `panos_zone` and `panos_panorama_zone`, and Ansible task `tasks.paloaltonetworks.panos.panos_zone` (Python resource check for Terraform, graph-based JSON policy for Ansible).
 
 ## Why it matters

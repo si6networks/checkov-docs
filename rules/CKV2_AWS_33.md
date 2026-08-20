@@ -8,6 +8,8 @@ An AppSync GraphQL API without WAF protection is exposed to injection, resource-
 This check ensures that every AWS AppSync GraphQL API is protected by an associated AWS WAFv2 web ACL.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** Terraform, CloudFormation
 - **Resource types:** `aws_appsync_graphql_api` (Terraform) / `AWS::AppSync::GraphQLApi` (CloudFormation), connected `aws_wafv2_web_acl_association` (Terraform) / `AWS::WAFv2::WebACLAssociation` (CloudFormation)
 - **Check type:** Graph-based connection check (both implementations)

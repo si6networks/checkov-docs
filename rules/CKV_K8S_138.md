@@ -8,6 +8,8 @@ Enabling kubelet anonymous authentication lets unauthenticated requests reach th
 This check verifies that `kubelet` explicitly disables anonymous authentication by setting `--anonymous-auth=false`, so unauthenticated requests to the kubelet API are rejected.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `kubelet` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice this evaluates any manifest that surfaces kubelet's command-line invocation with its flags — per CIS Kubernetes Benchmark 4.2.1.
 
 ## Why it matters

@@ -9,6 +9,8 @@ Elasticsearch/OpenSearch domains commonly hold logs, application data, or PII, a
 This check ensures that Elasticsearch/OpenSearch domains have encryption-at-rest configured using a customer-managed KMS key, rather than left unencrypted or relying only on an AWS-owned key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource types:** `aws_elasticsearch_domain`, `aws_opensearch_domain`
 

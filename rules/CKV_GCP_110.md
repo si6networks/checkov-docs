@@ -9,6 +9,8 @@ pgAudit provides detailed, session/object-level audit logging of database activi
 This check ensures that a Cloud SQL PostgreSQL instance has the `cloudsql.enable_pgaudit` database flag set to `on`, enabling the pgAudit extension for detailed, session/object-level audit logging.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_sql_database_instance` (PostgreSQL engine)
 - **Attribute inspected**: a `database_flags` block with `name = "cloudsql.enable_pgaudit"` and `value = "on"`

@@ -8,6 +8,8 @@ Not placing API Management inside a virtual network removes network-layer segmen
 This check ensures that an Azure API Management (APIM) service instance is deployed into a virtual network (VNet), rather than being deployed with no VNet integration at all.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_api_management` (inspects `virtual_network_configuration[0].subnet_id`)
 - **ARM/Bicep**: `Microsoft.ApiManagement/service` (inspects `properties/virtualNetworkConfiguration`)
 

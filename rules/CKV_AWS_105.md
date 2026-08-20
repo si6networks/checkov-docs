@@ -8,6 +8,8 @@ Not requiring SSL (require_ssl) on Redshift connections allows client-to-cluster
 This check ensures that Amazon Redshift cluster parameter groups enforce SSL (`require_ssl = true`) for client connections to the data warehouse.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::Redshift::ClusterParameterGroup` resources.
 - **Terraform**: `aws_redshift_parameter_group` resources.
 

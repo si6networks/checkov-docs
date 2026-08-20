@@ -9,6 +9,8 @@ Storage accounts are still encrypted at rest by default with Microsoft-managed k
 This check ensures an Azure Storage Account is configured to encrypt data at rest using a customer-managed key (CMK) stored in Azure Key Vault, rather than relying solely on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_storage_account`, connected via `azurerm_storage_account_customer_managed_key`, or configured directly through the `customer_managed_key` block's `key_vault_key_id` attribute.
 

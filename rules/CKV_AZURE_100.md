@@ -8,6 +8,8 @@ Cosmos DB data is encrypted at rest by default with Microsoft-managed keys, so l
 This check ensures that Azure Cosmos DB accounts are configured to use a customer-managed key (CMK), stored in Azure Key Vault, to encrypt data at rest rather than relying solely on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_cosmosdb_account` (inspects `key_vault_key_id`)
 - **ARM/Bicep**: `Microsoft.DocumentDb/databaseAccounts` (inspects `properties/keyVaultKeyUri`)
 

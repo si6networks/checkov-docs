@@ -8,6 +8,8 @@ Kinesis streams frequently carry live application/event data, and while this che
 This check requires that an `aws_kinesis_stream` resource specify a customer-managed KMS key (`kms_key_id`) for server-side encryption instead of the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_kinesis_stream`
 - **Check type:** resource (attribute-value check)

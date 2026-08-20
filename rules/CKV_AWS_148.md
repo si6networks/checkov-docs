@@ -8,6 +8,8 @@ Default VPCs come with permissive out-of-the-box networking (broad default secur
 This check flags any Terraform configuration that declares an `aws_default_vpc` resource, since the presence of that resource block means Terraform will manage (and, on `apply`, adopt/create) the account's default VPC.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `aws_default_vpc` resource.
 
 ## Why it matters

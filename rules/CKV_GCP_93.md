@@ -8,6 +8,8 @@ Spanner databases are encrypted by default, so missing CMK configuration reduces
 This check requires `google_spanner_database` resources to set `encryption_config.kms_key_name`, so Cloud Spanner database data at rest is encrypted with a customer-managed Cloud KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_spanner_database`
 - **Check type:** resource (attribute-value check on the nested `encryption_config` block)

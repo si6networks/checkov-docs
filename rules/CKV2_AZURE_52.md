@@ -9,6 +9,8 @@ Missing vulnerability assessment on a Synapse SQL Pool is a detective/monitoring
 This check ensures every Azure Synapse dedicated SQL Pool has vulnerability assessment enabled (chained through its security alert policy), so the pool's configuration is regularly scanned for known security weaknesses.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `terraform`
+
 - **IaC frameworks:** Terraform (graph-based check), ARM/Bicep (graph-based check)
 - **Resource types:** `Microsoft.Synapse/workspaces/sqlPools` → `Microsoft.Sql/servers/securityAlertPolicies` → `Microsoft.Sql/servers/vulnerabilityAssessments` (ARM); `azurerm_synapse_sql_pool` → `azurerm_synapse_sql_pool_security_alert_policy` → `azurerm_synapse_sql_pool_vulnerability_assessment` (Terraform)
 

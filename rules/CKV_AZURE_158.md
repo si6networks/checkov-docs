@@ -9,6 +9,8 @@ Allowing Databricks data-plane-to-control-plane traffic over the public internet
 This check ensures that an Azure Databricks workspace does not have public network access enabled, so that data-plane-to-control-plane communication (and all workspace access) occurs over a private link/private endpoint rather than the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_databricks_workspace`

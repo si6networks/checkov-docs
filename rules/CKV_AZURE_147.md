@@ -8,6 +8,8 @@ Permitting PostgreSQL connections below TLS 1.2 allows clients to negotiate outd
 This check ensures an Azure Database for PostgreSQL (single server) enforces a minimum TLS version of 1.2 for client connections, rather than allowing older, weaker TLS versions or leaving the setting unconfigured.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_postgresql_server` resource, attribute `ssl_minimal_tls_version_enforced`.
 
 ## Why it matters

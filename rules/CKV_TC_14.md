@@ -9,6 +9,8 @@ Disabled VPC flow logging removes network-traffic visibility needed to detect an
 This check ensures that Tencent Cloud VPC flow log configuration resources have flow log collection actually enabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_vpc_flow_log_config` (Tencent Cloud provider).
 
 ## Why it matters

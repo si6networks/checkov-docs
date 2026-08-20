@@ -9,6 +9,8 @@ Without enforced public access prevention, a single misconfigured ACL or bucket 
 This check requires every `google_storage_bucket` to set `public_access_prevention = "enforced"`, which blocks the bucket (and its objects) from ever being made publicly accessible via ACLs or IAM, regardless of other settings.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_storage_bucket`
 - **Check type:** resource (value check)

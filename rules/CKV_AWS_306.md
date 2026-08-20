@@ -8,6 +8,8 @@ This check verifies SageMaker notebook instances are launched into a custom VPC 
 This check ensures an `aws_sagemaker_notebook_instance` resource sets a `subnet_id`, placing it inside a customer-defined VPC subnet rather than in the AWS-managed default network.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_sagemaker_notebook_instance`
 

@@ -9,6 +9,8 @@ Allowing plain HTTP to a storage account exposes SAS tokens, account keys, and b
 This check ensures Azure Storage Accounts require HTTPS for all data-plane traffic (blobs, files, tables, queues) rather than allowing plaintext HTTP connections.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:** `Microsoft.Storage/storageAccounts`, `azurerm_storage_account`
 

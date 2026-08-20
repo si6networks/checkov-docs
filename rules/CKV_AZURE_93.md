@@ -8,6 +8,8 @@ Azure managed disks are encrypted by default with platform-managed keys, so omit
 This check verifies that an Azure managed disk is configured to use a specific Disk Encryption Set (customer-managed key encryption) rather than relying only on Azure's default platform-managed key encryption.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_managed_disk` (inspects `disk_encryption_set_id`)
 - **ARM templates**: `Microsoft.Compute/disks` (inspects `properties.encryption.diskEncryptionSetId`)
 - **Bicep**: resources compiling to `Microsoft.Compute/disks`

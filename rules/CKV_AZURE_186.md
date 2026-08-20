@@ -9,6 +9,8 @@ Missing customer-managed key encryption for App Configuration reduces control ov
 This check ensures an Azure App Configuration store is configured to use customer-managed key (CMK) encryption via Key Vault, rather than relying solely on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_app_configuration`
 

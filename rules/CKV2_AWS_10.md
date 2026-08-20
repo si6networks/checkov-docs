@@ -9,6 +9,8 @@ CloudTrail trails not forwarded to CloudWatch Logs reduce real-time visibility i
 This check ensures that AWS CloudTrail trails are configured to stream their logs into a CloudWatch Logs log group, not just S3.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_cloudtrail` resources, evaluated in connection with `aws_cloudwatch_log_group` resources.
 
 ## Why it matters

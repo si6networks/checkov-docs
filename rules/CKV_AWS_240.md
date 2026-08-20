@@ -9,6 +9,8 @@ Without server-side encryption, records buffered in the Firehose delivery stream
 This check ensures that an `aws_kinesis_firehose_delivery_stream` resource has server-side encryption (SSE) enabled, so data buffered within the Firehose delivery stream is encrypted at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_kinesis_firehose_delivery_stream`
 

@@ -8,6 +8,8 @@ Vertex AI Metadata Store content is encrypted by default, so lacking a CMK is a 
 This check requires `google_vertex_ai_metadata_store` resources to set `encryption_spec.kms_key_name`, so ML pipeline/experiment metadata is encrypted at rest with a customer-managed Cloud KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_vertex_ai_metadata_store`
 - **Check type:** resource (attribute-value check on the nested `encryption_spec` block)

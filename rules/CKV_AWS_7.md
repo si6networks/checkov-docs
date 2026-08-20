@@ -8,6 +8,8 @@ Disabled automatic key rotation for a customer-managed KMS key increases the lon
 This check verifies that a customer-managed KMS key (CMK) has automatic annual key rotation enabled, but only applies this requirement to symmetric (or HMAC) keys, since asymmetric keys do not support automatic rotation.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::KMS::Key`, properties `Properties/EnableKeyRotation` and `Properties/KeySpec`.
 - **Terraform**: `aws_kms_key` resource, attributes `enable_key_rotation` and `customer_master_key_spec`.
 

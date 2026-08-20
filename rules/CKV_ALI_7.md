@@ -8,6 +8,8 @@ An unencrypted disk exposes all data written to it in plaintext to anyone who ga
 This check ensures that an Alibaba Cloud ECS cloud disk (`alicloud_disk`) has encryption enabled at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_disk`
 

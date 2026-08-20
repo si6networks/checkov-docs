@@ -9,6 +9,8 @@ Running without a restrictive seccomp profile leaves the full host syscall surfa
 This check ensures pods/containers use a restrictive seccomp profile (`RuntimeDefault`, or the legacy `docker/default`/`runtime/default` annotation values) rather than running with the unconfined default.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only, kinds: `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`. Inspected at both pod (`spec.securityContext.seccompProfile.type`) and container (`containers[].securityContext.seccompProfile.type`) level, plus the legacy annotation `seccomp.security.alpha.kubernetes.io/pod`.
 
 ## Why it matters

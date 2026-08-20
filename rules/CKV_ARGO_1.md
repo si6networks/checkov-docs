@@ -8,6 +8,8 @@ Running Workflow pods under the default ServiceAccount risks granting workflow t
 This check ensures that Argo Workflows templates explicitly assign a non-default Kubernetes ServiceAccount to workflow pods rather than falling back to the namespace's `default` ServiceAccount.
 
 ## Applicability
+**Checkov framework(s):** `argo_workflows`
+
 Applies to Argo Workflows manifests (WorkflowTemplate, Workflow, CronWorkflow, etc.), specifically the `spec` object of a workflow/template — checked for presence and value of `serviceAccountName`.
 
 ## Why it matters

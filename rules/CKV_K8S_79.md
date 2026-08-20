@@ -8,6 +8,8 @@ The AlwaysAdmit admission plugin approves every request without any policy evalu
 This check fails a `kube-apiserver` container manifest if its `--enable-admission-plugins` value includes the deprecated `AlwaysAdmit` plugin, which admits every request unconditionally, bypassing all other admission control checks.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

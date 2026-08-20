@@ -8,6 +8,8 @@ Disabling automatic minor-version upgrades delays the application of vendor secu
 This check verifies that Alibaba Cloud RDS instances are configured to automatically apply minor engine version upgrades.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 

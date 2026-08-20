@@ -9,6 +9,8 @@ A short backup retention period mainly threatens recoverability after data loss,
 This check ensures that an Amazon Neptune DB cluster's automated backup retention period is set to at least 7 days, rather than left at the 1-day default.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::Neptune::DBCluster` (property `BackupRetentionPeriod`), `aws_neptune_cluster` (attribute `backup_retention_period`)

@@ -8,6 +8,8 @@ Omitting a security context leaves a workload with permissive kernel/runtime def
 This check fails Pods/workloads that don't have any `securityContext` defined (at the Pod level in the Kubernetes-native implementation, or per-container in the Terraform implementation), since an absent security context means the workload runs entirely on Kubernetes' permissive defaults rather than an explicitly reviewed hardening baseline.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`, `kubernetes_daemonset`, `kubernetes_daemon_set_v1`

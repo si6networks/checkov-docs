@@ -9,6 +9,8 @@ Without a managed identity, the cluster must rely on statically stored credentia
 This check ensures an Azure Data Explorer (Kusto) cluster has a managed identity configured, rather than relying on static credentials to access other Azure resources.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_kusto_cluster`
 

@@ -9,6 +9,8 @@ Failing to rotate KMS keys within 90 days increases the exposure window if a key
 This check requires a `google_kms_crypto_key` resource to define a `rotation_period` between 1 and 90 days, ensuring symmetric encryption keys are rotated automatically on a bounded schedule.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `google_kms_crypto_key` resource.
 
 ## Why it matters

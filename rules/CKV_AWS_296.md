@@ -8,6 +8,8 @@ This check verifies DMS endpoints use a customer-managed KMS key for encryption;
 This check ensures that an `aws_dms_endpoint` resource encrypts its data with a customer-managed KMS key — either via `kms_key_arn` in general, or via `s3_settings.server_side_encryption_kms_key_id` specifically when the endpoint's `engine_name` is `"s3"`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_dms_endpoint`
 

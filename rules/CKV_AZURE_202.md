@@ -9,6 +9,8 @@ Without a managed identity, Service Bus must rely on long-lived static credentia
 This check ensures an Azure Service Bus namespace has a managed identity (`identity` block with a `type`) configured, rather than relying purely on shared access keys/connection strings for authentication to related Azure resources.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_servicebus_namespace`
 

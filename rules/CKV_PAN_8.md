@@ -9,6 +9,8 @@ A missing rule description is a documentation/hygiene gap that hampers auditabil
 This check fails a Palo Alto Networks (PAN-OS) security policy rule that has no `description` (or an empty/blank one), enforcing that every rule documents its intent.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 - **Terraform**: resource types `panos_security_policy` and `panos_security_rule_group` (each `rule` block, attribute `description`).
 - **Ansible**: task `tasks.paloaltonetworks.panos.panos_security_rule` (attribute `description`), evaluated via a Checkov graph check.
 

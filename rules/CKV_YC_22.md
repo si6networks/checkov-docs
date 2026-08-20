@@ -9,6 +9,8 @@ A compute instance group deployed without a security group inherits overly permi
 This check fails when a Yandex Cloud `yandex_compute_instance_group` resource's instance template network interface does not have `security_group_ids` set.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_compute_instance_group`
 

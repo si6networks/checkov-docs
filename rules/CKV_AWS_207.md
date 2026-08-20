@@ -8,6 +8,8 @@ Disabling automatic minor version updates on an MQ broker means known security f
 Ensures that Amazon MQ brokers have automatic minor version upgrades enabled, so security patches and bug fixes for the broker engine are applied automatically during maintenance windows.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_mq_broker` — inspects the `auto_minor_version_upgrade` attribute.
 
 ## Why it matters

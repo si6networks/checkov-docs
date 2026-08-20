@@ -8,6 +8,8 @@ Assigning a public IP to a Vertex AI Workbench instance exposes a compute host t
 This check ensures that Vertex AI Workbench instances are configured with `disable_public_ip = true`, so they do not receive a publicly routable IP address.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_workbench_instance`
 

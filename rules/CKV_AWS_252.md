@@ -9,6 +9,8 @@ Missing an SNS topic on a CloudTrail trail delays real-time awareness of new log
 This check ensures that an `aws_cloudtrail` resource specifies an SNS topic (`sns_topic_name`) so that notifications are published each time CloudTrail delivers a new log file.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_cloudtrail`
 

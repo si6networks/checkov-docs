@@ -8,6 +8,8 @@ Non-ephemeral AKS OS disks persist and replicate node-local temporary data to Az
 Ensures that AKS (Azure Kubernetes Service) node pools use ephemeral OS disks — local VM storage — rather than network-attached managed disks for their operating system disk.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` — inspects `default_node_pool[0].os_disk_type`
 - **ARM**: `Microsoft.ContainerService/managedClusters` — inspects `properties.agentPoolProfiles[0].osDiskType`
 - **Bicep**: compiles to the ARM resource type above

@@ -9,6 +9,8 @@ Missing a reserved concurrency limit on a Lambda function is primarily an availa
 Fails when a Lambda function does not set a reserved/limited concurrent execution count, leaving it able to consume unbounded concurrency from the account's shared pool.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_lambda_function` resource.
 - **CloudFormation/SAM**: `AWS::Lambda::Function`, `AWS::Serverless::Function`.
 

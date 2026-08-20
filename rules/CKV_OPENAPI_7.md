@@ -9,6 +9,8 @@ Allowing 'http' in an operation's own schemes exposes that endpoint's traffic, i
 For Swagger 2.0 documents, no individual operation should declare `http` in its per-operation `schemes` list, since this would allow that specific endpoint to be reached over an unencrypted connection.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `security` / `paths` (operation-level `schemes` field).
 

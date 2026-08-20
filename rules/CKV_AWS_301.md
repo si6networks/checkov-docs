@@ -8,6 +8,8 @@ This check verifies a Lambda resource-based policy does not grant public invoke 
 This check ensures that an `aws_lambda_permission` resource's `principal` is not set to the wildcard `"*"`, which would allow any AWS principal (or anyone, for certain invocation configurations) to invoke the Lambda function directly.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_lambda_permission`
 

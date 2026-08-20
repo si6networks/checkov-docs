@@ -8,6 +8,8 @@ Disabling CodeBuild encryption leaves build artifacts and logs (which frequently
 This check fails when an AWS CodeBuild project uses S3 as its build-artifact store and has explicitly disabled encryption on those artifacts.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::CodeBuild::Project` (CloudFormation), `aws_codebuild_project` (Terraform)
 - **Check type:** resource

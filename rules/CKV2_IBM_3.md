@@ -9,6 +9,8 @@ Unrestricted platform API key creation lets any authorized user mint new long-li
 This check ensures that IBM Cloud account-level IAM settings (`ibm_iam_account_settings`) have `restrict_create_platform_apikey` set to `RESTRICTED`, preventing arbitrary users from freely creating new platform API keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ibm_iam_account_settings`
 

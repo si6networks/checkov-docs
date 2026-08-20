@@ -8,6 +8,8 @@ A writable root filesystem does not itself grant access but increases the blast 
 This check fails any container whose `securityContext.readOnlyRootFilesystem` is not explicitly set to `true`, because a writable root filesystem lets an attacker who gains code execution persist changes, drop tools, or tamper with the running application inside the container.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `PodTemplate`, `Deployment`, `DeploymentConfig`, `ReplicaSet`, `ReplicationController`, `StatefulSet`, `DaemonSet`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`

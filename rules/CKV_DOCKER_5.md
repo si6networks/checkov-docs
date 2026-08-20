@@ -9,6 +9,8 @@ An `update` run in its own Docker layer, separate from the install, is likely to
 This check fails a Dockerfile if a package-manager "update" command (e.g. `apt-get update`, `yum update`) appears in a `RUN` instruction without a corresponding install/upgrade command in the same (or another) `RUN` layer, since an update-only layer can be cached separately from the install step and become stale.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — specifically `RUN` instructions.
 
 ## Why it matters

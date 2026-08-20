@@ -9,6 +9,8 @@ Without an attribute_condition, a workload identity pool provider trusts any tok
 This check fails when a `google_iam_workload_identity_pool_provider` resource does not set an `attribute_condition`, meaning any external identity that can obtain a token from the configured issuer (e.g. any GitHub Actions workflow, in any repository) can assume the associated GCP service account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_iam_workload_identity_pool_provider`
 - **Check type:** resource (value check)

@@ -9,6 +9,8 @@ An unencrypted managed disk can expose all data it contains if the underlying st
 This check ensures that Azure Managed Disks connected to (or existing independently of) a virtual machine are encrypted, either via a disk encryption set or via encryption settings explicitly enabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_virtual_machine` and `azurerm_managed_disk`.
 

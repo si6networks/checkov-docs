@@ -9,6 +9,8 @@ Disabling GPG signature checks for dnf packages allows installation of unsigned 
 This check ensures that Ansible `dnf` module tasks do not disable GPG signature verification when installing packages.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible playbooks/roles. Applies to tasks using `ansible.builtin.dnf` or the legacy short module name `dnf`.
 
 ## Why it matters

@@ -9,6 +9,8 @@ A publicly reachable DMS replication instance exposes an endpoint that handles l
 This check fails when an AWS Database Migration Service (DMS) replication instance has `PubliclyAccessible` (or `publicly_accessible`) set to `true`, exposing the instance to the public internet.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_dms_replication_instance` resource — inspects `publicly_accessible`.
 - **CloudFormation**: `AWS::DMS::ReplicationInstance` resource — inspects `Properties/PubliclyAccessible`.
 

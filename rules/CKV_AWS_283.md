@@ -8,6 +8,8 @@ An IAM policy document that grants actions to Principal "*" (or any AWS principa
 This check fails when an `aws_iam_policy_document` data source contains an `Allow` statement (with no `condition`) whose `principals` block specifies `type = "AWS"` and an `identifiers` list containing the wildcard `"*"`, i.e. a policy that grants access to *any* AWS account/principal.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Entity:** `aws_iam_policy_document` (data source)
 

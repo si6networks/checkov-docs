@@ -9,6 +9,8 @@ A Microsoft SQL server without a private endpoint is more likely to be reachable
 This check ensures that an Azure SQL server (`azurerm_mssql_server`) has an associated Azure Private Endpoint, so database traffic stays on the Microsoft backbone/private network instead of traversing the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based connection check)
 - **Resource type:** `azurerm_mssql_server` (must be connected to an `azurerm_private_endpoint`)
 

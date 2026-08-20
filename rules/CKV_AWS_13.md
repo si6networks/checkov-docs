@@ -9,6 +9,8 @@ Allowing password reuse weakens the account password policy and makes credential
 This check requires the account-wide IAM password policy to set `password_reuse_prevention` to at least 24, so users cannot recycle recently-used passwords.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_iam_account_password_policy`
 

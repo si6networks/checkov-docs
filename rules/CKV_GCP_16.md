@@ -8,6 +8,8 @@ Without DNSSEC, a public zone's records can be spoofed or tampered with via cach
 This check fails when a public `google_dns_managed_zone` does not have DNSSEC (`dnssec_config.state`) set to `on` (or `transfer`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dns_managed_zone`
 - **Check type:** resource

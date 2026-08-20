@@ -9,6 +9,8 @@ Fewer than three dedicated master nodes is a high-availability/resilience gap fo
 This check ensures Elasticsearch/OpenSearch domains use at least three dedicated master nodes combined with zone awareness, so the cluster maintains quorum and remains available across an Availability Zone failure.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource types:** `aws_elasticsearch_domain`, `aws_opensearch_domain`
 

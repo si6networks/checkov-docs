@@ -8,6 +8,8 @@ A Cloud Build worker pool with a public IP exposes CI/CD build infrastructure di
 This check requires `google_cloudbuild_worker_pool` resources to set `worker_config.no_external_ip = true`, so that Cloud Build private-pool workers do not receive a public IP address.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_cloudbuild_worker_pool`
 - **Check type:** resource (attribute-value check on the nested `worker_config` block)

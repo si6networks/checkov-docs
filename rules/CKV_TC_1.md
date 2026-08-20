@@ -9,6 +9,8 @@ Unencrypted block storage exposes the raw contents of potentially sensitive appl
 This check ensures that Tencent Cloud Block Storage (CBS) disks have encryption enabled at the storage layer.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_cbs_storage` (Tencent Cloud provider).
 
 ## Why it matters

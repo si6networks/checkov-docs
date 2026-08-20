@@ -8,6 +8,8 @@ This check ensures the Front Door WAF actually blocks the Log4Shell (CVE-2021-44
 This check ensures an Azure Front Door WAF policy has the Log4j2/Log4Shell-specific managed rule (rule ID `944240` in the Java rule group of the Default/Microsoft Default Rule Set) enabled and set to actively block or redirect matching requests, rather than left disabled or only logging.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.Network/frontdoorWebApplicationFirewallPolicies` resources.
 - **Terraform**: `azurerm_frontdoor_firewall_policy` resource.
 - **Bicep**: compiles to the same ARM resource type.

@@ -9,6 +9,8 @@ Changing the database port off the default is a defense-in-depth obscurity measu
 This check ensures that Tencent Cloud MySQL (CDB) instances do not use the well-known default MySQL intranet port 3306.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_mysql_instance` (Tencent Cloud provider).
 
 ## Why it matters

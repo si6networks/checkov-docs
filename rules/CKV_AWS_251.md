@@ -9,6 +9,8 @@ Disabling CloudTrail logging removes the account's foundational audit trail of A
 This check ensures that an `aws_cloudtrail` resource has its `enable_logging` attribute set to `true` (or left at its default, which is also true), rather than explicitly disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_cloudtrail`
 

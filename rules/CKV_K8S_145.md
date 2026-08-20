@@ -8,6 +8,8 @@ The --make-iptables-util-chains setting governs whether kubelet manages helper i
 This check ensures the kubelet is started with `--make-iptables-util-chains=true`, so it manages its own iptables utility chains rather than relying on manual/external configuration.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

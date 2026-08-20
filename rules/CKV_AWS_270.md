@@ -9,6 +9,8 @@ This S3 storage config holds contact-center call recordings and transcripts that
 This check ensures that an Amazon Connect instance's S3 storage configuration (used for call recordings, chat transcripts, exported reports, etc.) specifies a customer-managed KMS key for encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_connect_instance_storage_config` (specifically the nested `s3_config.encryption_config` block)
 
 ## Why it matters

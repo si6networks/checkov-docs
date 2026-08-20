@@ -9,6 +9,8 @@ The affected volume only holds transient training scratch data during Comprehend
 This check ensures that an Amazon Comprehend custom entity recognizer specifies a KMS key (`volume_kms_key_id`) to encrypt the storage volume attached to the ML compute resources used during training.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_comprehend_entity_recognizer`
 
 ## Why it matters

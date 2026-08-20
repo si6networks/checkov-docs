@@ -8,6 +8,8 @@ An HTTP-triggered Cloud Function without https_trigger_security_level=SECURE_ALW
 This check ensures that any Cloud Function using an HTTP trigger requires authenticated (secure) invocations by setting `https_trigger_security_level` to `SECURE_ALWAYS`, rather than allowing unauthenticated/insecure HTTP access.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, specifically the `google_cloudfunctions_function` resource (Cloud Functions 1st gen HTTP-triggered functions).
 
 ## Why it matters

@@ -9,6 +9,8 @@ The Kubernetes Dashboard has repeatedly been abused as a cluster-takeover vector
 This check flags workloads that deploy the Kubernetes Dashboard container image or carry its characteristic labels, since the Dashboard has historically been a common cluster-compromise vector.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only, evaluated at the container level across kinds: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`.
 
 ## Why it matters

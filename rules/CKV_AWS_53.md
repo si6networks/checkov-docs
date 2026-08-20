@@ -8,6 +8,8 @@ Disabling S3's block-public-ACLs setting allows bucket or object ACLs to grant p
 This check ensures that the S3 bucket-level (or account-level) public access block configuration has `BlockPublicAcls` enabled, preventing new public ACLs from being applied to the bucket or its objects.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::S3::Bucket` (CloudFormation, inspecting `Properties/PublicAccessBlockConfiguration/BlockPublicAcls`); `aws_s3_bucket_public_access_block` (Terraform, inspecting `block_public_acls`)
 

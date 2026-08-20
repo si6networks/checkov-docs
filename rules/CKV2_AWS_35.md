@@ -8,6 +8,8 @@ Routing default traffic through a self-managed NAT instance instead of the manag
 This check flags route tables whose default route (`0.0.0.0/0`) is pointed at an EC2 instance acting as a NAT (via `instance_id`) instead of a managed `aws_nat_gateway`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_route_table` (inline `route` blocks), `aws_route` (standalone route resources)
 - **Category:** Networking

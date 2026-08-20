@@ -9,6 +9,8 @@ Allowing application pods to schedule on AKS system nodes lets a misbehaving or 
 This check ensures an AKS cluster's default (system) node pool is tainted with `CriticalAddonsOnly=true:NoSchedule`, so only critical system pods can be scheduled there and application workloads are kept off system nodes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` resources — inspects `default_node_pool[0].only_critical_addons_enabled`.
 
 ## Why it matters

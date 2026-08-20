@@ -9,6 +9,8 @@ Insufficient Activity Log retention shortens the historical window available for
 This check verifies that an Azure Monitor Log Profile retains the subscription's Activity Log for at least 365 days (or indefinitely, via a retention setting of `0` days), rather than expiring logs sooner.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_monitor_log_profile`
 - **ARM templates**: `Microsoft.Insights/logprofiles`
 - **Bicep**: `Microsoft.Insights/logprofiles`

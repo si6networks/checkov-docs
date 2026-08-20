@@ -9,6 +9,8 @@ Without image quarantine, newly pushed images are immediately pullable before ma
 This check ensures that images pushed to an Azure Container Registry are held in quarantine and scanned before being marked verified and made generally pullable.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_container_registry` resource (`quarantine_policy_enabled`).
 - **ARM/Bicep**: `Microsoft.ContainerRegistry/registries` resource (`properties.policies.quarantinePolicy.status` = `"enabled"`).
 

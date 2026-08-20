@@ -8,6 +8,8 @@ Without Defender for App Service, compromise of an internet-facing web or functi
 This check fails when the Azure Security Center (Microsoft Defender for Cloud) pricing tier for the "AppServices" resource type is not set to "Standard", meaning Defender for App Service is not enabled for the subscription.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, for the resource type `azurerm_security_center_subscription_pricing`.
 
 ## Why it matters

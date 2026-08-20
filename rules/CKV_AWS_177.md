@@ -9,6 +9,8 @@ Encrypting a Kinesis Video Stream with the default AWS-managed key instead of a 
 This check requires that an Amazon Kinesis Video Stream resource specifies a KMS key ID for at-rest encryption of stream data, rather than relying on default/unspecified key configuration.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_kinesis_video_stream`
 
 ## Why it matters

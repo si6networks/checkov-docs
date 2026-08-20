@@ -8,6 +8,8 @@ An EFS access point without an enforced root directory lets clients traverse int
 This check requires that EFS access points configure `root_directory.path` to a value other than `/` (the filesystem root), scoping the access point to a specific subdirectory instead of the entire file system.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_efs_access_point`
 

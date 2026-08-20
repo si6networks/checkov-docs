@@ -9,6 +9,8 @@ OAuth2 'implicit' flow returns access tokens directly in the URL fragment, expos
 For Swagger 2.0 documents, no scheme in `securityDefinitions` should use `type: oauth2` with `flow: implicit`, since the Implicit grant is deprecated in modern OAuth2 practice.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `securityDefinitions`.
 

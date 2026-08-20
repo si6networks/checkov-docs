@@ -9,6 +9,8 @@ A missing 'produces' declaration is a schema-completeness/documentation gap for 
 For Swagger 2.0 documents, every `GET` operation must explicitly declare a `produces` field listing the MIME type(s) of its response content, rather than relying on an implicit or undefined content type.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `paths` (each `GET` operation object).
 

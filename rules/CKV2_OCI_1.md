@@ -9,6 +9,8 @@ Attaching a long-lived, non-interactive API key to a full-Administrators account
 This check ensures that Oracle Cloud Infrastructure (OCI) users who are members of the `Administrators` identity group do not have an `oci_identity_api_key` associated with their account, since API keys provide long-lived, non-interactive programmatic credentials that bypass typical MFA/session controls.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the graph relationship between `oci_identity_group`, `oci_identity_user_group_membership`, `oci_identity_user`, and (transitively) `oci_identity_api_key` resources.
 
 ## Why it matters

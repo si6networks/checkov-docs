@@ -8,6 +8,8 @@ An insufficient audit-log backup count risks premature loss of historical audit 
 This check verifies that a self-managed `kube-apiserver` container retains at least 10 rotated audit log backup files via `--audit-log-maxbackup=10` (or higher).
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest, and only meaningful when audit logging is enabled (see CKV_K8S_91).
 
 ## Why it matters

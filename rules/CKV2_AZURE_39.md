@@ -9,6 +9,8 @@ Combining a public IP with unguarded serial console access on a VM broadens the 
 This check flags Azure virtual machines that have both a public IP address attached to their network interface and no boot diagnostics (serial console) configuration guarding that exposure, since the combination allows direct internet-facing serial console access alongside public network reachability.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based connection check)
 - **Resource types:** `azurerm_network_interface` connected to `azurerm_linux_virtual_machine`, `azurerm_windows_virtual_machine`, or `azurerm_virtual_machine`
 

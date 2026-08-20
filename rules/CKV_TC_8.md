@@ -9,6 +9,8 @@ An ingress rule that accepts all traffic from 0.0.0.0/0 removes network-layer ac
 This check ensures that Tencent Cloud VPC security group ingress rules do not permit unrestricted traffic from any IPv4 (`0.0.0.0/0`) or IPv6 (`::/0`) source.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_security_group_rule_set` (Tencent Cloud provider), specifically its `ingress` blocks.
 
 ## Why it matters

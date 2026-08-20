@@ -8,6 +8,8 @@ Missing Google-Groups-based RBAC is an access-governance gap (stale per-user bin
 This check ensures a GKE cluster is configured to bind Kubernetes RBAC authorization to Google Groups (via the GKE "Google Groups for RBAC" feature) rather than relying purely on individual IAM bindings.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 

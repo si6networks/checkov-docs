@@ -9,6 +9,8 @@ Lack of standard replication for Redis Cache is a high-availability weakness tha
 This check ensures an Azure Cache for Redis instance uses the Standard or Premium SKU tier (which run on a replicated pair of VMs) rather than the Basic tier (single VM, no replication).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_redis_cache` resources — inspects the `sku_name` attribute.
 
 ## Why it matters

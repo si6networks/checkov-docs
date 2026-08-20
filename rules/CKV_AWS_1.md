@@ -8,6 +8,8 @@ The check flags IAM policy statements that grant Allow on Action '*' and Resourc
 This check ensures that IAM policy documents (defined via Terraform's `aws_iam_policy_document` data source or in a Serverless Framework `provider.iam` block) do not grant `Allow` on `Action: "*"` combined with `Resource: "*"`, which would be a fully unrestricted administrative policy.
 
 ## Applicability
+**Checkov framework(s):** `serverless`, `terraform`
+
 - **Terraform**: the `aws_iam_policy_document` data source (any statement block).
 - **Serverless Framework**: the `serverless_aws` provider's IAM role statements (`provider.iamRoleStatements`).
 

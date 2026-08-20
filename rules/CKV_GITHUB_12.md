@@ -8,6 +8,8 @@ Leaving PR-review dismissal unrestricted lets any collaborator with dismissal ri
 This check fails when a branch protection rule's `required_pull_request_reviews/dismissal_restrictions` setting is not configured to a specific, restricted set of users/teams — i.e., when review-dismissal rights are left unrestricted rather than limited to a defined, trusted group.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings)
 - **Entities:** `*`, evaluated against `required_pull_request_reviews/dismissal_restrictions`
 

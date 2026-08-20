@@ -9,6 +9,8 @@ An SNS topic policy that permits cross-account access without tight principal re
 This check flags an SNS topic policy that grants `Allow` permissions to a specific external AWS account (a full IAM ARN principal) without any accompanying `Condition` clause to restrict that grant.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_sns_topic_policy`
 

@@ -8,6 +8,8 @@ An API Gateway API configured without an enforced HTTPS protocol allows requests
 This check verifies that every request configuration on an Alibaba Cloud API Gateway API is restricted to the HTTPS protocol.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_api_gateway_api`
 

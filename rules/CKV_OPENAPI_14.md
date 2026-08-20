@@ -9,6 +9,8 @@ Allowing the deprecated OAuth2 implicit flow on an individual operation exposes 
 For Swagger 2.0 documents, no operation's `security` requirement should resolve (via `securityDefinitions`) to an OAuth2 scheme configured with `flow: implicit` — this checks usage at the operation level, complementing CKV_OPENAPI_12 which checks the scheme definitions.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `paths` (each operation's `security` field, resolved against `securityDefinitions`).
 

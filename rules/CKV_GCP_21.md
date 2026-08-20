@@ -8,6 +8,8 @@ Missing labels on a GKE cluster is a resource-management and cost-attribution hy
 This check fails when a `google_container_cluster` resource does not set at least one key/value pair in `resource_labels`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource

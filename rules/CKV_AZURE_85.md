@@ -9,6 +9,8 @@ Disabled Defender for Kubernetes removes threat detection and runtime security a
 This check ensures the Microsoft Defender for Cloud pricing tier for the `KubernetesService` resource type is set to `Standard`, enabling Defender for Kubernetes across the subscription.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_security_center_subscription_pricing`
 - **ARM/Bicep**: `Microsoft.Security/pricings`
 

@@ -8,6 +8,8 @@ A Web App reachable from the public internet exposes the application (and often 
 Ensures that Azure App Service Web Apps are not reachable directly from the public internet, requiring access via private networking instead.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_linux_web_app`, `azurerm_windows_web_app` — inspects `public_network_access_enabled`
 - **ARM**: `Microsoft.Web/sites`, `Microsoft.Web/sites/slots`, `Microsoft.Web/sites/config` — inspects `properties.publicNetworkAccess`
 - **Bicep**: compiles to the ARM resource types above

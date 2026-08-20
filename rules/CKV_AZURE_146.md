@@ -8,6 +8,8 @@ Disabling the `log_retention` server parameter removes an audit-logging control 
 This check ensures the `log_retention` server configuration parameter for an Azure Database for PostgreSQL (single server) is not turned off, so query/connection logs are retained rather than discarded.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_postgresql_configuration` resource, where `name = "log_retention"`.
 
 ## Why it matters

@@ -9,6 +9,8 @@ IAM policies that allow privilege escalation actions let a compromised or over-p
 Fails when an IAM policy contains a combination of actions that is a known privilege-escalation vector — i.e., a set of permissions that lets the holder grant themselves broader access than originally intended.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_iam_policy_document` (data source)
 - **CloudFormation**: `AWS::IAM::Group`, `AWS::IAM::ManagedPolicy`, `AWS::IAM::Policy`, `AWS::IAM::Role`, `AWS::IAM::User`
 

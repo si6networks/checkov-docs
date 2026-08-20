@@ -8,6 +8,8 @@ Without a default-deny firewall rule, Key Vault (which stores secrets, keys, and
 This check ensures that an Azure Key Vault's network ACLs are configured with a default action of `Deny`, so access is blocked by default unless explicitly allowed by a firewall rule or VNet rule.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault` (inspects `network_acls[0].default_action`)
 - **ARM/Bicep**: `Microsoft.KeyVault/vaults` (inspects `properties/networkAcls/defaultAction`)
 

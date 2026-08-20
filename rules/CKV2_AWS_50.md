@@ -8,6 +8,8 @@ Disabling Multi-AZ automatic failover on an ElastiCache Redis replication group 
 This check fails when an `aws_elasticache_replication_group` (Redis) does not have `automatic_failover_enabled` set to `true`, leaving the cluster without automatic promotion of a replica to primary if the primary node fails.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_elasticache_replication_group`
 

@@ -9,6 +9,8 @@ An unbacked-up VM risks unrecoverable data loss following ransomware, corruption
 This check ensures that Azure Virtual Machines are enrolled in Azure Backup by verifying a connection to an `azurerm_backup_protected_vm` resource.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_virtual_machine`, connected via `azurerm_backup_protected_vm`.
 

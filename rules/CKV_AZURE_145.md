@@ -8,6 +8,8 @@ Allowing a Function App to accept TLS versions below 1.2 permits use of weak/dep
 This check ensures an Azure Function App (or its deployment slots) enforces a minimum TLS version of 1.2 (or higher) for inbound HTTPS connections, rather than allowing older, weaker TLS versions.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.Web/sites` and `Microsoft.Web/sites/slots` resources, property `properties/siteConfig/minTlsVersion`.
 - **Terraform**: `azurerm_function_app`, `azurerm_function_app_slot`, `azurerm_linux_function_app`, `azurerm_linux_function_app_slot`, `azurerm_windows_function_app`, `azurerm_windows_function_app_slot` — attribute `site_config[0].min_tls_version` (older resource types) or `site_config[0].minimum_tls_version` (newer linux/windows resource types).
 

@@ -8,6 +8,8 @@ Missing MQ broker logging removes visibility needed to detect and investigate ab
 This check ensures Amazon MQ brokers have general logging enabled so broker activity is captured for audit and troubleshooting.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_mq_broker`
 

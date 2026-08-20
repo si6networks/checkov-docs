@@ -8,6 +8,8 @@ A non-empty `workflow_dispatch` input schema lets a user-supplied parameter infl
 This check fails when a workflow's `on.workflow_dispatch` trigger declares any `inputs`, on the theory that build output must not be influenced by arbitrary user-supplied parameters beyond the build entry point and top-level source location.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **Framework:** GitHub Actions workflow YAML
 - **Entities:** `on` (the workflow trigger configuration block)
 

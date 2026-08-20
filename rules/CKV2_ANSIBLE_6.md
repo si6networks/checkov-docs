@@ -9,6 +9,8 @@ Disabling certificate validation for dnf removes protection against spoofed repo
 This check ensures that Ansible `dnf` module tasks do not disable certificate validation via the `validate_certs` option.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible playbooks/roles. Applies to tasks using `ansible.builtin.dnf` or the legacy short module name `dnf`.
 
 ## Why it matters

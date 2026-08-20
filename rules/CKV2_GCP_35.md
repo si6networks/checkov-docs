@@ -9,6 +9,8 @@ Missing CMK encryption on Vertex AI notebook runtime storage weakens defense-in-
 This check ensures that a Google Cloud Vertex AI (Notebooks) runtime's underlying virtual machine is encrypted using a customer-managed encryption key (CMEK) rather than relying solely on Google's default encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_notebooks_runtime`
 

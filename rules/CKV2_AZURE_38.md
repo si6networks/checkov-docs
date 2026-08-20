@@ -9,6 +9,8 @@ Missing soft-delete on a storage account is primarily an availability/recoverabi
 This check ensures an Azure Storage Account's blob service has soft-delete (delete retention policy) enabled with a positive retention period, so deleted blobs can be recovered within a window before permanent removal.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource type:** `azurerm_storage_account`
 

@@ -9,6 +9,8 @@ Assigning a public IP to the Kubernetes master exposes the cluster's control-pla
 This check ensures that a Yandex Managed Service for Kubernetes cluster's master (control plane) does not have a public IP address assigned, keeping the Kubernetes API server reachable only from private/internal networks.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_kubernetes_cluster`
 - **Check type:** resource (negative value check)

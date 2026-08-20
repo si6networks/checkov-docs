@@ -8,6 +8,8 @@ Without a managed identity, the Automation account depends on embedded or shared
 This check verifies that an Azure Automation Account has a managed identity configured, rather than relying solely on the legacy "Run As" account or embedded credentials for its runbook authentication.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_automation_account`
 

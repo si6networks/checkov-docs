@@ -8,6 +8,8 @@ Missing automated backups on a Cloud SQL instance does not expose data directly 
 This check fails when a `google_sql_database_instance` resource does not explicitly enable automated backups in its `settings.backup_configuration` block.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_sql_database_instance`
 - **Check type:** resource (Terraform plan/config attribute check)

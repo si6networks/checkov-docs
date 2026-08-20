@@ -8,6 +8,8 @@ Without a private endpoint, the storage account's data plane remains reachable v
 This check verifies that an Azure Storage Account has an Azure Private Endpoint connected to it, ensuring blob/file/queue/table data-plane access is not exposed over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource type involved:** `azurerm_storage_account`
 

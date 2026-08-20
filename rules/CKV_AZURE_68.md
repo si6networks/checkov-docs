@@ -8,6 +8,8 @@ A publicly reachable PostgreSQL server is directly exposed to internet-wide brut
 This check fails when an Azure Database for PostgreSQL (single) server is configured to allow public network access, exposing the database endpoint to the internet instead of restricting it to private/VNet connectivity.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_postgresql_server`), ARM templates, and Bicep, for the resource type `Microsoft.DBforPostgreSQL/servers`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Not requiring two-factor authentication org-wide leaves every member account, an
 This check fails when a GitHub organization's security settings do not require two-factor authentication (2FA) for all members, checked via the organization's `requiresTwoFactorAuthentication` setting.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub organization configuration (`github_configuration` — Checkov's GitHub org/repo settings scanner, driven by data pulled from the GitHub API, not a Terraform/YAML file you author directly)
 - **Entities:** organization-level settings (`*`, evaluated against `data/organization/requiresTwoFactorAuthentication`)
 

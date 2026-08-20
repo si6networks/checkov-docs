@@ -9,6 +9,8 @@ Granting allUsers/allAuthenticatedUsers IAM access to a Cloud Run service can ex
 This check ensures that IAM bindings/members applied to a Cloud Run service do not grant invocation access to the public principals `allUsers` or `allAuthenticatedUsers`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource types**: `google_cloud_run_service_iam_member`, `google_cloud_run_service_iam_binding`
 

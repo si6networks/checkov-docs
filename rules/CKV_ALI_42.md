@@ -8,6 +8,8 @@ Without SSL enforced, MongoDB traffic including authentication credentials and q
 This check ensures that an Alibaba Cloud ApsaraDB for MongoDB instance has SSL/TLS enabled (or being updated to a new certificate) for encrypting data in transit between clients and the database.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_mongodb_instance`
 

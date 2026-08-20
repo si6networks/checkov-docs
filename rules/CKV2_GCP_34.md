@@ -8,6 +8,8 @@ Enabling a public endpoint on a Vertex AI index endpoint exposes vector-search/m
 This check ensures that a Vertex AI Index Endpoint (used for vector similarity search / matching engine deployments) is not publicly accessible, i.e., `public_endpoint_enabled` is not set to `true`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_vertex_ai_index_endpoint`
 

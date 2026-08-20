@@ -8,6 +8,8 @@ Redshift Serverless namespaces are encrypted by default; not using a customer-ma
 This check fails when an `aws_redshiftserverless_namespace` resource does not set `kms_key_id`, meaning the Redshift Serverless namespace's data is not confirmed to be encrypted with a customer-managed key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_redshiftserverless_namespace`
 

@@ -9,6 +9,8 @@ Setting `services` to `any` removes the port/protocol-based secondary control, s
 This check fails any Palo Alto Networks (PAN-OS) security policy rule whose `services` field permits `any`, since that allows the rule to match traffic on every TCP/UDP port rather than the specific ports/services it is meant to control.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 - **Terraform**: resource types `panos_security_policy` and `panos_security_rule_group` (each `rule` block within them).
 - **Ansible**: task `tasks.paloaltonetworks.panos.panos_security_rule` (attribute `service`), evaluated via a Checkov graph check.
 

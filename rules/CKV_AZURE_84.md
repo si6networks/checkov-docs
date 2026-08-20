@@ -9,6 +9,8 @@ Disabled Defender for Storage removes automated detection of anomalous access, m
 This check ensures the Microsoft Defender for Cloud pricing tier for the `StorageAccounts` resource type is set to `Standard`, enabling Defender for Storage across the subscription.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_security_center_subscription_pricing`
 - **ARM/Bicep**: `Microsoft.Security/pricings`
 

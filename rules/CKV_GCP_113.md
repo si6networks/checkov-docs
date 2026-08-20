@@ -9,6 +9,8 @@ A google_iam_policy binding that grants allUsers/allAuthenticatedUsers hands the
 This check fails when a `google_iam_policy` Terraform data source defines a binding whose `members` list includes `allUsers` or `allAuthenticatedUsers`, i.e. the policy document itself grants public access before it's even attached to a resource.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Entity type:** `google_iam_policy` (a `data` source, not a resource)
 - **Check type:** data

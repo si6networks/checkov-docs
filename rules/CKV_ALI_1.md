@@ -9,6 +9,8 @@ A `public-read`/`public-read-write` OSS bucket ACL exposes every object to unaut
 This check ensures Alibaba Cloud OSS (Object Storage Service) buckets do not have their ACL set to `public-read` or `public-read-write`, whether configured directly on `alicloud_oss_bucket` or via a separate `alicloud_oss_bucket_acl` resource.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to `alicloud_oss_bucket` and `alicloud_oss_bucket_acl` resources.
 
 ## Why it matters

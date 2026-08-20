@@ -8,6 +8,8 @@ Public network access to a search service exposes indexed data and query/adminis
 This check verifies that an Azure Cognitive Search (Azure AI Search) service has public network access disabled, so the search service is only reachable through private connectivity (e.g. Private Endpoint) rather than over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_search_service`
 

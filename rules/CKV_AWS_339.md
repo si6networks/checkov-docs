@@ -8,6 +8,8 @@ Running an EKS cluster on an unsupported Kubernetes version means it no longer r
 This check requires that `aws_eks_cluster` resources set `version` to one of the Kubernetes releases AWS currently supports on EKS (at the time this check was authored: 1.29 through 1.35).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_eks_cluster`
 - **Note:** If `version` is omitted entirely, the check **passes** (`missing_block_result=CheckResult.PASSED`), since EKS will provision the cluster on its current default supported version.

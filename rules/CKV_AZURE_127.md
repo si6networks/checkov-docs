@@ -8,6 +8,8 @@ Disabling threat detection removes automated alerting on anomalous database acti
 This check verifies that an Azure Database for MySQL server has its Advanced Threat Protection (threat detection policy) enabled, so anomalous or potentially malicious database activity is automatically detected and alerted on.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_mysql_server`
 

@@ -8,6 +8,8 @@ Requiring an uppercase character in IAM user passwords is one layer of password 
 This check verifies that the AWS account's IAM password policy requires passwords to contain at least one uppercase letter.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `aws_iam_account_password_policy` resource (a singleton, account-wide setting).
 
 ## Why it matters

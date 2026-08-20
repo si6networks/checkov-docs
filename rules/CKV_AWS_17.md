@@ -9,6 +9,8 @@ A publicly accessible RDS instance exposes a database directly to the internet, 
 This check requires that RDS database instances are not configured with `publicly_accessible = true`, ensuring the database is only reachable through private networking rather than being assigned a public, internet-routable endpoint.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_db_instance`, `aws_rds_cluster_instance`
 - **CloudFormation**: `AWS::RDS::DBInstance`
 

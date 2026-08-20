@@ -8,6 +8,8 @@ A hardcoded default value on a `secureString`/`@secure()` parameter bakes a secr
 This check ID is used for two distinct purposes depending on framework: for ARM/Bicep templates it flags `secureString`/`@secure()` parameters that carry a hardcoded default value (a likely leaked secret), and for Terraform it separately verifies that an `azurerm_security_center_contact` resource has a security contact email configured.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM templates**: `secureString`-typed template parameters.
 - **Bicep**: `string` parameters decorated with `@secure()`.
 - **Terraform**: `azurerm_security_center_contact` resource, `email` attribute.

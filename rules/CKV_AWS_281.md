@@ -8,6 +8,8 @@ The Redshift snapshot copy grant already implies encryption; failing this check 
 This check fails when an `aws_redshift_snapshot_copy_grant` resource does not set `kms_key_id`, meaning cross-region Redshift snapshot copies are not confirmed to use a customer-managed KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_redshift_snapshot_copy_grant`
 

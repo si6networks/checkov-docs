@@ -8,6 +8,8 @@ Setting a hardcoded admin_pass on an openstack_compute_instance_v2 resource embe
 This check ensures OpenStack Nova compute instances do not set a hardcoded `admin_pass` value, which would embed a plain-text administrator password for the instance directly in Terraform source.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `openstack_compute_instance_v2`.
 
 ## Why it matters

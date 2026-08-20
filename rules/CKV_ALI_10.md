@@ -9,6 +9,8 @@ Without versioning, accidental or malicious overwrite/deletion of objects (inclu
 This check ensures Alibaba Cloud OSS buckets have versioning explicitly enabled (`versioning.status = "Enabled"`), so that overwritten or deleted objects can be recovered.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `alicloud_oss_bucket` resource, specifically its `versioning[0].status` attribute.
 
 ## Why it matters

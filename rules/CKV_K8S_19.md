@@ -8,6 +8,8 @@ Sharing the host network namespace exposes the node's network interfaces and loo
 This check fails any Pod/workload that sets `hostNetwork: true`, because that setting removes the container's isolated network namespace and exposes it directly on the node's network interfaces and loopback.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`

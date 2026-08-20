@@ -9,6 +9,8 @@ An EMR cluster's security group open to 0.0.0.0/0 exposes cluster management and
 This check requires that any security group attached to an `aws_emr_cluster` does not include `0.0.0.0/0` in any ingress rule's `cidr_blocks`, preventing the cluster's network interfaces from being reachable from the entire internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_emr_cluster` (must be connected to an `aws_security_group`)
 

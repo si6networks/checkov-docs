@@ -9,6 +9,8 @@ IBM Cloud Object Storage HMAC credentials function like S3 access keys and grant
 This check scans files for strings matching the format of IBM Cloud Object Storage (COS) HMAC access key ID / secret access key pairs, flagging any match as a hardcoded credential.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 This is a built-in Checkov **secrets scanning** check (framework: `secrets`) that runs against any text file included in a repository/directory scan — source code, IaC templates (Terraform provider/resource blocks, CloudFormation, Kubernetes manifests/Secrets), CI/CD configuration, shell scripts, and application config files. It is content/pattern-based, not scoped to a specific resource type ("entities": `secrets`).
 
 ## Why it matters

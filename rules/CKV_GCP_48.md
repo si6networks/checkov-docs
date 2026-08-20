@@ -9,6 +9,8 @@ Binding a project's default (often over-privileged) service account at the folde
 This check fails when a `google_folder_iam_member` or `google_folder_iam_binding` resource grants IAM access at a GCP folder scope to a project's default service account (the auto-created Compute Engine or App Engine service account) rather than to a dedicated, purpose-built service account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource types:** `google_folder_iam_member`, `google_folder_iam_binding`
 - **Check type:** resource check

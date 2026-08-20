@@ -9,6 +9,8 @@ A load balancer listener that isn't restricted to HTTPS/TLS with a minimum of TL
 This check ensures that Naver Cloud Platform (NCP) Load Balancer listeners (`ncloud_lb_listener`) use an encrypted protocol (`HTTPS` or `TLS`) and enforce a minimum TLS version of `TLSV12`, rather than plaintext protocols like `HTTP` or `TCP`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_lb_listener`
 - **Check type:** resource-configuration check (Python)

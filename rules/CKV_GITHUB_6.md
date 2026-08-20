@@ -8,6 +8,8 @@ Plaintext HTTP webhook delivery at the organization level exposes payloads and s
 This check enforces that all organization-level GitHub webhooks deliver payloads over HTTPS and, when SSL verification is disabled, that the webhook secret is properly redacted rather than exposed.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated against the organization webhooks document (files matching `org_webhooks`), where each webhook entry has a `config` object with `url`, `insecure_ssl`, and `secret` fields.
 
 ## Why it matters

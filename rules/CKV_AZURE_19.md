@@ -9,6 +9,8 @@ Using the free Security Center tier instead of Standard disables key Microsoft D
 This check ensures Azure Security Center (Microsoft Defender for Cloud) pricing for a resource category is set to the `Standard` tier rather than `Free`, so advanced threat protection features are active.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform (`azurerm` provider), ARM templates, Bicep (compiled to ARM)
 - **Resource types:**
   - ARM: `Microsoft.Security/pricings`

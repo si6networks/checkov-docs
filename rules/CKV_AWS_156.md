@@ -8,6 +8,8 @@ WorkSpaces root volumes contain the OS image plus locally cached credentials, co
 This check verifies that an Amazon WorkSpaces workspace has its root (C:) volume encryption enabled.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_workspaces_workspace`) and CloudFormation (`AWS::WorkSpaces::Workspace`).
 
 ## Why it matters

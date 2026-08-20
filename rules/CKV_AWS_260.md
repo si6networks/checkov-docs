@@ -9,6 +9,8 @@ Unrestricted ingress on port 80 exposes unencrypted HTTP traffic to the entire i
 This check flags EC2 security groups (or security group rules) that permit unrestricted inbound access (`0.0.0.0/0`, i.e. the entire IPv4 internet) on port 80 (HTTP).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: resources `aws_security_group`, `aws_security_group_rule`, `aws_vpc_security_group_ingress_rule`
 - **CloudFormation**: resource types `AWS::EC2::SecurityGroup`, `AWS::EC2::SecurityGroupIngress`
 

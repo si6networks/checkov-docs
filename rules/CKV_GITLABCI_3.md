@@ -8,6 +8,8 @@ This check's scan_conf() unconditionally returns PASSED, making it an informatio
 This check inventories the container `image` and `services` entries used in GitLab CI job definitions. It is an informational/inventory check rather than a pass/fail security gate — it always reports as passing.
 
 ## Applicability
+**Checkov framework(s):** `gitlab_ci`
+
 Applies to GitLab CI configuration files (`.gitlab-ci.yml`), specifically any job block's `image` and `services` array/scalar fields (matched via the wildcard entity patterns `*.image[]` and `*.services[]`).
 
 ## Why it matters

@@ -8,6 +8,8 @@ Granting the RBAC `bind` verb on RoleBindings/ClusterRoleBindings is a known pri
 This check fails any Kubernetes `Role` or `ClusterRole` that grants the `bind` verb on `rolebindings` or `clusterrolebindings` resources, because that permission lets a subject grant itself (or anyone else) any role it can see — a classic RBAC privilege-escalation primitive.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON)
 - **Resource/entity types:** `ClusterRole`, `Role`
 

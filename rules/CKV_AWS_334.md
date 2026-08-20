@@ -8,6 +8,8 @@ Running an ECS container in privileged mode grants it root-equivalent access to 
 This check requires that no container definition in an `aws_ecs_task_definition` sets `privileged: true`, preventing ECS containers (on EC2 launch type) from running with elevated host-level access equivalent to root on the underlying instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ecs_task_definition` (inspects the `container_definitions` JSON)
 

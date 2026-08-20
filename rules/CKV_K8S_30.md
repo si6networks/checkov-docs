@@ -9,6 +9,8 @@ Omitting an explicit securityContext leaves a container on its runtime's permiss
 This check ensures that pods/containers (in Pod, Deployment, and related workload manifests) define a `securityContext` block rather than relying entirely on defaults.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet` — evaluated at the container level.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`, at the `spec.container[].security_context` attribute.
 

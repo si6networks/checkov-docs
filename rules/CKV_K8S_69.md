@@ -8,6 +8,8 @@ A configured basic-auth file stores API server credentials as long-lived clearte
 This check fails a `kube-apiserver` container manifest if its `command` includes a `--basic-auth-file` argument at all, since basic-auth-file support is a legacy, insecure authentication mechanism.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` launches `kube-apiserver` — evaluated across `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet` (any workload kind containing a container), in practice firing only on control-plane static pod manifests or templates for `kube-apiserver`.
 
 ## Why it matters

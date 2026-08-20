@@ -8,6 +8,8 @@ NGINX Ingress alias-based annotation snippets under CVE-2021-25742 let a low-pri
 This check flags Kubernetes `Ingress` resources whose annotations contain a `*-snippet` key whose value includes the word `alias`, which can be used with NGINX's `alias` directive to break out of the intended web root and read arbitrary files from the ingress controller's filesystem.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests of `kind: Ingress`. Inspects the `metadata.annotations` map for keys containing `snippet` and values containing `alias`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Disabling SSL on an RDS instance allows database traffic to travel unencrypted, 
 This check verifies that an Alibaba Cloud ApsaraDB RDS instance has SSL encryption for client connections enabled or actively being configured.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 

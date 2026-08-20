@@ -9,6 +9,8 @@ An IAM role attached to a SageMaker notebook with wildcard Allow:* grants the no
 This check ensures the IAM role attached to a SageMaker notebook instance does not grant `Allow` on `Action: "*"` (i.e., unrestricted access to every AWS API action), which would give the notebook's execution environment effectively unbounded permissions across the AWS account.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::SageMaker::NotebookInstance` + `AWS::IAM::Role` (CloudFormation); `aws_sagemaker_notebook_instance` + `aws_iam_role` (Terraform)
 

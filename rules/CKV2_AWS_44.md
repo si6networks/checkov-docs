@@ -8,6 +8,8 @@ A route table tied to VPC peering with an overly permissive route (0.0.0.0/0 or 
 This check fails when a route table (or an individual route) that points at a VPC peering connection also routes the entire `0.0.0.0/0` (or `::/0`) address space through that peering connection, instead of scoping the route to the peer VPC's actual CIDR block.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_route`, `aws_route_table`
 

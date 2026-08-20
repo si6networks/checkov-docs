@@ -8,6 +8,8 @@ Failing to enable Azure Defender (threat protection) on Key Vault removes anomal
 This check verifies that Microsoft Defender for Cloud (formerly Azure Security Center / "Azure Defender") is enabled with the Standard pricing tier for the Key Vault resource type at the subscription level.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_security_center_subscription_pricing`
 - **ARM templates**: `Microsoft.Security/pricings`
 - **Bicep**: resources compiling to `Microsoft.Security/pricings`

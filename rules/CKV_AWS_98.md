@@ -9,6 +9,8 @@ Unencrypted storage for a SageMaker endpoint configuration leaves model artifact
 This check fails when an AWS SageMaker endpoint configuration does not specify a `kms_key_arn`, meaning the storage volumes attached to the endpoint's instances are not encrypted with a customer-managed (or any explicit) KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_sagemaker_endpoint_configuration` resource — inspects the `kms_key_arn` attribute.
 
 ## Why it matters

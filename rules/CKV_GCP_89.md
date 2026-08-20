@@ -8,6 +8,8 @@ A Vertex AI notebook instance with a public IP exposes an interactive ML develop
 This check requires `google_notebooks_instance` (Vertex AI Workbench / user-managed notebook) resources to set `no_public_ip = true`, so the notebook VM does not receive a public IP address.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_notebooks_instance`
 - **Check type:** resource (attribute-value check)

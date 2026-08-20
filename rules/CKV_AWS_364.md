@@ -9,6 +9,8 @@ Granting an AWS service principal invoke access without scoping to SourceArn/Sou
 This check ensures that when a Lambda resource-based policy (`aws_lambda_permission` / `AWS::Lambda::Permission`) grants invoke access to an AWS service principal (e.g. `s3.amazonaws.com`, `sns.amazonaws.com`), it also restricts *which* specific resource or account can invoke the function via `SourceArn` and/or `SourceAccount`.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::Lambda::Permission` (properties `Principal`, `SourceArn`, `SourceAccount`), `aws_lambda_permission` (attributes `principal`, `source_arn`, `source_account`)

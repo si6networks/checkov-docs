@@ -8,6 +8,8 @@ Using the ':latest' tag for a pipeline image is a supply-chain hygiene and repro
 This check verifies that Docker images referenced in a Bitbucket Pipelines configuration are pinned to a specific version tag rather than using the mutable `:latest` tag.
 
 ## Applicability
+**Checkov framework(s):** `bitbucket_pipelines`
+
 - **Bitbucket Pipelines** (`bitbucket-pipelines.yml`): applies to any `step.image` field, whether under `pipelines.default[]` or any custom pipeline/branch/tag pipeline definition.
 
 ## Why it matters

@@ -9,6 +9,8 @@ A managed disk with public network access enabled can be exported wholesale via 
 This check ensures that Azure managed disks (`azurerm_managed_disk`) explicitly disable public network access rather than allowing disk export/import endpoints to be reachable from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_managed_disk`
 

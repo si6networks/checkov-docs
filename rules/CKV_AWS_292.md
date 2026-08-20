@@ -8,6 +8,8 @@ This check verifies DocumentDB Global Cluster storage encryption is enabled; mis
 This check ensures that an `aws_docdb_global_cluster` resource has `storage_encrypted` explicitly set to `true`, since Amazon DocumentDB global clusters are unencrypted by default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_docdb_global_cluster`
 

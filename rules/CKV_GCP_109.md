@@ -9,6 +9,8 @@ This setting tunes log verbosity for error-level statements to aid troubleshooti
 This check ensures that a Cloud SQL PostgreSQL instance's `log_min_error_statement` database flag is set to a level of `error` or more verbose (e.g., `debug5`...`warning`, `error`), so that at minimum, statements causing errors are logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_sql_database_instance` (PostgreSQL engine)
 - **Attribute inspected**: a `database_flags` block with `name = "log_min_error_statement"` whose `value` is one of `debug5, debug4, debug3, debug2, debug1, info, notice, warning, error`

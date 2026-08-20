@@ -9,6 +9,8 @@ Missing ELB-based health checks on an Auto Scaling group affects availability by
 This check ensures that an Auto Scaling Group (ASG) attached to a Classic ELB or ALB/NLB target group uses ELB-based health checks (`health_check_type = "ELB"`) rather than relying solely on basic EC2 instance-status health checks.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_autoscaling_group` resources connected via `aws_autoscaling_attachment` to `aws_elb` or `aws_lb_target_group`.
 
 ## Why it matters

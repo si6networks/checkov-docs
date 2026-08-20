@@ -8,6 +8,8 @@ Missing a CloudFront response headers policy means security headers (e.g. HSTS, 
 This check ensures that every `aws_cloudfront_distribution` has an `aws_cloudfront_response_headers_policy` (or a referenced `data.aws_cloudfront_response_headers_policy`) attached, so that the distribution injects security-relevant HTTP response headers.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_cloudfront_distribution` (connected `aws_cloudfront_response_headers_policy` or `data.aws_cloudfront_response_headers_policy`)
 - **Check type:** Graph-based connection check

@@ -8,6 +8,8 @@ Without envelope encryption of Kubernetes Secrets at rest via KMS, sensitive cre
 This check verifies that an EKS cluster has envelope encryption configured for Kubernetes Secrets using a KMS key, so that Secret objects are encrypted at rest in etcd beyond the default EKS storage encryption.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::EKS::Cluster`, property path `Properties/EncryptionConfig`.
 - **Terraform**: `aws_eks_cluster` resource, attribute `encryption_config[0].resources`.
 

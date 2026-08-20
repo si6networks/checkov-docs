@@ -8,6 +8,8 @@ Disabling end-of-session logging in security policies removes visibility into co
 This check ensures PAN-OS security policy rules keep "Log at Session End" (`log_end`) enabled, so that traffic sessions matching the rule are logged when the session terminates.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 Terraform resources `panos_security_policy` and `panos_security_rule_group`, and Ansible task `tasks.paloaltonetworks.panos.panos_security_rule` (Python resource check for Terraform, graph-based JSON policy for Ansible).
 
 ## Why it matters

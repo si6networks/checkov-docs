@@ -9,6 +9,8 @@ Disabling connection logging removes an audit trail of who connected to the data
 This check fails when a `google_sql_database_instance` running PostgreSQL does not have the `log_connections` database flag explicitly set to `on`, meaning successful connection attempts to the database are not being logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `POSTGRES`
 - **Check type:** resource check

@@ -9,6 +9,8 @@ Granting a service account admin/owner-level privileges means any compromise of 
 This check fails when a `google_project_iam_member` resource grants an Admin, Editor, or Owner role directly to a user-managed service account (an `*.iam.gserviceaccount.com` principal).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `google_project_iam_member` resource.
 
 ## Why it matters

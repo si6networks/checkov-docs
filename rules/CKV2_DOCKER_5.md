@@ -8,6 +8,8 @@ Setting PYTHONHTTPSVERIFY=0 via ARG/ENV/RUN disables certificate validation for 
 This check fails a Dockerfile if it sets the `PYTHONHTTPSVERIFY` environment variable to `0` (via `ARG`, `ENV`, or an inline assignment in a `RUN` command), which globally disables Python's `ssl`/`urllib`/`pip` certificate verification for the whole build (or runtime) environment.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds. Implemented as a Checkov graph-based JSON policy that checks `ARG`, `ENV`, and `RUN` instructions.
 
 ## Why it matters

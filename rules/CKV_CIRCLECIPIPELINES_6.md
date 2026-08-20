@@ -9,6 +9,8 @@ Unsanitized input reaching a shell `run` command in a CI job enables shell/comma
 This check flags CircleCI `run` steps whose command text contains patterns from a known list of shell-injection-prone constructs, such as unquoted interpolation of untrusted variables into a shell command.
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 Applies to CircleCI Pipeline configuration files (`.circleci/config.yml`), specifically every step under `jobs.*.steps[]` that is a `run` step, in both the string shorthand and the `run: {command: ...}` map form.
 
 ## Why it matters

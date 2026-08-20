@@ -8,6 +8,8 @@ Disabled IPv6 Private Google Access is the dual-stack counterpart of CKV_GCP_74 
 This check ensures dual-stack (IPv4/IPv6) subnetworks enable Private Google Access over IPv6, so instances using IPv6-only or dual-stack addressing can still reach Google APIs privately.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_subnetwork`
 

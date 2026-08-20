@@ -8,6 +8,8 @@ A non-zero insecure port serves the Kubernetes API without authentication or aut
 This check verifies that a self-managed `kube-apiserver` container explicitly disables its plaintext, unauthenticated HTTP listener by setting `--insecure-port=0`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

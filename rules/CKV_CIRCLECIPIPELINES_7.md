@@ -9,6 +9,8 @@ A `curl ... POST` pattern in a CI run step is a strong indicator of exfiltration
 This check flags CircleCI `run` steps that use `curl` together with `POST` on the same line, a pattern consistent with exfiltrating data (such as secrets or environment variables) to an external endpoint.
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 Applies to CircleCI Pipeline configuration files (`.circleci/config.yml`), specifically every step under `jobs.*.steps[]` that is a `run` step, in both the string shorthand and the `run: {command: ...}` map form.
 
 ## Why it matters

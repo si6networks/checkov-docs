@@ -9,6 +9,8 @@ Using unmanaged disks instead of Azure Managed Disks is primarily an operational
 This check verifies that Azure Virtual Machines defined via the (classic) `azurerm_virtual_machine` resource use Managed Disks rather than unmanaged disks backed directly by a storage account blob (VHD).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_virtual_machine` (the legacy/classic VM resource; the newer `azurerm_linux_virtual_machine`/`azurerm_windows_virtual_machine` resources always use managed disks and are out of scope for this check)
 
 This is a graph-based attribute check on the `storage_os_disk` block.

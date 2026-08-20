@@ -9,6 +9,8 @@ Using the Free SKU instead of a paid tier only affects the AKS control-plane SLA
 This check ensures that an AKS cluster's `sku_tier` is set to `Standard` (paid, SLA-backed control plane) rather than the free tier, which carries no uptime SLA.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` (`sku_tier`).
 
 ## Why it matters

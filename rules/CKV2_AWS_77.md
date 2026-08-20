@@ -9,6 +9,8 @@ A public API Gateway without WAF protection against known bad inputs/anonymous I
 This check ensures that API Gateway stages/APIs have an AWS WAFv2 Web ACL attached, and that the Web ACL includes the AWS Managed Rule groups that mitigate Log4Shell (Log4j, CVE-2021-44228) style injection attacks.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `aws_api_gateway_stage` (REST APIs), `aws_apigatewayv2_api` (HTTP/WebSocket APIs), and `aws_wafv2_web_acl` (via `aws_wafv2_web_acl_association`).
 

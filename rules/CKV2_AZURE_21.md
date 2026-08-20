@@ -8,6 +8,8 @@ Missing read-request logging for Blob service limits forensic visibility into ac
 This check verifies that a non-public (private or blob-scoped) Azure Storage Container is linked, through its parent storage account, to a Log Analytics storage-insights configuration that captures Blob-service read logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource types involved:** `azurerm_storage_container`, `azurerm_storage_account`, `azurerm_log_analytics_storage_insights`
 

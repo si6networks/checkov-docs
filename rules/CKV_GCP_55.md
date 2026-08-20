@@ -9,6 +9,8 @@ log_min_messages controls log verbosity thresholds for operational messages and 
 This check fails when a `google_sql_database_instance` running PostgreSQL has a `log_min_messages` database flag set to a value outside the recognized severity levels, since an invalid or overly-restrictive setting silences important log output.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `POSTGRES`
 - **Check type:** resource check

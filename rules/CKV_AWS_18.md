@@ -8,6 +8,8 @@ Missing S3 access logging removes the audit trail needed to detect and investiga
 This check requires that S3 buckets have server access logging configured, so that requests made against the bucket are recorded to a target logging bucket.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource/entity types:** `AWS::S3::Bucket` (CloudFormation); `aws_s3_bucket` and (via connection) `aws_s3_bucket_logging` (Terraform, graph-based check)
 - **Check type:** resource attribute check (CloudFormation), graph-based connection/attribute check (Terraform)

@@ -9,6 +9,8 @@ SQS queues frequently transport sensitive application data end-to-end, and leavi
 This check ensures that an SQS queue has server-side encryption enabled, either via SQS-managed encryption (SSE-SQS) or a customer-specified KMS key.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: resource `aws_sqs_queue`
 - **CloudFormation**: resource type `AWS::SQS::Queue`
 

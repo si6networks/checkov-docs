@@ -8,6 +8,8 @@ Allowing password reuse lets compromised or previously leaked passwords be recyc
 This check verifies that the Alibaba Cloud RAM account password policy blocks users from reusing at least the last 24 passwords.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_account_password_policy`
 

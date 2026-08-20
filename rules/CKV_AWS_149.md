@@ -8,6 +8,8 @@ Secrets Manager already encrypts secrets by default with an AWS-managed key, so 
 This check verifies that a Secrets Manager secret is encrypted with a customer-managed KMS key (CMK) rather than the AWS-managed `aws/secretsmanager` key (or no key at all).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_secretsmanager_secret`) and CloudFormation (`AWS::SecretsManager::Secret`).
 
 ## Why it matters

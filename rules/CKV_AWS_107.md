@@ -8,6 +8,8 @@ This check (via Cloudsplaining) flags IAM policies that allow actions capable of
 This check uses the `cloudsplaining` policy-analysis engine to ensure IAM policies do not include actions that could expose sensitive credentials (e.g. IAM access keys, login profile passwords, service-specific credentials) to the policy's principal.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_iam_policy_document` data source (analyzed via the underlying compiled policy JSON).
 - **CloudFormation**: `AWS::IAM::Group`, `AWS::IAM::ManagedPolicy`, `AWS::IAM::Policy`, `AWS::IAM::Role`, `AWS::IAM::User` resources containing inline or attached IAM policy documents.
 

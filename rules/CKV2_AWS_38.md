@@ -8,6 +8,8 @@ Without DNSSEC, a public hosted zone's responses cannot be cryptographically val
 This check ensures that public Route 53 hosted zones (`aws_route53_zone` with no `vpc` block, i.e., not a private zone) have DNSSEC signing enabled via a connected `aws_route53_hosted_zone_dnssec` resource (and typically an `aws_route53_key_signing_key`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_route53_zone` (connected `aws_route53_hosted_zone_dnssec`, `aws_route53_key_signing_key`, `aws_route53_zone_association`)
 - **Category:** Networking

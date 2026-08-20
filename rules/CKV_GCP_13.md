@@ -9,6 +9,8 @@ Leaving client certificate authentication enabled on a GKE cluster retains a leg
 This check requires GKE clusters to disable legacy client-certificate-based authentication (`master_auth.client_certificate_config.issue_client_certificate` must be `false`), forcing cluster access to rely on stronger, centrally-managed authentication mechanisms instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource (value check)

@@ -9,6 +9,8 @@ A bucket policy that locks out all principals but the root account can remove le
 This check fails when an S3 bucket policy contains a `Deny` statement, with no `Condition` and no `NotAction`, whose `Principal` is `*` (everyone) and whose `Action` covers broad S3 write/management permissions (e.g. `s3:*`, `s3:Put*`, `s3:*BucketPolicy`, `s3:PutBucketPolicy`, or `*`) — a pattern that can lock every IAM identity, including the ones who need to fix the policy, out of managing the bucket.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_s3_bucket` (inline `policy` attribute) and `aws_s3_bucket_policy` resources — inspects the parsed JSON `policy` document's `Statement` list.
 
 ## Why it matters

@@ -9,6 +9,8 @@ Enabling password authentication on a Linux VM opens it to brute-force and crede
 This check ensures that Linux virtual machines (and scale sets) in Azure are configured to disable password-based SSH authentication, forcing use of SSH key-based authentication instead.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_linux_virtual_machine`, `azurerm_linux_virtual_machine_scale_set`

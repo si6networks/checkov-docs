@@ -8,6 +8,8 @@ Disabling logging for ECS Exec removes the audit trail for interactive shell acc
 This check ensures that an ECS cluster (`aws_ecs_cluster`) has ECS Exec command logging enabled — i.e. the `execute_command_configuration.logging` setting is not `NONE` — so that interactive `ecs execute-command` sessions into running containers are logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ecs_cluster`
 

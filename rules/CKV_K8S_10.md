@@ -8,6 +8,8 @@ Missing CPU requests only affects scheduler fairness and workload availability (
 This check ensures every container in a Kubernetes workload has a CPU `requests` value set under `resources`, so the scheduler knows how much CPU capacity to reserve for it.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 Applies to Kubernetes manifests (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) and Terraform configurations using the `kubernetes` provider (`kubernetes_deployment`, `kubernetes_deployment_v1`, `kubernetes_pod`, `kubernetes_pod_v1`), evaluated per-container.
 
 ## Why it matters

@@ -9,6 +9,8 @@ AppFlow connector profiles function as a credential store for third-party SaaS i
 This check ensures that an Amazon AppFlow connector profile specifies a customer-managed KMS key ARN (`kms_arn`) so credentials and connection metadata stored by the profile are encrypted with a key the customer controls.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_appflow_connector_profile`
 
 ## Why it matters

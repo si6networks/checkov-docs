@@ -9,6 +9,8 @@ A global security requirement pointing at an OAuth2 scheme configured with the '
 For Swagger 2.0 documents, no `security` requirement should reference an OAuth2 scheme configured with the `flow: password` (Resource Owner Password Credentials) grant type.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `security`, cross-referenced against `securityDefinitions`.
 

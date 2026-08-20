@@ -9,6 +9,8 @@ Using the free SignalR SKU is primarily an availability/SLA and feature-capacity
 This check ensures an Azure SignalR Service resource does not use the `Free_F1` SKU, which carries no availability SLA and imposes hard connection/message limits unsuitable for production use.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_signalr_service`
 

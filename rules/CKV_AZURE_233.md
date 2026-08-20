@@ -9,6 +9,8 @@ Missing zone redundancy in Azure Container Registry is a resilience/availability
 This check ensures an Azure Container Registry (and any of its geo-replications) is configured with zone redundancy enabled, so registry data is resilient to a single Availability Zone outage.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_container_registry` resources — inspects `zone_redundancy_enabled` on the registry itself, and `zone_redundancy_enabled` within each `georeplications` block.
 - **ARM/Bicep**: `Microsoft.ContainerRegistry/registries` and `Microsoft.ContainerRegistry/registries/replications` — inspects `properties.zoneRedundancy`.
 

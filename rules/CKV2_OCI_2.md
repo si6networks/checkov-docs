@@ -9,6 +9,8 @@ Allowing unrestricted RDP (3389) ingress from 0.0.0.0/0 exposes a remote adminis
 This check ensures OCI Network Security Group (NSG) security rules do not allow unrestricted ingress (`source = 0.0.0.0/0`) to TCP/UDP port 3389 (RDP), which would expose Windows Remote Desktop to the entire internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `oci_core_network_security_group_security_rule` resource.
 
 ## Why it matters

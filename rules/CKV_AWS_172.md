@@ -9,6 +9,8 @@ Missing deletion protection on a QLDB ledger is primarily an availability/data-i
 This check requires that Amazon QLDB ledgers have deletion protection enabled, preventing the ledger (and its immutable transaction history) from being accidentally or maliciously deleted.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_qldb_ledger`
 - **CloudFormation**: `AWS::QLDB::Ledger`
 

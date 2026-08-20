@@ -8,6 +8,8 @@ DMS replication instances are encrypted by an AWS-managed key by default, so the
 This check ensures that an AWS Database Migration Service (DMS) replication instance is configured with a customer-managed KMS key (CMK) for encryption at rest, rather than relying on the AWS-managed default key or no key at all.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_dms_replication_instance`
 

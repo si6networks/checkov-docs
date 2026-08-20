@@ -9,6 +9,8 @@ Unsigned/untrusted images allow tampered or malicious container images to be pul
 This check ensures that an Azure Container Registry (ACR) has content trust (Docker Notary-based image signing) enabled, so only signed/trusted images can be pushed and pulled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_container_registry` resource.
 
 ## Why it matters

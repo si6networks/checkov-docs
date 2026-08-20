@@ -8,6 +8,8 @@ Allowing weak TLS cipher suites on the kubelet API lets an attacker on the netwo
 This check ensures that if the kubelet's `--tls-cipher-suites` argument is set, every listed cipher suite is from an approved list of strong, modern TLS ciphers.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

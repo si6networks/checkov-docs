@@ -8,6 +8,8 @@ Allowing pods to share the host's PID namespace lets a compromised container obs
 This check ensures PodSecurityPolicy (PSP) resources do not permit pods to share the host's process ID (PID) namespace.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 Applies to both raw Kubernetes manifests (`PodSecurityPolicy` kind, `spec.hostPID`) and Terraform configurations using the `kubernetes` provider (`kubernetes_pod_security_policy` resource, `spec[0].host_pid`). Corresponds to CIS Kubernetes Benchmark controls 1.7.2 (v1.3) / 5.2.2 (v1.5).
 
 ## Why it matters

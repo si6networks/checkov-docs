@@ -9,6 +9,8 @@ Without enforced SSL, a MySQL server accepts unencrypted connections, exposing c
 This check ensures Azure Database for MySQL (single server) enforces SSL/TLS on all client connections rather than permitting plaintext connections.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.DBforMySQL/servers`, `azurerm_mysql_server`
 

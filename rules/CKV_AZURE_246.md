@@ -9,6 +9,8 @@ Enabling HTTP application routing auto-provisions a public DNS zone and ingress 
 This check ensures that the AKS "HTTP application routing" add-on, which automatically creates a public DNS zone and ingress controller for the cluster, is not enabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_kubernetes_cluster`
 

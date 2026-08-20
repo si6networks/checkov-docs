@@ -9,6 +9,8 @@ Missing versioning on a Spaces bucket weakens recovery from accidental deletion,
 This check requires that a DigitalOcean Spaces bucket (`digitalocean_spaces_bucket`) has object versioning enabled, so that overwritten or deleted objects can be recovered.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resource type `digitalocean_spaces_bucket` (DigitalOcean provider). Specifically inspects the `versioning` block's `enabled` attribute (`versioning[0].enabled`).
 
 ## Why it matters

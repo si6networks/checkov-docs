@@ -8,6 +8,8 @@ Without purge protection, an attacker or malicious insider who compromises suffi
 This check ensures that an Azure Key Vault has purge protection enabled, preventing keys, secrets, and certificates from being permanently and irreversibly deleted before their configured retention period expires.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault` (inspects `purge_protection_enabled`)
 - **ARM/Bicep**: `Microsoft.KeyVault/vaults` (inspects `properties/enablePurgeProtection`)
 

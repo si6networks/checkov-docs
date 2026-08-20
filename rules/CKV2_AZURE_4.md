@@ -9,6 +9,8 @@ This check ensures vulnerability-assessment scan reports are actually delivered,
 This check ensures that Azure SQL server's Advanced Data Security (ADS) vulnerability assessment is enabled and configured to actually send its recurring scan reports somewhere (either to subscription admins or to a specified email list).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based connection check)
 - **Resource types:** `azurerm_mssql_server` / `azurerm_sql_server` connected to `azurerm_mssql_server_security_alert_policy`, which must connect to `azurerm_mssql_server_vulnerability_assessment`
 

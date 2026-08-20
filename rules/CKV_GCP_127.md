@@ -9,6 +9,8 @@ Disabling integrity monitoring removes the mechanism that detects unauthorized c
 This check fails when a `google_notebooks_instance` (Vertex AI Workbench notebook) has `enable_integrity_monitoring` explicitly set to `false` in its `shielded_instance_config`, meaning boot-time and runtime integrity of the VM is not being continuously verified.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_notebooks_instance`
 - **Check type:** resource (negative value check)

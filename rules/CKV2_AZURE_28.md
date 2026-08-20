@@ -8,6 +8,8 @@ Without a managed identity, container instances typically fall back to embedded 
 This check verifies that an Azure Container Instance (ACI) container group has a managed identity (`identity.type`) configured, rather than relying on embedded credentials to authenticate to other Azure services.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_container_group`
 

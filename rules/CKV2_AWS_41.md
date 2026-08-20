@@ -8,6 +8,8 @@ Missing an IAM instance profile on an EC2 instance is an operational/hygiene gap
 This check fails when an `aws_instance` resource has no `iam_instance_profile` attribute set, meaning the EC2 instance has no IAM role attached.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_instance`
 

@@ -8,6 +8,8 @@ Disabling kubelet HTTPS causes API server-to-kubelet traffic (including exec/log
 This check fails a `kube-apiserver` container manifest if its `command` explicitly sets `--kubelet-https=false`, which would force the API server to talk to kubelets over plaintext HTTP instead of TLS.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ GKE nodes running as the Compute Engine default service account carry the broad 
 This check ensures that GKE node pools/clusters are not left on the Compute Engine default service account, and that the project instead explicitly manages default service account creation via `google_project_default_service_accounts`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform. It is a graph-based connection check that inspects `google_project_default_service_accounts` resources in relation to `google_container_node_pool` and `google_container_cluster` resources.
 
 ## Why it matters

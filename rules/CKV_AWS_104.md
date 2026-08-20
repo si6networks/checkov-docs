@@ -8,6 +8,8 @@ Disabling DocumentDB audit logging removes the record of data access and adminis
 This check ensures that Amazon DocumentDB cluster parameter groups enable the `audit_logs` parameter so database access/activity is recorded.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::DocDB::DBClusterParameterGroup` resources.
 - **Terraform**: `aws_docdb_cluster_parameter_group` resources.
 

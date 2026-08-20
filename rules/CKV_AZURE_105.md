@@ -8,6 +8,8 @@ Disabling encryption on a Data Lake Store account leaves data at rest unprotecte
 This check ensures that an Azure Data Lake Store (Gen1) account has encryption of data at rest enabled.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_data_lake_store` (inspects `encryption_state`)
 - **ARM/Bicep**: `Microsoft.DataLakeStore/accounts` (inspects `properties/encryptionState`)
 

@@ -8,6 +8,8 @@ Allowing 0.0.0.0/0 to reach the GKE control plane API server exposes the cluster
 This check fails when a `google_container_cluster`'s master-authorized-networks configuration allows `0.0.0.0/0` as an authorized CIDR block, meaning the Kubernetes control-plane API endpoint is reachable from anywhere on the internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource

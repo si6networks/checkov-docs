@@ -9,6 +9,8 @@ Pairing an HTTP (unencrypted) proxy target with an EXTERNAL load-balancing schem
 This check flags regional forwarding rules that point at an HTTP (not HTTPS) target proxy while using an `EXTERNAL` load-balancing scheme, since that configuration exposes a load balancer's plaintext HTTP listener to the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_forwarding_rule`
 

@@ -8,6 +8,8 @@ A Redshift cluster deployed outside a VPC (EC2-Classic) loses the network isolat
 This check verifies that a Redshift cluster is placed inside a VPC (via a cluster subnet group) rather than being launched in the legacy EC2-Classic network mode.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_redshift_cluster`) and CloudFormation (`AWS::Redshift::Cluster`).
 
 ## Why it matters

@@ -8,6 +8,8 @@ An SQS queue policy that permits wildcard (*) actions can let any principal read
 This check fails when an SQS queue policy's statement grants `Action: "*"`, i.e., permits every SQS API action rather than a specific, scoped set of actions.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_sqs_queue_policy`
 - **Check type:** resource

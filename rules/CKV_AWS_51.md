@@ -8,6 +8,8 @@ Mutable ECR image tags allow a previously-scanned or trusted tag to be silently 
 This check ensures Amazon ECR repositories have image tag immutability enabled, preventing an existing image tag (e.g., `latest`, `v1.2.3`) from being overwritten by a different image.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::ECR::Repository` (CloudFormation), `aws_ecr_repository` (Terraform)
 

@@ -8,6 +8,8 @@ Hard-coded AWS access and secret keys committed in provider/function configurati
 This check scans the Terraform `aws` provider block (and Serverless Framework `provider.aws` functions) for hard-coded AWS access key IDs and secret access keys, which should never be committed to source control.
 
 ## Applicability
+**Checkov framework(s):** `serverless`, `terraform`
+
 - **Frameworks:** Terraform, Serverless Framework
 - **Resource/entity types:**
   - Terraform: `aws` provider block (checks the `access_key` and `secret_key` arguments)

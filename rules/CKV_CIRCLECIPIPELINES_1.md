@@ -8,6 +8,8 @@ Referencing a CircleCI job image by the mutable ':latest' tag is a supply-chain 
 This check verifies that Docker executor images referenced in a CircleCI pipeline configuration (`.circleci/config.yml`) are pinned to a specific version tag rather than the mutable `:latest` tag.
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 - **CircleCI Pipelines** (`.circleci/config.yml`): applies to `jobs.*.docker[].image` entries (the Docker executor image list for each job).
 
 ## Why it matters

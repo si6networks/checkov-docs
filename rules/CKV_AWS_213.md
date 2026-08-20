@@ -8,6 +8,8 @@ Allowing SSLv3/TLS 1.0/1.1 (or an outdated ELB security policy) on a load balanc
 This check ensures that a Classic Elastic Load Balancer (ELB) SSL negotiation policy (`aws_load_balancer_policy`) does not enable deprecated/insecure SSL/TLS protocols or reference an outdated predefined security policy.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_load_balancer_policy`
 

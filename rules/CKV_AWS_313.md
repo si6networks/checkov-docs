@@ -9,6 +9,8 @@ Failing to copy tags to RDS cluster snapshots is a metadata/hygiene gap that aid
 This check ensures Amazon RDS (Aurora) clusters are configured to automatically propagate resource tags to any snapshots taken of the cluster.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_rds_cluster`
 

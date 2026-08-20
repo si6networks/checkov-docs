@@ -8,6 +8,8 @@ Mounting the Docker daemon socket into a container gives it root-equivalent cont
 This check fails any Pod/workload that mounts a `hostPath` volume pointing at `/var/run/docker.sock`, because giving a container access to the Docker daemon socket is equivalent to giving it root access to the entire host.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`, `kubernetes_daemonset`, `kubernetes_daemon_set_v1`

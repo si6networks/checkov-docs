@@ -9,6 +9,8 @@ Not requiring a symbol in account passwords marginally weakens password strength
 This check requires the account-wide IAM password policy to set `require_symbols = true`, so IAM user passwords must contain at least one non-alphanumeric symbol.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_iam_account_password_policy`
 

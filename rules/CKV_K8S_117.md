@@ -8,6 +8,8 @@ Without --client-cert-auth=true, etcd accepts client connections without verifyi
 This check verifies that the `etcd` server requires client certificate authentication (`--client-cert-auth=true`) for its client API, rather than accepting unauthenticated connections.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `etcd` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `etcd` component (CIS Kubernetes Benchmark 2.2).
 
 ## Why it matters

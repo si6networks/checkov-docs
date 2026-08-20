@@ -8,6 +8,8 @@ This detects Dataproc cluster IAM bindings/members granting access to allUsers o
 This check flags `google_dataproc_cluster_iam_member` and `google_dataproc_cluster_iam_binding` resources that grant IAM access to a Dataproc cluster to the special public principals `allUsers` or `allAuthenticatedUsers`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_dataproc_cluster_iam_member`, `google_dataproc_cluster_iam_binding`
 - **Check type:** resource (custom `scan_resource_conf` logic, not a simple attribute-value check)

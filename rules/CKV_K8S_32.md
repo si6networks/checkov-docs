@@ -9,6 +9,8 @@ A PodSecurityPolicy that fails to mandate a restrictive default seccomp profile 
 This check ensures a `PodSecurityPolicy` sets the cluster-wide default seccomp profile annotation to `docker/default` or `runtime/default`, so pods admitted under that policy get a restrictive syscall filter by default.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: resource kind `PodSecurityPolicy`, annotation `seccomp.security.alpha.kubernetes.io/defaultProfileName` on `metadata.annotations`.
 - **Terraform**: resource type `kubernetes_pod_security_policy`, same annotation under `metadata[0].annotations`.
 

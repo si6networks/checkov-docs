@@ -8,6 +8,8 @@ This check verifies root access is disabled on SageMaker notebook instances; roo
 This check ensures an `aws_sagemaker_notebook_instance` resource explicitly sets `root_access = "Disabled"`, preventing users of the notebook from gaining root/administrator privileges on the underlying instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_sagemaker_notebook_instance`
 

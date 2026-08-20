@@ -8,6 +8,8 @@ Setting the kubelet's --authorization-mode to AlwaysAllow disables authorization
 This check ensures that the kubelet's `--authorization-mode` argument does not include the value `AlwaysAllow`, which would let any request to the kubelet API bypass authorization entirely.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests (and manifest-generating Terraform via Kubernetes provider resources indirectly, though this specific check is implemented only for native Kubernetes manifests) — specifically Pod-template-bearing workload kinds: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the `command` array of any container in the pod spec, and only acts when that command invokes `kubelet` (i.e., this targets kubelet static-pod manifests or kubelet-wrapper containers, not arbitrary application pods).
 
 ## Why it matters

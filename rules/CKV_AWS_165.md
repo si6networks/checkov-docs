@@ -9,6 +9,8 @@ Missing point-in-time recovery on a DynamoDB global table is a data-durability/a
 This check requires that DynamoDB global tables have point-in-time recovery (PITR) enabled on their replicas so that table data can be restored to any point within the retention window in the event of accidental writes/deletes or application bugs.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_dynamodb_global_table` (see important note below — the check is effectively a no-op for Terraform)
 - **CloudFormation**: `AWS::DynamoDB::GlobalTable`
 

@@ -8,6 +8,8 @@ Missing the Azure Policy add-on removes a centralized guardrail for enforcing in
 This check verifies that an Azure Kubernetes Service (AKS) cluster has the Azure Policy Add-on enabled, allowing Azure Policy to enforce and audit configuration compliance across the cluster's Kubernetes resources.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_kubernetes_cluster`
 

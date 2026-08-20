@@ -8,6 +8,8 @@ An IAM policy granting '*' actions on '*' resources is a full administrative pri
 This check fails when an IAM policy document (managed or inline) contains an `Allow` statement granting `Action: "*"` on `Resource: "*"`, i.e. unrestricted administrator-equivalent permissions over every AWS action on every resource.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::IAM::Policy`, `AWS::IAM::Group`, `AWS::IAM::Role`, `AWS::IAM::User` (covers both standalone managed policies and inline `Policies` blocks embedded in group/role/user resources).
 - **Terraform**: `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`.
 

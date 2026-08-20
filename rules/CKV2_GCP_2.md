@@ -8,6 +8,8 @@ Legacy GCP networks lack subnetwork-based segmentation and predate current defau
 This check ensures a GCP project does not use "legacy" VPC networks — networks configured without proper subnetwork auto-creation controls.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_compute_network` (evaluated in connection with `google_project`)
 

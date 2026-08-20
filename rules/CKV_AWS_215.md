@@ -8,6 +8,8 @@ Disabling transit encryption on an AppSync API cache allows cached data to move 
 This check ensures that an AWS AppSync API cache (`aws_appsync_api_cache`) has encryption in transit enabled, protecting cached data as it moves between the AppSync service and the underlying cache nodes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_appsync_api_cache`
 

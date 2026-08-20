@@ -9,6 +9,8 @@ Binding RBAC permissions to the default ServiceAccount extends real, usable API 
 This check ensures no `RoleBinding` or `ClusterRoleBinding` grants RBAC permissions to the `default` ServiceAccount of any namespace.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: resource kinds `RoleBinding`, `ClusterRoleBinding`, field `subjects[]`.
 - **Terraform**: resource types `kubernetes_role_binding`, `kubernetes_role_binding_v1`, `kubernetes_cluster_role_binding`, `kubernetes_cluster_role_binding_v1`, attribute `subject[]`.
 

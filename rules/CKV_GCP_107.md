@@ -9,6 +9,8 @@ Public IAM bindings on a Cloud Function can expose serverless application logic,
 This check ensures that IAM bindings/members applied to a Google Cloud Function (1st or 2nd generation) do not grant invocation access to the public principal `allUsers`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource types**: `google_cloudfunctions_function_iam_member`, `google_cloudfunctions_function_iam_binding` (1st gen), `google_cloudfunctions2_function_iam_member`, `google_cloudfunctions2_function_iam_binding` (2nd gen)
 

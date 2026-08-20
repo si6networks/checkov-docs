@@ -9,6 +9,8 @@ Fetching files over plain HTTP/FTP with get_url allows a network attacker to tam
 This check ensures that Ansible `get_url` module tasks download files only over HTTPS, disallowing plaintext HTTP and FTP URLs.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible playbooks/roles. Applies to tasks using `ansible.builtin.get_url` or the legacy short module name `get_url`.
 
 ## Why it matters

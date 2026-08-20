@@ -8,6 +8,8 @@ Without encryption at host, temp disks, disk caches, and data flowing between AK
 Ensures that AKS node pools have host-based encryption (encryption-at-host) enabled, encrypting temp disks and OS/data disk caches on the underlying VM host as well as the data flowing between compute and storage.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster`, `azurerm_kubernetes_cluster_node_pool` — inspects `enable_host_encryption` (also accepts the newer alias `host_encryption_enabled`)
 - **ARM**: `Microsoft.ContainerService/managedClusters`, `Microsoft.ContainerService/managedClusters/agentPools` — inspects `properties.enableEncryptionAtHost` (path differs slightly depending on whether the resource is the cluster itself or a standalone agent pool)
 - **Bicep**: compiles to the ARM resource types above

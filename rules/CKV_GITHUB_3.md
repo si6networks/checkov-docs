@@ -8,6 +8,8 @@ Without an IP allow list, GitHub app access to the organization is reachable fro
 This check enforces that a GitHub organization has the IP allow list feature enabled for installed GitHub Apps, restricting which network locations can use those apps' credentials to interact with the organization.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated against the organization security settings document, specifically `data.organization.ipAllowListForInstalledAppsEnabledSetting`.
 
 ## Why it matters

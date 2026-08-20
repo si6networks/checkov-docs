@@ -9,6 +9,8 @@ DynamoDB tables without a customer-managed KMS key rely on default encryption wi
 Fails when a DynamoDB table's server-side encryption is not explicitly enabled with a customer-managed KMS key (CMK) ARN specified.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_dynamodb_table` resource.
 - **CloudFormation**: `AWS::DynamoDB::Table`.
 

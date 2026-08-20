@@ -8,6 +8,8 @@ Fetching sensitive values over plaintext HTTP to untrusted domains and then stor
 This check flags Terraform configurations where a `data.http` data source is connected to an `aws_ssm_parameter` that is not of type `SecureString`, meaning a value fetched over plain HTTP (potentially from an untrusted external endpoint) is being stored unencrypted, or conversely where a `data.http` source exists disconnected from any SSM parameter at all (flagged for review).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/data types:** `aws_ssm_parameter`, `data.http`
 - **Category:** Supply chain security

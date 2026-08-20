@@ -9,6 +9,8 @@ A leaked AWS access key is a long-lived static credential that can grant full pr
 This check scans file contents for hardcoded AWS access key IDs (and, in context, their paired secret access keys), flagging static AWS credentials committed directly into source or config files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (Terraform `.tf`/`.tfvars`, YAML/JSON config, `.env` files, scripts, CI pipeline definitions, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched credential string within a file; findings are reported at the file/line level rather than against a graph resource.
 

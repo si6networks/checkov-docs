@@ -8,6 +8,8 @@ Allowing public network access to the Storage Sync Service's control-plane chann
 This check fails when an Azure Storage Sync Service does not restrict incoming traffic to virtual networks only, meaning the sync service can be reached over the public internet in addition to (or instead of) private VNet paths.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_storage_sync`), ARM templates, and Bicep, for the resource type `Microsoft.StorageSync/storageSyncServices`.
 
 ## Why it matters

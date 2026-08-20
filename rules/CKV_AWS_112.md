@@ -9,6 +9,8 @@ Session Manager sessions can carry sensitive interactive-shell input/output and 
 Fails when an AWS Systems Manager (SSM) `Session` document does not configure a KMS key (`kmsKeyId`) to encrypt Session Manager session data.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_ssm_document` resource, specifically ones where `document_type = "Session"`.
 
 ## Why it matters

@@ -9,6 +9,8 @@ A bucket logging to itself is mainly a logging-integrity/hygiene defect (an atta
 This check fails when a `google_storage_bucket`'s `logging.log_bucket` attribute points back to the same bucket, i.e., the bucket is configured to write its own access logs into itself.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_storage_bucket`
 - **Check type:** resource check (Logging category)

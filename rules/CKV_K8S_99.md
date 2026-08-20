@@ -8,6 +8,8 @@ Without TLS client certificates configured for etcd, the API server's connection
 This check verifies that a self-managed `kube-apiserver` container configures both `--etcd-certfile` and `--etcd-keyfile`, enabling mutual TLS (mTLS) client authentication to the etcd datastore.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

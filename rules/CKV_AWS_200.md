@@ -8,6 +8,8 @@ Unencrypted EBS volumes baked into an Image Builder recipe leave disk contents (
 Ensures that EC2 Image Builder Image Recipe EBS block device mappings are encrypted, and that a KMS key is explicitly specified, rather than shipping unencrypted or default-key-encrypted volumes in the built image.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_imagebuilder_image_recipe` — inspects each entry in `block_device_mapping[].ebs` for `encrypted` and `kms_key_id`.
 
 ## Why it matters

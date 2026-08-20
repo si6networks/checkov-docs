@@ -8,6 +8,8 @@ Running Azure Spring Cloud without VNet integration removes network segmentation
 This check verifies that an Azure Spring Cloud (Azure Spring Apps) service — at any SKU tier above the free `B0` Basic tier — is deployed into a customer-owned Virtual Network via the service runtime subnet configuration.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `terraform`
+
 - **IaC frameworks:** Terraform and ARM templates (graph-based checks, one implementation per framework)
 - **Resource/entity types involved:** `azurerm_spring_cloud_service` (Terraform), `Microsoft.AppPlatform/Spring` (ARM)
 

@@ -8,6 +8,8 @@ A PodSecurityPolicy that admits privileged containers removes the cluster-wide g
 This check fails any `PodSecurityPolicy` that sets `spec.privileged: true`, because such a policy would allow the cluster to admit pods running fully privileged (host-equivalent) containers.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types:** `PodSecurityPolicy` (Kubernetes), `kubernetes_pod_security_policy` (Terraform)
 

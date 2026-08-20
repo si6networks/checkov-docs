@@ -9,6 +9,8 @@ An enabled interactive serial console provides an alternate, often less-monitore
 This check fails when a GCE instance sets `metadata.serial-port-enable = true`, which allows interactive access to the VM's serial console over the network.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_compute_instance`, `google_compute_instance_from_template`, and `google_compute_instance_template`.
 
 ## Why it matters

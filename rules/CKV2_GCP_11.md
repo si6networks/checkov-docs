@@ -8,6 +8,8 @@ Disabled Container Vulnerability Scanning on GCR removes a detective control for
 This check ensures that the Container Scanning API (`containerscanning.googleapis.com`) is enabled for the project, so images pushed to Google Container Registry / Artifact Registry are automatically scanned for known vulnerabilities.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, specifically the `google_project_services` resource (the resource used to enable Google Cloud APIs/services on a project).
 
 ## Why it matters

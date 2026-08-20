@@ -9,6 +9,8 @@ A disabled Kubernetes cluster log agent removes audit/event visibility needed to
 This check ensures that Tencent Kubernetes Engine (TKE) clusters have the built-in log agent enabled so that container/cluster logs are collected.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_kubernetes_cluster` (Tencent Cloud provider).
 
 ## Why it matters

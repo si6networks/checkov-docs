@@ -8,6 +8,8 @@ An Athena workgroup that does not enforce its encryption configuration allows in
 This check fails when an Athena Workgroup does not have `EnforceWorkGroupConfiguration` set to true, which would otherwise allow individual query clients to override the workgroup's centrally defined settings (including encryption requirements) on a per-query basis.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Athena::WorkGroup` (CloudFormation), `aws_athena_workgroup` (Terraform)
 - **Check type:** resource

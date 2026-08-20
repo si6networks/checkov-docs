@@ -8,6 +8,8 @@ Neptune graph database clusters typically hold relationship/identity data centra
 This check ensures Amazon Neptune database clusters have storage encryption enabled at rest.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Neptune::DBCluster` (CloudFormation), `aws_neptune_cluster` (Terraform)
 

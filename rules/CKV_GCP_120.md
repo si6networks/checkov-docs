@@ -9,6 +9,8 @@ Missing drop protection on a Spanner database creates an availability/data-loss 
 This check requires `google_spanner_database` resources to explicitly set `enable_drop_protection = true`, so the database cannot be accidentally dropped through the Spanner API/console independent of Terraform's own deletion protection.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_spanner_database`
 - **Check type:** resource (value check)

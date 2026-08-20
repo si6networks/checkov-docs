@@ -9,6 +9,8 @@ Leaving local (API-key) authentication enabled on Cognitive Services accounts al
 This check ensures that Azure Cognitive Services accounts require Azure AD (Entra ID) authentication instead of allowing local key-based authentication (API keys).
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_cognitive_account` resources — inspects the `local_auth_enabled` attribute (expects `false`).
 - **ARM/Bicep**: `Microsoft.CognitiveServices/accounts` — inspects `properties.disableLocalAuth` (expects `true`).
 

@@ -9,6 +9,8 @@ An Auto Scaling group that isn't wired to load-balancer health checks can keep u
 This check ensures that a Naver Cloud Platform (NCP) Auto Scaling Group (`ncloud_auto_scaling_group`) connected to a load-balancer target group uses the load balancer's health-check results (`health_check_type_code = "LOADB"`) — with that target group itself defining a real health check — rather than only relying on basic server-level health checks that don't reflect application health.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `ncloud_auto_scaling_group`, `ncloud_lb_target_group`
 - **Check type:** graph-based check (`.json` connection/attribute query)

@@ -8,6 +8,8 @@ A missing readiness probe is primarily an availability and traffic-routing hygie
 This check verifies that every container in a Kubernetes pod-spec (or corresponding Terraform `kubernetes_*` resource) defines a `readinessProbe`, so the platform can determine when the container is actually ready to receive traffic.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 Both Kubernetes YAML manifests and Terraform. Kubernetes entities: `DaemonSet`, `Deployment`, `DeploymentConfig`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet` (explicitly excludes `Job` and `CronJob`, and only evaluates regular `containers`, not `initContainers`). Terraform resources: `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`.
 
 ## Why it matters

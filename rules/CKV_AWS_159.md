@@ -8,6 +8,8 @@ Athena workgroup encryption protects query results and metadata written to S3, w
 This check verifies that an Amazon Athena workgroup's result configuration specifies an encryption option for query results.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `aws_athena_workgroup` resource.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Missing point-in-time recovery on a MySQL Cloud SQL instance is primarily an ava
 This check ensures that Cloud SQL MySQL database instances have binary logging enabled, which is required for point-in-time recovery (PITR).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_sql_database_instance`
 

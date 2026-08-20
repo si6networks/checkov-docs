@@ -9,6 +9,8 @@ An unrestricted 'owners' filter on an aws_ami data source enables the whoAMI nam
 This check ensures a Terraform `aws_ami` data source that filters AMIs by name specifies a trusted `owners` list, since relying only on a permissive name-pattern filter (e.g., containing wildcards) without an owner restriction is vulnerable to the "whoAMI" name-confusion supply-chain attack.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ami` (data source)
 

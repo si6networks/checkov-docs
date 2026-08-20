@@ -8,6 +8,8 @@ An `nc`/`netcat` invocation against a literal IP address in a workflow step is a
 This check fails when a GitHub Actions `run:` step invokes `nc` or `netcat` directly against a raw IP address, a pattern strongly associated with reverse-shell or bind-shell payloads.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **Framework:** GitHub Actions workflow YAML
 - **Entities:** `jobs` and `jobs.*.steps[]` — any step with a `run:` key
 

@@ -9,6 +9,8 @@ Object storage buckets not encrypted with a customer-managed key limit control o
 This check ensures that an OCI Object Storage bucket (`oci_objectstorage_bucket`) is encrypted with a customer-managed KMS key rather than Oracle's default at-rest encryption key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_objectstorage_bucket`
 

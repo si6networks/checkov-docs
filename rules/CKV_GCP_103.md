@@ -9,6 +9,8 @@ Assigning public IP addresses to Dataproc cluster nodes exposes cluster manageme
 This check ensures that a `google_dataproc_cluster` resource is configured with `internal_ip_only = true` in its `gce_cluster_config`, so cluster nodes are not assigned public/external IP addresses.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_dataproc_cluster`
 - **Attribute inspected**: `cluster_config.gce_cluster_config.internal_ip_only`

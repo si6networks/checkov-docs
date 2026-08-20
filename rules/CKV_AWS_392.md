@@ -8,6 +8,8 @@ An S3 access point with public access blocking disabled can expose the underlyin
 This check ensures that an S3 Access Point's `public_access_block_configuration` does not have all four block-public-access controls simultaneously disabled, which would allow the access point to serve public requests to the underlying bucket.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_s3_access_point`
 

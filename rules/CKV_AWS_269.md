@@ -9,6 +9,8 @@ This storage config protects Amazon Connect call/media recordings, which routine
 This check ensures that an Amazon Connect instance's Kinesis Video Stream storage configuration (used for call/chat/screen recordings) specifies a customer-managed KMS key for encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_connect_instance_storage_config` (specifically the nested `kinesis_video_stream_config.encryption_config` block)
 
 ## Why it matters

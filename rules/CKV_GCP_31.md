@@ -9,6 +9,8 @@ The default Compute Engine service account carries the broad project-wide Editor
 This check fails when a GCE instance (or instance template) uses the project's default Compute Engine service account together with the broad `cloud-platform` OAuth scope, which effectively grants the VM's workload full access to every Google Cloud API the project's IAM policy allows.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to resource types `google_compute_instance`, `google_compute_instance_from_template`, and `google_compute_instance_template`.
 
 ## Why it matters

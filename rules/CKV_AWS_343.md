@@ -8,6 +8,8 @@ Disabling automated snapshots on a Redshift cluster removes the ability to recov
 Ensures Amazon Redshift clusters keep automated backups turned on by requiring a non-zero `automated_snapshot_retention_period`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_redshift_cluster`
 

@@ -9,6 +9,8 @@ An unencrypted copied AMI leaves the full disk image — potentially including O
 This check ensures that when an Amazon Machine Image (AMI) is copied via `aws_ami_copy`, the resulting copy has its backing EBS snapshots encrypted.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ami_copy`
 

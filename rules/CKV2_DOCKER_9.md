@@ -8,6 +8,8 @@ The --nogpgcheck flag on dnf/tdnf/yum disables RPM package signature verificatio
 This check fails a Dockerfile if any `RUN` instruction invokes `yum`, `dnf`, or `tdnf` with the `--nogpgcheck` option, which skips GPG signature verification of installed RPM packages.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds (RHEL/CentOS/Fedora/Photon OS-based images using yum, dnf, or tdnf). Implemented as a Checkov graph-based JSON policy scanning `RUN` instructions.
 
 ## Why it matters

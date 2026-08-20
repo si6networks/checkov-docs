@@ -9,6 +9,8 @@ Without isolated compute, Synapse Spark pool workloads can share underlying comp
 This check ensures Azure Synapse Spark pools have compute isolation enabled, dedicating physical hardware to the pool instead of sharing hardware with other tenants.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_synapse_spark_pool` resources — inspects the `compute_isolation_enabled` attribute.
 - **ARM/Bicep**: `Microsoft.Synapse/workspaces/bigDataPools` — inspects `properties.isComputeIsolationEnabled`.
 

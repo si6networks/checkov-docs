@@ -8,6 +8,8 @@ Allowing inbound access from 0.0.0.0/0 on port 80 exposes an unencrypted HTTP se
 This check fails any NCloud Access Control Group rule (`ncloud_access_control_group_rule`) that permits inbound traffic on port 80 (HTTP) from the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_access_control_group_rule`
 - **Check type:** resource (subclass of the shared `AccessControlGroupInboundRule` base check, parameterized with `port=80`)

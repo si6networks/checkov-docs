@@ -9,6 +9,8 @@ Missing a customer-managed key for human-review workflow output reduces independ
 This check ensures that an `aws_sagemaker_flow_definition` resource (used for Amazon SageMaker Ground Truth / Augmented AI human-review workflows) specifies a KMS key to encrypt its output data.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** resource check
 - **Entities:** `aws_sagemaker_flow_definition`

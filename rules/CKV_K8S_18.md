@@ -8,6 +8,8 @@ Sharing the host IPC namespace exposes shared memory segments and semaphores of 
 This check fails any Pod/workload that sets `hostIPC: true`, because that setting lets containers in the pod read and write the host's shared memory, semaphores, and message queues, breaking inter-process isolation from the node.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`

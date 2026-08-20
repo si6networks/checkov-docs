@@ -8,6 +8,8 @@ Sharing the host PID namespace lets a container see and interact with (and poten
 This check fails any Pod/workload that sets `hostPID: true`, because that setting lets containers in the pod see and interact with every process running on the host node, not just their own.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`

@@ -8,6 +8,8 @@ Without in-transit encryption, traffic to and from a Redis instance (which may h
 This check requires `google_redis_instance` resources to set `transit_encryption_mode = "SERVER_AUTHENTICATION"`, so traffic between clients and the Redis instance is TLS-encrypted rather than sent in plaintext.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_redis_instance`
 - **Check type:** resource (attribute-value check)

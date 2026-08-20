@@ -8,6 +8,8 @@ A disabled WAF policy means the firewall rules exist but are not actively inspec
 This check verifies that an Azure Web Application Firewall policy attached to an Application Gateway has its policy settings enabled, so the WAF is actually active (in either Detection or Prevention mode) rather than provisioned but effectively dormant.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_web_application_firewall_policy`
 

@@ -9,6 +9,8 @@ Disabled ElastiCache automatic backups risk permanent data loss on cluster failu
 This check requires ElastiCache Redis clusters to set `snapshot_retention_limit` to a non-zero value so that automatic daily snapshots are retained.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_elasticache_cluster` (only evaluated for Redis; clusters with `engine = "memcached"` return UNKNOWN since Memcached has no backup/snapshot capability)
 

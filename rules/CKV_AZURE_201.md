@@ -9,6 +9,8 @@ Without a customer-managed key, Service Bus data is still encrypted by default (
 This check ensures an Azure Service Bus namespace is configured with a customer-managed key (CMK) reference for encryption, rather than relying solely on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_servicebus_namespace`
 

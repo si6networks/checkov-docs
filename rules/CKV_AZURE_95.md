@@ -8,6 +8,8 @@ Without automatic OS image patching, VM Scale Set instances can drift out of dat
 This check verifies that an Azure Virtual Machine Scale Set (VMSS) is configured to automatically apply OS image patches/upgrades to its instances rather than requiring manual intervention.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_virtual_machine_scale_set` (inspects `automatic_os_upgrade` and `os_profile_windows_config.enable_automatic_upgrades`)
 - **ARM templates**: `Microsoft.Compute/virtualMachineScaleSets` (inspects extensions for `enableAutomaticUpgrade`, and the `orchestrationMode`)
 - **Bicep**: resources compiling to `Microsoft.Compute/virtualMachineScaleSets`

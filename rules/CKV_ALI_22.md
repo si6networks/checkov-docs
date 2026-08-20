@@ -8,6 +8,8 @@ Without Transparent Data Encryption, data stored at rest in the RDS instance (in
 This check verifies that Transparent Data Encryption (TDE) is enabled on Alibaba Cloud RDS instances running supported MySQL or SQL Server engine versions.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 - Only evaluated (PASS/FAIL) when `engine` is `"MySQL"` or `"SQLServer"` **and** `engine_version` is one of the versions that support TDE (MySQL: `5.6`, `5.7`, `8`, `8.0`; SQL Server: `08r2_ent_ha`, `2012_ent_ha`, `2016_ent_ha`, `2017_ent`, `2019_std_ha`, `2019_ent`). Other engines/versions (e.g. PostgreSQL, or unsupported MySQL/SQL Server versions) return `UNKNOWN` — not evaluated.

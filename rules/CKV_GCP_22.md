@@ -8,6 +8,8 @@ Using a non-Container-Optimized-OS node image increases the node's attack surfac
 This check fails when a `google_container_node_pool` (on a cluster with `version` older than 1.24) does not use a Container-Optimized OS (`cos*`) image type for its nodes and doesn't remove the default node pool.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_node_pool`
 - **Check type:** resource

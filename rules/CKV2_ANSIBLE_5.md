@@ -9,6 +9,8 @@ Disabling SSL verification for dnf repository connections enables man-in-the-mid
 This check ensures that Ansible `dnf` module tasks do not disable SSL/TLS certificate validation when connecting to package repositories.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible playbooks/roles. Applies to tasks using `ansible.builtin.dnf` or the legacy short module name `dnf`.
 
 ## Why it matters

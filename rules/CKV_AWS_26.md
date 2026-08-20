@@ -9,6 +9,8 @@ SNS topics routinely carry sensitive payloads (PII, alerts, cross-service events
 This check ensures that an SNS topic has server-side encryption (SSE) enabled by specifying a KMS key, so that messages published to and stored in the topic are encrypted at rest.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: resource `aws_sns_topic`
 - **CloudFormation**: resource type `AWS::SNS::Topic`
 

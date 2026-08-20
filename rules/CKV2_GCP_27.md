@@ -8,6 +8,8 @@ Vertex AI workbench instance disks without a CMK still receive Google-managed en
 This check ensures that a Vertex AI Workbench instance's boot disk (and any data disks, if present) are encrypted with a customer-managed KMS key rather than relying only on Google-managed default encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_workbench_instance`
 

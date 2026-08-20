@@ -9,6 +9,8 @@ A publicly accessible Redshift cluster exposes a data warehouse endpoint directl
 This check fails when an Amazon Redshift cluster is configured with `PubliclyAccessible` (or `publicly_accessible`) set to `true`, which would allow the cluster to receive connections directly from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_redshift_cluster` resource — inspects the `publicly_accessible` argument.
 - **CloudFormation**: `AWS::Redshift::Cluster` resource — inspects `Properties/PubliclyAccessible`.
 

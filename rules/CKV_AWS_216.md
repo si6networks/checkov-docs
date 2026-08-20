@@ -8,6 +8,8 @@ A disabled CloudFront distribution is an availability/configuration-hygiene issu
 This check ensures that an `aws_cloudfront_distribution` resource has its `enabled` attribute set to `true`, so the distribution is actively serving traffic rather than sitting disabled while still billed and provisioned.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_cloudfront_distribution`
 

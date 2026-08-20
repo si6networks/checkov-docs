@@ -8,6 +8,8 @@ Enabled IP forwarding lets a compromised VM route and relay traffic between netw
 This check verifies that Azure Network Interface (NIC) resources have IP forwarding disabled, preventing the attached VM from routing traffic that isn't addressed to itself.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_network_interface`
 

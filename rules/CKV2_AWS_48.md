@@ -8,6 +8,8 @@ When AWS Config does not record global resource types (e.g., IAM), account-wide 
 This check fails when an AWS Config configuration recorder's `recording_group.include_global_resource_types` attribute is not set to `true`, meaning the recorder does not track changes to global (non-region-scoped) resources such as IAM.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_config_configuration_recorder`
 

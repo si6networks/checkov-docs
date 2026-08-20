@@ -8,6 +8,8 @@ A privileged container in an AWS Batch job definition can access the host's devi
 This check ensures that AWS Batch job definitions do not configure their container to run with the `privileged` flag enabled, which would grant the container elevated access to the host system.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_batch_job_definition`
 

@@ -9,6 +9,8 @@ Missing Stackdriver monitoring primarily impacts operational visibility and avai
 This check ensures that a `google_data_fusion_instance` resource has `enable_stackdriver_monitoring` set to `true`, so Cloud Monitoring (Stackdriver) metrics are collected for the Data Fusion instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_data_fusion_instance`
 - **Attribute inspected**: `enable_stackdriver_monitoring`

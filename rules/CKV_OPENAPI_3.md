@@ -9,6 +9,8 @@ Defining an HTTP Basic security scheme that is actually used by operations permi
 For OpenAPI 3.x documents, this check fails if any `components.securitySchemes` entry uses HTTP Basic authentication (`type: http`, `scheme: basic`), or if any operation in `paths` declares a `security` requirement at all while such a scheme is (or could be) in play — because Basic auth sends credentials in cleartext (base64, not encryption) unless the transport is guaranteed to be TLS.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (version 3.x.y specification files, JSON or YAML).
 - **Entity:** `components` (specifically `components.securitySchemes`), evaluated together with `paths`.
 

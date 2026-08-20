@@ -9,6 +9,8 @@ A PodSecurityPolicy that does not force-drop Linux capabilities allows any admit
 This check ensures a `PodSecurityPolicy` requires dropping Linux capabilities (`spec.requiredDropCapabilities`) rather than allowing pods to keep the default capability set.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: resource kind `PodSecurityPolicy`, field `spec.requiredDropCapabilities`.
 - **Terraform**: resource type `kubernetes_pod_security_policy`, attribute `spec[0].required_drop_capabilities`.
 

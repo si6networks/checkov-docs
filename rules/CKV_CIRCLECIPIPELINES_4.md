@@ -9,6 +9,8 @@ Referencing an unversioned volatile orb tag has the same supply-chain-integrity 
 This check fails a CircleCI pipeline configuration if it references an orb tagged `@volatile`, meaning the orb's publisher may push changes to that reference at any time without a corresponding, reviewable config change.
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 Applies to CircleCI Pipeline configuration files (`.circleci/config.yml`), specifically the top-level `orbs` block, where each entry is a string of the form `namespace/orb-name@version-or-tag`.
 
 ## Why it matters

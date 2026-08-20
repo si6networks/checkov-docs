@@ -8,6 +8,8 @@ Attaching the AWS-managed IAMFullAccess policy grants unrestricted IAM administr
 This check fails when any IAM principal — a role, user, or group — has the AWS-managed `IAMFullAccess` policy attached, whether by direct managed-policy-attachment resources, via a role's `managed_policy_arns`, via SSO permission set attachment, or referenced through a `data.aws_iam_policy` data source by name or ARN.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_iam_group_policy_attachment`, `aws_iam_policy_attachment`, `aws_iam_role`, `aws_iam_role_policy_attachment`, `aws_iam_user_policy_attachment`, `aws_ssoadmin_managed_policy_attachment`, `data.aws_iam_policy`
 

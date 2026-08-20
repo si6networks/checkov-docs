@@ -9,6 +9,8 @@ Absence of an S3 Public Access Block leaves the door open for a bucket (or a fut
 This check requires every `aws_s3_bucket` to have a connected `aws_s3_bucket_public_access_block` resource with, at minimum, `block_public_acls = true` and `block_public_policy = true`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_s3_bucket` (subject resource), `aws_s3_bucket_public_access_block` (must be connected to it)
 

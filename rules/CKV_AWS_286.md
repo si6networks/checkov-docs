@@ -8,6 +8,8 @@ An IAM policy permitting privilege escalation actions lets a principal with limi
 This check fails when an IAM policy document (attached inline or standalone) contains a combination of IAM permissions that is a known privilege-escalation vector — actions that would let a principal grant themselves broader permissions than they were explicitly given.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resources:** `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`
 

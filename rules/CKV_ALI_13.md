@@ -9,6 +9,8 @@ A minimum password length below 14 characters weakens resistance to offline brut
 This check verifies that an Alibaba Cloud RAM account password policy enforces a minimum password length of at least 14 characters, reducing the risk of weak, easily brute-forced credentials.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_account_password_policy`
 - **Category:** IAM

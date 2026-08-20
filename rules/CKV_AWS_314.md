@@ -9,6 +9,8 @@ Without a logging configuration, CodeBuild project executions leave no audit tra
 This check ensures every AWS CodeBuild project explicitly configures a logging destination (CloudWatch Logs and/or S3) rather than leaving build logging unconfigured.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_codebuild_project`
 

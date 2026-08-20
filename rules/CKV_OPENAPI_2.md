@@ -9,6 +9,8 @@ This is primarily an OpenAPI 2.0 spec-conformance check ensuring non-OAuth2 secu
 For OpenAPI/Swagger 2.0 documents, if a `security` requirement references a scheme whose `type` in `securityDefinitions` is anything other than `oauth2`, the associated scope array in that security requirement must be empty (`[]`), since only OAuth2 uses scopes.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** the `security` field (global `security` array or an operation-level `security` array), cross-referenced against `securityDefinitions`.
 

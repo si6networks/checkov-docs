@@ -9,6 +9,8 @@ Without TLS on the DAX cluster endpoint, all client traffic to the in-memory cac
 This check ensures that an Amazon DynamoDB Accelerator (DAX) cluster's `cluster_endpoint_encryption_type` is set to `TLS`, so client connections to the cluster endpoint are encrypted in transit.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_dax_cluster`
 

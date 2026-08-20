@@ -8,6 +8,8 @@ Disabling TLS certificate validation on get_url downloads lets a network-positio
 This check ensures that Ansible `get_url` tasks do not explicitly disable TLS/SSL certificate validation, which would expose downloads to man-in-the-middle tampering.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Applies to Ansible playbooks/roles, specifically any task using the `ansible.builtin.get_url` module (or its short alias `get_url`), including tasks nested inside `block:` structures up to four levels deep and tasks under `tasks:` blocks.
 
 ## Why it matters

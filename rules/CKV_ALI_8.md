@@ -8,6 +8,8 @@ The disk is already required to be encrypted; using a platform-managed key inste
 This check ensures that an Alibaba Cloud ECS cloud disk (`alicloud_disk`) is not only encrypted, but encrypted specifically using a customer-managed KMS key (`kms_key_id`), rather than a platform-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_disk`
 

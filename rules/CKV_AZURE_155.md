@@ -9,6 +9,8 @@ Leaving remote debugging enabled on an App Service slot exposes a live debugger 
 This check ensures that remote debugging is turned off on Azure App Service deployment slots, so a remote debugger port is not left open and reachable.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_app_service_slot`

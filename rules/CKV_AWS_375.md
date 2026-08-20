@@ -9,6 +9,8 @@ Granting FULL_CONTROL or READ_ACP to the AllUsers group hands anonymous internet
 This check flags an S3 bucket ACL that grants the `AllUsers` group (i.e., the entire internet) `FULL_CONTROL` or `READ_ACP` permission, which would let anyone read the bucket's access-control configuration or fully control the bucket.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_bucket_acl`
 

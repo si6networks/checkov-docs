@@ -9,6 +9,8 @@ Without a GKE network policy, pods can freely communicate with each other regard
 This check requires GKE clusters (`google_container_cluster`) to have Kubernetes Network Policy enabled (or to use the Dataplane V2 "ADVANCED_DATAPATH" provider, which enforces network policy natively), so that pod-to-pod traffic can be restricted rather than left fully open by default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource

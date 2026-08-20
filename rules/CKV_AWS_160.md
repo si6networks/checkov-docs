@@ -8,6 +8,8 @@ Timestream databases typically hold time-series telemetry, and encrypting with a
 This check verifies that an Amazon Timestream database specifies a KMS key for encrypting its stored time-series data.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_timestreamwrite_database`) and CloudFormation (`AWS::Timestream::Database`).
 
 ## Why it matters

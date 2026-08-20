@@ -9,6 +9,8 @@ Disabling the SQL server security alert policy removes detection of anomalous ac
 This check ensures an Azure SQL Server (`azurerm_sql_server`) has a Security Alert Policy (Advanced Threat Protection) attached and that its `state` is set to `Enabled`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_sql_server`, connected via `azurerm_mssql_server_security_alert_policy`.
 

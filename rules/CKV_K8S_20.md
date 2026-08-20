@@ -8,6 +8,8 @@ Allowing privilege escalation lets a process gain more privileges than its paren
 This check fails any container whose `securityContext.allowPrivilegeEscalation` is not explicitly set to `false`, since Kubernetes defaults this setting to allow privilege escalation (e.g. via setuid binaries) unless it is explicitly disabled.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `PodTemplate`, `Deployment`, `DeploymentConfig`, `ReplicaSet`, `ReplicationController`, `StatefulSet`, `DaemonSet`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`

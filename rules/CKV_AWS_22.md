@@ -8,6 +8,8 @@ A SageMaker notebook instance without a customer-managed KMS key relies on weake
 This check ensures that an Amazon SageMaker notebook instance (`aws_sagemaker_notebook_instance`) specifies a customer-managed KMS key (CMK) to encrypt its attached storage volume at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_sagemaker_notebook_instance`
 

@@ -8,6 +8,8 @@ Omitting a memory limit lets a container consume unbounded memory and trigger no
 This check verifies that every container in a Pod-carrying workload declares a memory value under `resources.limits`, so a container cannot consume unbounded memory on its node.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 Two independent implementations cover different IaC surfaces under this ID:
 - **Kubernetes** manifests: applicable entity kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet` — evaluated per-container, checking `resources.limits.memory`.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`.

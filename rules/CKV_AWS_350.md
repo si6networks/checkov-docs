@@ -8,6 +8,8 @@ EBS volumes attached to EMR nodes hold persistent job data and can be captured v
 Ensures an EMR security configuration that enables at-rest encryption also enables EBS volume encryption specifically, not just S3 or local-disk encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_emr_security_configuration`
 

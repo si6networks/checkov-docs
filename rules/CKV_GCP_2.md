@@ -8,6 +8,8 @@ A firewall rule permitting unrestricted ingress on SSH (port 22) from 0.0.0.0/0 
 This check fails when a `google_compute_firewall` resource has an `allow` ingress rule that permits TCP port 22 (SSH) from an unrestricted source range (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_firewall`
 - **Check type:** resource (implemented via the shared `AbsGoogleComputeFirewallUnrestrictedIngress` base class, parameterized with `PORT = 22`)

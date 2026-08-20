@@ -9,6 +9,8 @@ Disabling auto-upgrade on the Kubernetes cluster control plane means known secur
 This check ensures that the Yandex Managed Service for Kubernetes cluster master has auto-upgrade enabled in its maintenance policy, so the control plane automatically receives security and stability patches.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_kubernetes_cluster`
 - **Check type:** resource (negative value check)

@@ -8,6 +8,8 @@ Unrestricted outbound access to 0.0.0.0/0 lacks network egress segmentation, inc
 This check fails an NCloud `ncloud_access_control_group_rule` resource whenever it contains an outbound rule permitting traffic to any destination (`0.0.0.0/0` for IPv4 or `::/0` for IPv6).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_access_control_group_rule`
 - **Check type:** resource (custom `scan_resource_conf` logic)

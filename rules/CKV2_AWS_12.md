@@ -9,6 +9,8 @@ An unrestricted default security group can be inadvertently attached to resource
 This check ensures that the default security group automatically created with every AWS VPC is locked down to deny all inbound and outbound traffic, rather than being left with its permissive default rules or additional custom rules attached.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_vpc` resources, evaluated in connection with their `aws_default_security_group`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Enabling DSRI (Disable Server Response Inspection) in a security policy turns of
 This check ensures PAN-OS security policy rules do not enable "Disable Server Response Inspection" (DSRI), which if turned on skips content/threat inspection of server-to-client traffic.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 Terraform resources `panos_security_policy` and `panos_security_rule_group`, and Ansible task `tasks.paloaltonetworks.panos.panos_security_rule` (implemented as a Python resource check for Terraform and a graph-based JSON policy for Ansible).
 
 ## Why it matters

@@ -9,6 +9,8 @@ Unconstrained write-access IAM actions let a principal modify or destroy resourc
 Fails when an IAM policy grants write/modify-level actions (create, update, delete, put on data-plane resources) over an unconstrained resource scope with no restricting condition.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_iam_policy_document` (data source)
 - **CloudFormation**: `AWS::IAM::Group`, `AWS::IAM::ManagedPolicy`, `AWS::IAM::Policy`, `AWS::IAM::Role`, `AWS::IAM::User`
 

@@ -9,6 +9,8 @@ Disabling statement-duration logging (log_min_duration_statement = -1) prevents 
 This check fails when a `google_sql_database_instance` running PostgreSQL has the `log_min_duration_statement` database flag set to any value other than `-1`, which is Checkov's proxy for "not left at the safe default," since this flag (when set to a low positive threshold) causes full SQL statement text — potentially including literal parameter values such as passwords or PII — to be written to logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `POSTGRES`
 - **Check type:** resource check

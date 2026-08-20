@@ -8,6 +8,8 @@ An ACR webhook configured with a plain HTTP service URI transmits registry event
 This check verifies that an Azure Container Registry webhook's `service_uri` — the endpoint ACR calls when a registry event fires — uses HTTPS rather than plain HTTP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_container_registry_webhook`
 

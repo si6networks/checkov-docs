@@ -8,6 +8,8 @@ Without dismissing stale approvals on new commits, a previously reviewed and app
 This check fails when a branch protection rule does not automatically dismiss existing pull-request approvals after new commits are pushed, checked via `required_pull_request_reviews/dismiss_stale_reviews`.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings)
 - **Entities:** `*`, evaluated against `required_pull_request_reviews/dismiss_stale_reviews`
 

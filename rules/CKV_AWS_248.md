@@ -9,6 +9,8 @@ An Elasticsearch/OpenSearch domain left without an explicit security group falls
 This check ensures that an Elasticsearch/OpenSearch domain deployed inside a VPC has an explicit, dedicated security group assigned rather than falling back to the VPC's default security group.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource types:** `aws_elasticsearch_domain`, `aws_opensearch_domain`
 

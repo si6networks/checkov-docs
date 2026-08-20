@@ -9,6 +9,8 @@ Duplicate multistage build aliases are a correctness/maintainability defect (a l
 This check fails a Dockerfile using multistage builds if two or more `FROM ... AS <alias>` stages reuse the same alias name.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — specifically `FROM` instructions that include an `AS <alias>` clause, used in multistage builds.
 
 ## Why it matters

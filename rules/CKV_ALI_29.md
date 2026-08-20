@@ -8,6 +8,8 @@ An ALB ACL entry permitting 0.0.0.0/0 removes the access-control layer intended 
 This check fails any Alibaba Cloud Application Load Balancer (ALB) ACL entry attachment whose entry allows the unrestricted CIDR `0.0.0.0/0`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_alb_acl_entry_attachment`
 

@@ -8,6 +8,8 @@ Not requiring signed commits on protected branches makes it impossible to crypto
 This check ensures GitHub branch protection rules require that all commits pushed to a protected branch be cryptographically signed.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `github` provider, specifically the `github_branch_protection` and `github_branch_protection_v3` resources, at the `require_signed_commits` attribute.
 
 ## Why it matters

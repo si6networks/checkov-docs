@@ -8,6 +8,8 @@ Leaving Cosmos DB reachable over the public network broadens the attack surface 
 This check ensures that an Azure Cosmos DB account's public network access setting is disabled, so the account can only be reached through private endpoints/VNet integration rather than over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_cosmosdb_account` (inspects `public_network_access_enabled`)
 - **ARM/Bicep**: `Microsoft.DocumentDB/databaseAccounts` (inspects `properties/publicNetworkAccess`)
 

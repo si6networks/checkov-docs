@@ -9,6 +9,8 @@ Disabled control-plane and especially audit logging removes the primary forensic
 This check ensures that an `aws_eks_cluster` resource enables all five EKS control-plane log types (`api`, `audit`, `authenticator`, `controllerManager`, `scheduler`) rather than a subset or none.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** resource check
 - **Entities:** `aws_eks_cluster` (attribute `enabled_cluster_log_types`)

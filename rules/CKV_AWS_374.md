@@ -9,6 +9,8 @@ Missing CloudFront geo restriction is an access-control gap that limits abuse fr
 This check ensures that an Amazon CloudFront distribution has geographic (geo) restriction configured rather than left disabled, so content delivery can be limited to approved countries.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_cloudfront_distribution`
 

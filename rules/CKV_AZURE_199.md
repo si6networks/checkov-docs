@@ -9,6 +9,8 @@ This check only governs an additional infrastructure-level encryption layer on t
 This check ensures an Azure Service Bus namespace has infrastructure-level (double) encryption enabled on top of the standard service-side encryption, when using customer-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_servicebus_namespace`
 

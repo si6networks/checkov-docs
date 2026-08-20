@@ -9,6 +9,8 @@ Basic roles at the folder level grant broad Owner/Editor/Viewer permissions acro
 This check fails when a `google_folder_iam_member` or `google_folder_iam_binding` resource assigns a legacy GCP basic role (`roles/owner`, `roles/editor`, `roles/viewer`) at the folder level, since folder-level grants cascade to every project and sub-folder beneath them.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_folder_iam_member`, `google_folder_iam_binding`
 - **Check type:** resource

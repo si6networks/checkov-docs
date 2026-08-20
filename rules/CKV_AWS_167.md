@@ -9,6 +9,8 @@ A Glacier Vault access policy that permits any principal grants effectively publ
 This check requires that an S3 Glacier Vault's access policy does not grant broad, effectively-public access (e.g. `Principal: "*"` without adequate restriction), by analyzing the policy for internet-accessible actions.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_glacier_vault` (`access_policy` attribute)
 
 ## Why it matters

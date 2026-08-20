@@ -8,6 +8,8 @@ CloudWatch Log Groups can capture application, access, and audit data that occas
 This check verifies that a CloudWatch Logs log group has a KMS key configured for encrypting the log data at rest.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_cloudwatch_log_group`) and CloudFormation (`AWS::Logs::LogGroup`).
 
 ## Why it matters

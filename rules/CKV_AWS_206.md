@@ -8,6 +8,8 @@ An API Gateway custom domain pinned to an outdated TLS security policy permits w
 Ensures that an API Gateway custom domain name is configured with a modern TLS security policy, rather than an outdated policy that allows weaker TLS versions/ciphers.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_api_gateway_domain_name` — inspects the `security_policy` attribute.
 
 ## Why it matters

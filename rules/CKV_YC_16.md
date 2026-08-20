@@ -9,6 +9,8 @@ Without a Kubernetes network policy provider, pod-to-pod traffic is unrestricted
 This check fails when a Yandex Managed Service for Kubernetes cluster does not configure a `network_policy_provider`, meaning pod-to-pod traffic within the cluster is unrestricted by Kubernetes NetworkPolicy enforcement.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_kubernetes_cluster`
 

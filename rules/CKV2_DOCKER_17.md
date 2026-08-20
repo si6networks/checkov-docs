@@ -9,6 +9,8 @@ Using chpasswd to set account passwords directly in a Dockerfile RUN instruction
 This check verifies that no `RUN` instruction in a Dockerfile invokes the `chpasswd` utility to set or remove user passwords.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: any `RUN` instruction.
 
 This is a graph-based check that pattern-matches the literal text of `RUN` instruction values (start, contains, and end anchors).

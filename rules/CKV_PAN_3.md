@@ -8,6 +8,8 @@ Enabling Telnet on an Interface Management Profile exposes an entirely unencrypt
 This check ensures that PAN-OS Interface Management Profiles do not enable Telnet for management access, since Telnet transmits authentication credentials and session data completely unencrypted.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 Terraform resource `panos_management_profile`, and Ansible task `tasks.paloaltonetworks.panos.panos_management_profile` (implemented both as a Python resource check for Terraform and as a graph-based JSON policy for Ansible).
 
 ## Why it matters

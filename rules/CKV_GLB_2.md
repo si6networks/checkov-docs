@@ -8,6 +8,8 @@ Allowing force pushes on protected GitLab branches lets an actor rewrite commit 
 This check ensures GitLab branch protection settings do not permit force pushes to protected branches.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `gitlab` provider, specifically the `gitlab_branch_protection` resource, at the `allow_force_push` attribute.
 
 ## Why it matters

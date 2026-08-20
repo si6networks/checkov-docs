@@ -8,6 +8,8 @@ Disabled X-Ray tracing only reduces distributed-tracing observability for API Ga
 This check fails when an API Gateway stage does not have AWS X-Ray active tracing enabled, meaning distributed request traces through the API are not captured.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::ApiGateway::Stage`, `AWS::Serverless::Api` (CloudFormation/SAM), `aws_api_gateway_stage` (Terraform)
 - **Check type:** resource

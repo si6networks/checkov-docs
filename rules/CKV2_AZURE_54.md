@@ -9,6 +9,8 @@ Lack of auditing on a Synapse SQL Pool limits the ability to detect and investig
 This check verifies that every Synapse dedicated SQL pool has an associated auditing/extended-auditing policy with log monitoring enabled, so that queries run against the SQL pool are recorded.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `terraform`
+
 - **Terraform**: `azurerm_synapse_sql_pool` (must be connected to an `azurerm_synapse_sql_pool_extended_auditing_policy` resource)
 - **ARM templates**: `Microsoft.Synapse/workspaces/sqlPools` (must have a nested `Microsoft.Synapse/workspaces/sqlPools/auditingSettings` resource)
 

@@ -9,6 +9,8 @@ A leaked SoftLayer/IBM Cloud API key grants programmatic control over bare-metal
 This check scans file contents for hardcoded IBM Cloud/SoftLayer API credentials (username plus API key), flagging static infrastructure-provider credentials committed directly into source or config files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (Terraform provider blocks, config files, scripts, CI pipeline definitions, `.softlayer`/`.slcli` config, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched credential string within a file; findings are reported at the file/line level.
 

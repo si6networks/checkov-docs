@@ -8,6 +8,8 @@ Skipping Synapse's managed virtual network leaves data-plane traffic to linked s
 This check fails when an Azure Synapse Analytics workspace does not have managed virtual network isolation enabled, leaving Spark pools and integration runtimes without the platform-managed network boundary.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_synapse_workspace`), ARM templates, and Bicep, for the resource type `Microsoft.Synapse/workspaces`.
 
 ## Why it matters

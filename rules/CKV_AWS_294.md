@@ -8,6 +8,8 @@ This check verifies CloudTrail Event Data Store encryption uses a customer-manag
 This check ensures that an `aws_cloudtrail_event_data_store` resource specifies a `kms_key_id`, so the stored audit event data is encrypted with a customer-managed KMS key rather than relying on default/no encryption configuration.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_cloudtrail_event_data_store`
 

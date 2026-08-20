@@ -9,6 +9,8 @@ Disabling the HTTPS delivery endpoint removes the only encrypted transport optio
 This check ensures that an Azure CDN endpoint has the HTTPS delivery endpoint enabled (`is_https_allowed = true`), so content can be served over TLS.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_cdn_endpoint`
 

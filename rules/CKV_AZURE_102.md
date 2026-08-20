@@ -8,6 +8,8 @@ Missing geo-redundant backups on a PostgreSQL server is primarily an availabilit
 This check ensures that an Azure Database for PostgreSQL (single server) instance is configured to store its automated backups in a geo-redundant storage account rather than only locally-redundant storage.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_postgresql_server` (inspects `geo_redundant_backup_enabled`)
 - **ARM/Bicep**: `Microsoft.DBforPostgreSQL/servers` (inspects `properties/storageProfile/geoRedundantBackup`)
 

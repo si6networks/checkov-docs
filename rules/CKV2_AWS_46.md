@@ -8,6 +8,8 @@ A CloudFront distribution with an S3 origin lacking Origin Access Identity/Contr
 This check fails when a CloudFront distribution using an S3 bucket as its origin does not have Origin Access Identity (`s3_origin_config`) or Origin Access Control (`origin_access_control_id`) configured, meaning the S3 origin can potentially be reached directly, bypassing CloudFront.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_cloudfront_distribution`
 

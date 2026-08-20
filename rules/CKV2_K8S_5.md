@@ -9,6 +9,8 @@ Unrestricted read access to all Secrets exposes every credential, token, and key
 This check ensures no Role/ClusterRole bound to a ServiceAccount or Node grants unrestricted `get`/`watch`/`list` (or `*`) verb permission on `secrets` (or `*`) resources — i.e. without a `resourceNames` restriction limiting it to specific, named secrets.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests. Applies to `Role`, `ClusterRole`, `RoleBinding`, and `ClusterRoleBinding` resource kinds, evaluated as a connected RBAC graph.
 
 ## Why it matters

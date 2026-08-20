@@ -8,6 +8,8 @@ Leaving Azure Cache for Redis reachable from the public internet exposes an in-m
 This check verifies that Azure Cache for Redis instances have public network access disabled, forcing all connectivity through private endpoints/VNet integration instead of the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_redis_cache` (inspects `public_network_access_enabled`)
 - **ARM templates**: `Microsoft.Cache/redis` (inspects `properties.publicNetworkAccess`)
 - **Bicep**: resources compiling to `Microsoft.Cache/redis`

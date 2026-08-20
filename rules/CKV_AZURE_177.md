@@ -9,6 +9,8 @@ Disabling automatic OS updates on a Windows VM leaves known, patched vulnerabili
 This check ensures that Windows Azure Virtual Machines and VM Scale Sets have automatic OS updates enabled so security patches are applied without manual intervention.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_windows_virtual_machine`, `azurerm_windows_virtual_machine_scale_set` (`enable_automatic_updates`).
 - **ARM/Bicep**: `Microsoft.Compute/virtualMachines`, `Microsoft.Compute/virtualMachineScaleSets` (`properties.osProfile.windowsConfiguration.enableAutomaticUpdates` / the VMSS equivalent under `virtualMachineProfile`).
 

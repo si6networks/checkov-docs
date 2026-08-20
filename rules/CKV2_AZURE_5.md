@@ -9,6 +9,8 @@ This check ensures vulnerability-assessment alert emails reach admins and subscr
 This check ensures an Azure SQL server's vulnerability assessment is configured to notify subscription admins/owners (or an explicit email list) whenever recurring vulnerability scans complete.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource types:** `azurerm_mssql_server` / `azurerm_sql_server` connected to `azurerm_mssql_server_security_alert_policy`, connected to `azurerm_mssql_server_vulnerability_assessment`
 

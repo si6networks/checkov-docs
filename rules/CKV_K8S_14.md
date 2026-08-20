@@ -8,6 +8,8 @@ Using a mutable `latest`/blank image tag undermines deployment integrity and rol
 This check requires every container image reference to use a specific, immutable tag (or digest) instead of the mutable `:latest` tag or an omitted tag (which also defaults to `latest`).
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes** manifests: workload kinds with a container spec — `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`.
 - **Terraform**: `kubernetes_deployment`, `kubernetes_deployment_v1`, `kubernetes_pod`, `kubernetes_pod_v1` resources.
 In both cases it inspects each container's `image` field.

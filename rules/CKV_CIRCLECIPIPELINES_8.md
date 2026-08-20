@@ -9,6 +9,8 @@ This check is purely informational (it unconditionally passes and only inventori
 This is an inventory/detection check that records the Docker `image` used by CircleCI executors and jobs; as implemented, it does not actually fail configurations — it always reports a pass and exists to surface image usage data (e.g. for downstream image-vulnerability correlation).
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 Applies to CircleCI Pipeline configuration files (`.circleci/config.yml`), specifically the `image` field under `executors.*.docker[]` and `jobs.*.docker[]` blocks (the Docker executor images used to run CircleCI jobs).
 
 ## Why it matters

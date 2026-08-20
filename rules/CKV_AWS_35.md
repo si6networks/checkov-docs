@@ -8,6 +8,8 @@ CloudTrail logs are a sensitive audit trail of account activity; encrypting them
 Requires AWS CloudTrail trails to encrypt their delivered log files at rest using a customer-managed KMS key, rather than relying only on default Amazon S3-managed (SSE-S3) encryption.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks**: CloudFormation, Terraform
 - **Resource types**: `AWS::CloudTrail::Trail` (CloudFormation), `aws_cloudtrail` (Terraform)
 

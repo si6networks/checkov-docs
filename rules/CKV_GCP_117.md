@@ -9,6 +9,8 @@ Basic roles at the project level (Owner/Editor) grant sweeping, unscoped permiss
 This check fails when a `google_project_iam_member` or `google_project_iam_binding` resource assigns a legacy GCP basic role (`roles/owner`, `roles/editor`, `roles/viewer`) at the project level, since these roles grant sweeping, poorly-scoped permissions across the entire project.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_project_iam_member`, `google_project_iam_binding`
 - **Check type:** resource

@@ -9,6 +9,8 @@ Without a managed identity, Cognitive Search must use static credentials to reac
 This check ensures an Azure Cognitive Search service has a system-assigned managed identity configured, so it can authenticate to other Azure resources (such as data sources or Key Vault) without stored credentials.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_search_service`
 

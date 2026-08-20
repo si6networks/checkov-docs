@@ -9,6 +9,8 @@ Permitting TLS versions below 1.2 on an Azure SQL server allows database connect
 This check verifies that an Azure SQL (MSSQL) server enforces a minimum TLS version of 1.2 (or higher) for client connections, rejecting older, weaker TLS protocol negotiations.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mssql_server`
 - **ARM templates**: `Microsoft.Sql/servers`
 - **Bicep**: `Microsoft.Sql/servers`

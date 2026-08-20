@@ -8,6 +8,8 @@ Logging only reads or only writes instead of all events leaves a class of accoun
 This check ensures that an Alibaba Cloud ActionTrail trail is configured to log both read and write API events (`event_rw = "All"`), not just one category.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_actiontrail_trail`
 

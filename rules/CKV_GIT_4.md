@@ -8,6 +8,8 @@ Storing GitHub Actions secret values as plaintext in Terraform configuration har
 This check ensures GitHub Actions secret Terraform resources do not store a secret's value in plaintext directly in the Terraform configuration via `plaintext_value`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `github` provider, specifically the `github_actions_environment_secret`, `github_actions_organization_secret`, and `github_actions_secret` resources, at the `plaintext_value` attribute.
 
 ## Why it matters

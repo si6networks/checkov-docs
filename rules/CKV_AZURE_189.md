@@ -9,6 +9,8 @@ Allowing public network access to Azure Key Vault exposes an internet-reachable 
 This check ensures an Azure Key Vault either disables public network access entirely or, if public access remains enabled, at least restricts it via network ACLs (IP rules or virtual network subnet restrictions).
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform (`azurerm` provider), ARM templates, Bicep (compiled to ARM)
 - **Resource types:**
   - ARM: `Microsoft.KeyVault/vaults`

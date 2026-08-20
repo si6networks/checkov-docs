@@ -8,6 +8,8 @@ This check verifies API Gateway method-level caching is configured with cache_da
 This check ensures that on an `aws_api_gateway_method_settings` resource, if response caching is enabled (`caching_enabled = true`), then `cache_data_encrypted` must also be set to `true` so cached API responses are encrypted at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_api_gateway_method_settings`
 

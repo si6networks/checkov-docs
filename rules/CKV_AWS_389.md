@@ -9,6 +9,8 @@ Auto-assigning public IP addresses to instances launched from an Auto Scaling la
 This check ensures an EC2 Auto Scaling launch configuration does not automatically assign a public IP address to the instances it launches.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_launch_configuration`
 

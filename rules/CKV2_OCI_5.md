@@ -9,6 +9,8 @@ Disabling in-transit encryption for OKE node pool block storage leaves data movi
 This check ensures OCI Container Engine for Kubernetes (OKE) node pools enable `is_pv_encryption_in_transit_enabled` on `node_config_details`, so that data traveling between the compute instance and its attached block/boot volumes is encrypted in transit.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `oci_containerengine_node_pool` resource, specifically the `node_config_details.is_pv_encryption_in_transit_enabled` attribute.
 
 ## Why it matters

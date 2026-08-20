@@ -9,6 +9,8 @@ Lacking origin failover only affects availability of the CloudFront distribution
 This check ensures CloudFront distributions define an origin group with failover criteria and at least two member origins, so traffic automatically fails over to a secondary origin if the primary becomes unavailable.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_cloudfront_distribution`
 

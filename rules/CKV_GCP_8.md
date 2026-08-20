@@ -8,6 +8,8 @@ Disabling cluster monitoring is a detection/observability gap that delays recogn
 This check ensures a GKE cluster has Cloud Monitoring (formerly Stackdriver Monitoring) enabled rather than explicitly disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 

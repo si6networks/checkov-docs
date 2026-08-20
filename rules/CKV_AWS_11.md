@@ -9,6 +9,8 @@ Omitting the lowercase-character requirement weakens password complexity and bru
 Fails when the AWS account's IAM password policy does not require at least one lowercase character in user passwords.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_iam_account_password_policy` resource.
 
 ## Why it matters

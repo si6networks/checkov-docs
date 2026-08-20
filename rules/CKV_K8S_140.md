@@ -8,6 +8,8 @@ Without a --client-ca-file, the kubelet cannot validate client certificates for 
 This check ensures the kubelet is configured with a `--client-ca-file` pointing to a non-empty value, so client certificate authentication for requests to the kubelet API is enabled.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting only when the command invokes `kubelet` (kubelet static-pod / wrapper manifests).
 
 ## Why it matters

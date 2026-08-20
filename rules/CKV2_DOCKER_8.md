@@ -8,6 +8,8 @@ apt-get's --allow-unauthenticated flag disables GPG signature checks on Debian/U
 This check fails a Dockerfile if any `RUN` instruction invokes Debian/Ubuntu's `apt-get` with `--allow-unauthenticated`, which permits installing packages that fail GPG signature verification.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds (Debian/Ubuntu-based images). Implemented as a Checkov graph-based JSON policy scanning `RUN` instructions.
 
 ## Why it matters

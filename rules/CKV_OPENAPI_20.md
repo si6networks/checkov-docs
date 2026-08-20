@@ -9,6 +9,8 @@ Allowing an apiKey-based security scheme on operations reachable over unencrypte
 No operation that requires an `apiKey`-type security scheme should be reachable over an unencrypted transport (`http`/`ws`), since API keys sent in cleartext are as easily stolen as passwords.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (both Swagger 2.0 `securityDefinitions` and OpenAPI 3.x `components.securitySchemes` — this is a "generic" version-agnostic check).
 - **Entity:** `paths` (operations using `apiKey`-type schemes), evaluated together with `schemes` (2.0) / `servers` (3.x) and `securityDefinitions`/`components.securitySchemes`.
 

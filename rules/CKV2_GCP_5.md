@@ -9,6 +9,8 @@ Exempting members from audit logging for allServices creates a blind spot that l
 This check ensures that a GCP project has an audit log config (`google_project_iam_audit_config`) applying to `allServices`, with no exempted members, so that Admin Activity, Data Access, and System Event logs are captured for every user and every service in the project without carve-outs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_project`, `google_project_iam_audit_config`
 

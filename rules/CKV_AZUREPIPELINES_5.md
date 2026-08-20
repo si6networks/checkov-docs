@@ -9,6 +9,8 @@ This check only detects and inventories container image usage within pipeline de
 This is an informational/inventory check, not a pass/fail security gate — it exists so Checkov's supply-chain graph can enumerate every container image reference used across a pipeline's jobs, for use by other checks and by SCA/inventory tooling, and it always reports a passing result itself.
 
 ## Applicability
+**Checkov framework(s):** `azure_pipelines`
+
 - **Azure Pipelines** YAML pipeline definitions — applies to `jobs[]`, `stages[].jobs[]`, and any `container[]` entries found anywhere in the document (the `*.container[]` wildcard entity), i.e., it walks the whole pipeline looking for container image references.
 
 ## Why it matters

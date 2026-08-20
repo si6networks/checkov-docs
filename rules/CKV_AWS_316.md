@@ -9,6 +9,8 @@ Privileged mode grants the CodeBuild container host-level Docker access, so a co
 This check ensures AWS CodeBuild projects do not run their build environment in Docker "privileged mode" unless it is genuinely required.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_codebuild_project`
 

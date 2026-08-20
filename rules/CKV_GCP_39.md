@@ -9,6 +9,8 @@ Shielded VM protections (secure boot, vTPM, integrity monitoring) defend against
 This check requires a GCE instance's `shielded_instance_config` block to have both `enable_vtpm` and `enable_integrity_monitoring` set to `true`, enabling Shielded VM protections against boot- and kernel-level rootkits.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_compute_instance`, `google_compute_instance_template`, and `google_compute_instance_from_template`.
 
 ## Why it matters

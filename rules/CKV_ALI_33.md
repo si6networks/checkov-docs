@@ -8,6 +8,8 @@ Allowing TLS 1.0/1.1 on the load balancer permits use of protocol versions with 
 This check ensures that an Alibaba Cloud SLB (Server Load Balancer) TLS cipher policy does not permit the deprecated and insecure TLS 1.0 or TLS 1.1 protocol versions.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_slb_tls_cipher_policy`
 

@@ -9,6 +9,8 @@ Azure Database for MySQL is encrypted at rest by default with service-managed ke
 This check ensures an Azure Database for MySQL (single) server has transparent data encryption configured with a customer-managed key backed by Azure Key Vault, rather than only Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_mysql_server`, connected via `azurerm_mysql_server_key`, which in turn must be connected to an `azurerm_key_vault_key`.
 

@@ -8,6 +8,8 @@ Undefined security scopes break the authoritative link between an operation's de
 This check ensures that every OAuth2 security scope referenced by an operation in an OpenAPI 2.0 (Swagger) document is actually declared in the top-level `securityDefinitions` block, so that access-control scopes used in the API cannot silently be undefined or mistyped.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 Applies to OpenAPI (Swagger) 2.0 specification files. Checkov evaluates the `paths` object of the document (entity type `paths`), examining each path's operations and their `security` requirements against the document-level `securityDefinitions`.
 
 ## Why it matters

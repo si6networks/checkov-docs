@@ -8,6 +8,8 @@ An inadequate audit-log retention (max-age) window shortens the historical windo
 This check verifies that a self-managed `kube-apiserver` container retains audit log files for at least 30 days via `--audit-log-maxage=30` (or higher).
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest, and only meaningful when audit logging is enabled (see CKV_K8S_91).
 
 ## Why it matters

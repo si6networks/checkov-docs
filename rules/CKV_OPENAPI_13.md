@@ -9,6 +9,8 @@ HTTP Basic authentication sends credentials as trivially-reversible base64 on ev
 For Swagger 2.0 documents, no entry in `securityDefinitions` should have `type: basic` (HTTP Basic authentication).
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `securityDefinitions`.
 

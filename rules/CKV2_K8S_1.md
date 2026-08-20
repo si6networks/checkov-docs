@@ -9,6 +9,8 @@ Grants a ServiceAccount/Node the ability to create new RoleBindings binding itse
 This check ensures that no `Role`/`ClusterRole` grants `bind` (or wildcard `*`) verb permission on `rolebindings`/`clusterrolebindings` resources to a `ServiceAccount` or `Node` subject, since that permission would let the subject create new RoleBindings that grant itself arbitrary additional privileges.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests. Applies to `Role`, `ClusterRole`, `RoleBinding`, and `ClusterRoleBinding` resource kinds (RBAC objects), evaluated together as a connected graph (a RoleBinding/ClusterRoleBinding linked to the Role/ClusterRole it references).
 
 ## Why it matters

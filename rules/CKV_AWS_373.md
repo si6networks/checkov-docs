@@ -9,6 +9,8 @@ Relying on AWS-owned default encryption instead of a customer-managed key remove
 This check ensures that an Amazon Bedrock Agent resource specifies a customer-managed KMS key (CMK) to encrypt the agent's data, rather than relying on AWS-managed default encryption.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::Bedrock::Agent` (property `CustomerEncryptionKeyArn`), `aws_bedrockagent_agent` (attribute `customer_encryption_key_arn`)

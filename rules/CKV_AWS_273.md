@@ -9,6 +9,8 @@ Standalone IAM users typically rely on long-lived static access keys that bypass
 This check enforces that access to AWS should be granted via federated SSO (e.g., AWS IAM Identity Center / SAML federation) rather than standalone IAM users — it flags every `aws_iam_user` resource unconditionally as a finding, since the mere existence of an IAM user represents a non-SSO access path.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_iam_user` (any and all instances)
 
 ## Why it matters

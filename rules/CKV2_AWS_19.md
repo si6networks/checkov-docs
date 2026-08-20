@@ -9,6 +9,8 @@ Unattached Elastic IPs are an operational/cost hygiene issue with no meaningful 
 This check ensures that Elastic IP (EIP) addresses allocated for VPC use are actually attached to something (an EC2 instance, NAT gateway, or transfer server), not left dangling and unused.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_eip` resources (with `vpc = true` or `domain = "vpc"`), evaluated in connection with `aws_instance`, `aws_eip_association`, `aws_nat_gateway`, or `aws_transfer_server`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Unencrypted data disks provisioned via a launch template leave persistent VM dat
 This check ensures that any data disks defined inside an Alibaba Cloud ECS launch template are configured with encryption enabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_ecs_launch_template`
 

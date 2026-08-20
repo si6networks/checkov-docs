@@ -9,6 +9,8 @@ IAM policies that permit permissions-management or resource-exposure actions wit
 Fails when an IAM policy grants permissions-management actions (actions that can modify IAM permissions or resource-based policies, e.g. `iam:PutRolePolicy`, `iam:AttachUserPolicy`, `sns:AddPermission`) over resources without any restricting `Condition` or resource ARN constraint.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_iam_policy_document` (data source)
 - **CloudFormation**: `AWS::IAM::Group`, `AWS::IAM::ManagedPolicy`, `AWS::IAM::Policy`, `AWS::IAM::Role`, `AWS::IAM::User`
 

@@ -9,6 +9,8 @@ Allowing IMDSv1 permits any code that can coerce a single unauthenticated GET re
 This check ensures that a SageMaker Notebook Instance's Instance Metadata Service configuration requires version 2 (IMDSv2), preventing use of the older, more vulnerable IMDSv1.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::SageMaker::NotebookInstance` (property `InstanceMetadataServiceConfiguration/MinimumInstanceMetadataServiceVersion`), `aws_sagemaker_notebook_instance` (attribute `instance_metadata_service_configuration[0].minimum_instance_metadata_service_version`)

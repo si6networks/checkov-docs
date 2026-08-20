@@ -8,6 +8,8 @@ An Application Gateway listener accepting HTTP allows client traffic to traverse
 Ensures that Azure Application Gateway HTTP listeners are configured to use the `Https` protocol instead of plain `Http`, so client connections to the gateway are encrypted in transit.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_application_gateway` — inspects `http_listener[0].protocol`
 
 ## Why it matters

@@ -8,6 +8,8 @@ log_statement_stats is a verbose PostgreSQL profiling flag whose recommended 'of
 This check ensures that Cloud SQL PostgreSQL instances do not have the `log_statement_stats` database flag turned on, since it is a debugging feature that adds end-to-end statement profiling overhead and should stay disabled in normal operation.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, specifically the `google_sql_database_instance` resource, and only when `database_version` indicates a PostgreSQL engine.
 
 ## Why it matters

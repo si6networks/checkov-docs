@@ -9,6 +9,8 @@ The OAuth2 'password' grant flow requires the client to directly handle and tran
 This check ensures that no operation in a Swagger 2.0 OpenAPI specification uses the OAuth2 "password" grant flow (Resource Owner Password Credentials) for authentication.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **Framework:** OpenAPI (Swagger 2.0 specification documents)
 - **Entity:** `paths` (operations within the document, cross-referenced with `securityDefinitions`)
 

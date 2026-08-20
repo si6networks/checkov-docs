@@ -8,6 +8,8 @@ Missing log_duration on RDS reduces query-performance and forensic visibility bu
 This check ensures that the Alibaba Cloud RDS (PostgreSQL) database parameter `log_duration` is enabled, so the execution duration of each SQL statement is recorded in the database logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 

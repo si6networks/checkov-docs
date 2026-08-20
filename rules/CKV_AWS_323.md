@@ -9,6 +9,8 @@ Using the default ElastiCache subnet group can place the cluster in a less delib
 This check ensures ElastiCache clusters explicitly specify a custom `subnet_group_name` rather than relying on the account/region's default subnet group.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_elasticache_cluster`
 

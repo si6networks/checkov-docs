@@ -9,6 +9,8 @@ As with single-instance RDS, skipping IAM authentication on a cluster leaves log
 This check requires that Aurora/RDS clusters have IAM database authentication enabled, allowing database logins to be authorized and audited through AWS IAM rather than static database passwords alone.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_rds_cluster`
 - **CloudFormation**: `AWS::RDS::DBCluster`
 

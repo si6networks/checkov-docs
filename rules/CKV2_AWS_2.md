@@ -9,6 +9,8 @@ Unencrypted EBS volumes attached to EC2 instances leave data at rest exposed if 
 This check ensures that any EBS volume that is actually attached to an EC2 instance (via `aws_volume_attachment`) has encryption enabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_ebs_volume` resources, evaluated in connection with `aws_volume_attachment` resources.
 
 ## Why it matters

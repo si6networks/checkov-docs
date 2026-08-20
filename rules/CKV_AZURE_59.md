@@ -8,6 +8,8 @@ Allowing public network access to a storage account removes the network-layer ba
 This check fails when an Azure Storage Account has public network access enabled, meaning the storage account's data plane (blob/file/queue/table endpoints) is reachable from the public internet rather than being restricted to private/virtual network connectivity.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_storage_account`), ARM templates, and Bicep, for the resource type `Microsoft.Storage/storageAccounts`.
 
 ## Why it matters

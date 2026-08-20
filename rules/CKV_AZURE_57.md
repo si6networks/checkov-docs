@@ -8,6 +8,8 @@ A wildcard CORS policy on App Services removes the browser's cross-origin protec
 This check fails when an Azure App Service's CORS configuration allows all origins (`*`), which permits any website on the internet to make cross-origin browser requests to the app service.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`), ARM templates, and Bicep, for the resource type `Microsoft.Web/sites`.
 
 ## Why it matters

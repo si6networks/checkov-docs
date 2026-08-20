@@ -9,6 +9,8 @@ A rule with both source and destination addresses set to `any` is effectively an
 This check fails a Palo Alto Networks (PAN-OS) security policy rule when **both** its source and destination addresses are set to `any`, since that combination effectively allows traffic between every zone/host pair the rule's zones cover.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 - **Terraform**: resource types `panos_security_policy` and `panos_security_rule_group` (each `rule` block, attributes `source_addresses` / `destination_addresses`).
 - **Ansible**: task `tasks.paloaltonetworks.panos.panos_security_rule` (attributes `source_ip` / `destination_ip`), evaluated via a Checkov graph check.
 

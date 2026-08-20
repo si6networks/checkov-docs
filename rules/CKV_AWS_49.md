@@ -8,6 +8,8 @@ An IAM policy statement that allows "*" as its actions grants effectively unrest
 This check flags IAM policy documents that contain an `Allow` statement granting the wildcard action `"*"`, which grants unrestricted permissions across every AWS action the attached principal can reach.
 
 ## Applicability
+**Checkov framework(s):** `serverless`, `terraform`
+
 - **Frameworks:** Terraform, Serverless Framework
 - **Resource/entity types:**
   - Terraform: `aws_iam_policy_document` (data source), inspecting `statement` blocks

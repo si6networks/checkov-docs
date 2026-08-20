@@ -8,6 +8,8 @@ A security group allowing ingress from 0.0.0.0/0 on port 22 exposes SSH to the e
 This check flags OpenStack security group rules that allow unrestricted inbound access (`0.0.0.0/0`) to port 22 — the standard SSH port — over TCP or UDP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource types `openstack_compute_secgroup_v2` (legacy Nova security groups, using nested `rule` blocks) and `openstack_networking_secgroup_rule_v2` (Neutron security group rules).
 
 ## Why it matters

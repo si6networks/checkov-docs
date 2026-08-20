@@ -8,6 +8,8 @@ Without RestrictPublicBuckets, cross-account or public principals can access the
 This check verifies that an S3 bucket's Public Access Block configuration has `RestrictPublicBuckets` (CloudFormation) / `restrict_public_buckets` (Terraform) set to `true`, which restricts access to buckets/objects that have public bucket policies to only AWS services and authorized principals within the account.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::S3::Bucket` resources, property `Properties/PublicAccessBlockConfiguration/RestrictPublicBuckets`.
 - **Terraform**: `aws_s3_bucket_public_access_block` resource, attribute `restrict_public_buckets`.
 

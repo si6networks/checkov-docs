@@ -8,6 +8,8 @@ A SQL Server firewall rule of 0.0.0.0-0.0.0.0 is Azure's sentinel for 'allow all
 This check verifies that an Azure SQL (or MSSQL) server firewall rule is not scoped to the special `0.0.0.0`–`0.0.0.0` range, which represents the "allow all Azure services" catch-all rather than an intentionally scoped IP range.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource types involved:** `azurerm_sql_firewall_rule`, `azurerm_mssql_firewall_rule`
 

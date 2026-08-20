@@ -9,6 +9,8 @@ Disabled Defender for SQL-on-machines removes a detective control for threats ag
 This check ensures the Microsoft Defender for Cloud pricing tier for the `SqlServerVirtualMachines` resource type is set to `Standard` (i.e. Defender for SQL servers on machines is enabled), rather than left on the free tier.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_security_center_subscription_pricing`
 - **ARM/Bicep**: `Microsoft.Security/pricings`
 

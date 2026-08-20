@@ -9,6 +9,8 @@ Missing MWAA webserver log shipping removes visibility into access to the Airflo
 This check ensures that an AWS Managed Workflows for Apache Airflow (MWAA) environment publishes its Airflow webserver logs to CloudWatch Logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_mwaa_environment`
 

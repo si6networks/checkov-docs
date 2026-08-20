@@ -9,6 +9,8 @@ The AMI copy is still encrypted, but relying on the AWS-managed default key inst
 This check ensures that a copied Amazon Machine Image (`aws_ami_copy`) is encrypted using a customer-managed KMS key (CMK) rather than the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ami_copy`
 

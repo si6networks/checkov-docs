@@ -9,6 +9,8 @@ Without manual acceptance required, any principal that discovers the VPC Endpoin
 Fails when a VPC Endpoint Service (used to expose a service via AWS PrivateLink) does not require the service owner to manually accept new connection requests from consumer VPCs.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_vpc_endpoint_service` resource.
 - **CloudFormation**: `AWS::EC2::VPCEndpointService`.
 

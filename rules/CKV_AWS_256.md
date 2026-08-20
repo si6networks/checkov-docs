@@ -9,6 +9,8 @@ As with the action-based equivalent, the copy is already encrypted here; lacking
 This check ensures that AWS Data Lifecycle Manager (DLM) `schedule`-level `cross_region_copy_rule` blocks are both encrypted and use a customer-managed KMS key (CMK), rather than the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_dlm_lifecycle_policy`
 

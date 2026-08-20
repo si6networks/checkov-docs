@@ -9,6 +9,8 @@ A custom role definition scoped to a subscription can grant effectively unrestri
 This check flags custom Azure RBAC role definitions that grant full wildcard (`*`) actions while being assignable at the subscription scope, effectively recreating the built-in Owner role.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_role_definition`
 - **ARM templates**: `Microsoft.Authorization/roleDefinitions`
 - **Bicep**: `Microsoft.Authorization/roleDefinitions`

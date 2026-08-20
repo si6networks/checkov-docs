@@ -8,6 +8,8 @@ Not requiring status checks to pass before merge allows code that fails security
 This check fails when a branch protection rule does not require status checks to pass before merging (`required_status_checks`), meaning code can be merged into a protected branch even if CI, tests, linting, or security scans have failed or never run.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings)
 - **Entities:** `*`, evaluated against the `required_status_checks` field
 

@@ -9,6 +9,8 @@ Without an Azure AD admin configured, the SQL server relies solely on local SQL 
 This check verifies that every Azure SQL Server has an Azure Active Directory (Azure AD) administrator configured, rather than relying solely on SQL authentication.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_sql_server` (must be connected to an `azurerm_sql_active_directory_administrator` resource)
 
 This is a graph-based connection check.

@@ -9,6 +9,8 @@ A Service that exposes the highly privileged, unauthenticated-by-default Tiller 
 This check flags Kubernetes `Service` resources that expose the Tiller (Helm v2) component, identified by name, labels, or selector.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: resource kind `Service`.
 - **Terraform**: resource types `kubernetes_service`, `kubernetes_service_v1`.
 

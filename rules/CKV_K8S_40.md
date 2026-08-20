@@ -9,6 +9,8 @@ Running with a low UID mainly risks accidental collision with a real host user a
 This check ensures containers run with a UID of 10000 or higher (via `runAsUser` at pod or container level), rather than a low UID that might collide with a real user account on the host.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only, kinds: `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`. Inspected at `securityContext.runAsUser` at both pod and container scope.
 
 ## Why it matters

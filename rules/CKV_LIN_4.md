@@ -9,6 +9,8 @@ Requiring a username to be explicitly set is a configuration-completeness/hygien
 This check ensures every Linode Cloud Manager user resource (`linode_user`) has a `username` attribute explicitly defined, so each provisioned account has a unique, identifiable login name.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `linode_user`
 - **Check type:** resource-configuration attribute check

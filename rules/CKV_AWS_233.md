@@ -9,6 +9,8 @@ This is an availability/ordering safeguard for certificate replacement rather th
 This check ensures that `aws_acm_certificate` resources declare a `lifecycle { create_before_destroy = true }` block, so that a replacement certificate is issued before the old one is destroyed.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_acm_certificate`
 

@@ -8,6 +8,8 @@ Requiring linear history is primarily an operational/audit-clarity practice and 
 This check enforces that a protected branch's branch protection rule requires a linear commit history, blocking merge commits in favor of rebase or squash merges.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization/repository configuration (`github_configuration` IaC type, entity `*`), evaluated against branch protection settings, specifically `required_linear_history.enabled`.
 
 ## Why it matters

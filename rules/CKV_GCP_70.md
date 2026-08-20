@@ -8,6 +8,8 @@ Not enrolling in a release channel is a patch-management hygiene gap that increa
 This check ensures GKE clusters are enrolled in a release channel (Rapid, Regular, or Stable) so Google manages automatic version upgrades on a defined cadence, rather than the cluster running on an unmanaged, static Kubernetes version.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 

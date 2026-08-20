@@ -9,6 +9,8 @@ Disabled RDS log exports (audit, error, general, slow-query) remove a key detect
 This check requires that an RDS instance export at least one log type to CloudWatch Logs via `enabled_cloudwatch_logs_exports`, ensuring database activity and error logs are retained centrally rather than only on the instance itself.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_db_instance`
 

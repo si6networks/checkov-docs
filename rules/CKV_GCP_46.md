@@ -9,6 +9,8 @@ Binding IAM roles to the default Compute/App Engine service account at the proje
 This check fails when a `google_project_iam_member` or `google_project_iam_binding` resource grants a role to the project's default Compute Engine or App Engine service account, rather than to a purpose-built service account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_project_iam_member` and `google_project_iam_binding`.
 
 **Note on source:** Checkov implements this as `GoogleProjectMemberDefaultServiceAccount`, a thin subclass of the shared `AbsGoogleIAMMemberDefaultServiceAccount` base class. That abstract base's implementation was not included in the extracted source set for this doc; based on the class hierarchy and the default-service-account detection pattern used elsewhere in Checkov's GCP checks (see CKV_GCP_31, which matches the default Compute Engine service account email against the regex `\d+-compute@developer\.gserviceaccount\.com`), this check is understood to inspect the `member` field for that same default-service-account pattern (and/or the App Engine default `PROJECT_ID@appspot.gserviceaccount.com`) and fail when any role is granted to it.

@@ -9,6 +9,8 @@ Without a customer-managed key, monitoring output artifacts still get default S3
 This check ensures that an Amazon SageMaker Data Quality Job Definition specifies a customer-managed KMS key for encrypting the output (model monitoring/data quality) artifacts it produces.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::SageMaker::DataQualityJobDefinition` (property `DataQualityJobOutputConfig/KmsKeyId`), `aws_sagemaker_data_quality_job_definition` (attribute `data_quality_job_output_config[0].kms_key_id`)

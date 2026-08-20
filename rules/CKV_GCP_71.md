@@ -8,6 +8,8 @@ Disabling cluster-wide Shielded Nodes removes the prerequisite for verified boot
 This check ensures the cluster-wide Shielded GKE Nodes feature is enabled, which is the prerequisite for verified boot integrity and rootkit protections on node VMs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 

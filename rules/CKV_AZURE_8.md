@@ -9,6 +9,8 @@ The legacy Kubernetes Dashboard has a documented history of privilege-escalation
 This check ensures the deprecated Kubernetes Dashboard add-on is disabled on Azure Kubernetes Service (AKS) clusters.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster`
 - **ARM/Bicep**: `Microsoft.ContainerService/managedClusters`
 

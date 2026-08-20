@@ -9,6 +9,8 @@ Leaving local (access-key based) authentication enabled on App Configuration all
 This check ensures Azure App Configuration stores disable local (access-key based) authentication, forcing all requests to authenticate via Azure Active Directory instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_app_configuration`
 

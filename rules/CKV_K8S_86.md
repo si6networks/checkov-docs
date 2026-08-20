@@ -8,6 +8,8 @@ Binding the API server to an insecure, unauthenticated HTTP address exposes full
 This check verifies that a self-managed `kube-apiserver` container does not use the removed/deprecated `--insecure-bind-address` flag, which would expose an unauthenticated, unencrypted API server listener.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

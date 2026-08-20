@@ -8,6 +8,8 @@ Public network access to an Event Grid Domain allows untrusted network paths to 
 This check ensures that an Azure Event Grid Domain resource disables public network access, restricting event ingestion/management to private network paths.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_eventgrid_domain` (inspects `public_network_access_enabled`)
 - (No ARM/Bicep implementation reported for this specific check.)
 

@@ -9,6 +9,8 @@ Function Apps without enforced HTTPS transmit request/response data, function ke
 This check ensures Azure Function Apps (and slots) reject plain HTTP connections and require HTTPS, and, when auth v2 settings are used, that `requireHttps` is not disabled.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_function_app`, `azurerm_linux_function_app`, `azurerm_windows_function_app`, `azurerm_function_app_slot`, `azurerm_linux_function_app_slot`, `azurerm_windows_function_app_slot`
 - **ARM/Bicep**: `Microsoft.Web/sites`, `Microsoft.Web/sites/config`, `Microsoft.Web/sites/slots`
 

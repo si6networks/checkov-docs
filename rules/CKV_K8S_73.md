@@ -8,6 +8,8 @@ Without a configured kubelet certificate authority the API server cannot validat
 This check fails a `kube-apiserver` container manifest unless its `command` includes the `--kubelet-certificate-authority` argument, which the API server uses to validate the TLS certificate presented by kubelets it connects to.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

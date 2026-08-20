@@ -8,6 +8,8 @@ Disabled audit logging on an MQ broker removes the security-relevant trail neede
 Ensures that Amazon MQ brokers have audit logging enabled so that administrative and connection-level events on the broker are recorded to CloudWatch Logs.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_mq_broker` — inspects `logs[0].audit`.
 - **CloudFormation**: `AWS::AmazonMQ::Broker` — inspects `Properties/Logs/Audit`.
 - Applies only to `ActiveMQ`-engine brokers; if `EngineType`/`engine_type` is `RabbitMQ`, the check returns `UNKNOWN` (skipped) because RabbitMQ brokers do not support audit logging on Amazon MQ.

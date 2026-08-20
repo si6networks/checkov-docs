@@ -9,6 +9,8 @@ An outdated PHP runtime can carry known, unpatched interpreter-level vulnerabili
 This check ensures Azure App Service web apps configured to run PHP use a current, supported PHP version rather than an outdated one.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`
 - **ARM/Bicep**: `Microsoft.Web/sites`
 

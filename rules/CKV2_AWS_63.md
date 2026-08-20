@@ -9,6 +9,8 @@ A network firewall without logging enabled loses visibility into blocked/allowed
 This check requires every `aws_networkfirewall_firewall` resource to have a connected `aws_networkfirewall_logging_configuration` resource, ensuring firewall traffic and alert events are actually logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_networkfirewall_firewall` (must be connected to `aws_networkfirewall_logging_configuration`)
 

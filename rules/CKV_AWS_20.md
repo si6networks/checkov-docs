@@ -8,6 +8,8 @@ An S3 bucket ACL granting READ to everyone makes bucket contents world-readable 
 Ensures an S3 bucket's ACL is not set to a canned ACL that grants read access to all users (`public-read` or `public-read-write`), which would let anyone on the internet list/read bucket objects.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::S3::Bucket` — inspects `Properties/AccessControl`; fails if it equals `PublicRead` or `PublicReadWrite`.
 - **Terraform** (graph-based check): `aws_s3_bucket` (legacy inline `acl` attribute) and the separate `aws_s3_bucket_acl` resource (AWS provider v4+ split resource model), including its `access_control_policy.grant[].grantee.uri` grants.
 

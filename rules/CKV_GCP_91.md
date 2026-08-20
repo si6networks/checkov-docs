@@ -8,6 +8,8 @@ Dataproc cluster data is encrypted at rest by default, so missing CMK configurat
 This check requires `google_dataproc_cluster` resources to set `cluster_config.encryption_config.kms_key_name`, so that cluster disks and job data are encrypted at rest with a customer-managed Cloud KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dataproc_cluster`
 - **Check type:** resource (attribute-value check on a nested block path)

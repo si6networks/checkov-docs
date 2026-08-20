@@ -8,6 +8,8 @@ Missing request timeouts on the API server are primarily an availability/resourc
 This check verifies that if a self-managed `kube-apiserver` container sets `--request-timeout`, the value is a well-formed duration string (e.g., `1m`, `30s`, `1h30m`).
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

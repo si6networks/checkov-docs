@@ -9,6 +9,8 @@ Without auto-updating antimalware, a VM is more likely to miss signatures for ne
 This check ensures that Azure Virtual Machines have the Microsoft Antimalware (IaaSAntimalware) extension installed with automatic minor-version updates enabled, so the antimalware engine and signature updates stay current without manual intervention.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_virtual_machine`, connected to an `azurerm_virtual_machine_extension` of type `IaaSAntimalware` published by `Microsoft.Azure.Security`.
 

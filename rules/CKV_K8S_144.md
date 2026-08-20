@@ -8,6 +8,8 @@ Disabling --protect-kernel-defaults allows kubelet to silently modify kernel sys
 This check ensures the kubelet is started with `--protect-kernel-defaults=true`, causing it to fail-fast if host kernel parameters don't match the values the kubelet expects rather than silently overriding them.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

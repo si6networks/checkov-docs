@@ -9,6 +9,8 @@ An inbound firewall rule sourced from 0.0.0.0/0 (or ::/0) opens the associated p
 This check fails a DigitalOcean Cloud Firewall (`digitalocean_firewall`) resource if any inbound rule allows traffic from `0.0.0.0/0` or `::/0` — i.e., from any IPv4 or IPv6 address on the internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resource type `digitalocean_firewall` (DigitalOcean provider). Specifically inspects each entry in the `inbound_rule` block list and its nested `source_addresses` attribute.
 
 ## Why it matters

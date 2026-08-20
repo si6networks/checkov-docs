@@ -9,6 +9,8 @@ Allowing CloudFront to communicate with a custom origin over plaintext HTTP expo
 This check requires CloudFront distributions with a custom origin to set `OriginProtocolPolicy`/`origin_protocol_policy` to `https-only`, so CloudFront always connects to the origin over HTTPS rather than allowing (or exclusively using) plaintext HTTP.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::CloudFront::Distribution` (CloudFormation), `aws_cloudfront_distribution` (Terraform) — specifically origins using `CustomOriginConfig`/`custom_origin_config`
 

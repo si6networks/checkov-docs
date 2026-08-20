@@ -9,6 +9,8 @@ Key Vault keys without an expiration date can remain valid indefinitely, weakeni
 This check verifies that every Azure Key Vault key resource has an expiration date configured, rather than being valid indefinitely.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault_key`
 - **ARM templates**: `Microsoft.KeyVault/vaults/keys`
 - **Bicep**: `Microsoft.KeyVault/vaults/keys`

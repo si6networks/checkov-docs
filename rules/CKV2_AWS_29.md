@@ -8,6 +8,8 @@ A public API Gateway without WAF protection leaves backend APIs directly exposed
 This check ensures that API Gateway REST APIs (`aws_api_gateway_rest_api`) with a deployed stage are protected by an AWS WAF web ACL, unless the API is a PRIVATE endpoint (not internet-reachable).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_api_gateway_rest_api`, `aws_api_gateway_stage` (connected `aws_wafv2_web_acl_association` / `aws_wafregional_web_acl_association`)
 - **Check type:** Graph-based connection + attribute check

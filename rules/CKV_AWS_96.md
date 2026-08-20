@@ -9,6 +9,8 @@ Unencrypted Aurora storage leaves data at rest exposed if underlying storage, sn
 This check fails when an Amazon Aurora DB cluster does not have `StorageEncrypted`/`storage_encrypted` set to `true`, meaning the underlying cluster storage is not encrypted at rest.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_rds_cluster` resource — inspects `storage_encrypted` (with a special pass-through for `engine_mode = "serverless"`).
 - **CloudFormation**: `AWS::RDS::DBCluster` resource — inspects `Properties.StorageEncrypted` (with special handling when `SnapshotIdentifier`/`SourceDBClusterIdentifier` is set).
 

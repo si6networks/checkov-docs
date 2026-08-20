@@ -8,6 +8,8 @@ Vertex AI endpoints without a CMK still benefit from default encryption at rest,
 This check ensures that a Vertex AI Endpoint resource defines an `encryption_spec` block, indicating use of a customer-managed encryption key (CMEK) rather than default Google-managed encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_vertex_ai_endpoint`
 

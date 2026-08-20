@@ -8,6 +8,8 @@ Missing X-Ray tracing on a Step Functions state machine reduces operational visi
 This check fails when an `aws_sfn_state_machine` (AWS Step Functions) resource does not have X-Ray tracing enabled, reducing visibility into execution behavior and making performance/error diagnosis harder.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_sfn_state_machine`
 

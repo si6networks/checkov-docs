@@ -8,6 +8,8 @@ Passwords that never expire (or expire too infrequently) increase the window in 
 This check verifies that the Alibaba Cloud RAM account password policy forces password rotation at least every 90 days.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_account_password_policy`
 

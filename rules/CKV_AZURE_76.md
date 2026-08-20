@@ -9,6 +9,8 @@ Without Key Vault-managed encryption, Batch account data relies on platform-mana
 This check ensures an Azure Batch account is configured with a Key Vault reference so that data can be encrypted using customer-managed keys (CMK) instead of relying solely on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_batch_account`
 - **ARM/Bicep**: `Microsoft.Batch/batchAccounts`
 

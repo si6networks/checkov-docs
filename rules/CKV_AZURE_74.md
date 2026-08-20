@@ -9,6 +9,8 @@ Disabled disk encryption on Data Explorer clusters leaves data at rest in cleart
 This check ensures Azure Data Explorer (Kusto) clusters have disk encryption enabled for their local/cache disks.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kusto_cluster`
 - **ARM/Bicep**: `Microsoft.Kusto/clusters`
 

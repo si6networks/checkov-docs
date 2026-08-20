@@ -9,6 +9,8 @@ Unencrypted etcd storage in a Kubernetes cluster means cluster secrets, service 
 This check fails when a Yandex Managed Service for Kubernetes (`yandex_kubernetes_cluster`) does not configure a KMS key for etcd encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_kubernetes_cluster`
 

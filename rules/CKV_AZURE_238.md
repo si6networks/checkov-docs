@@ -9,6 +9,8 @@ Not configuring a managed identity for Cognitive Services accounts pushes teams 
 This check ensures Azure Cognitive Services accounts have a managed identity (system-assigned or user-assigned) configured, rather than relying purely on other credential types for access to other Azure resources.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_cognitive_account` resources — inspects `identity[0].type` (any non-empty value is accepted).
 - **ARM/Bicep**: `Microsoft.CognitiveServices/accounts` — inspects `properties.identity.type` (any non-empty value accepted).
 

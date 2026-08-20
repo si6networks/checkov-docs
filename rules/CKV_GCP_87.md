@@ -8,6 +8,8 @@ A publicly reachable Data Fusion instance exposes a data-integration/ETL control
 This check requires `google_data_fusion_instance` resources to set `private_instance = true`, so the Data Fusion instance's networking is not exposed via a public IP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_data_fusion_instance`
 - **Check type:** resource (attribute-value check)

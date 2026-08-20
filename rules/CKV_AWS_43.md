@@ -8,6 +8,8 @@ A Kinesis stream without server-side (KMS) encryption stores in-flight data reco
 This check ensures Amazon Kinesis Data Streams have server-side encryption enabled using KMS.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Kinesis::Stream` (CloudFormation), `aws_kinesis_stream` (Terraform)
 

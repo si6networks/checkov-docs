@@ -8,6 +8,8 @@ An unencrypted Server instance volume leaves data at rest unprotected, so anyone
 This check requires that an NCloud `ncloud_server` resource has its base block storage volume encrypted (`is_encrypted_base_block_storage_volume = true`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_server`
 - **Check type:** resource (single attribute value check)

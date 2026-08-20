@@ -9,6 +9,8 @@ Without host-based encryption, data on a Windows VM's OS, data, and temp disks i
 This check ensures that an Azure Windows Virtual Machine has encryption-at-host enabled, so that all disks attached to the VM — including the OS disk, data disks, and the ephemeral temp disk — are encrypted at rest on the host infrastructure.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_windows_virtual_machine`

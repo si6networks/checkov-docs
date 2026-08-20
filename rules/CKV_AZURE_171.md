@@ -9,6 +9,8 @@ Disabling the automatic upgrade channel means the cluster's control plane and ku
 This check ensures that an AKS cluster has an automatic upgrade channel configured (anything other than `"none"`), so the cluster receives Kubernetes version and/or node image upgrades on a defined cadence.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` (`automatic_channel_upgrade` or the legacy `automatic_upgrade_channel` attribute).
 - **ARM/Bicep**: `Microsoft.ContainerService/managedClusters` (`properties.autoUpgradeProfile.upgradeChannel`).
 

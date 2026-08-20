@@ -8,6 +8,8 @@ Disabled logging on a Dialogflow agent removes an audit trail of conversational 
 This check ensures that Dialogflow ES agents have `enable_logging` set to `true`, so conversation and interaction events are recorded.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dialogflow_agent`
 

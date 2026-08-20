@@ -8,6 +8,8 @@ Lack of a mandatory code-review/approval rule on a source repository allows unre
 This check ensures that every `aws_codecommit_repository` has an associated approval rule template (via `aws_codecommit_approval_rule_template_association`), so that pull requests against the repository require an approval rule (e.g., minimum number of approvers) before merging.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_codecommit_repository` (connected `aws_codecommit_approval_rule_template_association`)
 - **Category:** General security

@@ -9,6 +9,8 @@ Secrets that never rotate remain valid indefinitely, so any credential leaked vi
 This check requires that every AWS Secrets Manager secret defined in Terraform has an associated `aws_secretsmanager_secret_rotation` resource, ensuring the secret's value is rotated automatically rather than remaining static indefinitely.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_secretsmanager_secret` (the check inspects whether this resource is connected to an `aws_secretsmanager_secret_rotation` resource)
 

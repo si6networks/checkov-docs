@@ -8,6 +8,8 @@ As with the firewall resource itself, the underlying firewall policy is encrypte
 Requires AWS Network Firewall **policy** resources (`aws_networkfirewall_firewall_policy`) to specify an `encryption_configuration` with a customer-managed KMS key, rather than defaulting to the AWS-owned key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_networkfirewall_firewall_policy`
 

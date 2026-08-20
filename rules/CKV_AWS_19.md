@@ -8,6 +8,8 @@ Unlike the CMK-specific checks, this one verifies that server-side encryption at
 This check requires that an S3 bucket has server-side encryption configured (either SSE-S3/`AES256` or SSE-KMS/`aws:kms`) for data stored at rest.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource/entity types:** `AWS::S3::Bucket` (CloudFormation); `aws_s3_bucket` and (via connection) `aws_s3_bucket_server_side_encryption_configuration` (Terraform, graph-based check)
 - **Check type:** resource attribute check (CloudFormation), graph-based connection/attribute check (Terraform)

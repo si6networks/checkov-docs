@@ -9,6 +9,8 @@ Unrestricted UDP access from the internet to network security groups can expose 
 This check ensures Azure Network Security Group (NSG) rules do not allow inbound UDP traffic from the entire internet (`*`, `0.0.0.0/0`, `Internet`, `any`, etc.).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_network_security_group` (with inline `security_rule` blocks) and standalone `azurerm_network_security_rule`
 
 ## Why it matters

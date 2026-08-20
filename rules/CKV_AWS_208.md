@@ -8,6 +8,8 @@ Running an MQ broker below the minimum supported ActiveMQ/RabbitMQ version risks
 Ensures that Amazon MQ brokers (and configurations) run an engine version at or above a defined minimum (ActiveMQ 5.17, RabbitMQ 3.11), so brokers aren't left on old engine releases missing security patches.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_mq_broker`, `aws_mq_configuration` — inspects `engine_type` and `engine_version`.
 
 ## Why it matters

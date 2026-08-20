@@ -8,6 +8,8 @@ Automatically assigning public IP addresses to ECS tasks exposes the service's n
 This check requires that `aws_ecs_service` resources using `awsvpc` networking do not set `network_configuration.assign_public_ip = true`, preventing tasks from automatically receiving a public IP address.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ecs_service`
 

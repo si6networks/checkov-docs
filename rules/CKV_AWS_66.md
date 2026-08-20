@@ -8,6 +8,8 @@ A CloudWatch Log Group without a retention policy keeps logs indefinitely (needl
 This check verifies that a CloudWatch Log Group has an explicit `RetentionInDays`/`retention_in_days` value set (any value), rather than defaulting to "Never Expire," so that log storage cost and data-retention policy are deliberately controlled.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::Logs::LogGroup`, property `Properties/RetentionInDays`.
 - **Terraform**: `aws_cloudwatch_log_group` resource, attribute `retention_in_days`.
 

@@ -9,6 +9,8 @@ A security requirement that references a scheme name absent from securityDefinit
 For Swagger 2.0 documents, every scheme name referenced in any `security` requirement (global or per-operation) must correspond to an entry actually declared in `securityDefinitions`; dangling references indicate a broken or misconfigured security model.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `security`, cross-checked against the document's `securityDefinitions` and `paths`.
 

@@ -9,6 +9,8 @@ Without soft-delete and purge protection, a Key Vault holding cryptographic keys
 This check verifies that an Azure Key Vault has both Soft Delete and Purge Protection enabled, so deleted vaults/secrets/keys/certificates can be recovered and cannot be permanently and immediately destroyed.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault`
 - **ARM templates**: `Microsoft.KeyVault/vaults`
 - **Bicep**: `Microsoft.KeyVault/vaults`

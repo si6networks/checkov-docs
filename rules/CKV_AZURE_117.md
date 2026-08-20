@@ -8,6 +8,8 @@ Without a customer-managed disk encryption set, node disk data relies on Azure's
 This check verifies that an Azure Kubernetes Service (AKS) cluster is configured to use a customer-managed Disk Encryption Set for encrypting the OS/data disks of its node pools, rather than relying solely on Azure's default platform-managed encryption keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_kubernetes_cluster`
 

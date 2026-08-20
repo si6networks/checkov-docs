@@ -9,6 +9,8 @@ EBS optimization affects dedicated I/O throughput/performance for EC2 instances 
 This check requires EC2 instances to enable EBS optimization (`ebs_optimized = true`) so the instance gets dedicated, consistent throughput to its attached EBS volumes rather than sharing general network bandwidth with other traffic.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 - **Frameworks:** Terraform (AWS provider), Ansible
 - **Resource/task types:**
   - Terraform: `aws_instance`

@@ -8,6 +8,8 @@ Leaving key-based metadata write access enabled on CosmosDB lets an attacker wit
 This check ensures that an Azure Cosmos DB account has key-based metadata write access disabled, preventing account keys from being used to modify the account's own management-plane configuration.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.DocumentDB/databaseAccounts` resources, property `properties/disableKeyBasedMetadataWriteAccess`.
 - **Terraform**: `azurerm_cosmosdb_account` resource, attribute `access_key_metadata_writes_enabled`.
 - **Bicep**: compiles to the same ARM resource type and property.

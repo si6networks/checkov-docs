@@ -9,6 +9,8 @@ Allowing 0.0.0.0/0 in the Cognitive Search firewall opens the service to unauthe
 This check ensures the `allowed_ips` firewall rule list on an Azure Cognitive Search service does not include the global CIDR range `0.0.0.0/0`, which would effectively make the service open to the entire internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_search_service`
 

@@ -8,6 +8,8 @@ A publicly reachable MySQL server is directly exposed to internet-wide brute-for
 This check fails when an Azure MySQL server (or flexible server) is configured to allow public network access, ensuring the database is only reachable through private/virtual network connectivity.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_mysql_server`), ARM templates, and Bicep, for the resource types `Microsoft.DBforMySQL/servers` and `Microsoft.DBforMySQL/flexibleServers`.
 
 ## Why it matters

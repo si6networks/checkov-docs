@@ -8,6 +8,8 @@ Without Terway or Flannel as the CNI plugin, the Kubernetes cluster cannot enfor
 This check verifies that an Alibaba Cloud Container Service for Kubernetes (ACK) cluster is configured with a CNI network plugin — Terway (`terway-eniip`) or Flannel — that supports standard Kubernetes NetworkPolicy enforcement, correctly wired to a pod network (via `pod_vswitch_ids` or `pod_cidr`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_cs_kubernetes`
 

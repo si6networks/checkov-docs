@@ -9,6 +9,8 @@ Enabling internet access on a managed MySQL instance exposes a database service 
 This check fails when a Tencent Cloud MySQL (CDB) instance is configured with `internet_service` enabled, meaning the database is directly reachable from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `tencentcloud_mysql_instance`
 - **Check type:** resource check (single-attribute value check)

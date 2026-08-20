@@ -8,6 +8,8 @@ Without push restrictions on a protected branch, any collaborator with write acc
 This check fails when a branch protection rule does not define push `restrictions`, meaning any collaborator with write access to the repository can push directly to the protected branch rather than only a defined, limited set of users/teams/apps.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings)
 - **Entities:** `*`, evaluated against the `restrictions` field
 

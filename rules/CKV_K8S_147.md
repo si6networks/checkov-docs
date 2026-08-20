@@ -8,6 +8,8 @@ An excessive --event-qps rate limit degrades kubelet event capture used for secu
 This check ensures the kubelet's `--event-qps` rate limit (queries-per-second for event reporting) is not set so high that meaningful audit/event data could be dropped or rate-limited away — anything over 5 is flagged.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

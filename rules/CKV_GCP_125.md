@@ -9,6 +9,8 @@ A weak or missing attribute_condition on a GitHub Actions OIDC trust policy lets
 This check performs a deep validation of `google_iam_workload_identity_pool_provider` resources that trust GitHub Actions' OIDC issuer, failing if the `attribute_condition` does not properly restrict which GitHub repository (and claim) can assume the mapped GCP identity.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_iam_workload_identity_pool_provider`
 - **Check type:** resource

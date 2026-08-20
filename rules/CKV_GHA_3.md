@@ -8,6 +8,8 @@ A `curl` invocation on the same line as a secret strongly indicates a workflow i
 This check fails when a GitHub Actions `run:` step contains a single line that uses `curl` together with the literal word `secret`, a pattern commonly seen when a secret is being exfiltrated to an external host or passed insecurely on a command line.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **Framework:** GitHub Actions workflow YAML
 - **Entities:** `jobs` and `jobs.*.steps[]` — any step with a `run:` key
 

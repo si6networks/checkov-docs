@@ -8,6 +8,8 @@ Not forcing HTTPS-only on an App Service allows plaintext HTTP traffic to be ser
 This check ensures an Azure App Service (Web App) has the "HTTPS Only" setting enabled so that all inbound HTTP requests are redirected to HTTPS rather than served in plaintext.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.Web/sites` resources, property `properties/httpsOnly`.
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_web_app`, and `azurerm_windows_web_app` resources, attribute `https_only`.
 - **Bicep**: compiles to the same ARM resource type.

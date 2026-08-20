@@ -8,6 +8,8 @@ Without a health check path, the platform cannot detect and route traffic away f
 Ensures that an Azure App Service (Web App) defines a health-check path so Azure can monitor instance health and route traffic away from unhealthy instances.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app` — inspects `site_config[0].health_check_path`
 - **ARM**: `Microsoft.Web/sites`, `Microsoft.Web/sites/slots` — inspects `properties.siteConfig.healthCheckPath`
 - **Bicep**: compiles to the ARM resource types above

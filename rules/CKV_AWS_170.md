@@ -9,6 +9,8 @@ Setting QLDB permissions mode to ALLOW_ALL (instead of STANDARD) grants all auth
 This check requires that Amazon QLDB (Quantum Ledger Database) ledgers use the `STANDARD` permissions mode, which enforces fine-grained IAM authorization on every ledger operation, rather than the legacy `ALLOW_ALL` mode.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_qldb_ledger`
 - **CloudFormation**: `AWS::QLDB::Ledger`
 

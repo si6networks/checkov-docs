@@ -9,6 +9,8 @@ Without enforced SSL, a PostgreSQL server accepts unencrypted connections, expos
 This check ensures Azure Database for PostgreSQL (single server) enforces SSL/TLS on all client connections rather than permitting plaintext connections.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.DBforPostgreSQL/servers`, `azurerm_postgresql_server`
 

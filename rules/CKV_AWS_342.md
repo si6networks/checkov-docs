@@ -8,6 +8,8 @@ A WAF rule with no configured action is effectively inert, so malicious requests
 Verifies that every rule inside an AWS WAF / WAF Classic / WAF Regional Web ACL or rule group actually specifies an action (or override action, or references a managed rule group), so that matched requests are not silently evaluated with no effect.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource types**: `aws_waf_rule_group`, `aws_waf_web_acl`, `aws_wafregional_rule_group`, `aws_wafregional_web_acl`, `aws_wafv2_rule_group`, `aws_wafv2_web_acl`
 

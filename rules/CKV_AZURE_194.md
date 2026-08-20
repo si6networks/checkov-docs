@@ -9,6 +9,8 @@ Without a managed identity, the Event Grid Domain must depend on statically mana
 This check ensures an Azure Event Grid Domain has a managed identity configured, so it can authenticate to other Azure resources without relying on static credentials.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_eventgrid_domain`
 

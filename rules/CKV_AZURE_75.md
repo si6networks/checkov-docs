@@ -9,6 +9,8 @@ Missing double (infrastructure-level) encryption is a defense-in-depth gap on to
 This check ensures Azure Data Explorer (Kusto) clusters have double encryption enabled, layering a second, infrastructure-level encryption on top of standard storage-service encryption.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kusto_cluster`
 - **ARM/Bicep**: `Microsoft.Kusto/clusters`
 

@@ -8,6 +8,8 @@ Allowing fewer than 2 required MR approvals weakens the code-review control that
 This check ensures a GitLab project's Terraform-managed configuration requires at least two approving reviews before a merge request can be merged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `gitlab` provider, specifically the `gitlab_project` resource, at the `approvals_before_merge` attribute.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Public network access to an IoT Hub exposes a device-management and telemetry co
 This check ensures that an Azure IoT Hub instance disables public network access so it can only be reached over a private endpoint rather than the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_iothub` (inspects `public_network_access_enabled`)
 - (No ARM/Bicep implementation reported for this specific check.)
 

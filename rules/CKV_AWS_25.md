@@ -9,6 +9,8 @@ Exposing RDP (port 3389) to 0.0.0.0/0 opens a top brute-force and exploit target
 This check ensures that no security group (or security group rule) permits unrestricted inbound access (`0.0.0.0/0` or `::/0`) to TCP port 3389, the Windows Remote Desktop Protocol (RDP) port.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:**
   - CloudFormation: `AWS::EC2::SecurityGroup`, `AWS::EC2::SecurityGroupIngress`

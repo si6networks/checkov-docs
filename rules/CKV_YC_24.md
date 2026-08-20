@@ -9,6 +9,8 @@ Binding IAM roles directly to a personal passport (user) account instead of a se
 This check ensures that Yandex Cloud IAM role bindings/members at the folder, cloud, or organization level are not granted directly to "passport account" (individual user account, `userAccount:...`) identities — favoring service accounts or federated identities instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_resourcemanager_folder_iam_binding`, `yandex_resourcemanager_folder_iam_member`, `yandex_resourcemanager_cloud_iam_binding`, `yandex_resourcemanager_cloud_iam_member`, `yandex_organizationmanager_organization_iam_binding`, `yandex_organizationmanager_organization_iam_member`
 - **Check type:** resource

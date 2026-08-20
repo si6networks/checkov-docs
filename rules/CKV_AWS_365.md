@@ -9,6 +9,8 @@ Leaving TLS optional allows silent fallback to plaintext SMTP delivery, exposing
 This check ensures that an `aws_ses_configuration_set` resource has its `delivery_options.tls_policy` set to `Require`, so that outbound emails sent through that configuration set are only delivered over TLS-encrypted connections.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** resource check
 - **Entities:** `aws_ses_configuration_set`

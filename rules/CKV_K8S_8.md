@@ -8,6 +8,8 @@ A missing liveness probe is chiefly an availability/self-healing concern (stuck 
 This check fails a container definition (in Kubernetes manifests or Terraform `kubernetes_pod`/`kubernetes_deployment` resources) that does not configure a `livenessProbe`, which Kubernetes uses to detect and automatically restart hung or deadlocked containers.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: container-bearing kinds excluding `CronJob`/`Job` — i.e. `DaemonSet`, `Deployment`, `DeploymentConfig`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Only applies to `containers`, not `initContainers` (init containers run to completion and don't need liveness probes).
 - **Terraform**: `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1` resources.
 

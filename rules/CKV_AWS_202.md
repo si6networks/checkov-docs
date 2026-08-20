@@ -8,6 +8,8 @@ Disabling TLS on MemoryDB lets client-cluster traffic travel in plaintext, expos
 Ensures that Amazon MemoryDB for Redis clusters have TLS (in-transit encryption) enabled, preventing plaintext Redis protocol traffic between clients and the cluster.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_memorydb_cluster` — inspects the `tls_enabled` attribute.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Missing geo-redundant backups is an availability/disaster-recovery gap affecting
 This check verifies that an Azure Database for MariaDB server is configured with geo-redundant backup storage, so automated backups survive a regional outage or disaster affecting the primary Azure region.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:**
   - Terraform: `azurerm_mariadb_server`

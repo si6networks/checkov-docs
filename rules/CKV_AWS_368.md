@@ -9,6 +9,8 @@ Lacking a CMK for the job's transient EBS storage weakens key-level access audit
 This check ensures that an Amazon SageMaker Data Quality Job Definition specifies a customer-managed KMS key to encrypt the EBS storage volume attached to the monitoring job's compute instances.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::SageMaker::DataQualityJobDefinition` (property `JobResources/ClusterConfig/VolumeKmsKeyId`), `aws_sagemaker_data_quality_job_definition` (attribute `job_resources[0].cluster_config[0].volume_kms_key_id`)

@@ -9,6 +9,8 @@ Disabling end-to-end TLS on Azure Spring Cloud app traffic allows sensitive appl
 This check verifies that apps deployed in an Azure Spring Cloud (now Azure Spring Apps) service on a non-Basic tier have end-to-end TLS enabled between the ingress and the application instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_spring_cloud_service` and its connected `azurerm_spring_cloud_app` resources.
 
 This is a graph-based connection/attribute check spanning two related resource types.

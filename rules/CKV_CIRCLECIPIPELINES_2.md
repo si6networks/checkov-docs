@@ -8,6 +8,8 @@ Pinning a CircleCI job image by tag instead of an immutable digest allows the un
 This check verifies that Docker executor images in a CircleCI pipeline configuration are referenced by an immutable content digest (`@sha256:...`) rather than by a mutable tag name.
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 - **CircleCI Pipelines** (`.circleci/config.yml`): applies to `jobs.*.docker[].image` entries (the Docker executor image list for each job).
 
 ## Why it matters

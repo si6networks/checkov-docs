@@ -8,6 +8,8 @@ This check verifies RDS DB snapshots are not shared with all AWS accounts, and a
 This check ensures an `aws_db_snapshot` resource's `shared_accounts` list does not contain the value `"all"`, which would make the RDS database snapshot publicly restorable by any AWS account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_db_snapshot`
 

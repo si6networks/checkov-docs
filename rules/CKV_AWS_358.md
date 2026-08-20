@@ -9,6 +9,8 @@ A missing or wildcarded `sub` condition on a GitHub Actions OIDC trust policy le
 This check validates that IAM trust policies (`aws_iam_policy_document`) federating trust to GitHub Actions' OIDC provider (`token.actions.githubusercontent.com`) constrain the `sub` claim with a condition that cannot be trivially satisfied by an attacker-controlled repository, branch, or environment name.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** data source check
 - **Entities:** `aws_iam_policy_document` (specifically statements whose `principals` block federates to a `Federated` identifier containing `oidc-provider/token.actions.githubusercontent.com`)

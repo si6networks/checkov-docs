@@ -8,6 +8,8 @@ A non-zone-redundant Event Hub Namespace is a regional-outage resilience concern
 Ensures that an Azure Event Hubs namespace is deployed in a region that supports Availability Zone redundancy, since zone redundancy for Event Hubs is determined automatically by the deployment region rather than an explicit toggle.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_eventhub_namespace` — inspects the `location` attribute against a hard-coded allow-list of zone-redundancy-capable Azure regions
 
 ## Why it matters

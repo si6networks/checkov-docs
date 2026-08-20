@@ -9,6 +9,8 @@ Same underlying risk as CSEK-on-disk (CKV_GCP_37) applied to the instance resour
 This check requires the `boot_disk` block of a `google_compute_instance` to set either `disk_encryption_key_raw` or `kms_key_self_link`, ensuring the instance's boot disk — not just its data disks — is encrypted with a customer-supplied or customer-managed key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `google_compute_instance` resource (specifically its `boot_disk` block).
 
 ## Why it matters

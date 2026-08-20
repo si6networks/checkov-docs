@@ -8,6 +8,8 @@ The check requires a customer-managed KMS key for EBS volumes rather than checki
 This check requires that an `aws_ebs_volume` resource specify a customer-managed KMS key (`kms_key_id`) for encryption instead of the AWS-managed default EBS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ebs_volume`
 - **Check type:** resource (attribute-value check)

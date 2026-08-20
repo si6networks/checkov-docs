@@ -8,6 +8,8 @@ A Security Zone without an attached Zone Protection Profile lacks the firewall's
 This check ensures every PAN-OS Security Zone has a non-empty Zone Protection Profile assigned, so that flood, reconnaissance, and packet-based attack protections are actively enforced on that zone.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 Terraform resources `panos_zone`, `panos_zone_entry`, and `panos_panorama_zone`, and Ansible task `tasks.paloaltonetworks.panos.panos_zone` (Python resource check for Terraform, graph-based JSON policy for Ansible).
 
 ## Why it matters

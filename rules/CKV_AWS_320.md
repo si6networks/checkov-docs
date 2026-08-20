@@ -9,6 +9,8 @@ Using a non-default Redshift database name is a security-through-obscurity harde
 This check ensures Amazon Redshift clusters explicitly set a custom database name rather than relying on the implicit default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_redshift_cluster`
 

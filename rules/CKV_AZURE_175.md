@@ -9,6 +9,8 @@ Using the Free SKU for Web PubSub only affects the availability SLA, not confide
 This check ensures that an Azure Web PubSub resource is not deployed on the `Free_F1` SKU, which carries no availability SLA.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_web_pubsub` (`sku`).
 - **ARM/Bicep**: `Microsoft.SignalRService/webPubSub` (`sku.name`).
 

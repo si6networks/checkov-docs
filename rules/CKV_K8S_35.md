@@ -9,6 +9,8 @@ Injecting secrets as environment variables increases the chance of accidental di
 This check ensures containers do not inject Kubernetes `Secret` data via environment variables (`env[].valueFrom.secretKeyRef` or `envFrom[].secretRef`), preferring instead that secrets be mounted as files.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: container-level check across kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`, at `spec.container[].env[].value_from.secret_key_ref` and `spec.container[].env_from[].secret_ref`.
 

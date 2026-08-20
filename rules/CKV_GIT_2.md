@@ -8,6 +8,8 @@ Disabling SSL certificate verification on a repository webhook allows a man-in-t
 This check ensures that GitHub repository webhooks are configured to verify SSL/TLS (i.e., do not disable certificate validation) when delivering payloads to their target endpoint.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `github` provider, specifically the `github_repository_webhook` resource, at the `configuration[0].insecure_ssl` attribute.
 
 ## Why it matters

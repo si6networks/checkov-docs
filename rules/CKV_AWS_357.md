@@ -8,6 +8,8 @@ Allowing FTP on an AWS Transfer Family server permits authentication credentials
 Ensures AWS Transfer Family servers do not enable plaintext FTP as one of their supported file-transfer protocols.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_transfer_server`
 

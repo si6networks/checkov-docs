@@ -9,6 +9,8 @@ Pods admitted without an associated NetworkPolicy default to unrestricted pod-to
 This check ensures every `Pod` (including those created by a `Deployment`) has at least one `NetworkPolicy` selecting it, so that network traffic to/from the pod is explicitly governed rather than left fully open by default.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests. Applies to `Pod` and `Deployment` resource kinds (a Deployment's pod template is treated as the Pod for graph-connection purposes), checked against `NetworkPolicy` resources in the same namespace.
 
 ## Why it matters

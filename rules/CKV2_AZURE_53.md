@@ -9,6 +9,8 @@ Missing extended audit logging on a Synapse workspace reduces forensic visibilit
 This check verifies that every Azure Synapse Analytics workspace has an associated extended auditing policy that is enabled, so that database activity in the workspace is recorded.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `terraform`
+
 - **Terraform**: `azurerm_synapse_workspace` (must be connected to an `azurerm_synapse_workspace_extended_auditing_policy` resource)
 - **ARM templates**: `Microsoft.Synapse/workspaces` (must have a nested/associated `Microsoft.Synapse/workspaces/extendedAuditingPolicies` resource)
 

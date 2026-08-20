@@ -8,6 +8,8 @@ A SQL Server firewall rule permitting ingress from 0.0.0.0/0 exposes the databas
 This check ensures that SQL server/database firewall rules do not create a rule spanning the entire IP address space (`0.0.0.0` – `255.255.255.255`), which is the equivalent of allowing access from any IP address on the internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mariadb_firewall_rule`, `azurerm_sql_firewall_rule`, `azurerm_postgresql_firewall_rule`, `azurerm_mysql_firewall_rule`, `azurerm_mysql_flexible_server_firewall_rule`, `azurerm_mssql_firewall_rule`
 - **ARM/Bicep**: `Microsoft.Sql/servers` (specifically nested `firewallRules`/`firewallrules` sub-resources)
 

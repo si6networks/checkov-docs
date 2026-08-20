@@ -8,6 +8,8 @@ Failing to periodically review and remove inactive branches is primarily a repos
 This check fails when a repository branch's last commit is older than 60 days, flagging stale branches that should be reviewed and cleaned up.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration`)
 - **Entities:** `*` — evaluated per-branch against branch/commit metadata (`commit/commit/author`, specifically the commit author's `date`), validated against Checkov's internal `branch` schema
 

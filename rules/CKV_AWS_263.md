@@ -9,6 +9,8 @@ AppFlow data in transit between SaaS systems and AWS can include sensitive busin
 This check ensures that an Amazon AppFlow flow specifies a customer-managed KMS key ARN (`kms_arn`) for encrypting data that moves through the flow.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_appflow_flow`
 
 ## Why it matters

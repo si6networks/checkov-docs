@@ -9,6 +9,8 @@ Missing a security alert policy on a Synapse SQL Pool is a detective/monitoring 
 This check ensures every Azure Synapse dedicated SQL Pool has an associated, enabled security alert policy that monitors for anomalous database activities such as SQL injection attempts and unusual access patterns.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `terraform`
+
 - **IaC frameworks:** Terraform (graph-based check), ARM/Bicep (graph-based check)
 - **Resource types:** `Microsoft.Synapse/workspaces/sqlPools` connected to `Microsoft.Sql/servers/securityAlertPolicies` (ARM); `azurerm_synapse_sql_pool` connected to `azurerm_synapse_sql_pool_security_alert_policy` (Terraform)
 

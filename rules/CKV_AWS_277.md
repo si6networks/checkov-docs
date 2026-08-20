@@ -8,6 +8,8 @@ A security group rule allowing ingress from 0.0.0.0/0 on all protocols/ports (-1
 This check fails when a security group (or security group rule) allows inbound traffic from any IPv4/IPv6 address (`0.0.0.0/0` or `::/0`) across **all ports and protocols** (port range represented as `-1`, i.e. "any port").
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resources:** `aws_security_group`, `aws_security_group_rule`, `aws_vpc_security_group_ingress_rule`
 

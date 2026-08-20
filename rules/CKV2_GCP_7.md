@@ -9,6 +9,8 @@ A MySQL root user without a password allows anyone who can reach the instance to
 This check ensures that when a Cloud SQL MySQL instance has a `google_sql_user` named `root` (or starting with `root`), that user has a password configured, rather than allowing passwordless root/administrative login.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_sql_database_instance`, `google_sql_user`
 

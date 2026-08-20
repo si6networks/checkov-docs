@@ -8,6 +8,8 @@ Enabling GKE alpha cluster features disables node auto-upgrade/auto-repair and r
 This check ensures that GKE clusters do not have the Kubernetes alpha features flag (`enable_kubernetes_alpha`) turned on.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 

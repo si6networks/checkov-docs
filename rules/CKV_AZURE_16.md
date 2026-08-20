@@ -9,6 +9,8 @@ Without a managed identity, an App Service is more likely to rely on long-lived 
 This check ensures that an Azure App Service (Web App) has a managed identity (system-assigned or user-assigned) configured, so it is registered with Azure Active Directory (Entra ID) and can authenticate to other Azure resources without embedded credentials.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`

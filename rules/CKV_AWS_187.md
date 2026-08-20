@@ -8,6 +8,8 @@ SageMaker domains/notebooks often handle training data and credentials that can 
 This check requires that SageMaker Domains and Notebook Instances specify a customer-managed KMS key for encrypting their attached storage, instead of relying on the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource/entity types:** `AWS::SageMaker::NotebookInstance`, `AWS::SageMaker::Domain` (CloudFormation); `aws_sagemaker_domain`, `aws_sagemaker_notebook_instance` (Terraform)
 - **Check type:** resource (attribute-value check), separate implementations per framework/resource

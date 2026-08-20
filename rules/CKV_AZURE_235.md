@@ -9,6 +9,8 @@ Plaintext environment variables on Azure Container Instances can hold secrets (A
 This check flags Azure Container Instance (ACI) container groups whose containers use the plain `environment_variables` block instead of Azure's `secure_environment_variables` mechanism, on the theory that sensitive values should never be passed as plaintext environment variables.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_container_group` resources — inspects the `container` and `init_container` blocks for an `environment_variables` key.
 
 ## Why it matters

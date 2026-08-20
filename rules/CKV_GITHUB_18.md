@@ -8,6 +8,8 @@ Allowing deletion of a protected branch creates an availability/integrity risk (
 This check fails when a branch protection rule permits the protected branch to be deleted (`allow_deletions/enabled` is `true`), rather than requiring it to be `false`.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings)
 - **Entities:** `*`, evaluated against `allow_deletions/enabled`, with an expected value of `false`
 

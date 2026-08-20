@@ -9,6 +9,8 @@ Without a managed identity, the Event Grid Topic must rely on other authenticati
 This check ensures an Azure Event Grid Topic has a managed identity configured, so it can authenticate to other Azure resources (e.g. event handlers, dead-letter destinations) without static credentials.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform (`azurerm` provider), ARM templates, Bicep (compiled to ARM)
 - **Resource types:**
   - ARM: `Microsoft.EventGrid/topics`

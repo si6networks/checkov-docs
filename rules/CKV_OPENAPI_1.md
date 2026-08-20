@@ -9,6 +9,8 @@ An OpenAPI 2.0 spec with no securityDefinitions declares an API with no authenti
 This check ensures that an OpenAPI/Swagger 2.0 specification document defines a non-empty top-level `securityDefinitions` object, meaning the API declares at least one authentication/authorization scheme.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **Framework:** OpenAPI (Swagger 2.0 specification documents)
 - **Entity:** `securityDefinitions` (document-level block)
 

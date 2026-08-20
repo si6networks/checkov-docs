@@ -9,6 +9,8 @@ Running an Aurora PostgreSQL version known to be exposed to the local-file-read 
 This check flags Aurora PostgreSQL `aws_db_instance` resources pinned to specific patched-but-still-vulnerable engine versions (10.11–10.13, 11.6–11.8) that are affected by a known local file read vulnerability.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_db_instance`
 

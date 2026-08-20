@@ -9,6 +9,8 @@ Missing VPC flow logs removes visibility into network traffic patterns, signific
 This check ensures that every VPC has an associated VPC Flow Log capturing network traffic metadata.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_vpc` resources, evaluated in connection with `aws_flow_log` resources.
 
 ## Why it matters

@@ -9,6 +9,8 @@ Exposing port 22 from a container image invites SSH access into what should typi
 This check fails a Dockerfile if it contains an `EXPOSE` instruction listing port 22 (SSH), on the theory that containers generally should not run or expose an SSH daemon.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — specifically the `EXPOSE` instruction.
 
 ## Why it matters

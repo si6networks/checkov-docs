@@ -9,6 +9,8 @@ Missing access logging on an ELBv2 removes a source of forensic and detection da
 This check fails when an Application Load Balancer or Network Load Balancer (ELBv2) does not have S3 access logging enabled, meaning connection-level request logs are not being captured.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_lb` and `aws_alb` resources — inspects `access_logs[0].enabled`. Gateway Load Balancers (`load_balancer_type = "gateway"`) are explicitly excluded and return `UNKNOWN` since access logs are not applicable/available for that type.
 - **CloudFormation**: `AWS::ElasticLoadBalancingV2::LoadBalancer` resource — inspects the `LoadBalancerAttributes` list for a `Key: access_logs.s3.enabled` entry with `Value: true`.
 

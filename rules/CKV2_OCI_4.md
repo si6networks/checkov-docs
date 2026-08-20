@@ -9,6 +9,8 @@ Without proper root-squash mapping, any NFS client presenting root credentials i
 This check ensures OCI File Storage NFS exports (`oci_file_storage_export`) apply an `identity_squash` setting of `ROOT` combined with `anonymous_uid`/`anonymous_gid` both set to `65534` (the conventional `nobody`/`nogroup` IDs), so that clients presenting root credentials over NFS are mapped down to an unprivileged identity rather than being trusted as root.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `oci_file_storage_export` resource, specifically its `export_options[].identity_squash`, `export_options[].anonymous_uid`, and `export_options[].anonymous_gid` attributes.
 
 ## Why it matters

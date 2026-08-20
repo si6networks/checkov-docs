@@ -8,6 +8,8 @@ An Access Control Group without any rule attached is a configuration completenes
 This graph-based check ensures that every NCloud `ncloud_access_control_group` resource has at least one `ncloud_access_control_group_rule` connected to it, so the group is not left as an empty, unenforced container.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_access_control_group` (checked for a graph connection to `ncloud_access_control_group_rule`)
 - **Check type:** graph-based connection check (JSON policy)

@@ -8,6 +8,8 @@ A missing memory request only affects scheduling decisions rather than enforcing
 This check verifies that every container in a Pod-carrying workload declares a memory value under `resources.requests`, so the scheduler has an accurate figure for how much memory the container needs when placing it on a node.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 Two independent implementations cover different IaC surfaces under this ID:
 - **Kubernetes** manifests: applicable entity kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet` — evaluated per-container, checking `resources.requests.memory`.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`.

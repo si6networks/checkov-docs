@@ -8,6 +8,8 @@ Missing tags on autoscaling launch configurations is an operational/hygiene gap 
 This check verifies that an `aws_autoscaling_group` resource specifies a `tag` or `tags` block, ensuring instances launched by the group are tagged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `aws_autoscaling_group` resource.
 
 ## Why it matters

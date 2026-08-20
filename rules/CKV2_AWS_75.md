@@ -9,6 +9,8 @@ A wildcard CORS policy lets any origin make authenticated cross-origin requests,
 This check ensures that a Lambda Function URL's Cross-Origin Resource Sharing (CORS) configuration does not allow requests from any origin (`*`) combined with any HTTP method (`*`).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** Terraform and CloudFormation (implemented as graph-based checks that trace the connection between a Lambda function and its Function URL resource).
 - **Resource types:**
   - Terraform: `aws_lambda_function` connected to `aws_lambda_function_url`.

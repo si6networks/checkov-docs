@@ -8,6 +8,8 @@ Neptune clusters are encrypted at rest regardless, so missing a customer-managed
 Requires Amazon Neptune clusters to be encrypted using a customer-managed KMS key (via `kms_key_arn`) rather than the AWS-owned default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_neptune_cluster`
 

@@ -8,6 +8,8 @@ Hard-coded secrets in EC2 user data are retrievable in plaintext via the instanc
 This check scans the `user_data` (bootstrap script) of EC2 instances, launch templates, and launch configurations for values that look like hard-coded secrets.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::EC2::Instance` (CloudFormation); `aws_instance`, `aws_launch_template`, `aws_launch_configuration` (Terraform) — specifically the `UserData`/`user_data` attribute.
 

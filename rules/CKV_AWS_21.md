@@ -8,6 +8,8 @@ Without versioning enabled, an S3 bucket cannot recover objects that are acciden
 Ensures S3 buckets have versioning enabled so that overwritten or deleted objects can be recovered from prior versions.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::S3::Bucket` — inspects `Properties/VersioningConfiguration/Status`, expecting `Enabled`.
 - **Terraform** (graph-based check): `aws_s3_bucket` (legacy inline `versioning` block) and the separate `aws_s3_bucket_versioning` resource (AWS provider v4+ split resource model), expecting `versioning_configuration.status = "Enabled"`.
 

@@ -8,6 +8,8 @@ A publicly accessible Neptune cluster instance exposes a graph database directly
 This check ensures that Amazon Neptune cluster instances are not configured with `publicly_accessible = true`, preventing direct internet exposure of the graph database.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resource `aws_neptune_cluster_instance`, specifically the `publicly_accessible` attribute.
 
 ## Why it matters

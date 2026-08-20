@@ -8,6 +8,8 @@ Without the Ledger feature, tampering with database rows by a privileged user (i
 Ensures that an Azure SQL Database has the Ledger feature enabled, which cryptographically protects historical data against tampering — including tampering by privileged users such as DBAs or cloud administrators.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_mssql_database` — inspects `ledger_enabled`
 
 ## Why it matters

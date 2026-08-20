@@ -8,6 +8,8 @@ An internet-facing load balancer without WAF protection is fully exposed to comm
 This check ensures that internet-facing Application Load Balancers (`aws_lb`/`aws_alb` of type `application`) have an AWS WAF web ACL associated with them, either via WAFv2 or the legacy WAF Regional association.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_lb`, `aws_alb` (and their connected `aws_wafv2_web_acl_association` / `aws_wafregional_web_acl_association`)
 - **Check type:** Graph-based connection + attribute check

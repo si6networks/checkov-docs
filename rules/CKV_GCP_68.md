@@ -8,6 +8,8 @@ Missing Secure Boot removes a post-compromise persistence defense (unsigned boot
 This check ensures that GKE node pools have Secure Boot enabled as part of their Shielded VM configuration, so nodes only boot verified, unmodified boot components.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_container_cluster`, `google_container_node_pool`
 

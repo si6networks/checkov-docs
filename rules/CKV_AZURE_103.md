@@ -8,6 +8,8 @@ Not using a Git repository for Data Factory source control is a change-managemen
 This check ensures that an Azure Data Factory instance is configured with a Git (GitHub or Azure DevOps/VSTS) repository for source control of its pipelines, datasets, and linked services, rather than relying only on the "live" data factory mode.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_data_factory` (inspects `github_configuration[0].repository_name` and `vsts_configuration[0].repository_name`)
 - **ARM/Bicep**: `Microsoft.DataFactory/factories` (inspects `properties/repoConfiguration/type`)
 

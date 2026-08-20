@@ -8,6 +8,8 @@ This detects Memorystore for Redis instances with AUTH disabled, meaning any cli
 This check requires `google_redis_instance` resources to set `auth_enabled = true`, so client connections to the Redis instance must present an AUTH token/password.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_redis_instance`
 - **Check type:** resource (attribute-value check)

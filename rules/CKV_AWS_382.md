@@ -9,6 +9,8 @@ Unrestricted egress to any port from a security group allows compromised instanc
 This check ensures no security group rule allows unrestricted outbound (egress) traffic to `0.0.0.0/0` covering all ports/protocols (`port -1`, i.e., "all traffic").
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_security_group` (inline `egress` blocks), `aws_security_group_rule`, `aws_vpc_security_group_egress_rule`
 

@@ -9,6 +9,8 @@ Not enabling access logging on a storage bucket removes the audit trail needed t
 This check fails when a `google_storage_bucket` does not have an access-logging configuration (`logging` block with a non-empty `log_bucket`), meaning access to objects in the bucket is not being recorded.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_storage_bucket`
 - **Check type:** resource check (Logging category)

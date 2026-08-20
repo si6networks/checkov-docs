@@ -8,6 +8,8 @@ Vertex AI tensorboards without a CMK still use default encryption at rest, makin
 This check ensures that a Vertex AI Tensorboard resource defines an `encryption_spec` block, indicating use of a customer-managed encryption key (CMEK) rather than default Google-managed encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_vertex_ai_tensorboard`
 

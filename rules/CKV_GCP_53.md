@@ -9,6 +9,8 @@ Disabling disconnection logging weakens the session audit trail needed to recons
 This check fails when a `google_sql_database_instance` running PostgreSQL does not have the `log_disconnections` database flag explicitly set to `on`, meaning session terminations from the database are not being logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `POSTGRES`
 - **Check type:** resource check

@@ -9,6 +9,8 @@ DLM schedule-based cross-region copy rules that omit the encrypted flag can prod
 This check ensures that AWS Data Lifecycle Manager (DLM) `schedule` blocks with a `cross_region_copy_rule` have encryption enabled for the resulting cross-region snapshot copies.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_dlm_lifecycle_policy`
 

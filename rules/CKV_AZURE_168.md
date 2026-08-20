@@ -9,6 +9,8 @@ A low max-pods ceiling is an availability/capacity-planning concern (forces more
 This check ensures that AKS node pools are configured to allow at least 50 pods per node, rather than the low Azure CLI/portal default of 30.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` (default node pool) and `azurerm_kubernetes_cluster_node_pool` (additional pools).
 - **ARM/Bicep**: `Microsoft.ContainerService/managedClusters` and `Microsoft.ContainerService/managedClusters/agentPools`.
 

@@ -8,6 +8,8 @@ Missing a content_type label on a Key Vault secret is a metadata/organizational 
 This check ensures that every Azure Key Vault secret has its `content_type` metadata field populated, documenting what kind of value the secret holds.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault_secret` (inspects `content_type`)
 - **ARM/Bicep**: `Microsoft.KeyVault/vaults/secrets` (inspects `properties/contentType`)
 

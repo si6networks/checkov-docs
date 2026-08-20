@@ -9,6 +9,8 @@ Granting a folder member the built-in "admin" or "editor" role hands out broad, 
 This check flags Yandex Cloud Resource Manager folder-level IAM bindings/members that grant the built-in `admin` or `editor` roles, which are broad, elevated privileges that should not be assigned directly to folder members.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_resourcemanager_folder_iam_binding`, `yandex_resourcemanager_folder_iam_member`
 - **Check type:** resource (negative value check)

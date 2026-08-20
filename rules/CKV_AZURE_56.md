@@ -8,6 +8,8 @@ Disabling platform-level authentication on a Function App leaves publicly reacha
 This check fails when an Azure Function App does not have App Service Authentication ("EasyAuth") enabled, meaning HTTP-triggered functions may be invokable without any identity check enforced by the platform.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_function_app`), ARM templates, and Bicep, for the resource type `Microsoft.Web/sites/config` (specifically the `authsettingsV2` config child resource).
 
 ## Why it matters

@@ -8,6 +8,8 @@ Missing the AWS-managed WAF rule groups that detect Log4j exploitation patterns 
 This check fails when a CloudFront distribution is associated with a WAFv2 WebACL, but that WebACL's rules do not include the AWS Managed Rule groups `AWSManagedRulesAnonymousIpList` and `AWSManagedRulesKnownBadInputsRuleSet`, which together provide protection against known Log4Shell (Log4j, CVE-2021-44228) style exploitation traffic and requests from anonymizing sources.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_cloudfront_distribution`, `aws_wafv2_web_acl`
 

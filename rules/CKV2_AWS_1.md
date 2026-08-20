@@ -9,6 +9,8 @@ Subnets without an attached NACL lose an extra layer of stateless network filter
 This check ensures that every Network ACL (NACL) defined in Terraform is actually attached to at least one subnet, either directly or through its parent VPC's default association.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_network_acl` resources, evaluated in connection with `aws_subnet` and `aws_vpc` resources.
 
 ## Why it matters

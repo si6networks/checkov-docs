@@ -8,6 +8,8 @@ A Function App with public network access enabled exposes its HTTP-triggered end
 Ensures that Azure Function Apps are not reachable directly from the public internet, requiring access via private networking (VNet integration / private endpoints) instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_linux_function_app`, `azurerm_linux_function_app_slot`, `azurerm_windows_function_app`, `azurerm_windows_function_app_slot` — inspects `public_network_access_enabled`
 
 ## Why it matters

@@ -9,6 +9,8 @@ Disabled Defender for Container Registries removes vulnerability scanning and th
 This check ensures the Microsoft Defender for Cloud pricing tier for the `ContainerRegistry` resource type is set to `Standard`, enabling Defender scanning for Azure Container Registry.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_security_center_subscription_pricing`
 
 ## Why it matters

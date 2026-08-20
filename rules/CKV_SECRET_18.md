@@ -9,6 +9,8 @@ A leaked Twilio credential can be used to intercept OTP/2FA SMS codes, send phis
 This check scans file contents for hardcoded Twilio API keys/secrets (and account SID/auth-token pairs), flagging static telephony/messaging-platform credentials committed directly into source or config files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (application config, YAML/JSON, `.env` files, scripts, CI pipeline definitions, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched credential string within a file; findings are reported at the file/line level.
 

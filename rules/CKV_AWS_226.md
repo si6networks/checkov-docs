@@ -8,6 +8,8 @@ Without automatic minor version upgrades, an RDS/Aurora instance can miss timely
 This check ensures that RDS database instances and cluster instances (`aws_db_instance`, `aws_rds_cluster_instance`) have `auto_minor_version_upgrade` enabled so they automatically receive minor engine version patches.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_db_instance`, `aws_rds_cluster_instance`
 

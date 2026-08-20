@@ -9,6 +9,8 @@ Running HTTP/1.1 instead of HTTP/2 is primarily a performance/modernization conc
 This check ensures that an Azure App Service / Web App has HTTP/2 enabled in its site configuration, rather than being left on the older HTTP/1.1-only default.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app` (`site_config[0].http2_enabled`).
 - **ARM/Bicep**: `Microsoft.Web/sites` (`properties.siteConfig.http20Enabled` — represented as a string in older API versions, boolean in newer ones).
 

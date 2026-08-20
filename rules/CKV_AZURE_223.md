@@ -8,6 +8,8 @@ Allowing Event Hub Namespace clients to connect below TLS 1.2 permits weak or de
 Ensures that an Azure Event Hubs namespace enforces a minimum TLS version of 1.2 for client connections, rejecting older, weaker TLS versions.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_eventhub_namespace` — inspects `minimum_tls_version`
 - **ARM**: `Microsoft.EventHub/namespaces` — inspects `properties.minimumTlsVersion`
 - **Bicep**: compiles to the ARM resource type above

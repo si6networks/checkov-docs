@@ -8,6 +8,8 @@ Setting --hostname-override can bypass TLS bootstrap hostname verification for t
 This check ensures the kubelet's `--hostname-override` argument is not set, so the kubelet uses the node's true hostname/identity for all cluster operations.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

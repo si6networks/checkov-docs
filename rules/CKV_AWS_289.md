@@ -8,6 +8,8 @@ IAM policies allowing unconstrained permissions-management or resource-exposure 
 This check fails when an IAM policy document grants "permissions management" actions (the ability to modify IAM/resource policies or otherwise change access controls) over an unconstrained `Resource` scope, per cloudsplaining's analysis.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resources:** `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`
 

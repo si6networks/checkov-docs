@@ -9,6 +9,8 @@ Missing deletion protection on a Spanner database is primarily an availability/d
 This check requires `google_spanner_database` resources to set `deletion_protection = true`, preventing the database (and all data in it) from being deleted via `terraform destroy` or `terraform apply` operations that would remove the resource.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_spanner_database`
 - **Check type:** resource (value check)

@@ -8,6 +8,8 @@ Software-protected keys already benefit from Key Vault's access controls, so lac
 This check ensures that a key stored in Azure Key Vault is generated/protected by a Hardware Security Module (HSM) rather than by software-based cryptography.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault_key` (inspects `key_type`)
 - **ARM/Bicep**: `Microsoft.KeyVault/vaults/keys` (inspects `properties/kty`)
 

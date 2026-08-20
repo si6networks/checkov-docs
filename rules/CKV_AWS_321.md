@@ -9,6 +9,8 @@ Without enhanced VPC routing, Redshift COPY/UNLOAD traffic can traverse the publ
 This check ensures Amazon Redshift clusters have `enhanced_vpc_routing` enabled, forcing all COPY/UNLOAD/data-import traffic to route through the cluster's VPC instead of over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_redshift_cluster`
 

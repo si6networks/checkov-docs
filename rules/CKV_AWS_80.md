@@ -8,6 +8,8 @@ Missing MSK cluster logging limits visibility into broker-level activity needed 
 This check fails when an Amazon MSK (Managed Streaming for Apache Kafka) cluster does not have broker logging enabled to at least one of CloudWatch Logs, Kinesis Data Firehose, or S3.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::MSK::Cluster` (CloudFormation), `aws_msk_cluster` (Terraform)
 - **Check type:** resource

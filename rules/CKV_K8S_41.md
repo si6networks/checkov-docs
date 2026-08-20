@@ -9,6 +9,8 @@ Leaving the default ServiceAccount's token auto-mountable means every pod that d
 This check ensures the automatically-created `default` ServiceAccount in each namespace has `automountServiceAccountToken: false` set, so it cannot be used to authenticate to the Kubernetes API unless explicitly opted back in.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: resource kind `ServiceAccount`, only when `metadata.name == "default"`; field `automountServiceAccountToken`.
 - **Terraform**: resource types `kubernetes_service_account`, `kubernetes_service_account_v1`, same field, only when the resource's `metadata.name` is `"default"`.
 

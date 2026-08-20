@@ -8,6 +8,8 @@ wget's --no-check-certificate disables TLS validation for build-time downloads, 
 This check fails a Dockerfile if any `RUN` instruction invokes `wget` with `--no-check-certificate`, which disables TLS certificate validation for the download.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds. Implemented as a Checkov graph-based JSON policy scanning `RUN` instructions (`resource_types: ["RUN"]`).
 
 ## Why it matters

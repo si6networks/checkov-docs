@@ -9,6 +9,8 @@ This is an availability/resilience best practice (geo-replication for multi-regi
 This check ensures that an Azure Container Registry configured for multi-region use is on the Premium SKU with `georeplications` configured, so image pulls remain available and fast across regions.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_container_registry` resource.
 
 ## Why it matters

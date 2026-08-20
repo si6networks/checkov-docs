@@ -8,6 +8,8 @@ Using kubenet instead of Azure CNI limits fine-grained network policy enforcemen
 This check verifies that an Azure Kubernetes Service (AKS) cluster's network profile uses the Azure CNI network plugin rather than the basic `kubenet` plugin.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_kubernetes_cluster`
 

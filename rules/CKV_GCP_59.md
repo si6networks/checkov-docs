@@ -9,6 +9,8 @@ Contained database authentication lets users authenticate directly against a dat
 This check fails when a `google_sql_database_instance` running SQL Server has the `contained database authentication` database flag set to `on`, which permits users to authenticate directly to individual databases without a corresponding server-level login.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `SQLSERVER`
 - **Check type:** resource check

@@ -9,6 +9,8 @@ Using the default service account at the organization level compounds the over-p
 This check fails when a `google_organization_iam_member` or `google_organization_iam_binding` resource grants a role to a project's default Compute Engine or App Engine service account at the organization level.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_organization_iam_member` and `google_organization_iam_binding`.
 
 **Note on source:** Checkov implements this as `GoogleOrgMemberDefaultServiceAccount`, a thin subclass of the shared `AbsGoogleIAMMemberDefaultServiceAccount` base class (the same base class used by CKV_GCP_46 at project scope). That abstract base's implementation was not included in the extracted source set for this doc; based on the class hierarchy and the default-service-account detection pattern used elsewhere in Checkov's GCP checks (see CKV_GCP_31's regex `\d+-compute@developer\.gserviceaccount\.com` for the default Compute Engine SA), this check is understood to inspect the `member` field for that same default-service-account pattern and fail when any role is granted to it at organization scope.

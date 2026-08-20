@@ -9,6 +9,8 @@ Attaching AdministratorAccess grants unrestricted Action:* / Resource:* across t
 This check flags IAM roles and policy-attachment resources that attach the AWS-managed `AdministratorAccess` policy, which grants unrestricted (`*:*`) permissions across the entire AWS account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resources `aws_iam_role` (via inline `managed_policy_arns`), `aws_iam_policy_attachment`, `aws_iam_role_policy_attachment`, `aws_iam_user_policy_attachment`, `aws_iam_group_policy_attachment`, `aws_ssoadmin_managed_policy_attachment`
 
 ## Why it matters

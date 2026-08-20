@@ -8,6 +8,8 @@ PubSub topics are encrypted by Google by default, so a missing CMK removes custo
 This check requires every `google_pubsub_topic` Terraform resource to set `kms_key_name`, so that message data at rest is encrypted with a customer-managed Cloud KMS key instead of only Google's default encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_pubsub_topic`
 - **Check type:** resource (attribute-value check)

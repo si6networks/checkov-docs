@@ -8,6 +8,8 @@ Cross-zone load balancing affects even distribution of traffic across availabili
 This check verifies that a Network or Gateway Load Balancer has `enable_cross_zone_load_balancing` set to `true`, so traffic is evenly distributed across targets in all enabled Availability Zones rather than only within the AZ that received the request.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `aws_lb` and `aws_alb` resources — but only when `load_balancer_type` is `network` or `gateway`. Application Load Balancers are exempted (cross-zone balancing is always on and non-configurable for ALBs).
 
 ## Why it matters

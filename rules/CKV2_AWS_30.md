@@ -8,6 +8,8 @@ Missing query logging on a Postgres RDS instance removes an audit trail useful f
 This check ensures a standalone (non-Aurora) PostgreSQL RDS instance (`aws_db_instance` with `engine = "postgres"`) is attached to a DB parameter group that configures `log_statement` and `log_min_duration_statement`, enabling query logging.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_db_instance` (engine `postgres`), connected `aws_db_parameter_group`
 - **Check type:** Graph-based connection + attribute check

@@ -9,6 +9,8 @@ Assigning a public IP to a managed database host exposes a data-storing service 
 This check fails when a Yandex Managed Database cluster is configured to assign a public IP address to its hosts (or to the cluster, for Greenplum), making the database directly reachable from the internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_mdb_clickhouse_cluster`, `yandex_mdb_elasticsearch_cluster`, `yandex_mdb_greenplum_cluster`, `yandex_mdb_kafka_cluster`, `yandex_mdb_mongodb_cluster`, `yandex_mdb_mysql_cluster`, `yandex_mdb_postgresql_cluster`, `yandex_mdb_sqlserver_cluster`
 

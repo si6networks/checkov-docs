@@ -9,6 +9,8 @@ An EMR security configuration that doesn't enforce SSE-KMS leaves data processed
 This check requires that an EMR security configuration's at-rest encryption for local disks/EBS is configured using SSE-KMS (server-side encryption with a KMS key), rather than a weaker or unspecified encryption mode.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_emr_security_configuration`
 
 ## Why it matters

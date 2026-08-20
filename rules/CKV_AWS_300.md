@@ -8,6 +8,8 @@ This check verifies S3 lifecycle rules abort incomplete multipart uploads; missi
 This check ensures an `aws_s3_bucket_lifecycle_configuration` resource includes an enabled rule with `abort_incomplete_multipart_upload` configured (and, if a filter is present, that filter must be empty/unscoped so the rule applies broadly) — otherwise incomplete multipart uploads can accumulate indefinitely and incur storage costs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_bucket_lifecycle_configuration`
 

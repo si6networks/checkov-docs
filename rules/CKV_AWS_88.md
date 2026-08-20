@@ -9,6 +9,8 @@ Assigning a public IP to an EC2 instance widens its network attack surface to th
 This check fails when an EC2 instance, launch template, or Ansible `ec2_instance` task explicitly requests a public IP address (`associate_public_ip_address` / `assign_public_ip` set to `true`), which would make the instance directly reachable from the internet.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `cloudformation`, `terraform`
+
 - **Terraform**: `aws_instance` (`associate_public_ip_address` attribute) and `aws_launch_template` (`network_interfaces[0].associate_public_ip_address`).
 - **CloudFormation**: `AWS::EC2::Instance` and `AWS::EC2::LaunchTemplate` — inspects `NetworkInterfaces[].AssociatePublicIpAddress` (top-level for Instance, under `LaunchTemplateData` for LaunchTemplate).
 - **Ansible**: tasks using the `amazon.aws.ec2_instance` or `ec2_instance` modules — inspects `network.assign_public_ip`, including tasks nested inside `block`/`tasks` structures at various depths.

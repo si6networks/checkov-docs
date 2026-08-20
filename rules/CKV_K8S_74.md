@@ -8,6 +8,8 @@ AlwaysAllow authorization mode disables all authorization checks on the API serv
 This check fails a `kube-apiserver` container manifest if its `--authorization-mode` argument includes `AlwaysAllow`, which disables all authorization checks and permits every authenticated (or even unauthenticated) request.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

@@ -9,6 +9,8 @@ Running an unsupported Python version risks missing security patches for the lan
 This check ensures Azure App Service web apps configured to run Python use a current, supported Python interpreter version rather than an outdated one.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`
 - **ARM/Bicep**: `Microsoft.Web/sites`
 

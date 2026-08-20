@@ -8,6 +8,8 @@ Wildcards in Role/ClusterRole rules grant unrestricted API groups, resources, or
 This check fails RBAC `Role`/`ClusterRole` definitions (and their Terraform equivalents) whose first access rule grants permissions using a wildcard (`*`) in `apiGroups`, `resources`, or `verbs`, since wildcards grant far broader access than intended.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: `Role`, `ClusterRole` kinds.
 - **Terraform**: `kubernetes_role`, `kubernetes_role_v1`, `kubernetes_cluster_role`, `kubernetes_cluster_role_v1` resources.
 

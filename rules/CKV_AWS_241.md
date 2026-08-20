@@ -9,6 +9,8 @@ Encryption is already enabled by CKV_AWS_240's control; using the AWS-owned key 
 This check ensures that an `aws_kinesis_firehose_delivery_stream` uses server-side encryption enabled with a customer-managed KMS key (CMK), including a valid key ARN, rather than relying on the AWS-owned default key or leaving encryption disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_kinesis_firehose_delivery_stream`
 

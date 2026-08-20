@@ -8,6 +8,8 @@ A security rule with both source_zone and destination_zone set to 'any' effectiv
 This check ensures PAN-OS security policy rules do not set both `source_zone` and `destination_zone` to `any`, which would allow the rule to match traffic between every zone pair on the firewall rather than an intentional, scoped set of zones.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible task `tasks.paloaltonetworks.panos.panos_security_rule` (implemented only as a graph-based JSON policy for Ansible; no Terraform equivalent is listed).
 
 ## Why it matters

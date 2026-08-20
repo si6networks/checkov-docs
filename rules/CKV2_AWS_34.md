@@ -8,6 +8,8 @@ Unencrypted SSM parameters can store configuration values, tokens, or credential
 This check ensures that `aws_ssm_parameter` resources use the `SecureString` type, which stores the parameter value encrypted with a KMS key rather than as plaintext.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_ssm_parameter`
 - **Provider scope:** AWS

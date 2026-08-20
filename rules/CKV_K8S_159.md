@@ -8,6 +8,8 @@ Uncontrolled git-sync sidecars pull and can execute code from a remote git sourc
 This check flags any Pod/workload container that sets the environment variable `GITSYNC_GIT`, because that variable is used by the `git-sync` sidecar to pass raw arguments to the underlying `git` binary and has a documented command-injection vulnerability.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types (Kubernetes):** `Pod`, `PodTemplate`, `Deployment`, `DeploymentConfig`, `ReplicaSet`, `ReplicationController`, `StatefulSet`, `DaemonSet`, `Job`, `CronJob`
 - **Resource/entity types (Terraform):** `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`

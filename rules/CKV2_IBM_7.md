@@ -9,6 +9,8 @@ A Kubernetes cluster with a public service endpoint exposes the cluster manageme
 This check ensures that an IBM Cloud Kubernetes Service cluster (`ibm_container_cluster`) has its private service endpoint enabled (`private_service_endpoint = true`) and its public service endpoint disabled or absent, so the cluster's Kubernetes master/API server is reachable only over private connectivity.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ibm_container_cluster`
 

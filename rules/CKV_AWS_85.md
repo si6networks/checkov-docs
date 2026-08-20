@@ -8,6 +8,8 @@ Missing DocumentDB logging limits the ability to detect and investigate unauthor
 This check fails when an Amazon DocumentDB cluster does not export `profiler` or `audit` logs to CloudWatch Logs.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::DocDB::DBCluster` (CloudFormation), `aws_docdb_cluster` (Terraform)
 - **Check type:** resource

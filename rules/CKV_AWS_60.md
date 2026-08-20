@@ -8,6 +8,8 @@ An IAM role trust policy that fails to restrict which principals or services can
 This check fails when an IAM role's trust policy (`AssumeRolePolicyDocument`) contains an `Allow` statement whose `Principal.AWS` is the wildcard `"*"`, meaning literally any AWS account or entity (given the right conditions/credentials) could assume the role.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::IAM::Role`, property `Properties/AssumeRolePolicyDocument`.
 - **Terraform**: `aws_iam_role` resource, attribute `assume_role_policy`.
 

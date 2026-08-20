@@ -9,6 +9,8 @@ Allowing public network access to an Event Grid Topic exposes the event ingestio
 This check ensures an Azure Event Grid Topic disables public network access, restricting publish/subscribe traffic to private network paths.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform (`azurerm` provider), ARM templates, Bicep (compiled to ARM)
 - **Resource types:**
   - ARM: `Microsoft.EventGrid/topics`

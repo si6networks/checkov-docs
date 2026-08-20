@@ -9,6 +9,8 @@ GIT_SSL_NO_VERIFY disables TLS certificate checks for git operations, allowing a
 This check verifies that the `GIT_SSL_NO_VERIFY` environment variable is never set (to any value) in a Dockerfile, whether via `ARG`/`ENV` or inline in a `RUN` command, since Git treats its mere presence as disabling TLS certificate checks.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: `ARG`, `ENV`, and `RUN` instructions.
 
 This is a graph-based check using regex matching, evaluated across the three instruction types.

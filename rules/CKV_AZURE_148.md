@@ -9,6 +9,8 @@ Allowing older TLS versions on Redis Cache weakens transport encryption for cach
 This check ensures that an Azure Redis Cache instance requires clients to connect using TLS 1.2 (or later) rather than an older, weaker TLS/SSL version.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_redis_cache`
 

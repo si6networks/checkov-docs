@@ -8,6 +8,8 @@ DAX is an in-memory cache fronting DynamoDB and commonly holds sensitive applica
 This check ensures Amazon DynamoDB Accelerator (DAX) clusters have server-side encryption enabled, since DAX clusters are unencrypted by default.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::DAX::Cluster` (CloudFormation), `aws_dax_cluster` (Terraform)
 

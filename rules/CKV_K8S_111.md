@@ -8,6 +8,8 @@ The --root-ca-file is distributed to pods via service account secrets to let the
 This check verifies that when `kube-controller-manager` specifies a `--root-ca-file` argument, it points at a `.pem`-suffixed certificate file, so ServiceAccount tokens distributed to Pods include a valid root CA bundle for verifying the API server's TLS certificate.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `kube-controller-manager` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `kube-controller-manager` control-plane component.
 
 ## Why it matters

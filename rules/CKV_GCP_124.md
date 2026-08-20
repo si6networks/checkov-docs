@@ -9,6 +9,8 @@ An overly permissive ingress setting on a Cloud Function allows invocation from 
 This check fails when a `google_cloudfunctions_function` or `google_cloudfunctions2_function` allows unrestricted ingress (i.e. its ingress setting is not one of `ALLOW_INTERNAL_ONLY` or `ALLOW_INTERNAL_AND_GCLB`), meaning the function can be invoked directly from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_cloudfunctions_function` (1st gen), `google_cloudfunctions2_function` (2nd gen)
 - **Check type:** resource (value check)

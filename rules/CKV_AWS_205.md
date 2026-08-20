@@ -8,6 +8,8 @@ Sharing AMI launch permissions with other accounts extends access to the full di
 Flags any use of the `aws_ami_launch_permission` resource, since granting launch permissions on an AMI to another account (or the public) widens who can create instances from your custom image.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_ami_launch_permission` — this check unconditionally fails whenever this resource type is present, regardless of the specific account ID/group being granted.
 
 ## Why it matters

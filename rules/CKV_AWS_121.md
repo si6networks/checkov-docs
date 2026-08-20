@@ -9,6 +9,8 @@ Without AWS Config aggregating configuration changes across all regions, securit
 Fails when an `aws_config_configuration_aggregator` resource does not aggregate configuration data from all regions (via either account-based or organization-based aggregation with `all_regions` set).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_config_configuration_aggregator` resource.
 
 ## Why it matters

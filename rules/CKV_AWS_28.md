@@ -8,6 +8,8 @@ Missing point-in-time recovery on a DynamoDB table is an availability/resilience
 This check fails when a DynamoDB table does not have Point-in-Time Recovery (PITR) enabled, leaving the table without continuous backups that can restore to any second in the last 35 days.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** Terraform, CloudFormation
 - **Resources:** `aws_dynamodb_table` (Terraform), `AWS::DynamoDB::Table` (CloudFormation)
 

@@ -9,6 +9,8 @@ This entropy-based detector catches unbranded high-entropy hex secrets (signing 
 This check flags hexadecimal-formatted string literals in scanned files whose Shannon entropy is high enough to statistically resemble a random secret (API key, token, or cryptographic material) rather than ordinary code, config, or a known constant.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (source code, config files, YAML/JSON, scripts, Dockerfiles, CI pipeline definitions, etc.), not limited to a single IaC resource type. This detector is a generic fallback that runs alongside the vendor-specific pattern detectors (AWS, Slack, Stripe, etc.) to catch secrets that don't match a known provider's format.
 - **Entities**: any hex-formatted string token in scanned file content; findings are reported at the file/line level.
 

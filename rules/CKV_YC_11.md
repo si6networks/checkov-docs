@@ -9,6 +9,8 @@ A compute instance's network interface without an assigned security group falls 
 This check fails when a Yandex Cloud `yandex_compute_instance` resource's network interface does not have a `security_group_ids` attribute set.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_compute_instance`
 

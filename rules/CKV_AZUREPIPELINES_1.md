@@ -9,6 +9,8 @@ Using a floating 'latest' tag for a container job means the exact image content 
 This check fails when a job (or a job nested inside a stage) in an Azure Pipelines YAML file runs its container image with either no tag at all (defaults to `:latest`) or an explicit `:latest` tag, instead of pinning to a specific version.
 
 ## Applicability
+**Checkov framework(s):** `azure_pipelines`
+
 - **Azure Pipelines** YAML pipeline definitions — applies to the `jobs` and `stages[].jobs[]` entities, specifically their `container` field (either a plain image string or a `container.image` object field).
 
 ## Why it matters

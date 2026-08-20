@@ -8,6 +8,8 @@ Setting `ACTIONS_ALLOW_UNSECURE_COMMANDS` to true re-enables a workflow-commands
 This check fails when a GitHub Actions workflow job or step sets the environment variable `ACTIONS_ALLOW_UNSECURE_COMMANDS` to a truthy value, which re-enables a deprecated and dangerous workflow-command mechanism.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **Framework:** GitHub Actions workflow YAML
 - **Entities:** `jobs` (job-level `env` block) and `jobs.*.steps[]` (step-level `env` block)
 

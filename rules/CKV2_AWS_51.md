@@ -8,6 +8,8 @@ Omitting client certificate authentication on API Gateway removes an additional 
 This check fails when an API Gateway (REST or HTTP, but not WebSocket) stage does not have a `client_certificate_id` configured, meaning API Gateway does not present a certificate to authenticate itself to backend integrations, and backends have no way to verify that requests actually originated from your API Gateway rather than a spoofed source.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_api_gateway_stage` (REST APIs), `aws_apigatewayv2_api`, `aws_apigatewayv2_stage` (HTTP APIs — WebSocket APIs are exempted)
 

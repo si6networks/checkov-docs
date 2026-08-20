@@ -8,6 +8,8 @@ The --service-account-private-key-file underpins the signing of every service ac
 This check verifies that when `kube-controller-manager` specifies a `--service-account-private-key-file`, that file has a `.pem` extension, which Checkov treats as the marker of a properly-provisioned private key file for the service account token controller.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `kube-controller-manager` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `kube-controller-manager` control-plane component.
 
 ## Why it matters

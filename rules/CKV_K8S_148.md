@@ -8,6 +8,8 @@ Without --tls-cert-file and --tls-private-key-file configured, the kubelet API s
 This check ensures the kubelet is configured with both `--tls-cert-file` and `--tls-private-key-file` so its HTTPS API is served with a proper TLS certificate/key pair rather than a kubelet-generated self-signed one.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

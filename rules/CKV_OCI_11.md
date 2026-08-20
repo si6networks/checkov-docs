@@ -8,6 +8,8 @@ Not requiring lowercase characters in the IAM password policy weakens password c
 This check requires that an OCI `oci_identity_authentication_policy` resource's password policy mandates at least one lowercase character (`is_lowercase_characters_required = true`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `oci_identity_authentication_policy`
 - **Check type:** resource (single attribute value check, nested under `password_policy` block index 0)

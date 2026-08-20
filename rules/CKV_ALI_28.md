@@ -8,6 +8,8 @@ A disabled KMS key mainly creates an operational/availability risk (dependent en
 This check verifies that Alibaba Cloud KMS keys are not left in a disabled state.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_kms_key`
 

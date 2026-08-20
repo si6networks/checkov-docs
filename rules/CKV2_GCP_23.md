@@ -8,6 +8,8 @@ A Document AI Warehouse Location without a CMK relies on Google-managed encrypti
 This check ensures that a Document AI Warehouse Location resource references a customer-managed KMS key (`kms_key`) rather than relying solely on Google-managed default encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_document_ai_warehouse_location`
 

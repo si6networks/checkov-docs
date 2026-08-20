@@ -9,6 +9,8 @@ Missing load-balancer access logging removes a key source of visibility into rec
 This check ensures that a Tencent Cloud CLB (Cloud Load Balancer) instance is configured with both a log set ID and a log topic ID so that access logs are captured.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_clb_instance` (Tencent Cloud provider).
 
 ## Why it matters

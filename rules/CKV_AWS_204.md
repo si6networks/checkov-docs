@@ -8,6 +8,8 @@ Unencrypted AMI EBS block devices expose the disk image's contents, which can in
 Ensures that any `aws_ami` resource defining its own EBS block devices (rather than deriving them entirely from a snapshot) has those EBS volumes encrypted, so that the resulting AMI does not produce unencrypted instance storage.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_ami` — inspects each entry in `ebs_block_device` for `snapshot_id` and `encrypted`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Backtracking is a recovery/availability feature for Aurora clusters, so its abse
 This check requires Aurora / Aurora-MySQL RDS clusters to set a non-zero `backtrack_window`, enabling Aurora's backtracking feature so the cluster can be rewound to an earlier point in time without a full restore.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_rds_cluster`
 - **Engine scope:** Only `aurora` and `aurora-mysql` (backtracking is not available for Aurora PostgreSQL or plain MySQL/other engines)

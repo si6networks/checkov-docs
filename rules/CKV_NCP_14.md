@@ -9,6 +9,8 @@ An NCP NAS volume without encryption enabled stores data at rest in plaintext, e
 This check ensures that Naver Cloud Platform (NCP) Network Attached Storage volumes (`ncloud_nas_volume`) have encryption at rest enabled via the `is_encrypted_volume` attribute.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_nas_volume`
 - **Check type:** resource-configuration attribute check

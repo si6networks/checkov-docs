@@ -8,6 +8,8 @@ Unsafe GitHub Actions OIDC trust conditions on an IAM role can allow workflows f
 This check inspects the inline `assume_role_policy` (trust policy) of an `aws_iam_role` for statements that federate trust to GitHub Actions' OIDC provider, and fails if the `sub` (subject) claim condition is missing or written in a way that can be bypassed (wildcards, missing claim segments, or unsafe claim ordering).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_iam_role` (specifically its `assume_role_policy` attribute)
 

@@ -9,6 +9,8 @@ Public network access on a storage account backing a Machine Learning workspace 
 This check ensures that when an Azure Machine Learning workspace is flagged as handling "High Business Impact" (HBI) data, any storage account connected to that workspace has public network access disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource types:** `azurerm_machine_learning_workspace` connected to `azurerm_storage_account`
 

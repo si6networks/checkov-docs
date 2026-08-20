@@ -9,6 +9,8 @@ Leaving HTTP port 80 open to the entire internet on an NSG exposes any bound ser
 This check ensures that Azure Network Security Group (NSG) rules do not allow unrestricted inbound access on port 80 (HTTP) from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_network_security_group`, `azurerm_network_security_rule`

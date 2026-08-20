@@ -8,6 +8,8 @@ Setting the secure port to 0 disables the authenticated, TLS-protected API serve
 This check verifies that a self-managed `kube-apiserver` container does not disable its authenticated, TLS-secured HTTPS listener by setting `--secure-port=0`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

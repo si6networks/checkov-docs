@@ -9,6 +9,8 @@ A firewall whose default inbound policy is ACCEPT rather than DROP silently allo
 This check ensures a Linode Cloud Firewall (`linode_firewall`) has its default `inbound_policy` set to `DROP` rather than `ACCEPT`, so that any traffic not explicitly matched by a firewall rule is blocked instead of allowed through.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `linode_firewall`
 - **Check type:** resource-configuration attribute check

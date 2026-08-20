@@ -9,6 +9,8 @@ Leaving the legacy (v1) instance metadata service enabled removes IMDSv2-style p
 This check ensures that OCI compute instances (`oci_core_instance`) disable the legacy (v1) Instance Metadata Service (IMDS) endpoint, forcing use of the more secure v2 endpoint only.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_instance`
 

@@ -9,6 +9,8 @@ log_temp_files logging is a performance-diagnostic aid for tracking disk-based t
 This check fails when a `google_sql_database_instance` running PostgreSQL has the `log_temp_files` database flag set to anything other than `0`, since a non-zero (or unset) value suppresses logging of temporary file usage that indicates queries spilling to disk.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `POSTGRES`
 - **Check type:** resource check

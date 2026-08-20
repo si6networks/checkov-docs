@@ -9,6 +9,8 @@ A PodSecurityPolicy allowing `hostNetwork: true` lets any admitted pod bind to t
 This check ensures a Kubernetes `PodSecurityPolicy` does not allow pods to use `hostNetwork: true`, which would let a pod share the host node's network namespace.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: resource kind `PodSecurityPolicy`, field `spec.hostNetwork`.
 - **Terraform**: resource type `kubernetes_pod_security_policy`, attribute `spec[0].host_network`.
 

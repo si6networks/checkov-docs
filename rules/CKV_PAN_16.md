@@ -8,6 +8,8 @@ Leaving session-start logging enabled outside of troubleshooting/long-lived-GRE 
 This check ensures that PAN-OS security policy rules do not enable "Log at Session Start" (`log_start`) by default, since session-start logging is intended only for narrow use cases (troubleshooting, long-lived GRE tunnels) and, if left broadly enabled, generates excessive/duplicate log volume.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible task `tasks.paloaltonetworks.panos.panos_security_rule` (this check is implemented only as a graph-based JSON policy for Ansible; no Terraform equivalent is listed).
 
 ## Why it matters

@@ -9,6 +9,8 @@ Without code-signing enforcement, Lambda will run any code package uploaded by a
 This check ensures a Lambda function specifies a code-signing configuration (`code_signing_config_arn`) so that AWS Lambda validates the integrity and provenance of deployed code before accepting it.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_lambda_function`
 
 ## Why it matters

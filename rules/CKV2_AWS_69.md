@@ -9,6 +9,8 @@ Allowing unencrypted client connections to an RDS database exposes query traffic
 This check requires RDS instances to enforce TLS/SSL-encrypted connections at the database engine level via the connected parameter group — specifically `rds.force_ssl` (PostgreSQL/SQL Server), `require_secure_transport` (MySQL/MariaDB), or `db2comm=SSL` (Db2) — rather than allowing unencrypted client connections.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::RDS::DBInstance` + `AWS::RDS::DBParameterGroup` (CloudFormation); `aws_db_instance` + `aws_db_parameter_group` (Terraform)
 

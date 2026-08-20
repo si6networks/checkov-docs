@@ -9,6 +9,8 @@ Public IPs on Kubernetes node group instances expose worker nodes that run appli
 This check ensures that worker nodes in a Yandex Managed Service for Kubernetes node group are not configured with a public IP / NAT on their network interface, keeping worker nodes reachable only via private networking.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_kubernetes_node_group`
 - **Check type:** resource (negative value check)

@@ -8,6 +8,8 @@ An Automation account reachable from any public network can be targeted for cred
 This check verifies that an Azure Automation Account has its `public_network_access_enabled` attribute explicitly set to `false`, ensuring the account is not reachable over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_automation_account`
 

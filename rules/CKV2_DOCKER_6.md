@@ -8,6 +8,8 @@ NODE_TLS_REJECT_UNAUTHORIZED=0 globally disables TLS certificate verification fo
 This check fails a Dockerfile if it sets `NODE_TLS_REJECT_UNAUTHORIZED` to `0` (via `ARG`, `ENV`, or inline in a `RUN` command), which globally disables TLS certificate verification for the Node.js runtime and for `npm`/`yarn`/`node` HTTPS clients.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds. Implemented as a Checkov graph-based JSON policy checking `ARG`, `ENV`, and `RUN` instructions.
 
 ## Why it matters

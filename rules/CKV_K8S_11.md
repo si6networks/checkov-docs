@@ -8,6 +8,8 @@ Omitting CPU limits allows a container to consume unbounded CPU on a node, enabl
 This check verifies that every container in a Pod-carrying workload declares a CPU `limits` value under `resources`, so a container cannot consume unbounded CPU on its node.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 Two independent implementations cover different IaC surfaces under the same ID:
 - **Kubernetes** manifests: applicable entity kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet` — evaluated per-container.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1` — evaluated per-container inside `spec.container` (or `spec.template.spec.container` for Deployments).

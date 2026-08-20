@@ -8,6 +8,8 @@ Unencrypted EBS volumes on launch configurations/instances expose data at rest, 
 This check fails when the EBS volumes (root and/or additional block devices) attached to an EC2 instance or Auto Scaling launch configuration are not encrypted.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::AutoScaling::LaunchConfiguration` (CloudFormation), `aws_instance`, `aws_launch_configuration` (Terraform)
 - **Check type:** resource

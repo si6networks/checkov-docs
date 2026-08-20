@@ -8,6 +8,8 @@ A CodeArtifact domain without a customer-managed KMS key still benefits from def
 This check ensures that an AWS CodeArtifact domain (`aws_codeartifact_domain`) is configured with a customer-managed KMS key for encrypting its stored package assets and metadata.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_codeartifact_domain`
 

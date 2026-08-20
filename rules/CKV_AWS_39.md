@@ -9,6 +9,8 @@ Enabling any public endpoint access on the EKS API server (even with CIDR filter
 This check ensures the EKS cluster's Kubernetes API server public endpoint is fully disabled (`endpoint_public_access = false`), rather than merely restricted to specific CIDRs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_eks_cluster`
 

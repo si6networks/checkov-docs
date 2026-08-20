@@ -9,6 +9,8 @@ A Transfer Server configured with a PUBLIC endpoint type exposes an SFTP/FTPS fi
 This check requires that an AWS Transfer Family (SFTP/FTPS/FTP) server's endpoint type be `VPC` or `VPC_ENDPOINT` rather than the internet-facing `PUBLIC` endpoint type.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_transfer_server`
 - **CloudFormation**: `AWS::Transfer::Server`
 

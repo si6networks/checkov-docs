@@ -9,6 +9,8 @@ An inbound NACL rule spanning the full port range (1-65535) removes all port-lev
 This check ensures that inbound rules on a Naver Cloud Platform (NCP) Network ACL (`ncloud_network_acl_rule`) do not use the full port range `1-65535`, which would allow traffic to any port on the destination.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_network_acl_rule`
 - **Check type:** resource-configuration check (Python)

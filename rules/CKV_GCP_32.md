@@ -9,6 +9,8 @@ Leaving project-wide SSH keys unblocked means any key added to project metadata 
 This check requires that a GCE instance's `metadata.block-project-ssh-keys` value be set to `true`, preventing the VM from trusting any SSH public key stored at the project level.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_compute_instance`, `google_compute_instance_from_template`, and `google_compute_instance_template`.
 
 ## Why it matters

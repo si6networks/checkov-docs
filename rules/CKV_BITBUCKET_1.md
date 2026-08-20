@@ -8,6 +8,8 @@ Requiring fewer than two approvals on merge requests weakens the code-review con
 This check verifies that a Bitbucket repository's branch restrictions configuration enforces a minimum of 2 required reviewer approvals before a pull request can be merged.
 
 ## Applicability
+**Checkov framework(s):** `bitbucket_configuration`
+
 - **Bitbucket configuration** (`bitbucket_configuration` — Checkov's scan of live Bitbucket repository settings/branch-restrictions API responses, not a `bitbucket-pipelines.yml` file): applies to the branch restrictions resource as a whole (`supported_entities = ("*",)`).
 
 ## Why it matters

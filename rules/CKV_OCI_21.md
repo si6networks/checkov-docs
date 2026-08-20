@@ -9,6 +9,8 @@ Non-stateless ingress rules on network security groups can allow unintended stat
 This check ensures that ingress rules within an OCI Network Security Group (`oci_core_network_security_group_security_rule`) are explicitly marked `stateless = true`, rather than relying on the default stateful behavior.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_network_security_group_security_rule`
 

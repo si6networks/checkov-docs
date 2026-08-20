@@ -9,6 +9,8 @@ An ELB without an ACM-issued TLS certificate can leave traffic unencrypted or re
 This check requires that every listener on a "classic" Elastic Load Balancer (`aws_elb`) specify an SSL certificate (`ssl_certificate_id`), ensuring encrypted, certificate-backed listeners rather than plaintext or unauthenticated endpoints.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_elb` (Classic Load Balancer)
 

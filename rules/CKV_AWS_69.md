@@ -8,6 +8,8 @@ A publicly accessible Amazon MQ broker exposes the messaging endpoint (and any c
 This check fails when an Amazon MQ broker is configured with `PubliclyAccessible`/`publicly_accessible` set to `true`, meaning the message broker's endpoints are reachable directly from the public internet rather than only from within the associated VPC.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::AmazonMQ::Broker`, property `Properties/PubliclyAccessible`.
 - **Terraform**: `aws_mq_broker` resource, attribute `publicly_accessible`.
 

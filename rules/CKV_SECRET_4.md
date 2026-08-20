@@ -9,6 +9,8 @@ Embedded Basic Auth credentials in a URL are a plaintext username/password pair 
 This check scans file contents for URLs or connection strings containing embedded HTTP Basic Authentication credentials in the form `scheme://user:password@host`, flagging plaintext usernames/passwords committed directly into source or config.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (Terraform, YAML/JSON config, Dockerfiles, CI pipeline definitions, `.env` files, application config, scripts, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched credential-bearing URL string within a file; findings are reported at the file/line level.
 

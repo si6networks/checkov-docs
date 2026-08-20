@@ -9,6 +9,8 @@ Missing or weak Strict-Transport-Security enforcement on CloudFront responses le
 This check ensures that a CloudFront response headers policy has a fully and correctly configured `strict_transport_security` block — enabled with a sufficiently long max-age, subdomain inclusion, override, and preload — so that the HSTS header is actually enforced on responses.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_cloudfront_response_headers_policy`
 

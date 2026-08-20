@@ -9,6 +9,8 @@ OS Login centralizes SSH key/IAM-based access control and revocation instead of 
 This check requires that the `enable-oslogin` project metadata key be set to `"TRUE"` on a `google_compute_project_metadata` resource, turning on OS Login for all instances in the project by default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `google_compute_project_metadata` resource.
 
 ## Why it matters

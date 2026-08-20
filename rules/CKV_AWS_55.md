@@ -8,6 +8,8 @@ Without IgnorePublicAcls, legacy or accidental public ACL grants on objects/buck
 This check verifies that an S3 bucket's Public Access Block configuration has `IgnorePublicAcls` (CloudFormation) / `ignore_public_acls` (Terraform) set to `true`, so that any public ACL granted on the bucket or its objects is ignored by S3.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::S3::Bucket` resources, property `Properties/PublicAccessBlockConfiguration/IgnorePublicAcls`.
 - **Terraform**: `aws_s3_bucket_public_access_block` resource, attribute `ignore_public_acls`.
 

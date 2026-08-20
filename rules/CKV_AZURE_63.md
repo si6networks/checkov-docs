@@ -8,6 +8,8 @@ Missing HTTP access logging removes the primary forensic record of requests to a
 This check fails when an Azure App Service (or Web App) does not have HTTP request logging enabled, meaning inbound HTTP traffic to the app is not recorded for later analysis.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`), ARM templates, and Bicep, for the resource type `Microsoft.Web/sites/config`.
 
 ## Why it matters

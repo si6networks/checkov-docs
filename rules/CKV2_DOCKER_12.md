@@ -9,6 +9,8 @@ Setting NPM_CONFIG_STRICT_SSL to false disables TLS certificate validation for n
 This check verifies that the `NPM_CONFIG_STRICT_SSL` (or lowercase `npm_config_strict_ssl`) environment variable is never set to `false` in a Dockerfile, whether via `ARG`/`ENV` or inline in a `RUN` command.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: `ARG`, `ENV`, and `RUN` instructions.
 
 This is a graph-based check using regex matching, evaluated across three different instruction types (it must find no disabling pattern in any of them).

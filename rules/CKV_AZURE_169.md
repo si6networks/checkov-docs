@@ -9,6 +9,8 @@ Legacy AvailabilitySet node pools lack autoscaling and zone redundancy, reducing
 This check ensures that AKS node pools use Virtual Machine Scale Sets (VMSS) as the agent pool type rather than the legacy `AvailabilitySet` type.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` (`default_node_pool[0].type`).
 - **ARM/Bicep**: `Microsoft.ContainerService/managedClusters` (`properties.agentPoolProfiles[0].type`).
 

@@ -8,6 +8,8 @@ Binding the scheduler to an address other than 127.0.0.1 exposes its unauthentic
 This check verifies that `kube-scheduler` binds its (unauthenticated legacy) HTTP endpoint to the loopback address `127.0.0.1` rather than a routable/external interface.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `kube-scheduler` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `kube-scheduler` control-plane component.
 
 ## Why it matters

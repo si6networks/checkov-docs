@@ -9,6 +9,8 @@ Reliance on static, long-lived DB passwords instead of short-lived IAM-signed to
 This check requires that RDS database instances use IAM database authentication instead of (or in addition to) native database passwords, so that database login is tied to centrally managed AWS IAM identities.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_db_instance`
 - **CloudFormation**: `AWS::RDS::DBInstance`
 

@@ -8,6 +8,8 @@ Not enforcing branch protection rules on administrators lets any admin account (
 This check fails when a protected branch's `enforce_admins` setting is not enabled, meaning repository administrators can bypass the branch protection rules (required reviews, status checks, etc.) that everyone else must follow.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings pulled from the GitHub API)
 - **Entities:** `*`, evaluated against the `enforce_admins/enabled` field of a branch protection rule
 

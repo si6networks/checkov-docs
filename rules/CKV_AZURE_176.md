@@ -9,6 +9,8 @@ Without a managed identity, Web PubSub must rely on long-lived static credential
 This check ensures that an Azure Web PubSub resource has a managed identity (`identity.type`) configured, rather than relying solely on static, long-lived credentials to authenticate to other Azure resources.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_web_pubsub` (`identity[0].type`).
 - **ARM/Bicep**: `Microsoft.SignalRService/webPubSub` (`identity.type`).
 

@@ -8,6 +8,8 @@ Allowing force pushes on protected branches lets history (and any record of a ma
 This check enforces that a protected branch's branch protection rule disallows force pushes, preventing contributors (and their tools) from overwriting the branch's commit history.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization/repository configuration (`github_configuration` IaC type, entity `*`), evaluated against branch protection settings, specifically `allow_force_pushes.enabled`.
 
 ## Why it matters

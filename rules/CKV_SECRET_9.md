@@ -9,6 +9,8 @@ An exposed JWT can allow an attacker to impersonate the token's subject or bypas
 This check scans files for strings matching the structural format of a JSON Web Token (JWT) — three base64url-encoded segments separated by dots — flagging any match as a potentially hardcoded/leaked token.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 This is a built-in Checkov **secrets scanning** check (framework: `secrets`) that runs against any text file included in a repository/directory scan — application source, IaC templates, CI/CD pipeline files, configuration files, and plaintext test fixtures. It is content/pattern-based rather than tied to a specific resource type ("entities": `secrets`).
 
 ## Why it matters

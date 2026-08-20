@@ -8,6 +8,8 @@ Auto-accepting Transit Gateway VPC attachment requests removes the approval gate
 This check requires that `aws_ec2_transit_gateway` resources do not set `auto_accept_shared_attachments = "enable"`, so that VPC attachment requests from other accounts must be manually reviewed and approved rather than auto-accepted.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ec2_transit_gateway`
 

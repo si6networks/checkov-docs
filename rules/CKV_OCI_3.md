@@ -9,6 +9,8 @@ Block volumes not encrypted with a customer-managed key reduce control over key 
 This check ensures that OCI Block Storage block volumes (`oci_core_volume`) specify a customer-managed KMS key for encryption rather than relying solely on Oracle's default (Oracle-managed) at-rest encryption key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_volume`
 

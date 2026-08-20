@@ -8,6 +8,8 @@ Leaving public network access enabled on a SQL Server exposes a sensitive databa
 This check ensures that an Azure SQL logical server disables public network access, so the server can only be reached through private connectivity (Private Link/VNet) rather than the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mssql_server` (inspects `public_network_access_enabled`)
 - **ARM/Bicep**: `Microsoft.Sql/servers` (inspects `properties/publicNetworkAccess`)
 

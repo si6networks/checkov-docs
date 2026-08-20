@@ -8,6 +8,8 @@ CodePipeline artifacts are encrypted by a default S3/KMS key regardless, so miss
 This check ensures that an AWS CodePipeline (`aws_codepipeline`) resource specifies a KMS key for its artifact store encryption, rather than relying on the default S3/CodePipeline-managed encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_codepipeline`
 

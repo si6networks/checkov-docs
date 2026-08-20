@@ -8,6 +8,8 @@ Leaving public network access enabled on an Azure Container Registry exposes the
 This check ensures an Azure Container Registry has public network access disabled, so the registry's data-plane and management-plane endpoints are reachable only via private connectivity (private endpoints/VNet).
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.ContainerRegistry/registries` resources, property `properties/publicNetworkAccess`.
 - **Terraform**: `azurerm_container_registry` resource, attribute `public_network_access_enabled`.
 - **Bicep**: compiles to the same ARM resource type.

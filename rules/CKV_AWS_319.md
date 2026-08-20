@@ -9,6 +9,8 @@ Disabled CloudWatch alarm actions mean configured alarms will not notify or trig
 This check ensures CloudWatch metric alarms have `actions_enabled` set so that configured alarm actions (SNS notification, Auto Scaling action, etc.) actually fire when the alarm state changes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_cloudwatch_metric_alarm`
 

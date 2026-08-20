@@ -9,6 +9,8 @@ An AppSync GraphQL API without a WAF ACL enforcing anonymous-IP and known-bad-in
 This check ensures that an AWS AppSync GraphQL API has an AWS WAFv2 Web ACL attached, and that the Web ACL includes the AWS Managed Rule groups that mitigate Log4Shell (Log4j, CVE-2021-44228) style injection attacks.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `aws_appsync_graphql_api` and `aws_wafv2_web_acl` (via `aws_wafv2_web_acl_association`).
 

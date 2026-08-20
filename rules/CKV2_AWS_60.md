@@ -9,6 +9,8 @@ Copy-tags-to-snapshot only affects metadata propagation and cost/asset-tracking 
 This check requires non-Aurora/Neptune/DocumentDB `aws_db_instance` resources to explicitly set `copy_tags_to_snapshot = true`, so that resource tags applied to the instance are automatically propagated to its snapshots.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_db_instance` (specifically excluded when `engine` is `neptune`, `aurora`, or `docdb`, which manage tagging differently or via cluster-level resources)
 

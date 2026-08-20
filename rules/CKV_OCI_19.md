@@ -9,6 +9,8 @@ Unrestricted ingress from 0.0.0.0/0 to SSH (port 22) exposes a privileged remote
 This check ensures that no OCI VCN security list (`oci_core_security_list`) contains an ingress rule that opens SSH (port 22) to the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_security_list`
 

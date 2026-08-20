@@ -8,6 +8,8 @@ Allowing outdated TLS versions or deprecated/weak cipher suites on an Applicatio
 Ensures that an Azure Application Gateway's SSL/TLS policy enforces a modern minimum TLS protocol version (TLS 1.2 or 1.3) and does not permit legacy/weak cipher suites, when using a custom (non-predefined) SSL policy — or uses Microsoft's current recommended predefined policy.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_application_gateway` — inspects the `ssl_policy` block (`policy_type`, `min_protocol_version`, `cipher_suites`, `policy_name`)
 - **ARM**: `Microsoft.Network/applicationGateways` — inspects `properties.sslPolicy` (`policyType`, `minProtocolVersion`, `cipherSuites`, `policyName`)
 - **Bicep**: compiles to the ARM resource type above

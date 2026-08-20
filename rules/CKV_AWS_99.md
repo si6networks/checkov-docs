@@ -9,6 +9,8 @@ A Glue Security Configuration without encryption enabled leaves job data, logs, 
 This check fails unless an AWS Glue Security Configuration has encryption enabled across all three of its supported channels: CloudWatch Logs encryption, job bookmarks encryption, and S3 encryption.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_glue_security_configuration` resource — inspects `encryption_configuration[0].cloudwatch_encryption`, `.job_bookmarks_encryption`, and `.s3_encryption`.
 - **CloudFormation**: `AWS::Glue::SecurityConfiguration` resource — inspects `Properties.EncryptionConfiguration.CloudWatchEncryption`, `.JobBookmarksEncryption`, and `.S3Encryptions`.
 

@@ -9,6 +9,8 @@ Using Free/Shared/Basic App Service plan tiers mainly forgoes SLA guarantees, au
 This check ensures an Azure App Service Plan uses a SKU tier suitable for production workloads, flagging the Free (`F1`), Shared (`D1`), and Basic (`B1`/`B2`/`B3`) tiers as unsuitable.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_service_plan`
 

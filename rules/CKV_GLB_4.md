@@ -8,6 +8,8 @@ Not rejecting unsigned commits makes it impossible to cryptographically verify c
 This check ensures a GitLab project's push rules reject any commit that is not cryptographically signed.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `gitlab` provider, specifically the `gitlab_project` resource, at the `push_rules[0].reject_unsigned_commits` attribute.
 
 ## Why it matters

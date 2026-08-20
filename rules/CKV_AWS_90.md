@@ -9,6 +9,8 @@ Disabling TLS on DocumentDB connections allows database traffic, including crede
 This check fails when an Amazon DocumentDB cluster parameter group explicitly sets the `tls` parameter to `disabled`, which turns off in-transit encryption for connections to the cluster.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_docdb_cluster_parameter_group` resource — inspects `parameter` blocks for a `name = "tls"` entry with `value = "disabled"`.
 - **CloudFormation**: `AWS::DocDB::DBClusterParameterGroup` resource — inspects `Properties/Parameters/tls`.
 

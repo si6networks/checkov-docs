@@ -9,6 +9,8 @@ Missing rule descriptions is a governance/hygiene gap that hampers later auditin
 This check ensures that every security group and every individual security group rule (ingress/egress) includes a non-empty `description`, so the intent of each rule is documented directly in the configuration.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:**
   - CloudFormation: `AWS::EC2::SecurityGroup`, `AWS::EC2::SecurityGroupIngress`, `AWS::EC2::SecurityGroupEgress`

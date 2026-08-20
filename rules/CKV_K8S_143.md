@@ -8,6 +8,8 @@ Setting the streaming-connection idle timeout to 0 keeps kubelet exec/attach/por
 This check ensures the kubelet's `--streaming-connection-idle-timeout` is not explicitly disabled (set to `0`), which would let streaming connections (exec/attach/portforward) stay open indefinitely.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

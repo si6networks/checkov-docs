@@ -9,6 +9,8 @@ Missing scheduler logs remove visibility into DAG parsing and scheduling behavio
 This check ensures that an Amazon Managed Workflows for Apache Airflow (MWAA) environment has scheduler logging enabled, so scheduler activity is captured in CloudWatch Logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_mwaa_environment`
 

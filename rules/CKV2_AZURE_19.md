@@ -9,6 +9,8 @@ An IP firewall rule permitting broad or unrestricted network access to a Synapse
 This check ensures that Azure Synapse Analytics workspaces do not have any IP-based firewall rules attached, which — combined with Synapse's "Allow Azure services" toggle behavior — implies network access should be governed by managed private endpoints or VNet-based controls rather than broad IP allow-listing.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** ARM/Bicep and Terraform.
 - **Resource types:** `Microsoft.Synapse/workspaces` (ARM/Bicep, Python-based check inspecting `dependsOn`), `azurerm_synapse_workspace` connected to `azurerm_synapse_firewall_rule` (Terraform graph check).
 

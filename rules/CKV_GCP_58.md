@@ -9,6 +9,8 @@ SQL Server cross-database ownership chaining lets a user with access to one data
 This check fails when a `google_sql_database_instance` running SQL Server has the `cross db ownership chaining` database flag set to `on`, which allows ownership chains to span across databases within the instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `SQLSERVER`
 - **Check type:** resource check

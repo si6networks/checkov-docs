@@ -8,6 +8,8 @@ A firewall with no attached firewall policy loses centralized rule governance an
 Ensures that a classic `azurerm_firewall` resource is associated with an Azure Firewall Policy, rather than relying solely on the older classic rule-collection model.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_firewall` — inspects `firewall_policy_id`
 
 ## Why it matters

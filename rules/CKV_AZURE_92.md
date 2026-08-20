@@ -8,6 +8,8 @@ Unmanaged (VHD-based) disks lack the built-in encryption, access control, and re
 This check verifies that Azure Virtual Machines use managed disks rather than legacy unmanaged disks backed by a VHD file in a storage account.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_linux_virtual_machine`, `azurerm_windows_virtual_machine` (inspects `storage_os_disk`/`storage_data_disk` blocks for `vhd_uri`)
 - **ARM templates**: `Microsoft.Compute/virtualMachines` (inspects `properties.storageProfile.osDisk`/`dataDisks` for a `vhd` key)
 - **Bicep**: resources compiling to `Microsoft.Compute/virtualMachines`

@@ -8,6 +8,8 @@ The check requires a customer-managed KMS key for EFS rather than checking for e
 This check requires that an `aws_efs_file_system` resource specify a customer-managed KMS key (`kms_key_id`) for at-rest encryption instead of the AWS-managed default EFS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_efs_file_system`
 - **Check type:** resource (attribute-value check)

@@ -8,6 +8,8 @@ Disabling vulnerability alerts removes visibility into known-vulnerable dependen
 This check ensures that a GitHub repository has Dependabot/GitHub vulnerability alerts (`vulnerability_alerts`) enabled so known-vulnerable dependencies are automatically flagged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `github` provider, specifically the `github_repository` resource.
 
 ## Why it matters

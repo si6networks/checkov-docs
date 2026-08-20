@@ -9,6 +9,8 @@ An ALB/NLB target group or listener configured for plain HTTP instead of HTTPS t
 This check ensures that Application/Network Load Balancer target groups (and any listener attached to them) do not use plaintext `HTTP` as the protocol, so traffic between the load balancer and backend targets (and/or clients) is encrypted.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_lb_target_group`, `aws_alb_target_group`, `aws_lb_listener`, `aws_alb_listener` (this is a graph-based check that correlates target groups with their connected listeners)
 

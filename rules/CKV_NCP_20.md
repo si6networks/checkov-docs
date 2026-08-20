@@ -9,6 +9,8 @@ This check verifies that a NAT-gateway default route exists for web-tier connect
 This check ensures that Naver Cloud Platform (NCP) route table entries (`ncloud_route`) pointing at a NAT Gateway (`target_type = "NATGW"`) use the default route destination `0.0.0.0/0`, so outbound internet connectivity is correctly and completely routed through the NAT gateway.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_route`
 - **Check type:** resource-configuration check (Python)

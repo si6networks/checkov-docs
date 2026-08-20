@@ -9,6 +9,8 @@ Without Object Lock (WORM), objects such as backups, audit logs, or compliance r
 This check requires S3 buckets to configure `object_lock_configuration` with `object_lock_enabled = "Enabled"`, turning on S3 Object Lock (WORM — write-once-read-many) protection so objects cannot be deleted or overwritten for a configured retention period.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_s3_bucket`
 

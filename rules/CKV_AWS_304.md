@@ -8,6 +8,8 @@ This check verifies Secrets Manager rotation occurs within a 90-day window; long
 This check ensures an `aws_secretsmanager_secret_rotation` resource's rotation configuration results in an effective rotation interval of 90 days or less, whether specified via `automatically_after_days` or a `schedule_expression` (`rate(...)`/`cron(...)`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_secretsmanager_secret_rotation`
 

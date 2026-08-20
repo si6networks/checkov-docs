@@ -9,6 +9,8 @@ Lacking a managed identity forces app services to rely on hardcoded credentials 
 This check ensures an Azure App Service (Web App) has a managed identity (`identity` block/`identity/type`) configured, of any type, rather than relying solely on stored credentials for authenticating to other Azure resources.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`
 - **ARM/Bicep**: `Microsoft.Web/sites`
 

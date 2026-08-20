@@ -8,6 +8,8 @@ Missing Redshift cluster logging removes the audit trail needed to detect and in
 This check fails when an Amazon Redshift cluster does not have audit/database logging enabled, meaning connection, user activity, and query logs are not captured.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Redshift::Cluster` (CloudFormation), `aws_redshift_cluster` (Terraform)
 - **Check type:** resource

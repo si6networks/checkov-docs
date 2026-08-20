@@ -9,6 +9,8 @@ A security group allowing 0.0.0.0/0 ingress on SSH (22) directly exposes every a
 This check ensures that no security group rule allows unrestricted (`0.0.0.0/0`) inbound access to TCP port 22 (SSH).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:**
   - CloudFormation: `AWS::EC2::SecurityGroup`, `AWS::EC2::SecurityGroupIngress`

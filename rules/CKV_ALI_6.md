@@ -8,6 +8,8 @@ Using default OSS encryption instead of a customer-managed KMS key weakens key-m
 This check ensures that an Alibaba Cloud OSS (Object Storage Service) bucket's server-side encryption is configured with a Customer Master Key (CMK) from KMS, rather than relying solely on a platform-managed key or no key reference at all.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_oss_bucket`
 

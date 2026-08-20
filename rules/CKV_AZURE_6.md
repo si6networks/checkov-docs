@@ -8,6 +8,8 @@ Leaving the AKS API server reachable from any source IP exposes the cluster's mo
 This check fails when an Azure Kubernetes Service (AKS) cluster's Kubernetes API server does not have an authorized IP range restriction configured, meaning the cluster's control-plane API is reachable from any IP address on the internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_kubernetes_cluster`), ARM templates, and Bicep, for the resource type `Microsoft.ContainerService/managedClusters`.
 
 ## Why it matters

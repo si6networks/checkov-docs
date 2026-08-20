@@ -8,6 +8,8 @@ A short (or disabled) SQL Collector retention period limits the historical audit
 This check verifies that the SQL Collector (SQL audit log) feature is enabled on Alibaba Cloud RDS instances and configured to retain logs for at least 180 days.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 

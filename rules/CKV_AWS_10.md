@@ -8,6 +8,8 @@ Allowing a minimum IAM password length below 14 characters weakens resistance to
 This check ensures the AWS account's IAM password policy enforces a minimum password length of at least 14 characters for IAM users.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resource `aws_iam_account_password_policy` — an account-level, singleton resource that configures the password policy applied to all IAM users in the AWS account.
 
 ## Why it matters

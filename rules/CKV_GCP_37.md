@@ -9,6 +9,8 @@ Without customer-supplied encryption keys, disk data for sensitive workloads rel
 This check requires a `google_compute_disk` resource to set the `disk_encryption_key` attribute, meaning the disk is encrypted using a key you supply rather than relying solely on Google's default encryption-at-rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `google_compute_disk` resource.
 
 ## Why it matters

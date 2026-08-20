@@ -9,6 +9,8 @@ A public IP address directly exposes the instance to the internet, expanding its
 This check fails when a GCE instance's `network_interface` block defines an `access_config` sub-block, which is what provisions an ephemeral or static external (public) IP address on the instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_compute_instance`, `google_compute_instance_template`, and `google_compute_instance_from_template`.
 
 ## Why it matters

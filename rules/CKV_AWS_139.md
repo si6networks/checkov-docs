@@ -9,6 +9,8 @@ Missing deletion protection on RDS clusters risks accidental or malicious destru
 This check requires `aws_rds_cluster` resources to set `deletion_protection = true`, preventing the cluster from being deleted (accidentally or maliciously) without first explicitly disabling the protection flag.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_rds_cluster`
 

@@ -9,6 +9,8 @@ Basic (primitive) roles like Owner/Editor at the organization level grant broad,
 This check fails when a `google_organization_iam_member` or `google_organization_iam_binding` resource assigns one of GCP's legacy "basic roles" (`roles/owner`, `roles/editor`, `roles/viewer`) at the organization level, since these roles are extremely broad and apply to every project under the org.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_organization_iam_member`, `google_organization_iam_binding`
 - **Check type:** resource

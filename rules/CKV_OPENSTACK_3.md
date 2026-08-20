@@ -8,6 +8,8 @@ A security group allowing ingress from 0.0.0.0/0 on port 3389 exposes RDP, a fre
 This check flags OpenStack security group rules that allow unrestricted inbound access (`0.0.0.0/0`) to port 3389 — the standard RDP (Remote Desktop Protocol) port — over TCP or UDP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource types `openstack_compute_secgroup_v2` (legacy Nova security groups) and `openstack_networking_secgroup_rule_v2` (Neutron security group rules).
 
 ## Why it matters

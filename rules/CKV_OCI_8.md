@@ -9,6 +9,8 @@ Missing versioning on object storage increases risk of irreversible data loss or
 This check ensures that an OCI Object Storage bucket (`oci_objectstorage_bucket`) has object versioning enabled so prior versions of an object are retained rather than overwritten or lost.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_objectstorage_bucket`
 

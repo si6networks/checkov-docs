@@ -8,6 +8,8 @@ Missing Binary Authorization removes a supply-chain gate that would otherwise bl
 This check ensures GKE clusters enforce Binary Authorization, a deploy-time control that only allows container images which have been signed/attested by a trusted authority to run on the cluster.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 

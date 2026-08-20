@@ -9,6 +9,8 @@ A Kubernetes cluster's master/control-plane endpoint left without a security gro
 This check fails when a Yandex Managed Service for Kubernetes cluster's master does not have `security_group_ids` set.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_kubernetes_cluster`
 

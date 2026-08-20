@@ -8,6 +8,8 @@ Multi-AZ is a high-availability/failover control for RDS, improving resilience a
 This check verifies that a non-Aurora RDS instance has Multi-AZ deployment enabled, so a synchronously-replicated standby exists in a second Availability Zone for automatic failover.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_db_instance`) and CloudFormation (`AWS::RDS::DBInstance`). Aurora engines are automatically excluded (see below), since Aurora storage is inherently replicated across AZs independent of the `MultiAZ` flag.
 
 ## Why it matters

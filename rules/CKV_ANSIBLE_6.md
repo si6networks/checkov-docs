@@ -8,6 +8,8 @@ The apt force flag bypasses package signature validation and allows downgrades t
 This check ensures that Ansible `apt` tasks do not set `force: true`, since `force` bypasses package signature/authentication checks and allows package downgrades that can leave the system in a broken or inconsistent state.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Applies to Ansible playbooks/roles, specifically any task using the `ansible.builtin.apt` module (or its short alias `apt`), including tasks nested inside `block:` structures up to four levels deep and tasks under `tasks:` blocks.
 
 ## Why it matters

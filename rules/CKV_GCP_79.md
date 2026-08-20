@@ -8,6 +8,8 @@ Running an unsupported major database engine version means any future disclosed 
 This check ensures a `google_sql_database_instance` is running on a current, supported major database engine version rather than an outdated one that no longer receives security patches.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_sql_database_instance`
 

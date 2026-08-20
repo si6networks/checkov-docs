@@ -9,6 +9,8 @@ An internet-facing ALB lacking a WAF rule set that blocks Log4Shell-style payloa
 This check ensures that any internet-facing Application/Network Load Balancer has an AWS WAFv2 Web ACL attached, and that the Web ACL includes the AWS Managed Rules groups that specifically mitigate the Log4Shell (Log4j, CVE-2021-44228) exploitation vector.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `aws_alb`, `aws_lb`, and `aws_wafv2_web_acl` (via their connection to `aws_wafv2_web_acl_association`).
 

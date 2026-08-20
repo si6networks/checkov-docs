@@ -9,6 +9,8 @@ Allowing outdated or unencrypted listener protocols exposes traffic in transit t
 This check ensures that Tencent Cloud CLB (Cloud Load Balancer) listeners do not use unencrypted or legacy protocols (`TCP`, `UDP`, `HTTP`) that transmit traffic in plaintext.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_clb_listener` (Tencent Cloud provider).
 
 ## Why it matters

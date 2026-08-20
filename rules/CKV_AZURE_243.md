@@ -9,6 +9,8 @@ An Azure Machine Learning workspace without a private endpoint communicates over
 This check ensures an Azure Machine Learning workspace's managed virtual network has at least one outbound rule of type `PrivateEndpoint`, so that outbound traffic from the workspace's managed compute reaches dependent services privately instead of over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`
+
 - **ARM/Bicep**: `Microsoft.MachineLearningServices/workspaces` — inspects `properties.managedNetwork.outboundRules` for any rule with `type == "PrivateEndpoint"`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ A token-auth-file configures static, non-expiring bearer tokens for API server a
 This check fails a `kube-apiserver` container manifest if its `command` includes any argument starting with `--token-auth-file`, since static token file authentication is a legacy, weak credential mechanism.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

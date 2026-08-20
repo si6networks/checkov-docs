@@ -8,6 +8,8 @@ Disabling GitLab's push-based secret detection lets hardcoded credentials be com
 This check ensures a GitLab project's push rules have the built-in "prevent secrets" feature enabled, which blocks pushes that appear to contain known file types/patterns commonly used for credentials and private keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `gitlab` provider, specifically the `gitlab_project` resource, at the `push_rules[0].prevent_secrets` attribute.
 
 ## Why it matters

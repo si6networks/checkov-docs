@@ -8,6 +8,8 @@ Plaintext HTTP webhook delivery for a repository exposes payloads and shared sec
 This check enforces that all repository-level GitHub webhooks deliver payloads over HTTPS with SSL verification enabled, rather than plaintext HTTP or unverified TLS.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization/repository configuration (`github_configuration` IaC type, entity `*`), evaluated against the repository webhooks document (files matching `repository_webhooks`), where each webhook entry has a `config` object with `url` and `insecure_ssl` fields.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Allowing CloudFront viewers to connect over plain HTTP (or a non-HTTPS-only view
 This check requires that CloudFront distributions do not set `viewer_protocol_policy` (or `ViewerProtocolPolicy` in CloudFormation) to `allow-all` on their default or ordered cache behaviors, so that viewers are forced to connect over HTTPS rather than being allowed to use plaintext HTTP.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::CloudFront::Distribution` (CloudFormation), `aws_cloudfront_distribution` (Terraform)
 

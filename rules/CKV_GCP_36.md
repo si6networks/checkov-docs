@@ -9,6 +9,8 @@ Enabling IP forwarding lets an instance route or spoof traffic on behalf of othe
 This check fails when a GCE instance sets `can_ip_forward = true`, allowing it to send and receive packets with source/destination IPs other than its own assigned addresses.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_compute_instance`, `google_compute_instance_from_template`, and `google_compute_instance_template`.
 
 ## Why it matters

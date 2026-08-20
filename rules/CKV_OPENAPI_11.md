@@ -9,6 +9,8 @@ OAuth2 'password' grant requires the client application to directly collect and 
 For Swagger 2.0 documents, no scheme declared in `securityDefinitions` should be configured with `type: oauth2` and `flow: password` — this checks the security-scheme definitions themselves, complementing CKV_OPENAPI_8 which checks their usage in `security` requirements.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `securityDefinitions`.
 

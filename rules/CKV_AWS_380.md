@@ -9,6 +9,8 @@ Using an outdated AWS Transfer Family security policy can permit weaker/deprecat
 This check ensures an AWS Transfer Family server (`aws_transfer_server`) uses a security policy that is no more than 24 months old, rather than defaulting to an outdated TLS/SSH cipher policy.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_transfer_server`
 

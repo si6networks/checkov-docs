@@ -8,6 +8,8 @@ Allowing privilege escalation (via setuid binaries or CAP_SYS_ADMIN) lets a comp
 This check fails a `PodSecurityPolicy` (PSP) if `spec.allowPrivilegeEscalation` is not explicitly set to `false`, since the field defaults to `true` when omitted.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: `PodSecurityPolicy` kind.
 - **Terraform**: `kubernetes_pod_security_policy` resource.
 

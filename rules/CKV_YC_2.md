@@ -9,6 +9,8 @@ Assigning a public IP (NAT) to a compute instance exposes it directly to the int
 This check fails when a Yandex Cloud `yandex_compute_instance` resource has NAT (public IP assignment) enabled on one of its network interfaces.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_compute_instance`
 

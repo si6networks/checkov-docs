@@ -9,6 +9,8 @@ PIP_TRUSTED_HOST disables TLS certificate verification for pip installs from the
 This check verifies that the `PIP_TRUSTED_HOST` environment variable is never set in a Dockerfile, whether via `ARG`/`ENV` or inline in a `RUN` command, since it tells pip to skip HTTPS certificate verification for the listed host(s).
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: `ARG`, `ENV`, and `RUN` instructions.
 
 This is a graph-based check using regex matching, evaluated across the three instruction types.

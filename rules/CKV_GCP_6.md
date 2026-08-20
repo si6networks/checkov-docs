@@ -9,6 +9,8 @@ Not requiring SSL/TLS for Cloud SQL connections allows database credentials and 
 This check fails when a `google_sql_database_instance` does not enforce SSL/TLS-encrypted client connections, either via the modern `ssl_mode` setting or the legacy `require_ssl` boolean.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance`
 - **Check type:** resource check

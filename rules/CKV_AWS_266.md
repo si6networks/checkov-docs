@@ -9,6 +9,8 @@ RDS snapshot copies are full database dumps and a high-value target, but this ch
 This check ensures that an `aws_db_snapshot_copy` (RDS DB snapshot copy) resource specifies a customer-managed KMS key ID for encrypting the copied snapshot.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_db_snapshot_copy`
 
 ## Why it matters

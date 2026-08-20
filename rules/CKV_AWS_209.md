@@ -8,6 +8,8 @@ An MQ broker without CMK-based encryption at rest leaves queued and stored messa
 Ensures that an Amazon MQ broker specifies a customer-managed KMS key (CMK) for at-rest encryption, rather than relying on the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_mq_broker` — inspects `encryption_options[0].kms_key_id`.
 
 ## Why it matters

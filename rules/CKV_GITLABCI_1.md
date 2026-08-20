@@ -8,6 +8,8 @@ Piping CI/CD environment variables into a curl command is a classic pattern for 
 This check flags GitLab CI job `script` lines that invoke `curl` while referencing CI environment variables (`$CI...`), a pattern commonly used to exfiltrate CI secrets to an external, attacker-controlled endpoint.
 
 ## Applicability
+**Checkov framework(s):** `gitlab_ci`
+
 Applies to GitLab CI pipeline configuration (`gitlab_ci` IaC type, check type `jobs`), evaluated against every line/entry within a job's `script[]` array (entity `*.script[]`).
 
 ## Why it matters

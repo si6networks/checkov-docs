@@ -8,6 +8,8 @@ Missing Elasticsearch/OpenSearch domain logging removes the audit trail needed t
 This check fails when an Elasticsearch/OpenSearch Service domain does not have log publishing enabled and correctly configured (e.g., no enabled CloudWatch log destination for at least one log type).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Elasticsearch::Domain`, `AWS::OpenSearchService::Domain` (CloudFormation), `aws_elasticsearch_domain`, `aws_opensearch_domain` (Terraform)
 - **Check type:** resource

@@ -9,6 +9,8 @@ Without vulnerability scanning enabled, a container registry can distribute imag
 This check ensures that an Azure Container Registry (ACR) is provisioned on a SKU tier (Standard or Premium) that supports Microsoft Defender for Cloud's container image vulnerability scanning, rather than the Basic tier which does not support it.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_container_registry`

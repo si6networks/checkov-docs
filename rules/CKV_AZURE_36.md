@@ -9,6 +9,8 @@ This check governs whether trusted first-party Azure services can bypass storage
 This check verifies that when a Storage Account's network rules default to denying traffic, the "Trusted Microsoft Services" bypass is enabled (or the default action is `Allow`), so first-party Azure services can still reach the account without requiring the whole default action to be opened up.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_storage_account` (inline `network_rules`) and `azurerm_storage_account_network_rules`
 - **ARM templates**: `Microsoft.Storage/storageAccounts`
 - **Bicep**: `Microsoft.Storage/storageAccounts`

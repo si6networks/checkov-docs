@@ -9,6 +9,8 @@ Security group rules allowing ingress from 0.0.0.0/0 to port 22 expose SSH manag
 This check ensures that no OCI Network Security Group rule (`oci_core_network_security_group_security_rule`) permits SSH (port 22) ingress from the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_network_security_group_security_rule`
 

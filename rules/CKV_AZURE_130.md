@@ -8,6 +8,8 @@ Infrastructure (double) encryption adds a second layer of encryption beneath Azu
 This check verifies that an Azure Database for PostgreSQL server has infrastructure-level (double) encryption enabled, adding a second, independent layer of encryption at rest beneath Azure's standard service-level encryption.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:**
   - Terraform: `azurerm_postgresql_server`

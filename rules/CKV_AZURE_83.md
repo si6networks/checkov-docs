@@ -9,6 +9,8 @@ An outdated Java runtime may lack fixes for known JVM/library vulnerabilities, p
 This check ensures Azure App Service web apps configured to run Java use a current, supported Java version rather than an outdated one.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`
 - **ARM/Bicep**: `Microsoft.Web/sites`
 

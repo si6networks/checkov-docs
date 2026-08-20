@@ -8,6 +8,8 @@ The check only verifies that a customer-managed KMS key is used for FSx ONTAP en
 This check requires that an `aws_fsx_ontap_file_system` resource specify a customer-managed KMS key (`kms_key_id`) rather than relying on the AWS-managed default key for at-rest encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_fsx_ontap_file_system`
 - **Check type:** resource (attribute-value check)

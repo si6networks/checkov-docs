@@ -8,6 +8,8 @@ This detects a firewall rule allowing unrestricted (0.0.0.0/0) ingress to MySQL 
 This check flags `google_compute_firewall` resources whose ingress `allow` rules permit unrestricted (`0.0.0.0/0`) source ranges on TCP port 3306, the standard MySQL port.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_firewall`
 - **Check type:** resource (subclass of the shared `AbsGoogleComputeFirewallUnrestrictedIngress` base check, parameterized with port 3306)

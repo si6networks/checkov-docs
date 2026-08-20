@@ -8,6 +8,8 @@ A `run:` step interpolating unsanitized untrusted input (e.g. PR titles/branch n
 This check fails when a GitHub Actions `run:` step contains text patterns that indicate untrusted, attacker-influenced context data (like PR titles, issue bodies, or commit messages) is being interpolated directly into a shell command, a classic GitHub Actions script-injection vulnerability.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **Framework:** GitHub Actions workflow YAML
 - **Entities:** `jobs` and `jobs.*.steps[]` — specifically any step with a `run:` key
 

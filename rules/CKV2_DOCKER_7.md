@@ -8,6 +8,8 @@ apk's --allow-untrusted flag skips package signature verification on Alpine, so 
 This check fails a Dockerfile if any `RUN` instruction invokes Alpine's `apk` package manager with `--allow-untrusted`, which installs packages even when their signature cannot be verified.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds (typically Alpine-based images). Implemented as a Checkov graph-based JSON policy scanning `RUN` instructions (`resource_types: ["RUN"]`).
 
 ## Why it matters

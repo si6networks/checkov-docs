@@ -9,6 +9,8 @@ Without an enforced pod security policy, the OKE cluster's admission controller 
 This check ensures OCI Container Engine for Kubernetes (OKE) clusters enable the Pod Security Policy admission controller (`options.admission_controller_options.is_pod_security_policy_enabled`), so that pod specifications are validated against security policies before admission.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `oci_containerengine_cluster` resource, specifically the `options.admission_controller_options.is_pod_security_policy_enabled` attribute.
 
 ## Why it matters

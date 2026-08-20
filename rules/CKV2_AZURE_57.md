@@ -9,6 +9,8 @@ Without a private endpoint, a PostgreSQL Flexible Server is exposed to public ne
 This check verifies that every Azure Database for PostgreSQL Flexible Server has an associated Private Endpoint, so the database is not exposed to the public internet by default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_postgresql_flexible_server` (must be connected to an `azurerm_private_endpoint` resource)
 
 This is a graph-based connection check, structurally identical to CKV2_AZURE_56 but for PostgreSQL instead of MySQL.

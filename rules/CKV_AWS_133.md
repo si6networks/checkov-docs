@@ -9,6 +9,8 @@ Missing automated RDS backups is primarily an availability/recoverability gap (d
 This check requires `aws_db_instance` and `aws_rds_cluster` resources to have a `backup_retention_period` set to a value between 1 and 35 days, ensuring automated backups are retained for a meaningful window.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource types:** `aws_db_instance`, `aws_rds_cluster`
 

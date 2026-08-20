@@ -9,6 +9,8 @@ Disabled WAF logging removes visibility into blocked/allowed requests, hampering
 This check requires that an AWS WAF Web ACL (classic WAF or WAF Regional) has a logging configuration with a log destination configured, so that requests inspected/matched by WAF rules are recorded for visibility and forensics.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_waf_web_acl`, `aws_wafregional_web_acl`
 
 ## Why it matters

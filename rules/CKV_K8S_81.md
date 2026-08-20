@@ -8,6 +8,8 @@ Without SecurityContextDeny (when PodSecurityPolicy is absent), the API server h
 This check fails a `kube-apiserver` container manifest if its `--enable-admission-plugins` value contains neither `PodSecurityPolicy` nor `SecurityContextDeny`, meaning no admission-time control is in place to restrict pod `securityContext` settings.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

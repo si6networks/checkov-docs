@@ -8,6 +8,8 @@ Disabling EMR's block-public-access setting can leave cluster security groups re
 This check ensures that the account-level EMR block-public-access configuration has `block_public_security_group_rules` set to `true`, preventing EMR clusters from being launched with security group rules that allow unrestricted inbound access.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_emr_block_public_access_configuration`
 

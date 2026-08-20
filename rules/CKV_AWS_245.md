@@ -9,6 +9,8 @@ Cross-region automated RDS backup replicas can end up stored unencrypted at rest
 This check ensures that RDS automated backups replicated to another region (via `aws_db_instance_automated_backups_replication`) are encrypted with a customer-managed KMS key (CMK).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_db_instance_automated_backups_replication`
 

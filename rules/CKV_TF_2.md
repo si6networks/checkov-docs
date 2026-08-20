@@ -9,6 +9,8 @@ Using a semantic version tag is a materially weaker supply-chain control than a 
 This check fails when a Terraform `module` block references a remote git source that is neither pinned to a commit hash nor to a semantic-version tag (e.g. `v1.2.3`), and (for registry-style sources) has no `version` constraint set.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** module check — applies to any `module` block, independent of provider
 - **Entities:** `module` (all Terraform module blocks with a remote source)

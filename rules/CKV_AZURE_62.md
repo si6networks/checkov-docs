@@ -8,6 +8,8 @@ A wildcard CORS policy on Function Apps removes the browser's cross-origin prote
 This check fails when an Azure Function App's CORS configuration allows all origins (`*`), which permits any website on the internet to make cross-origin browser requests to the function app's HTTP endpoints.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_function_app`), ARM templates, and Bicep, for the resource type `Microsoft.Web/sites`.
 
 ## Why it matters

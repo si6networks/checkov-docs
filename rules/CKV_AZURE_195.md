@@ -9,6 +9,8 @@ Leaving local (key-based) authentication enabled on an Event Grid Domain allows 
 This check ensures an Azure Event Grid Domain disables local (key-based) authentication, requiring publishers and management operations to authenticate via Azure Active Directory instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_eventgrid_domain`
 

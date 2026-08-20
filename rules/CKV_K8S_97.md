@@ -8,6 +8,8 @@ Without a service-account key file configured, the API server cannot properly ve
 This check verifies that if a self-managed `kube-apiserver` container sets `--service-account-key-file`, its value points to a `.pem`-suffixed file path used for validating ServiceAccount tokens.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

@@ -9,6 +9,8 @@ This flag only affects the granularity of forensic detail captured in connection
 This check ensures that a Cloud SQL PostgreSQL instance (`google_sql_database_instance`) has the `log_hostname` database flag set to `on`, so client hostnames are resolved and recorded in connection logs alongside IP addresses.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_sql_database_instance` (PostgreSQL engine)
 - **Attribute inspected**: a `database_flags` block with `name = "log_hostname"` and `value = "on"`

@@ -8,6 +8,8 @@ Allowing any NGINX Ingress annotation snippets at all (CVE-2021-25742) lets anyo
 This check flags any Kubernetes `Ingress` resource that uses **any** annotation whose key contains `snippet` (e.g., NGINX Ingress `configuration-snippet`, `server-snippet`, `stream-snippet`), regardless of the value's content, as a blanket prevention of the annotation-snippet feature implicated in CVE-2021-25742.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests of `kind: Ingress`. Inspects the `metadata.annotations` map for any key containing the substring `snippet`.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Allowing fewer than 2 required MR approvals weakens the code-review control that
 This check ensures that a GitLab project's merge-request approval configuration requires at least two approvals before a merge request can be merged.
 
 ## Applicability
+**Checkov framework(s):** `gitlab_configuration`
+
 Applies to GitLab project-level configuration scanned by Checkov's `gitlab_configuration` framework (Checkov reads exported GitLab project/approval settings, e.g. via the GitLab API/settings JSON, rather than a Terraform resource). It targets the project approvals settings document (matched against the `project_approvals` schema), applicable to any GitLab project (`"*"` entity).
 
 ## Why it matters

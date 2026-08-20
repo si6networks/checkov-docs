@@ -9,6 +9,8 @@ ADD's implicit remote-URL fetching and auto-extraction of archives (tar, zip) ca
 This check fails a Dockerfile whenever it contains an `ADD` instruction, requiring the use of the more predictable `COPY` instruction instead.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — specifically the `ADD` instruction.
 
 ## Why it matters

@@ -8,6 +8,8 @@ Attaching a public IP directly to a Server instance places it on the open intern
 This check flags NCloud (Naver Cloud Platform) `ncloud_public_ip` resources whenever they are associated with a server instance, since attaching a public IP directly exposes the instance to the internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_public_ip`
 - **Check type:** resource (single-resource attribute check)

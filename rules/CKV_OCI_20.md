@@ -9,6 +9,8 @@ Unrestricted ingress from 0.0.0.0/0 to RDP (port 3389) exposes a privileged remo
 This check ensures that no OCI VCN security list (`oci_core_security_list`) contains an ingress rule that opens RDP (port 3389) to the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_security_list`
 

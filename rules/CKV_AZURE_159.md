@@ -9,6 +9,8 @@ Missing built-in logging on a function app reduces visibility into application b
 This check ensures that Azure Function Apps (and their deployment slots) have built-in logging (`enable_builtin_logging`) turned on, so function invocation logs are captured by default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource types:** `azurerm_function_app`, `azurerm_function_app_slot`
 

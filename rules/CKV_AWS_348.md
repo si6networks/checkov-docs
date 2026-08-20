@@ -8,6 +8,8 @@ Long-lived access keys on the AWS root user provide unrestricted, unconditional 
 Ensures Terraform-managed `aws_iam_access_key` resources are never created for the `root` account user.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_iam_access_key`
 

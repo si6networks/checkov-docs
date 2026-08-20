@@ -8,6 +8,8 @@ Sharing the host's PID namespace lets a container see and potentially signal or 
 This check requires that no container definition in an `aws_ecs_task_definition` sets `pidMode` (task-level `pid_mode`) to `"host"`, preventing ECS tasks from sharing the underlying EC2 host's process namespace.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ecs_task_definition` (inspects the `container_definitions` JSON for a `pidMode` field)
 

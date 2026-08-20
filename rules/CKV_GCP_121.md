@@ -9,6 +9,8 @@ Missing deletion protection on a BigQuery table is chiefly an accidental-deletio
 This check requires `google_bigquery_table` resources to explicitly set `deletion_protection = true`, preventing accidental or unauthorized deletion of BigQuery tables via Terraform.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_bigquery_table`
 - **Check type:** resource (value check)

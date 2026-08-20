@@ -9,6 +9,8 @@ This check guards against an outage during forced API Gateway replacement and ha
 This check ensures that `aws_api_gateway_rest_api` resources declare a `lifecycle { create_before_destroy = true }` block, so a replacement API is created before the old one is torn down.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_api_gateway_rest_api`
 

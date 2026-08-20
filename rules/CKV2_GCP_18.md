@@ -8,6 +8,8 @@ Relying on GCP's implicit default network means the auto-created default firewal
 This check ensures that every `google_compute_network` (VPC) defined in Terraform has at least one explicit `google_compute_firewall` resource connected to it, rather than relying on GCP's implicit/legacy default firewall behavior.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, specifically the `google_compute_network` resource, evaluated for a graph connection to `google_compute_firewall` resources.
 
 ## Why it matters

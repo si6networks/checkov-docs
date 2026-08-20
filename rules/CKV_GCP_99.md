@@ -8,6 +8,8 @@ Granting `allUsers`/`allAuthenticatedUsers` on a Pub/Sub topic IAM binding expos
 This check fails when a Google Cloud Pub/Sub topic's IAM policy grants access to `allUsers` or `allAuthenticatedUsers`, which would let anyone on the internet (or any Google account holder) publish to or manage the topic.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource types:** `google_pubsub_topic_iam_member`, `google_pubsub_topic_iam_binding`
 

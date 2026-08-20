@@ -8,6 +8,8 @@ AMIs distributed without CMK-based encryption may expose disk contents (which ca
 Ensures that EC2 Image Builder Distribution Configurations encrypt the resulting AMI snapshots with a customer-managed KMS key (CMK) rather than leaving them unencrypted or relying only on the default AWS-managed key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_imagebuilder_distribution_configuration` — inspects `distribution[0].ami_distribution_configuration[0].kms_key_id`.
 
 ## Why it matters

@@ -9,6 +9,8 @@ Disabling or misconfiguring SQL Server auditing removes the activity log trail n
 This check ensures that Azure SQL Database extended auditing policies have `log_monitoring_enabled` set, so that audit logs are actively sent to Azure Monitor / Log Analytics for centralized capture and retention rather than only stored locally in a storage account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_mssql_database_extended_auditing_policy`
 

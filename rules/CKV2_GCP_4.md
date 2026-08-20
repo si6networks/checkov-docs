@@ -9,6 +9,8 @@ Without Bucket Lock enforcing retention on log sink buckets, audit/log data can 
 This check ensures that when a GCP logging sink (organization, folder, or project) writes to a Cloud Storage bucket, that destination bucket has its retention policy locked (`retention_policy.is_locked = true`), so log data cannot be deleted or have its retention period shortened by anyone — including project admins — before the retention period expires.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_logging_folder_sink`, `google_logging_organization_sink`, `google_logging_project_sink`, `google_storage_bucket`
 

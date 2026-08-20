@@ -8,6 +8,8 @@ Without the PodSecurityPolicy (or equivalent) admission controller enforced, pod
 This check verifies that a self-managed `kube-apiserver` container explicitly enables the (now-deprecated) `PodSecurityPolicy` admission controller via `--enable-admission-plugins`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

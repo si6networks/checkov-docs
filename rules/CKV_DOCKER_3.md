@@ -9,6 +9,8 @@ Running a container without a declared non-root USER means the process runs as r
 This check requires that a Dockerfile contains a `USER` instruction, so the container's main process does not run as root by default.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — this check applies to the Dockerfile as a whole (`supported_instructions = ("*",)`) looking for a `USER` instruction anywhere in the file.
 
 ## Why it matters

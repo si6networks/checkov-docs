@@ -9,6 +9,8 @@ Leaving the Spring Cloud API Portal publicly accessible broadens the network att
 This check ensures that an Azure Spring Cloud (Azure Spring Apps) API Portal instance does not have public network access enabled, keeping it reachable only from within the trusted virtual network.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_spring_cloud_api_portal`
 

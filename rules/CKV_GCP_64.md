@@ -9,6 +9,8 @@ Nodes without the private-nodes configuration can receive public IP addresses, d
 This check fails when a `google_container_cluster` (GKE cluster) does not have a `private_cluster_config` block configured, meaning cluster nodes are provisioned with externally-routable IP addresses rather than being restricted to private (internal) IPs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource value check (Kubernetes category) — expects any value (`ANY_VALUE`) to be set for `private_cluster_config`

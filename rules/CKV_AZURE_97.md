@@ -8,6 +8,8 @@ Without encryption at host, temporary disks, caches, and data flows between comp
 This check verifies that Azure Virtual Machines and Virtual Machine Scale Sets have "Encryption at Host" enabled, which encrypts temp disks and disk caches on the physical host, not just the managed disks themselves.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_linux_virtual_machine_scale_set`, `azurerm_windows_virtual_machine_scale_set` (inspects `encryption_at_host_enabled`)
 - **ARM templates**: `Microsoft.Compute/virtualMachineScaleSets`, `Microsoft.Compute/virtualMachines` (inspects `properties.virtualMachineProfile.securityProfile.encryptionAtHost` for scale sets, and `properties.securityProfile.encryptionAtHost` for standalone VMs)
 - **Bicep**: resources compiling to the above ARM types

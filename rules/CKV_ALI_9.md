@@ -8,6 +8,8 @@ An RDS instance whitelisting 0.0.0.0/0 is reachable from the entire internet, ex
 This check ensures that an Alibaba Cloud RDS database instance's IP whitelist (`security_ips`) does not include `0.0.0.0` or `0.0.0.0/0`, which would allow connections from any address on the internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 

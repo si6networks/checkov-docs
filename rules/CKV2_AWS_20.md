@@ -9,6 +9,8 @@ An ALB that does not redirect HTTP to HTTPS allows client traffic to be sent or 
 This check ensures that an Application/Classic Load Balancer's HTTP (port 80) listener, if present, redirects traffic to HTTPS rather than serving plaintext content directly.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_lb`/`aws_alb` resources, evaluated in connection with their `aws_lb_listener`/`aws_alb_listener` resources.
 
 ## Why it matters

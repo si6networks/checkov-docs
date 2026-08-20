@@ -9,6 +9,8 @@ Leaving S3 ACLs enabled (instead of enforcing bucket-owner-only access) retains 
 This check requires `aws_s3_bucket_ownership_controls` resources to set `rule.object_ownership` to `BucketOwnerEnforced`, which fully disables S3 ACLs on the bucket in favor of IAM/bucket-policy-only access control.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_bucket_ownership_controls`
 

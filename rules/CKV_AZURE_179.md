@@ -9,6 +9,8 @@ Without the VM agent, the platform loses the ability to apply extensions used fo
 This check ensures that the Azure VM Guest Agent (`provision_vm_agent`) is enabled on Windows and Linux virtual machines and scale sets, rather than explicitly disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_windows_virtual_machine`, `azurerm_windows_virtual_machine_scale_set`, `azurerm_linux_virtual_machine`, `azurerm_linux_virtual_machine_scale_set` (`provision_vm_agent`).
 
 ## Why it matters

@@ -8,6 +8,8 @@ Artifact Registry repositories are encrypted at rest by default, so lacking a CM
 This check requires every `google_artifact_registry_repository` Terraform resource to set `kms_key_name`, ensuring container images and other build artifacts are encrypted at rest with a customer-managed Cloud KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_artifact_registry_repository`
 - **Check type:** resource (attribute-value check)

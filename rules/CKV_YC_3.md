@@ -9,6 +9,8 @@ An Object Storage bucket without server-side encryption configured leaves data a
 This check ensures that a Yandex Cloud Object Storage bucket (`yandex_storage_bucket`) has server-side encryption configured with a KMS master key, rather than being left without encryption-at-rest configuration.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_storage_bucket`
 - **Check type:** resource (value check, `ANY_VALUE` expected)

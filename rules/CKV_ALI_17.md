@@ -8,6 +8,8 @@ Missing a lowercase-character requirement modestly reduces password entropy and 
 This check verifies that the Alibaba Cloud RAM account password policy requires passwords to contain at least one lowercase letter.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_account_password_policy`
 

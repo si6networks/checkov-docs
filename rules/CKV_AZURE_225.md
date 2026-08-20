@@ -8,6 +8,8 @@ A non-zone-redundant App Service Plan is a resilience/availability concern tied 
 Ensures that an Azure App Service Plan is configured for zone redundancy, distributing its instances across multiple Availability Zones within a region.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_service_plan` — inspects `zone_balancing_enabled`
 - **ARM**: `Microsoft.Web/serverfarms` — inspects `properties.zoneRedundant`
 - **Bicep**: compiles to the ARM resource type above

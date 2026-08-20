@@ -8,6 +8,8 @@ Without request validation, API Gateway forwards malformed or unexpected paramet
 This check fails when an `aws_api_gateway_method` resource has no `request_validator_id` set, meaning API Gateway performs no built-in validation of incoming request parameters/body before passing the request through to the backend integration.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_api_gateway_method`
 

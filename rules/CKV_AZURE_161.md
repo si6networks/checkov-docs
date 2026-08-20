@@ -9,6 +9,8 @@ Not enforcing HTTPS-only on the Spring Cloud API Portal permits plaintext HTTP t
 This check ensures that an Azure Spring Cloud (Azure Spring Apps) API Portal instance enforces HTTPS-only access rather than allowing plain HTTP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_spring_cloud_api_portal`
 

@@ -8,6 +8,8 @@ Without --use-service-account-credentials, all built-in controllers share the ro
 This check verifies that `kube-controller-manager` is started with `--use-service-account-credentials=true`, so that each individual controller loop authenticates to the API server using its own distinct service account rather than the controller manager's single shared credential.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `kube-controller-manager` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `kube-controller-manager` control-plane component.
 
 ## Why it matters

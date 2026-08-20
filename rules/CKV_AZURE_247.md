@@ -9,6 +9,8 @@ Without outbound network restriction and FQDN allow-listing, an Azure OpenAI Cog
 For Azure Cognitive Services accounts of kind `OpenAI`, this check ensures outbound network access is restricted and an explicit allow-list of outbound FQDNs is configured, preventing the deployed model endpoint from communicating with arbitrary external destinations.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_cognitive_account` (only when `kind = "OpenAI"`; all other kinds automatically pass)
 

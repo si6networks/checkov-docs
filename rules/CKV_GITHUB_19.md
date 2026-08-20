@@ -8,6 +8,8 @@ Allowing a single reviewer (or no review) to approve merges removes a key contro
 This check enforces that a GitHub repository's branch protection rule requires at least two approving pull request reviews before a change can be merged.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization/repository configuration (`github_configuration` IaC type), evaluated against branch protection settings exported from the GitHub API/Terraform `github_branch_protection` style configuration collected by Checkov's GitHub provider integration. Entity type is `*` (the branch protection document as a whole).
 
 ## Why it matters

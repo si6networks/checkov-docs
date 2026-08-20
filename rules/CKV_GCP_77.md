@@ -8,6 +8,8 @@ Unrestricted 0.0.0.0/0 ingress to the FTP data port exposes unencrypted file tra
 This check ensures a `google_compute_firewall` ingress rule does not allow unrestricted (`0.0.0.0/0`) access to TCP port 20, the FTP data transfer port.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_firewall`
 

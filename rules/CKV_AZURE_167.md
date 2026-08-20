@@ -9,6 +9,8 @@ Missing retention policy for untagged manifests is primarily a storage-hygiene a
 This check ensures that an Azure Container Registry has a retention policy configured to automatically clean up untagged image manifests after a set number of days.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_container_registry` resource.
 
 ## Why it matters

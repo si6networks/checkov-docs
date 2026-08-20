@@ -9,6 +9,8 @@ Lacking rescue-based error handling in a block is an operational reliability gap
 This check ensures that Ansible `block` constructs include a `rescue` section so task failures inside the block are handled rather than causing an uncontrolled playbook failure.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible playbooks/roles. Applies to any `block` entity (a `block:` key grouping a list of tasks).
 
 ## Why it matters

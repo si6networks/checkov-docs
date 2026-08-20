@@ -9,6 +9,8 @@ Enabling public network access on Azure App Configuration exposes an internet-re
 This check ensures Azure App Configuration stores do not have their `public_network_access` setting explicitly set to `Enabled`, so that access is restricted to private/network-controlled paths.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_app_configuration`
 

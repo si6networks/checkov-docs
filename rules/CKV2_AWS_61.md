@@ -9,6 +9,8 @@ Missing S3 lifecycle rules mainly affects storage cost and data retention hygien
 This check requires every `aws_s3_bucket` to have lifecycle rules defined — either via a connected `aws_s3_bucket_lifecycle_configuration` resource, or (for older provider syntax) an inline `lifecycle_rule` block — so that old/noncurrent object versions and stale data are automatically transitioned or expired rather than accumulating indefinitely.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_bucket` (must be connected to `aws_s3_bucket_lifecycle_configuration`, OR have an inline `lifecycle_rule` attribute)
 

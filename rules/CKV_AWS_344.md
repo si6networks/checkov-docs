@@ -8,6 +8,8 @@ Without deletion protection, an AWS Network Firewall instance can be accidentall
 Requires AWS Network Firewall `aws_networkfirewall_firewall` resources to set `delete_protection = true`, preventing accidental or unauthorized deletion of the firewall.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_networkfirewall_firewall`
 

@@ -9,6 +9,8 @@ Allowing weak-cipher SSL policies on load balancers exposes TLS connections to d
 This check verifies that a `google_compute_ssl_policy` used by HTTPS/SSL proxy load balancers doesn't permit outdated TLS versions or weak ciphers such as RC4, 3DES, or CBC-mode RSA suites.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `google_compute_ssl_policy` resource, which is then referenced by HTTPS/SSL proxy load balancer target proxies.
 
 ## Why it matters

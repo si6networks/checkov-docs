@@ -8,6 +8,8 @@ Hardcoded OpenStack password, token, or application_credential_secret values in 
 This check flags Terraform `openstack` provider blocks that contain a literal `password`, `token`, or `application_credential_secret` value instead of sourcing those credentials from a secret manager or environment variable.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, `provider "openstack"` blocks (provider-level check, not a resource).
 
 ## Why it matters

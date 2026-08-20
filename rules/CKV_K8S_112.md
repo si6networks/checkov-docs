@@ -8,6 +8,8 @@ Disabling automatic kubelet server certificate rotation leaves long-lived certif
 This check verifies that neither `kube-controller-manager` nor `kubelet` explicitly disables the `RotateKubeletServerCertificate` feature gate, which governs automatic rotation of the kubelet's server (serving) TLS certificate.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `kube-controller-manager` or `kubelet` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it evaluates the static Pod manifests for the `kube-controller-manager` control-plane component and any manifest that surfaces kubelet's command-line flags (e.g. via a kubelet config rendered as a Pod command, per CIS-1.6 4.2.12).
 
 ## Why it matters

@@ -8,6 +8,8 @@ An IAM binding granting allUsers or allAuthenticatedUsers access to a Cloud Stor
 This check fails when a `google_storage_bucket_iam_binding` or `google_storage_bucket_iam_member` resource grants a role to the special principals `allUsers` or `allAuthenticatedUsers`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_storage_bucket_iam_binding`, `google_storage_bucket_iam_member`
 - **Check type:** resource

@@ -8,6 +8,8 @@ An RDS cluster snapshot is a full point-in-time copy of a database's contents, a
 This check verifies that an `aws_db_cluster_snapshot` resource has `storage_encrypted` set to `true`, ensuring manual snapshots of an RDS/Aurora cluster are encrypted at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `aws_db_cluster_snapshot` resource.
 
 ## Why it matters

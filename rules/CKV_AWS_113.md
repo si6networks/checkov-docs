@@ -9,6 +9,8 @@ Disabled or unencrypted logging of privileged interactive Session Manager activi
 Fails when an AWS Systems Manager (SSM) `Session` document does not configure logging to either an encrypted S3 bucket or an encrypted CloudWatch Logs group.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_ssm_document` resource, specifically ones where `document_type = "Session"`.
 
 ## Why it matters

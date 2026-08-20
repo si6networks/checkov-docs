@@ -9,6 +9,8 @@ Unrestricted 0.0.0.0/0 ingress to RDP (3389) at the subnet-wide NACL layer expos
 This check ensures that no AWS Network ACL (NACL) rule allows unrestricted (`0.0.0.0/0`) inbound access to TCP port 3389 (RDP — Remote Desktop Protocol).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_network_acl` (inline `ingress` blocks) and `aws_network_acl_rule` (standalone rule resources)
 

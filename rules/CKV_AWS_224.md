@@ -8,6 +8,8 @@ ECS Exec sessions can carry sensitive command output and credentials; without CM
 This check ensures that when an ECS cluster (`aws_ecs_cluster`) enables ECS Exec logging, it also encrypts that logging (and the exec channel data) using a customer-managed KMS key, rather than logging in a way that isn't independently key-protected.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ecs_cluster`
 

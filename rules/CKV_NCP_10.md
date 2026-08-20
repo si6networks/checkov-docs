@@ -9,6 +9,8 @@ A Network ACL rule allowing inbound SSH (port 22) from 0.0.0.0/0 exposes a manag
 This check ensures that Naver Cloud Platform (NCP) Network ACL rules (`ncloud_network_acl_rule`) do not permit unrestricted inbound access (from `0.0.0.0/0` or `::/0`) to TCP/UDP port 22 (SSH).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_network_acl_rule`
 - **Check type:** resource-configuration check (Python, shared base class `NACLInboundCheck`)

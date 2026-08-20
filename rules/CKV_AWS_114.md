@@ -9,6 +9,8 @@ An EMR cluster configured for Kerberos without a Realm set is an incomplete/misc
 Fails when an `aws_emr_cluster` resource defines a `kerberos_attributes` block but that block does not include a `realm` value.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_emr_cluster` resource.
 
 ## Why it matters

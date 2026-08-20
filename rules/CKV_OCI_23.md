@@ -9,6 +9,8 @@ A Data Catalog without attached private endpoints is reachable over the public n
 This check ensures that an OCI Data Catalog (`oci_datacatalog_catalog`) is attached to at least one private endpoint, restricting network access rather than being reachable over the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_datacatalog_catalog`
 

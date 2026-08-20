@@ -9,6 +9,8 @@ Missing SNS notifications for CloudFormation stack events reduces operational aw
 Fails when an `aws_cloudformation_stack` resource does not specify any `notification_arns`, meaning stack lifecycle events are not published to an SNS topic.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_cloudformation_stack` resource.
 
 ## Why it matters

@@ -9,6 +9,8 @@ Disabling the instance monitoring service reduces visibility into abnormal resou
 This check ensures that Tencent Cloud CVM instances have the built-in cloud monitor service enabled rather than explicitly disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_instance` (Tencent Cloud provider).
 
 ## Why it matters

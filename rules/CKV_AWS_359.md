@@ -9,6 +9,8 @@ Lacking IAM database authentication forces reliance on long-lived, harder-to-rot
 This check ensures that an `aws_neptune_cluster` resource has `iam_database_authentication_enabled` set to `true`, so that database access can be authenticated via IAM credentials rather than relying solely on database-native credentials.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** resource check
 - **Entities:** `aws_neptune_cluster`

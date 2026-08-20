@@ -9,6 +9,8 @@ A public ECR repository policy allows anyone on the internet to pull container i
 This check ensures ECR repository resource policies do not grant internet-accessible (effectively public/wildcard-principal) access to the repository.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** Terraform and CloudFormation
 - **Resource types:** `aws_ecr_repository_policy` (Terraform); `AWS::ECR::Repository` (CloudFormation)
 

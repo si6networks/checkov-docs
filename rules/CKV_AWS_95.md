@@ -9,6 +9,8 @@ Missing access logging on API Gateway V2 removes a key detective control for ide
 This check fails when an HTTP API (API Gateway V2) stage — defined directly or via SAM's `AWS::Serverless::HttpApi` shorthand — does not configure an `AccessLogSettings.DestinationArn`, meaning access logging is not set up for that stage.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`
+
 - **CloudFormation** (including AWS SAM): `AWS::ApiGatewayV2::Stage` and `AWS::Serverless::HttpApi` resources — inspects `Properties.AccessLogSettings.DestinationArn`.
 
 ## Why it matters

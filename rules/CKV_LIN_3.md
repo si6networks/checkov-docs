@@ -9,6 +9,8 @@ Requiring an email address on a Linode user is an account-hygiene/contactability
 This check ensures every Linode Cloud Manager user resource (`linode_user`) has an `email` attribute defined, so each account is tied to a verifiable, contactable identity.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `linode_user`
 - **Check type:** resource-configuration attribute check

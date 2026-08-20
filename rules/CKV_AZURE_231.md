@@ -9,6 +9,8 @@ Missing zone redundancy for App Service Environment affects availability during 
 This check ensures an Azure App Service Environment (v3) is deployed as zone redundant, spreading its underlying instances across multiple Availability Zones.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_app_service_environment_v3` resources — inspects the `zone_redundant` attribute.
 
 ## Why it matters

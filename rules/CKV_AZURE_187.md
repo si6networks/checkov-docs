@@ -9,6 +9,8 @@ Without purge protection, a deleted App Configuration store (and any sensitive s
 This check ensures Azure App Configuration stores have purge protection enabled, preventing permanent, immediate deletion of a soft-deleted store.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_app_configuration`
 

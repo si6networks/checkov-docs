@@ -8,6 +8,8 @@ This check flags IAM policies that grant wildcard `iam:*` or `*` administrative 
 This check fails when an IAM policy (managed, inline, or an SSO permission set inline policy) contains an `Allow` statement granting the wildcard action `iam:*` or the fully unrestricted `*` action, which effectively grants unrestricted control over the account's identity and access management.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`, `data.aws_iam_policy_document`
 

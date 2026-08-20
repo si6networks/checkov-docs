@@ -8,6 +8,8 @@ Allowing public network access to Cognitive Services accounts exposes an AI/ML s
 This check ensures an Azure Cognitive Services account (e.g. Azure OpenAI, Computer Vision, Speech, etc.) has public network access explicitly disabled, restricting access to private endpoints/VNets only.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.CognitiveServices/accounts` resources, property `properties/publicNetworkAccess`.
 - **Terraform**: `azurerm_cognitive_account` resource, attribute `public_network_access_enabled`.
 - **Bicep**: compiles to the same ARM resource type.

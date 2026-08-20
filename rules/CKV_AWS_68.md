@@ -8,6 +8,8 @@ Without a WAF in front of a CloudFront distribution, the application loses a lay
 This check verifies that a CloudFront distribution has a Web Application Firewall (WAF) Web ACL attached (a non-empty `WebACLId`/`web_acl_id`), providing a layer of protection against common web exploits before requests reach the origin.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::CloudFront::Distribution`, property `Properties/DistributionConfig/WebACLId`.
 - **Terraform**: `aws_cloudfront_distribution` resource, attribute `web_acl_id`.
 

@@ -8,6 +8,8 @@ Without Azure AD-backed authentication, Service Fabric cluster management relies
 This check verifies that an Azure Service Fabric cluster is configured to use Azure Active Directory for client authentication, rather than relying solely on certificate-based client authentication.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_service_fabric_cluster`
 

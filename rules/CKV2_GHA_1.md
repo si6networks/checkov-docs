@@ -9,6 +9,8 @@ Top-level write-all GITHUB_TOKEN permissions grant every job in the workflow bro
 This check ensures a GitHub Actions workflow's top-level `permissions` key is not set to the shorthand value `write-all`, which grants the workflow's `GITHUB_TOKEN` write access to every scope (contents, packages, issues, pull-requests, etc.) for the duration of the run.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **IaC framework:** GitHub Actions workflow YAML
 - **Entity:** the top-level `permissions` key in a workflow file
 

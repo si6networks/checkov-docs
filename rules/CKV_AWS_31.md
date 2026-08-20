@@ -9,6 +9,8 @@ Without encryption in transit and an auth token, traffic to and from the ElastiC
 This check ensures ElastiCache (Redis) replication groups enable in-transit (TLS) encryption and use an auth token (or a user group for RBAC-based access control), so that client-to-cluster traffic and cache access are both protected.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** Terraform and CloudFormation
 - **Resource types:** `aws_elasticache_replication_group` (Terraform), `AWS::ElastiCache::ReplicationGroup` (CloudFormation)
 

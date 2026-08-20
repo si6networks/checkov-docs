@@ -9,6 +9,8 @@ An ELB listener using plaintext HTTP/TCP (or HTTPS without a certificate) leaves
 This check ensures that a classic Elastic Load Balancer (`aws_elb`) listener does not use unencrypted `HTTP`/`TCP` as its instance protocol, and that when it does use `HTTPS`/`SSL`, a valid SSL certificate is actually attached.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_elb` (classic Elastic Load Balancer)
 

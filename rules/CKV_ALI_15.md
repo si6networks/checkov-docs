@@ -8,6 +8,8 @@ A password policy that omits a symbol requirement weakens brute-force resistance
 This check verifies that the Alibaba Cloud RAM account password policy requires passwords to contain at least one symbol/special character.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_account_password_policy`
 

@@ -8,6 +8,8 @@ Without soft delete, accidental or malicious deletion of Key Vault objects is im
 This check ensures that an Azure Key Vault has soft delete enabled, so keys, secrets, and certificates (and the vault itself) can be recovered for a retention period after deletion rather than being removed immediately and permanently.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault` (inspects `soft_delete_enabled`)
 - **ARM/Bicep**: `Microsoft.KeyVault/vaults` (inspects `properties/enableSoftDelete`)
 

@@ -8,6 +8,8 @@ Disabling node pool auto-repair only degrades cluster availability/self-healing 
 This check ensures that Alibaba Cloud Container Service (ACK) Kubernetes node pools have the `auto_repair` management feature enabled, so unhealthy nodes are automatically detected and repaired.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_cs_kubernetes_node_pool`
 

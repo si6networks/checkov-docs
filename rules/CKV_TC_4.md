@@ -9,6 +9,8 @@ Default security groups are commonly left in a permissive state, so relying on o
 This check ensures that Tencent Cloud CVM instances are attached to purpose-built security groups rather than the account/VPC's default security group.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_instance` (Tencent Cloud provider).
 
 ## Why it matters

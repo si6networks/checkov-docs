@@ -9,6 +9,8 @@ Disabling high-severity email alerts delays human awareness of a detected incide
 This check ensures the Azure Security Center (Microsoft Defender for Cloud) security contact is configured to send email notifications when high-severity alerts are triggered.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:** `azurerm_security_center_contact` (Terraform), `Microsoft.Security/securityContacts` (ARM/Bicep)
 

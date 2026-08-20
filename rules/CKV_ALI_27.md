@@ -8,6 +8,8 @@ Disabled automatic KMS key rotation means a single key material stays in use ind
 This check verifies that automatic key rotation is enabled on Alibaba Cloud KMS (Key Management Service) keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_kms_key`
 

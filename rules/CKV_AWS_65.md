@@ -8,6 +8,8 @@ Container Insights is an observability/monitoring feature for ECS; its absence r
 This check verifies that an ECS cluster has the `containerInsights` cluster setting enabled (value `enabled` or `enhanced`), so that CloudWatch Container Insights collects detailed performance and resource-utilization metrics/logs for the cluster's tasks and services.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::ECS::Cluster`, property `Properties/ClusterSettings` (a list of `{Name, Value}` pairs).
 - **Terraform**: `aws_ecs_cluster` resource, `setting { name = "containerInsights", value = ... }` block.
 

@@ -9,6 +9,8 @@ Classic access on a VPC bridges it to the flatter, less-segmented IBM Cloud Clas
 This check ensures that an IBM Cloud VPC (`ibm_is_vpc`) does not have classic infrastructure access enabled, i.e., `classic_access` is absent or explicitly set to `false`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ibm_is_vpc`
 

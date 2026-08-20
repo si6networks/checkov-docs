@@ -9,6 +9,8 @@ An ACCEPT default outbound policy weakens egress filtering and defense-in-depth 
 This check ensures a Linode Cloud Firewall (`linode_firewall`) has its default `outbound_policy` set to `DROP` rather than `ACCEPT`, so unmatched outbound traffic is blocked by default instead of allowed to leave the instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `linode_firewall`
 - **Check type:** resource-configuration attribute check

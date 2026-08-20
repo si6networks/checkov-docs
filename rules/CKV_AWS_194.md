@@ -8,6 +8,8 @@ Field-level logging adds finer-grained request/response detail on top of basic A
 This check requires that an AWS AppSync GraphQL API's logging configuration sets `FieldLogLevel`/`field_log_level` to either `ALL` or `ERROR`, so resolver-level execution details (not just top-level request logs) are captured.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource/entity types:** `AWS::AppSync::GraphQLApi` (CloudFormation); `aws_appsync_graphql_api` (Terraform)
 - **Check type:** resource (attribute-value check)

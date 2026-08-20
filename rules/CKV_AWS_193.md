@@ -8,6 +8,8 @@ Missing CloudWatch logging on an AppSync GraphQL API removes the audit trail nee
 This check requires that an AWS AppSync GraphQL API has CloudWatch logging configured by specifying a `CloudWatchLogsRoleArn` (CloudFormation) / `cloudwatch_logs_role_arn` (Terraform) in its logging configuration.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource/entity types:** `AWS::AppSync::GraphQLApi` (CloudFormation); `aws_appsync_graphql_api` (Terraform)
 - **Check type:** resource (attribute-value check)

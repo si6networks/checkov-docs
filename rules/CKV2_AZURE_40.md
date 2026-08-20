@@ -9,6 +9,8 @@ Leaving Shared Key authorization enabled on a storage account permits access via
 This check ensures an Azure Storage Account has Shared Key (account-key based) authorization disabled, forcing all data-plane access to use Azure AD (Entra ID) identity-based authorization instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource type:** `azurerm_storage_account`
 

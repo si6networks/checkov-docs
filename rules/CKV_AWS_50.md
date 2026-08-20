@@ -8,6 +8,8 @@ Disabled X-Ray tracing reduces operational and performance observability for a L
 This check ensures Lambda functions have AWS X-Ray active tracing enabled, so invocations can be traced for observability and troubleshooting.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_lambda_function`
 

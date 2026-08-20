@@ -8,6 +8,8 @@ Disabling TLS certificate validation on an Ansible uri task allows man-in-the-mi
 This check ensures that Ansible tasks using the `uri` (or `ansible.builtin.uri`) module do not disable TLS certificate validation by setting `validate_certs: false`.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 - **Framework:** Ansible
 - **Task/module scope:** any task invoking `ansible.builtin.uri` or its short alias `uri`, including tasks nested inside `block:` sections up to several levels deep, and both at the play `tasks:` level and standalone task-file level (per the JMESPath entity selectors covering `tasks`, `block`, and nested `block` combinations).
 

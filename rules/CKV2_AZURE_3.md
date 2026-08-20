@@ -8,6 +8,8 @@ Without periodic recurring vulnerability scans, newly introduced SQL Server misc
 This check verifies that an Azure SQL server has Vulnerability Assessment configured with recurring scans enabled, wired through an active security alert policy.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource types involved:** `azurerm_sql_server` / `azurerm_mssql_server`, `azurerm_mssql_server_security_alert_policy`, `azurerm_mssql_server_vulnerability_assessment`
 

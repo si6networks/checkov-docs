@@ -8,6 +8,8 @@ Failing to enforce HTTPS on an Elasticsearch/OpenSearch domain allows data (incl
 This check fails when an Amazon Elasticsearch/OpenSearch Service domain does not enforce HTTPS-only access to its endpoint, meaning it may allow plaintext HTTP connections.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Elasticsearch::Domain` (CloudFormation), `aws_elasticsearch_domain`, `aws_opensearch_domain` (Terraform)
 - **Check type:** resource

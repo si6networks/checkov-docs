@@ -9,6 +9,8 @@ Pinning a module source to a mutable ref (branch/tag) rather than an immutable c
 This check fails when a Terraform `module` block references a remote (e.g., git) source without pinning it to an immutable commit hash via a `?ref=<sha>` query parameter.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** module check — applies to any `module` block regardless of provider, since it inspects only the `source` attribute
 - **Entities:** `module` (all Terraform module blocks with a remote git-style `source`)

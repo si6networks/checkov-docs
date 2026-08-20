@@ -9,6 +9,8 @@ A missing or inadequate health check only affects the load balancer's ability to
 This check ensures that any HTTP or HTTPS ALB/NLB target group defines a health check block with a configured path, so the load balancer can actively determine backend target health.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resources `aws_lb_target_group`, `aws_alb_target_group` (protocol `HTTP` or `HTTPS` only — other protocols like `TCP` return `UNKNOWN`/not evaluated)
 
 ## Why it matters

@@ -8,6 +8,8 @@ An IDPS mode set to Alert rather than Deny means the firewall policy only logs d
 Ensures that an Azure Firewall Policy's Intrusion Detection and Prevention System (IDPS) is configured in `Deny` mode, so traffic matching known attack signatures is actively blocked rather than only alerted on.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_firewall_policy` — inspects `intrusion_detection[0].mode`
 
 ## Why it matters

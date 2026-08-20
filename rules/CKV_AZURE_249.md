@@ -9,6 +9,8 @@ A loosely-scoped OIDC federated identity subject claim (wildcards or abusable cl
 This check validates that Azure AD Workload Identity Federation credentials for GitHub Actions (`azuread_application_federated_identity_credential`) have a `subject` claim that is scoped tightly enough to prevent unintended repositories, branches, or actors from assuming the federated identity.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azuread_application_federated_identity_credential`
 

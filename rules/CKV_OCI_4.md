@@ -9,6 +9,8 @@ Disabling in-transit encryption for boot volume traffic exposes disk I/O data to
 This check ensures that OCI compute instances (`oci_core_instance`) enable in-transit encryption for traffic between the instance and its boot/block volumes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_instance`
 

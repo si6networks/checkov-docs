@@ -8,6 +8,8 @@ A hardcoded Bridgecrew API token committed in Terraform provider configuration i
 This check verifies that the Terraform `bridgecrew` provider block does not contain a hard-coded Bridgecrew/Prisma Cloud API token literal in source code.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `provider "bridgecrew"` blocks (provider-type check, inspects the `token` argument)
 
 ## Why it matters

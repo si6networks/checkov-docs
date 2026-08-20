@@ -8,6 +8,8 @@ This check enforces a customer-managed KMS key on S3 bucket objects rather than 
 This check requires that an `aws_s3_bucket_object` resource specify a customer-managed KMS key (`kms_key_id`) so the individual object is encrypted with a key your organization controls.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_bucket_object` (the legacy/deprecated Terraform AWS provider resource, superseded by `aws_s3_object`)
 - **Check type:** resource (attribute-value check)

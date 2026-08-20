@@ -9,6 +9,8 @@ Unencrypted RDS global clusters store potentially sensitive relational data acro
 This check requires `aws_rds_global_cluster` resources to set `storage_encrypted = true`, ensuring data across all regional clusters in the Aurora Global Database is encrypted at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_rds_global_cluster`
 

@@ -9,6 +9,8 @@ Missing read/write/delete logging on the Storage Queue service limits the abilit
 This check ensures diagnostic logging is enabled and captures read, write, and delete operations for the Azure Storage Account's Queue service.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.Storage/storageAccounts/queueServices/providers/diagnosticsettings`, `azurerm_storage_account` (via its `queue_properties.logging` block; only relevant when `account_kind` is `Storage` or `StorageV2`)
 

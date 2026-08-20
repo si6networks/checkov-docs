@@ -8,6 +8,8 @@ Without required CODEOWNER review, changes to sensitive paths (CI config, infra 
 This check fails when a branch protection rule does not require review from designated code owners (`required_pull_request_reviews/require_code_owner_reviews`), meaning changes to sensitive files/paths can be merged without sign-off from the people responsible for them.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings)
 - **Entities:** `*`, evaluated against `required_pull_request_reviews/require_code_owner_reviews`
 

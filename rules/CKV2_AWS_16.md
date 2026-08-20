@@ -9,6 +9,8 @@ Lacking Auto Scaling on DynamoDB tables is primarily an availability and cost-ma
 This check ensures that DynamoDB tables using provisioned billing mode have Application Auto Scaling configured (or use on-demand `PAY_PER_REQUEST` billing instead) so read/write capacity scales automatically with load.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_dynamodb_table` resources, evaluated in connection with `aws_appautoscaling_target`/`aws_appautoscaling_policy` resources.
 
 ## Why it matters

@@ -8,6 +8,8 @@ A PodSecurityPolicy that permits adding arbitrary Linux capabilities lets worklo
 This check fails any `PodSecurityPolicy` that sets `spec.allowedCapabilities` to a non-empty list, because that permits pods bound to the policy to add Linux capabilities beyond the container runtime's default set.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) and Terraform
 - **Resource/entity types:** `PodSecurityPolicy` (Kubernetes), `kubernetes_pod_security_policy` (Terraform)
 

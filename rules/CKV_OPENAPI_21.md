@@ -9,6 +9,8 @@ Arrays without a maximum item count let a client submit unbounded payloads, crea
 Every schema of `type: array` anywhere in the OpenAPI/Swagger document (parameters, request bodies, response schemas, nested definitions) must declare a `maxItems` constraint, so clients cannot submit or trigger unbounded-size arrays.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (both Swagger 2.0 and OpenAPI 3.x specification files — generic, version-agnostic check).
 - **Entity:** `paths` (recursively scans any nested `array`-typed schema reachable from path/operation definitions, including parameters, request bodies, and response schemas).
 

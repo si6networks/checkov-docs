@@ -9,6 +9,8 @@ Missing detailed EC2 monitoring only reduces metric granularity (5-minute vs 1-m
 This check requires that EC2 instances enable CloudWatch detailed monitoring (1-minute granularity metrics) rather than relying on the default 5-minute basic monitoring interval.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_instance`
 

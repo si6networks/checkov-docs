@@ -9,6 +9,8 @@ Disabling transparent data encryption on Synapse SQL pools leaves potentially se
 This check ensures Azure Synapse dedicated SQL pools have Transparent Data Encryption (TDE) enabled via the `data_encrypted` attribute.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_synapse_sql_pool` resources — inspects the `data_encrypted` attribute.
 
 ## Why it matters

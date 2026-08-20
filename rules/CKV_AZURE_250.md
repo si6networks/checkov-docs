@@ -9,6 +9,8 @@ Setting Storage Sync Service to allow all incoming traffic removes network-level
 This check ensures that an Azure File Sync `azurerm_storage_sync` resource does not allow all incoming traffic; its `incoming_traffic_policy` must be set to a restricted value rather than `AllowAllTraffic`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_storage_sync`
 

@@ -8,6 +8,8 @@ Use of legacy EC2-Classic ElastiCache security groups signals a cluster running 
 Flags any use of the legacy `aws_elasticache_security_group` resource, since ElastiCache Security Groups are a deprecated, EC2-Classic-era construct that should never appear in a modern (VPC-based) Terraform configuration.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_elasticache_security_group` — this check unconditionally fails if this resource type is present at all; there is no passing configuration for it.
 
 ## Why it matters

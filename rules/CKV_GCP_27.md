@@ -8,6 +8,8 @@ Auto-created default networks come with permissive default firewall rules and a 
 This check fails when a `google_project` resource does not explicitly set `auto_create_network = false`, meaning GCP will auto-create the legacy "default" VPC network for the project.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_project`
 - **Check type:** resource

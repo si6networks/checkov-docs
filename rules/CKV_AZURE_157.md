@@ -9,6 +9,8 @@ Without data exfiltration protection, a Synapse workspace can send data to arbit
 This check ensures that an Azure Synapse Analytics workspace has data exfiltration protection enabled, which restricts outbound data movement to only approved (allow-listed) Azure tenants and destinations.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_synapse_workspace`

@@ -9,6 +9,8 @@ NAT/public IP on a compute instance group directly exposes every instance in the
 This check fails when a Yandex Cloud `yandex_compute_instance_group` resource's instance template network interface has NAT (public IP assignment) enabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_compute_instance_group`
 

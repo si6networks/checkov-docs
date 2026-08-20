@@ -8,6 +8,8 @@ Leaving EBS default encryption disabled means any new volume created without an 
 This check ensures that EBS encryption-by-default is enabled at the account/region level, so that every new EBS volume is automatically encrypted at rest without relying on developers to remember to set encryption per-volume.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resource `aws_ebs_encryption_by_default`, an account/region-level singleton setting (via the `enabled` attribute).
 
 ## Why it matters

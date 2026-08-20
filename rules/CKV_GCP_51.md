@@ -9,6 +9,8 @@ log_checkpoints logging is primarily an operational/diagnostic aid for I/O and p
 This check fails when a `google_sql_database_instance` running PostgreSQL does not have the `log_checkpoints` database flag explicitly set to `on`, meaning checkpoint activity (a key indicator of I/O load and potential DoS/performance issues) is not being logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `POSTGRES`
 - **Check type:** resource check

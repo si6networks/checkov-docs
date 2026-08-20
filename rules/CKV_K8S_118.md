@@ -8,6 +8,8 @@ Enabling --auto-tls causes etcd to generate self-signed certificates automatical
 This check verifies that the `etcd` server does not enable `--auto-tls=true`, which would make etcd generate and use self-signed client-facing TLS certificates automatically instead of using certificates issued by the cluster's trusted CA.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `etcd` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `etcd` component (CIS Kubernetes Benchmark 2.3).
 
 ## Why it matters

@@ -9,6 +9,8 @@ Without a SAS expiration policy, shared-access-signature tokens generated agains
 This check ensures that if an Azure Storage Account still allows Shared Key authorization (and thus Shared Access Signature generation), it must also enforce a SAS expiration policy so that generated SAS tokens cannot be issued with unlimited or excessively long lifetimes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource type:** `azurerm_storage_account`
 

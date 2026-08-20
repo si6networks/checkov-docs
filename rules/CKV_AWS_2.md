@@ -8,6 +8,8 @@ An ALB listener that isn't restricted to HTTPS/TLS allows client traffic to trav
 Ensures that Application/Network Load Balancer listeners either terminate traffic using a secure protocol (HTTPS/TLS/TCP/UDP/TCP_UDP) or, if using plain HTTP, redirect it to HTTPS.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_lb_listener`, `aws_alb_listener` — inspects the `protocol` attribute and, when `HTTP`, the `default_action` redirect configuration.
 - **CloudFormation**: `AWS::ElasticLoadBalancingV2::Listener` — inspects `Properties/Protocol` and `Properties/DefaultActions`.
 

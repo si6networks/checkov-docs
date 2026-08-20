@@ -8,6 +8,8 @@ Disabling geo-redundant backups on MySQL is primarily an availability/disaster-r
 This check verifies that an Azure Database for MySQL server (single server or flexible server) has geo-redundant backups enabled, so backups are replicated to a paired Azure region.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mysql_server`, `azurerm_mysql_flexible_server` (inspects `geo_redundant_backup_enabled`)
 - **ARM templates**: `Microsoft.DBforMySQL/flexibleServers` (inspects `properties.Backup.geoRedundantBackup`)
 - **Bicep**: resources compiling to the above ARM type

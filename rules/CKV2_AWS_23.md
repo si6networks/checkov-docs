@@ -8,6 +8,8 @@ A dangling Route 53 alias pointing to a deprovisioned resource enables subdomain
 This check ensures that every Route 53 `A` record with an `alias` block actually points to a real, connected AWS resource (e.g., a load balancer, EC2 instance, CloudFront distribution) rather than being a dangling record with no live target.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_route53_record` (type `A` only)
 - **Check type:** Graph-based connection/attribute check

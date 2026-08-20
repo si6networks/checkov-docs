@@ -9,6 +9,8 @@ Without AKS diagnostic logging to Azure Monitor, control-plane and workload even
 This check verifies that an Azure Kubernetes Service (AKS) cluster has the Azure Monitor container insights add-on (`oms_agent`/`omsagent`) enabled, so cluster and container logs/metrics are shipped to a Log Analytics workspace.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster`
 - **ARM templates**: `Microsoft.ContainerService/managedClusters`
 - **Bicep**: `Microsoft.ContainerService/managedClusters`

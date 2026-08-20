@@ -9,6 +9,8 @@ Write access to services/status enables exploitation of the well-known unpatched
 This check ensures no Role/ClusterRole bound to a ServiceAccount or Node grants `update`/`patch` (or `*`) verb permission on the `services/status` subresource, because that permission can be used to exploit CVE-2020-8554 and hijack traffic for arbitrary LoadBalancer-type Services.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests. Applies to `Role`, `ClusterRole`, `RoleBinding`, and `ClusterRoleBinding` resource kinds, evaluated as a connected RBAC graph.
 
 ## Why it matters

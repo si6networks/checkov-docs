@@ -8,6 +8,8 @@ IAM policies permitting data exfiltration actions (e.g. unrestricted S3 GetObjec
 This check fails when an IAM policy document grants actions from cloudsplaining's "data exfiltration" category — permissions that would allow a principal to move data out of AWS storage/services in ways that bypass normal controls (e.g., unrestricted S3 object retrieval/sync, snapshot sharing, or KMS decrypt without corresponding least-privilege scoping).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resources:** `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`
 

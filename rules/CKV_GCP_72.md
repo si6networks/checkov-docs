@@ -8,6 +8,8 @@ Missing Integrity Monitoring is a detection gap (loss of visibility into boot-ch
 This check ensures GKE node pools have Integrity Monitoring enabled as part of their Shielded VM configuration, so unexpected changes to the boot sequence are detected and reported.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_container_cluster`, `google_container_node_pool`
 

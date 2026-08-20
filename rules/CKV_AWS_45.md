@@ -8,6 +8,8 @@ Hard-coded secrets in Lambda environment variables are stored largely in clearte
 This check scans Lambda function environment variables for values that look like hard-coded secrets (API keys, credentials, tokens), which should be stored in a secrets manager instead.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::Lambda::Function`, `AWS::Serverless::Function` (CloudFormation/SAM), `aws_lambda_function` (Terraform) — specifically the `Environment`/`environment` variables block.
 

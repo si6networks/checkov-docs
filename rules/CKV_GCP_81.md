@@ -8,6 +8,8 @@ The dataset-level default-CMEK counterpart to CKV_GCP_80; missing it risks new t
 This check ensures a `google_bigquery_dataset` sets a default customer-managed KMS key, so any table created in that dataset inherits CMEK encryption rather than relying solely on Google's default encryption-at-rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_bigquery_dataset`
 

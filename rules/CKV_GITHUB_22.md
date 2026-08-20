@@ -8,6 +8,8 @@ Unrestricted private repository creation mainly drives governance sprawl and inc
 This check enforces that a GitHub organization does not allow all members to freely create new private repositories.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated against the organization-level settings document (`members_can_create_private_repositories`).
 
 ## Why it matters

@@ -8,6 +8,8 @@ A MongoDB instance deployed outside a VPC is reachable over the classic/public n
 This check ensures that an Alibaba Cloud ApsaraDB for MongoDB instance is deployed within a Virtual Private Cloud (`network_type = "VPC"`) rather than the legacy Classic network.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_mongodb_instance`
 

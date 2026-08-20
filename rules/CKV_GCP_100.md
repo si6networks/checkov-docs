@@ -9,6 +9,8 @@ Granting allUsers/allAuthenticatedUsers on a BigQuery table exposes potentially 
 This check ensures that IAM bindings/members applied to a BigQuery table do not grant access to the special public principals `allUsers` or `allAuthenticatedUsers`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource types**: `google_bigquery_table_iam_member`, `google_bigquery_table_iam_binding`
 

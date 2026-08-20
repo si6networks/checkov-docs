@@ -9,6 +9,8 @@ A leaked Slack token can exfiltrate private message/file history and be used to 
 This check scans file contents for hardcoded Slack tokens (bot, user, workspace, or webhook tokens), flagging static Slack API credentials committed directly into source, config, or CI pipeline files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (YAML/JSON config, CI pipeline definitions, scripts, application config, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched token string within a file; findings are reported at the file/line level.
 

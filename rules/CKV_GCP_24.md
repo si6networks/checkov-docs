@@ -8,6 +8,8 @@ Disabling PodSecurityPolicy removes an admission-control layer that restricts pr
 This check fails when a `google_container_cluster` with `min_master_version` below 1.25 does not explicitly enable the `pod_security_policy_config` (PodSecurityPolicy admission controller).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource

@@ -8,6 +8,8 @@ A DMS endpoint without SSL configured transmits potentially sensitive database c
 This check fails when a DMS (Database Migration Service) endpoint's engine requires an explicit SSL mode and `ssl_mode` is left as `none`, meaning data replicated to/from that endpoint travels unencrypted.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_dms_endpoint`
 

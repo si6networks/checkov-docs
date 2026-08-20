@@ -8,6 +8,8 @@ Leaving the kubelet's unauthenticated read-only port (10255) open exposes pod an
 This check ensures the kubelet's unauthenticated, read-only HTTP port (`--read-only-port`) is disabled by setting it to `0`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

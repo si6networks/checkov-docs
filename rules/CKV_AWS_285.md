@@ -8,6 +8,8 @@ Without execution history logging, security-relevant state machine activity (inp
 This check fails when an `aws_sfn_state_machine` resource's logging configuration does not include execution data (`include_execution_data = true`), meaning the detailed input/output/state data of executions is not being logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_sfn_state_machine`
 

@@ -8,6 +8,8 @@ Not requiring conversation resolution before merge allows unresolved reviewer co
 This check fails when a branch protection rule does not require all pull-request review conversations to be resolved before merging (`required_conversation_resolution/enabled`).
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 - **Framework:** GitHub repository configuration (`github_configuration` — branch protection settings)
 - **Entities:** `*`, evaluated against `required_conversation_resolution/enabled`
 

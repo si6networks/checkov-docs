@@ -9,6 +9,8 @@ If Tiller's gRPC listener is reachable from other pods rather than bound to loca
 For any container identified as Tiller (Helm v2's server component), this check ensures its gRPC listener is bound only to `localhost`/`127.0.0.1` rather than being reachable from the rest of the cluster network.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only, container-level check across kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. This check only evaluates containers that are already identified as Tiller by the shared `Tiller.is_tiller()` helper (same image/label heuristic used by CKV_K8S_34); for any non-Tiller container it returns `UNKNOWN` (not applicable).
 
 ## Why it matters

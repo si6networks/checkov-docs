@@ -9,6 +9,8 @@ A storage bucket ACL or grant that allows public-read/public-read-write access (
 This check fails when a Yandex Object Storage bucket (`yandex_storage_bucket`) is configured with a public ACL (`public-read`/`public-read-write`) or an explicit grant to the `AllUsers` group.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_storage_bucket`
 

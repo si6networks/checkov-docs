@@ -9,6 +9,8 @@ Leaving the Naver Kubernetes Service public endpoint enabled exposes the Kuberne
 This check ensures that a Naver Kubernetes Service (NKS) cluster (`ncloud_nks_cluster`) does not have its control-plane API server exposed via a public network endpoint (`public_network` attribute set to `true`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_nks_cluster`
 - **Check type:** resource-configuration check (Python, `BaseResourceNegativeValueCheck`)

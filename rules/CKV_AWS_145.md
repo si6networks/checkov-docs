@@ -8,6 +8,8 @@ S3 buckets frequently hold sensitive data, and this check ensures encryption at 
 This check verifies that an S3 bucket's default server-side encryption uses `aws:kms` (a KMS key) rather than plain `AES256` (Amazon-managed SSE-S3 encryption) or no default encryption at all.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `aws_s3_bucket` (legacy inline `server_side_encryption_configuration` block) and the standalone `aws_s3_bucket_server_side_encryption_configuration` resource.
 
 ## Why it matters

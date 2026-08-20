@@ -9,6 +9,8 @@ A Vertex AI runtime with a public IP is directly reachable from the internet, ex
 This check ensures that a Google Cloud Vertex AI (Notebooks) runtime's virtual machine is configured to use only an internal IP address, preventing it from being directly reachable from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_notebooks_runtime`
 

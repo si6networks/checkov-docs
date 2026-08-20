@@ -8,6 +8,8 @@ An inactive WAF policy mode means malicious traffic is not being blocked or flag
 This check verifies that an Azure Front Door WAF policy is actually enabled/active, so that traffic passing through Front Door is genuinely being inspected rather than having a WAF policy resource defined but administratively turned off.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:**
   - Terraform: `azurerm_frontdoor_firewall_policy`

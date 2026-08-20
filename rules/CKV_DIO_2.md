@@ -9,6 +9,8 @@ A droplet created without an SSH key falls back to DigitalOcean emailing a rando
 This check requires that a DigitalOcean Droplet (`digitalocean_droplet`) resource specifies at least one SSH key via the `ssh_keys` attribute, rather than relying on a generated root password.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform resource type `digitalocean_droplet` (DigitalOcean provider). Specifically inspects the `ssh_keys` attribute for the presence of any value.
 
 ## Why it matters

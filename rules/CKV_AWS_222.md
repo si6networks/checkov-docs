@@ -8,6 +8,8 @@ Without automatic minor version upgrades, a DMS replication instance can miss ti
 This check ensures that an AWS DMS replication instance (`aws_dms_replication_instance`) has `auto_minor_version_upgrade` enabled so it automatically receives minor engine version upgrades, including security patches.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_dms_replication_instance`
 

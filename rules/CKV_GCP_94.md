@@ -8,6 +8,8 @@ Dataflow workers configured with public IPs expose the compute nodes processing 
 This check requires `google_dataflow_job` resources to set `ip_configuration = "WORKER_IP_PRIVATE"`, so Dataflow worker VMs do not receive public IP addresses.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dataflow_job`
 - **Check type:** resource (attribute-value check)

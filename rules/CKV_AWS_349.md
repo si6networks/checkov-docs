@@ -8,6 +8,8 @@ Unencrypted local (instance-store) disks on EMR cluster nodes can expose interme
 Ensures an EMR security configuration that enables at-rest encryption also enables local disk encryption specifically, rather than leaving instance store/local volumes unencrypted.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_emr_security_configuration`
 

@@ -8,6 +8,8 @@ Without log_disconnections, security teams lose an audit trail of session ending
 This check ensures that the Alibaba Cloud RDS (PostgreSQL) database parameter `log_disconnections` is enabled, so every session disconnection is recorded in the database logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 

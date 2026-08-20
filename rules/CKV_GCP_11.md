@@ -9,6 +9,8 @@ A Cloud SQL instance configured to accept connections from 0.0.0.0/0 exposes the
 This check ensures that a `google_sql_database_instance`'s authorized networks (both static entries and `dynamic "authorized_networks"` blocks) do not include a CIDR range ending in `/0` (i.e., `0.0.0.0/0`), which would allow any IP address on the internet to attempt a connection to the database.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_sql_database_instance`
 - Specifically inspects the `settings.ip_configuration.authorized_networks` (static list) and `settings.ip_configuration.dynamic.authorized_networks` (dynamic block) attributes.

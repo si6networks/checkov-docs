@@ -9,6 +9,8 @@ Running on a deprecated, unpatched Lambda runtime increases exposure to known un
 This check ensures that Lambda functions do not specify a `runtime` value that AWS has deprecated (no longer receives security patches and is scheduled for, or already subject to, blocked updates/creates).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::Lambda::Function`, `AWS::Serverless::Function` (property `Runtime`), `aws_lambda_function` (attribute `runtime`)

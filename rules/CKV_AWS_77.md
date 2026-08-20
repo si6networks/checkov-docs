@@ -8,6 +8,8 @@ An unencrypted Athena database leaves query results and underlying data at rest 
 This check fails when an AWS Athena database (the S3-backed query result/catalog store) does not have an encryption configuration set, since Athena databases are **unencrypted by default**.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_athena_database`
 - **Check type:** resource

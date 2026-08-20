@@ -8,6 +8,8 @@ This check verifies ElastiCache replication group in-transit encryption; without
 This check ensures an ElastiCache Replication Group has in-transit (TLS) encryption enabled, checking `transit_encryption_enabled` in Terraform (`aws_elasticache_replication_group`) or `TransitEncryptionEnabled` in CloudFormation (`AWS::ElastiCache::ReplicationGroup`).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** Terraform, CloudFormation
 - **Resource types:** `aws_elasticache_replication_group` (Terraform), `AWS::ElastiCache::ReplicationGroup` (CloudFormation)
 

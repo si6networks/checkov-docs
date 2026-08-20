@@ -9,6 +9,8 @@ Using launch templates instead of legacy launch configurations is primarily a fe
 This check ensures Auto Scaling groups are provisioned using a `launch_template` (or a `mixed_instances_policy` that itself uses a launch template), rather than the legacy `launch_configuration` mechanism.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_autoscaling_group`
 

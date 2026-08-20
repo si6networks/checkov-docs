@@ -8,6 +8,8 @@ Permitting Lua code in NGINX Ingress annotation snippets enables CVE-2021-25742,
 This check flags Kubernetes `Ingress` resources whose annotations contain a `*-snippet` key (e.g., `nginx.ingress.kubernetes.io/configuration-snippet`) whose value includes Lua-related keywords or the `kubernetes.io` string, which could be used to inject and execute arbitrary Lua/config code in the NGINX ingress controller.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests of `kind: Ingress`. Inspects the `metadata.annotations` map for keys containing `snippet` and their values.
 
 ## Why it matters

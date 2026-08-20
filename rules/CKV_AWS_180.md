@@ -8,6 +8,8 @@ This only enforces customer-managed KMS keys for Image Builder components rather
 This check requires that an `aws_imagebuilder_component` resource specify a customer-managed KMS key (`kms_key_id`) to encrypt the component's data, instead of relying on the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_imagebuilder_component`
 - **Check type:** resource (attribute-value check)

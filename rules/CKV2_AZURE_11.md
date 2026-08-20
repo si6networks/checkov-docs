@@ -9,6 +9,8 @@ Data Explorer clusters are encrypted at rest by default; omitting a customer-man
 This check ensures that an Azure Data Explorer (Kusto) cluster has a customer-managed key configured for encryption at rest, instead of relying on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_kusto_cluster`, connected via `azurerm_kusto_cluster_customer_managed_key`.
 

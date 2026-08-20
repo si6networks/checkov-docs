@@ -9,6 +9,8 @@ Using the AWS-managed default key instead of a customer-managed KMS key for SQS 
 This check flags `aws_sqs_queue` resources that explicitly set `kms_master_key_id` to the AWS-managed default alias `alias/aws/sqs`, encouraging use of a customer-managed KMS key (CMK) instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_sqs_queue`
 

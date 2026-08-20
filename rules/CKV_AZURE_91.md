@@ -8,6 +8,8 @@ Enabling the non-SSL port on Azure Cache for Redis permits cleartext transmissio
 This check verifies that an Azure Cache for Redis instance does not have the legacy non-SSL (unencrypted) port enabled, ensuring all client connections use TLS.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_redis_cache` (inspects `enable_non_ssl_port`)
 
 ## Why it matters

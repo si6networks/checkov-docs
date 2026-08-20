@@ -8,6 +8,8 @@ A PostgreSQL Flexible Server firewall rule spanning the full 0.0.0.0-255.255.255
 This check verifies that firewall rules on an Azure Database for PostgreSQL Flexible Server do not open the entire IPv4 address space (`0.0.0.0` to `255.255.255.255`) to the database.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_postgresql_flexible_server_firewall_rule`
 

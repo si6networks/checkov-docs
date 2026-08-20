@@ -9,6 +9,8 @@ Leaving public network access enabled on an Azure Machine Learning workspace bro
 This check ensures an Azure Machine Learning workspace has public network access disabled, requiring access via private networking rather than the open internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM/Bicep (both graph-based checks)
 - **Resource types:** `Microsoft.MachineLearningServices/workspaces` (ARM/Bicep), `azurerm_machine_learning_workspace` (Terraform)
 

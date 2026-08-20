@@ -8,6 +8,8 @@ Standalone IAM users without group-based permission management increase the risk
 This check ensures every `aws_iam_user` defined in Terraform is attached to at least one IAM group via `aws_iam_group_membership`, rather than having permissions assigned individually to the user.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_iam_user` (the entity being validated), `aws_iam_group_membership` (the connecting resource), and transitively `aws_iam_group`
 - **Check type:** Graph-based connection check (evaluates relationships between resources across the Terraform configuration, not a single resource's attributes)

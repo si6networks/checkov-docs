@@ -8,6 +8,8 @@ Permitting weak or non-forward-secret cipher suites on the API server's TLS list
 This check ensures that if the Kubernetes API server's `--tls-cipher-suites` argument is set, every cipher suite listed is drawn from an approved set of strong, modern TLS cipher suites.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Applies to Kubernetes manifests defining container specs for workload kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — relevant specifically to the static Pod manifest running `kube-apiserver`, since the check looks for the `kube-apiserver` command.
 
 ## Why it matters

@@ -9,6 +9,8 @@ Auto-mounting a service account token into a pod that has no need to call the Ku
 This check ensures pods explicitly set `automountServiceAccountToken: false` unless the workload actually needs to call the Kubernetes API from inside the container.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only, kinds: `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`. Inspected at `spec.automountServiceAccountToken` (or the equivalent nested path for CronJob/Deployment-style templates).
 
 ## Why it matters

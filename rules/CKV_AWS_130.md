@@ -9,6 +9,8 @@ Subnets that auto-assign public IPs cause instances launched into them to defaul
 This check requires that `aws_subnet` resources do not set `map_public_ip_on_launch = true`, preventing instances launched into the subnet from automatically receiving a public IP address.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_subnet`
 

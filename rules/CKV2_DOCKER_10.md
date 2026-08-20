@@ -9,6 +9,8 @@ Disabling rpm's digest/signature verification allows unsigned or tampered packag
 This check verifies that `rpm` invocations in a Dockerfile do not disable package integrity/signature verification via the `--nodigest`, `--nosignature`, `--noverify`, or `--nofiledigest` flags.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: any `RUN` instruction.
 
 This is a graph-based check using regex matching against the `RUN` instruction's command text.

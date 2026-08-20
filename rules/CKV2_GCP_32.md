@@ -8,6 +8,8 @@ Enabling external IPs on a TPU v2 VM exposes an expensive, compute-privileged ML
 This check ensures that a TPU v2 VM resource does not expose external (public) IP addresses on its network interfaces.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_tpu_v2_vm`
 

@@ -9,6 +9,8 @@ An HTTP/HTTPS target group without a configured health check can route traffic t
 This check ensures that Naver Cloud Platform (NCP) load-balancer target groups (`ncloud_lb_target_group`) using the `HTTP` or `HTTPS` protocol define an active health check with a URL path, so the load balancer can accurately detect and route around unhealthy backends.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_lb_target_group`
 - **Check type:** resource-configuration check (Python)

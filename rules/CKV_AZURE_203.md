@@ -9,6 +9,8 @@ Leaving local (SAS key) authentication enabled allows access via long-lived, oft
 This check ensures an Azure Service Bus namespace has `local_auth_enabled` set to `false`, forcing all clients to authenticate via Azure AD instead of SAS keys/connection strings.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_servicebus_namespace`
 

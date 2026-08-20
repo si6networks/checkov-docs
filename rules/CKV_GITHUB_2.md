@@ -8,6 +8,8 @@ Without an org-wide SSO requirement, members can authenticate with weaker, unmon
 This check enforces that a GitHub organization has SAML single sign-on (SSO) configured, verified via the presence of a SAML identity provider `ssoUrl` in the organization's security configuration.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type / entity `*`), evaluated against the organization security document (the JSON payload describing organization-level settings, keyed under `data.organization`).
 
 ## Why it matters

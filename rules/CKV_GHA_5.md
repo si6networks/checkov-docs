@@ -8,6 +8,8 @@ Building and publishing artifacts without a cosign signing step weakens supply-c
 This check fails when a GitHub Actions job builds a software artifact (container image, package, binary, etc.) but never runs `cosign sign` anywhere afterward in that same job, meaning the artifact is published without a verifiable cryptographic signature.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **Framework:** GitHub Actions workflow YAML
 - **Entities:** `jobs` (evaluated at the whole-job level, across all of its steps)
 

@@ -8,6 +8,8 @@ Without --etcd-cafile, the API server cannot validate etcd's certificate, exposi
 This check ensures the Kubernetes API server is started with the `--etcd-cafile` argument set, so it validates etcd's TLS certificate against a trusted CA when connecting to the cluster's data store.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Applies to Kubernetes manifests defining container specs for workload kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — relevant specifically to the static Pod manifest that runs `kube-apiserver` (typically `/etc/kubernetes/manifests/kube-apiserver.yaml`), since the check looks for the `kube-apiserver` command.
 
 ## Why it matters

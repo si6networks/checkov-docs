@@ -8,6 +8,8 @@ Missing a terminated-pod-gc-threshold mainly risks unbounded growth of terminate
 This check verifies that the `kube-controller-manager` is configured with a `--terminated-pod-gc-threshold` value greater than zero, so that terminated Pod objects are periodically garbage-collected rather than accumulating indefinitely.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests (raw YAML/JSON, and any Helm/Kustomize output Checkov renders to Kubernetes objects) that define a Pod-carrying workload whose container command line invokes `kube-controller-manager`. Applicable entity kinds: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice this check only fires meaningfully on the static Pod manifest used to run the control-plane `kube-controller-manager` component (e.g. `/etc/kubernetes/manifests/kube-controller-manager.yaml` on a kubeadm cluster), since it inspects the container's `command` array for that binary name.
 
 ## Why it matters

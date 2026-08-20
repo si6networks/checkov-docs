@@ -9,6 +9,8 @@ Allowing `hostIPC: true` via a cluster-wide PodSecurityPolicy lets any admitted 
 This check ensures a Kubernetes `PodSecurityPolicy` does not allow pods to share the host's IPC (inter-process communication) namespace via `hostIPC: true`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: resource kind `PodSecurityPolicy`, field `spec.hostIPC`.
 - **Terraform**: resource type `kubernetes_pod_security_policy`, attribute `spec[0].host_ipc`.
 

@@ -9,6 +9,8 @@ A load balancer configured for public rather than private network type exposes t
 This check ensures that Naver Cloud Platform (NCP) Load Balancer resources (`ncloud_lb`) are configured with `network_type = "PRIVATE"` rather than a public-facing network type.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_lb`
 - **Check type:** resource-configuration attribute check

@@ -8,6 +8,8 @@ Alias IP ranges primarily affect network addressing/routing design for pod IPs r
 This check fails when a `google_container_cluster` does not configure an `ip_allocation_policy` block, meaning the cluster is not using VPC-native (alias IP) networking.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource

@@ -8,6 +8,8 @@ MemoryDB snapshots not using a customer-managed KMS key still get default encryp
 This check fails when an `aws_memorydb_snapshot` resource does not specify a KMS `kms_key_arn`, meaning the snapshot is not confirmed to be encrypted with a customer-managed key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_memorydb_snapshot`
 

@@ -9,6 +9,8 @@ Failing to block nested-item anonymous access lets any blob container in the acc
 This check ensures an Azure Storage Account explicitly disallows nested items (blobs/containers) from being configured for anonymous public read access.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource type:** `azurerm_storage_account`
 

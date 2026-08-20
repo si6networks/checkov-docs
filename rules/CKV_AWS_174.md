@@ -9,6 +9,8 @@ Allowing CloudFront viewer connections below TLS 1.2 permits use of deprecated, 
 This check requires that a CloudFront distribution's viewer certificate configuration enforces a minimum TLS protocol version of 1.2 or higher for connections between end-users (viewers) and CloudFront, rejecting the CloudFront default certificate and any protocol policy allowing TLS 1.0/1.1.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_cloudfront_distribution`
 - **CloudFormation**: `AWS::CloudFront::Distribution`
 

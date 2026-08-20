@@ -8,6 +8,8 @@ An outdated RDS CA certificate can break or weaken TLS certificate validation fo
 This check ensures that an `aws_db_instance` resource specifies a modern RDS certificate authority (CA) certificate for encrypting client-to-database connections, rather than relying on an older/deprecated CA.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_db_instance`
 

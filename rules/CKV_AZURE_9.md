@@ -8,6 +8,8 @@ An NSG rule that allows RDP (port 3389) from the internet exposes a remote admin
 This check flags Azure Network Security Group (NSG) rules that allow unrestricted inbound RDP (TCP port 3389) access from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_network_security_group` (inline `security_rule` blocks), `azurerm_network_security_rule` (standalone rule resources)
 - **ARM templates**: `Microsoft.Network/networkSecurityGroups`, `Microsoft.Network/networkSecurityGroups/securityRules`
 - **Bicep**: resources compiling to the above ARM types

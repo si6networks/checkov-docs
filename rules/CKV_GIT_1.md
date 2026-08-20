@@ -8,6 +8,8 @@ A repository that should be private but is left public exposes proprietary sourc
 This check ensures a `github_repository` Terraform resource is configured as private (or at least internal), rather than publicly visible.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `github` provider, specifically the `github_repository` resource type.
 
 ## Why it matters

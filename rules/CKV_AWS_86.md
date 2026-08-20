@@ -8,6 +8,8 @@ Missing CloudFront access logging removes visibility into requests hitting a pub
 This check fails when a CloudFront distribution does not have standard access logging configured with a destination S3 bucket.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::CloudFront::Distribution` (CloudFormation), `aws_cloudfront_distribution` (Terraform)
 - **Check type:** resource

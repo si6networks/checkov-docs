@@ -8,6 +8,8 @@ A hardcoded Linode API token committed in Terraform provider configuration is a 
 This check scans the Terraform `provider "linode"` block for a hardcoded API token value that matches Linode's token format, flagging it as an exposed secret.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to the `provider` block configuration type, specifically `provider "linode"` (the Linode Terraform provider used to manage Linode cloud resources — instances, NodeBalancers, LKE clusters, object storage, etc.).
 
 ## Why it matters

@@ -9,6 +9,8 @@ Missing tag propagation to snapshots is a governance/hygiene gap that can weaken
 This check ensures that an `aws_neptune_cluster` resource has `copy_tags_to_snapshot` enabled, so that resource tags (used for ownership, cost allocation, and access-control policies) are propagated to any snapshots taken of the cluster.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Check type:** resource check
 - **Entities:** `aws_neptune_cluster`

@@ -9,6 +9,8 @@ Disabling checkpoint logging only reduces operational diagnostic detail for Post
 This check ensures the PostgreSQL server configuration parameter `log_checkpoints` is turned on, so checkpoint activity is recorded in the server logs.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.DBforPostgreSQL/servers/configurations` (and generic `configurations` with `parent_type = Microsoft.DBforPostgreSQL/servers`), `azurerm_postgresql_configuration`
 

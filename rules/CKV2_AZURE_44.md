@@ -9,6 +9,8 @@ A MySQL server without a private endpoint is more likely to be reachable over th
 This check ensures that an Azure Database for MySQL server has an associated Azure Private Endpoint, so database traffic stays on the Microsoft backbone/private network instead of traversing the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based connection check)
 - **Resource type:** `azurerm_mysql_server` (must be connected to an `azurerm_private_endpoint`)
 

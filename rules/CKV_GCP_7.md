@@ -8,6 +8,8 @@ Legacy ABAC is a coarse, largely all-or-nothing authorization mode that bypasses
 This check ensures that GKE clusters do not have the legacy Attribute-Based Access Control (ABAC) authorizer enabled, forcing use of the more granular Kubernetes RBAC model instead.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 

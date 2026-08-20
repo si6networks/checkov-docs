@@ -8,6 +8,8 @@ Without an audit log path configured, security-relevant API server events are no
 This check verifies that a self-managed `kube-apiserver` container has audit logging enabled by setting the `--audit-log-path` argument to a target log file.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

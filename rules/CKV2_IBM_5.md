@@ -9,6 +9,8 @@ Unrestricted service ID creation allows proliferation of non-human identities th
 This check ensures that IBM Cloud account-level IAM settings (`ibm_iam_account_settings`) have `restrict_create_service_id` set to `RESTRICTED`, preventing arbitrary users from freely creating new Service IDs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ibm_iam_account_settings`
 

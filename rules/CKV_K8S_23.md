@@ -8,6 +8,8 @@ Running containers as root increases the impact of any container-breakout vulner
 This check fails Pods/workloads where neither the Pod's nor its containers' security context reliably ensures the container process runs as a non-root user (via `runAsNonRoot: true` or `runAsUser` set to a non-zero UID), since running as root inside a container significantly increases the impact of any container escape or kernel exploit.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON) only (no Terraform implementation for this specific rule ID)
 - **Resource/entity types:** `Pod`, `Deployment`, `DaemonSet`, `StatefulSet`, `ReplicaSet`, `ReplicationController`, `Job`, `CronJob`
 

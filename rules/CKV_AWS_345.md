@@ -8,6 +8,8 @@ Network Firewall resources are already encrypted at rest by AWS-managed keys by 
 Requires AWS Network Firewall firewalls and rule groups to be encrypted with a customer-managed KMS key (CMK) rather than relying on the AWS-owned/managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource types**: `aws_networkfirewall_firewall`, `aws_networkfirewall_rule_group`
 

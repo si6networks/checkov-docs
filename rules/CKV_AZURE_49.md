@@ -9,6 +9,8 @@ Allowing password-based (basic) authentication on Linux VM scale set instances i
 This check verifies that a Linux Virtual Machine Scale Set has password-based SSH authentication disabled, requiring SSH key-based authentication instead.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_linux_virtual_machine_scale_set`
 - **ARM templates**: `Microsoft.Compute/virtualMachineScaleSets`
 - **Bicep**: `Microsoft.Compute/virtualMachineScaleSets`

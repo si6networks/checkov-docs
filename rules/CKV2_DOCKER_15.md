@@ -9,6 +9,8 @@ Disabling sslverify for yum/dnf removes certificate validation on RPM repository
 This check verifies that no `RUN` instruction disables TLS certificate validation for `yum`/`dnf` package installs via `--setopt=sslverify=0` (or equivalent false/no values).
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: any `RUN` instruction.
 
 This is a graph-based, case-insensitive regex check against the `RUN` instruction's command text.

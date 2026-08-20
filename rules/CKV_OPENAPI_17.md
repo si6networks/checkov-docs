@@ -9,6 +9,8 @@ A missing 'consumes' declaration for write operations is a documentation/schema-
 For Swagger 2.0 documents, every `PUT`, `POST`, or `PATCH` operation must explicitly declare a `consumes` field listing the MIME type(s) of request bodies it accepts.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `paths` (each `PUT`/`POST`/`PATCH` operation object).
 

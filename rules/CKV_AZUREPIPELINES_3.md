@@ -9,6 +9,8 @@ Setting a variable without the secret flag causes its value to be written into p
 This check fails when a `bash` or `powershell` pipeline step uses the `##vso[task.setvariable]` logging command with `issecret=true` — i.e., a script-computed value is being marked as a secret variable at runtime, which Checkov flags for review.
 
 ## Applicability
+**Checkov framework(s):** `azure_pipelines`
+
 - **Azure Pipelines** YAML pipeline definitions — applies to `jobs[].steps[]` and `stages[].jobs[].steps[]` entities, specifically inline `bash` or `powershell` step scripts.
 
 ## Why it matters

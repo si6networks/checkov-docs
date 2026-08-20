@@ -8,6 +8,8 @@ Without a network policy engine, every pod can reach every other pod by default,
 This check fails when an Azure Kubernetes Service (AKS) cluster does not have a network policy engine (e.g. Azure or Calico) configured, meaning pod-to-pod traffic within the cluster is unrestricted by default.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_kubernetes_cluster`), ARM templates, and Bicep, for the resource type `Microsoft.ContainerService/managedClusters`.
 
 ## Why it matters

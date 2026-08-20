@@ -9,6 +9,8 @@ Preferring apt-get over apt is a tooling-stability best practice (apt's CLI is n
 This check flags Dockerfile `RUN` instructions that invoke the `apt` command-line tool directly, recommending `apt-get` (or `apt-cache`) instead, because `apt`'s interface is not guaranteed stable across Debian/Ubuntu releases.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **IaC framework**: Dockerfile
 - **Instruction inspected**: `RUN`
 - Applies to any `RUN` instruction whose shell command invokes `apt` as a standalone word.

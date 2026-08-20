@@ -8,6 +8,8 @@ Disabled Private Google Access mainly pressures operators toward assigning unnec
 This check ensures VM instances in a GCP subnetwork that lack external IP addresses can still reach Google APIs and services privately, rather than being unable to reach them (or being tempted to route through a public IP/NAT unnecessarily).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_subnetwork`
 

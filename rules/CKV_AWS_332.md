@@ -8,6 +8,8 @@ Pinning an ECS Fargate service to an older platform version delays receipt of AW
 This check requires that ECS services using the `FARGATE` launch type set `platform_version = "LATEST"`, ensuring tasks run on the most current Fargate runtime rather than being pinned to an older, potentially unpatched platform version.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ecs_service`
 - **Scope:** Only services with `launch_type = "FARGATE"` — EC2-launch-type services return `UNKNOWN` since platform version doesn't apply.

@@ -9,6 +9,8 @@ Missing deletion protection on a Neptune cluster is primarily an availability/da
 This check requires that every `aws_neptune_cluster` resource explicitly sets `deletion_protection = true`, preventing the cluster from being deleted without first disabling that protection.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_neptune_cluster`
 

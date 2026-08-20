@@ -8,6 +8,8 @@ Allowing IMDSv1 (instead of enforcing IMDSv2 with token-based session auth) leav
 This check fails when an EC2 instance, launch template, or launch configuration allows the legacy, unauthenticated Instance Metadata Service v1 (IMDSv1) rather than requiring the session-token-based IMDSv2.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::EC2::LaunchTemplate` (CloudFormation), `aws_instance`, `aws_launch_configuration`, `aws_launch_template` (Terraform)
 - **Check type:** resource

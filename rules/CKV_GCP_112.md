@@ -9,6 +9,8 @@ A public IAM binding (allUsers/allAuthenticatedUsers) on a KMS crypto key lets a
 This check fails when a Google Cloud KMS (Key Management Service) crypto key IAM policy grants access to `allUsers` or `allAuthenticatedUsers`, which would let anyone on the internet (or anyone with a Google account) use the key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_kms_crypto_key_iam_policy`, `google_kms_crypto_key_iam_binding`, `google_kms_crypto_key_iam_member`
 - **Check type:** resource

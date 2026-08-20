@@ -8,6 +8,8 @@ An unencrypted AppSync API cache can persist cached GraphQL response data (poten
 This check ensures that an AWS AppSync API cache (`aws_appsync_api_cache`) has encryption at rest enabled, protecting cached GraphQL response data stored on disk.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_appsync_api_cache`
 

@@ -8,6 +8,8 @@ Without a private cluster configuration, GKE nodes can be assigned public IPs, d
 This check fails when a `google_container_cluster` does not configure a `private_cluster_config` block, meaning cluster nodes (and potentially the control plane) have public IP addresses.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_cluster`
 - **Check type:** resource

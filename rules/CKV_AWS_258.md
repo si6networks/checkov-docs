@@ -9,6 +9,8 @@ Setting a Lambda function URL's AuthType to NONE makes the function invocable by
 This check ensures that a Lambda function URL's authorization type is not set to `NONE`, so that invocations require IAM authentication rather than being open to unauthenticated callers.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:**
   - CloudFormation: `AWS::Lambda::Url`

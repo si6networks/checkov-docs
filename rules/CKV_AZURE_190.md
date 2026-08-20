@@ -9,6 +9,8 @@ Allowing nested items (containers/blobs) in a storage account to be set public r
 This check ensures an Azure Storage account has anonymous/public access to blob containers disabled at the account level, so individual containers cannot be made publicly readable.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_storage_account`
 

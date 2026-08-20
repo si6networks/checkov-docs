@@ -8,6 +8,8 @@ Missing VPC Flow Logs removes network traffic visibility needed to detect and in
 This check fails when a `google_compute_subnetwork` does not configure a `log_config` block enabling VPC Flow Logs, unless the subnet's `purpose` makes flow logs inapplicable.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_subnetwork`
 - **Check type:** resource

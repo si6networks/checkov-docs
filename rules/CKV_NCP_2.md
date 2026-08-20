@@ -9,6 +9,8 @@ Requiring a description on access-control-group rules is a documentation/hygiene
 This check ensures that Naver Cloud Platform (NCP) Access Control Group resources (`ncloud_access_control_group`, `ncloud_access_control_group_rule`) — NCP's equivalent of a security group — have a `description` on the group itself or on each of its inbound/outbound rules, documenting why the rule exists.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `ncloud_access_control_group`, `ncloud_access_control_group_rule`
 - **Check type:** resource-configuration check (Python)

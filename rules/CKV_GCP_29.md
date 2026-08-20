@@ -8,6 +8,8 @@ Without uniform bucket-level access, object-level ACLs can override IAM policy a
 This check fails when a `google_storage_bucket` does not set `uniform_bucket_level_access = true`, leaving the bucket able to use legacy object-level ACLs alongside IAM.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_storage_bucket`
 - **Check type:** resource

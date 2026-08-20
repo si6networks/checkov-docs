@@ -8,6 +8,8 @@ log_planner_stats is a verbose PostgreSQL profiling flag whose recommended 'off'
 This check ensures that Cloud SQL PostgreSQL instances do not have the `log_planner_stats` database flag turned on, since it is a debugging feature that adds query-planner profiling overhead and should stay disabled in normal operation.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, specifically the `google_sql_database_instance` resource, and only when `database_version` indicates a PostgreSQL engine.
 
 ## Why it matters

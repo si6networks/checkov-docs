@@ -9,6 +9,8 @@ Without a configured rotation period, a KMS symmetric key is used indefinitely, 
 This check ensures that a Yandex Cloud KMS symmetric key has a `rotation_period` configured, so the underlying cryptographic key material is automatically rotated on a schedule rather than remaining static indefinitely.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_kms_symmetric_key`
 - **Check type:** resource (value check, `ANY_VALUE` expected)

@@ -9,6 +9,8 @@ Referencing a container by mutable tag instead of an immutable digest allows the
 This check fails when a job's `container` field in an Azure Pipelines YAML file references an image by tag rather than by an immutable content digest (`@sha256:...`).
 
 ## Applicability
+**Checkov framework(s):** `azure_pipelines`
+
 - **Azure Pipelines** YAML pipeline definitions — applies to the `jobs` and `stages[].jobs[]` entities, specifically their `container` field.
 
 ## Why it matters

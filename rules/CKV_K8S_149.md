@@ -8,6 +8,8 @@ Disabling automatic kubelet certificate rotation (--rotate-certificates=false) l
 This check ensures the kubelet does not have automatic client certificate rotation disabled (`--rotate-certificates=false`), so its client certificates are renewed automatically before they expire.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests for workload kinds carrying a pod template: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. It inspects the container `command` array, acting when it invokes `kubelet`.
 
 ## Why it matters

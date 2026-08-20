@@ -8,6 +8,8 @@ Disabling log_duration on a Cloud SQL PostgreSQL instance removes query-timing d
 This check ensures that Cloud SQL PostgreSQL instances have the `log_duration` database flag explicitly turned on, so that the execution duration of every SQL statement is recorded in the database logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform, specifically the `google_sql_database_instance` resource, and only when `database_version` indicates a PostgreSQL engine.
 
 ## Why it matters

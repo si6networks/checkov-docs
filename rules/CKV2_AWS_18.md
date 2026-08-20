@@ -9,6 +9,8 @@ EFS file systems excluded from AWS Backup plans risk unrecoverable data loss aft
 This check ensures that every `aws_efs_file_system` is included in an AWS Backup plan via an `aws_backup_selection` resource, so it is automatically and regularly backed up.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform (AWS provider). Applies to `aws_efs_file_system` resources, evaluated in connection with `aws_backup_selection` (which itself connects to an `aws_backup_plan`).
 
 ## Why it matters

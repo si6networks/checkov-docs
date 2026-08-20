@@ -9,6 +9,8 @@ Allowing unauthenticated identities lets any unauthenticated internet user obtai
 This check ensures that an Amazon Cognito identity pool does not have `allow_unauthenticated_identities` (Terraform) / `AllowUnauthenticatedIdentities` (CloudFormation) set to `true`, preventing anonymous/guest users from obtaining temporary AWS credentials.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::Cognito::IdentityPool` (property `AllowUnauthenticatedIdentities`), `aws_cognito_identity_pool` (attribute `allow_unauthenticated_identities`)

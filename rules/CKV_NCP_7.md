@@ -8,6 +8,8 @@ An unencrypted Basic Block Storage volume provisioned via the launch configurati
 This check requires that an NCloud `ncloud_launch_configuration` resource (used by auto-scaling groups) has its attached block storage volume encrypted (`is_encrypted_volume = true`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_launch_configuration`
 - **Check type:** resource (single attribute value check)

@@ -8,6 +8,8 @@ A KMS key policy containing a wildcard ('*') principal can allow any AWS princip
 This check requires that a KMS key's resource policy does not grant an `Allow` statement to a wildcard (`*`) principal, which would let any AWS identity (in any account, anywhere) use or manage the key.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::KMS::Key` (CloudFormation), `aws_kms_key` (Terraform)
 

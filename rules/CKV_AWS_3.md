@@ -8,6 +8,8 @@ This check verifies EBS volume encryption at rest; unencrypted volumes risk expo
 This check ensures that EBS volumes are created with encryption at rest enabled, checking the `encrypted` attribute in Terraform (`aws_ebs_volume`) or the `Encrypted` property in CloudFormation (`AWS::EC2::Volume`).
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** Terraform, CloudFormation
 - **Resource types:** `aws_ebs_volume` (Terraform), `AWS::EC2::Volume` (CloudFormation)
 

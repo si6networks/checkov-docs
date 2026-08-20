@@ -8,6 +8,8 @@ Without --peer-client-cert-auth=true on the etcd container, peer-to-peer replica
 This check verifies that a Pod named `etcd` requires client certificate authentication on its peer (member-to-member) endpoint, by requiring `--peer-client-cert-auth=true` in the container's `args`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only, restricted specifically to entity kind `Pod` — and further specifically to a Pod whose `metadata.name` is exactly `etcd` (the standard static Pod name for the etcd component on kubeadm-managed clusters). Other Pods are not evaluated by this check.
 
 ## Why it matters

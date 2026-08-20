@@ -8,6 +8,8 @@ Unrestricted 0.0.0.0/0 ingress to the FTP control port exposes a cleartext-crede
 This check ensures a `google_compute_firewall` ingress rule does not allow unrestricted (`0.0.0.0/0`) access to TCP port 21, the FTP control port.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_firewall`
 

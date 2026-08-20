@@ -9,6 +9,8 @@ Unencrypted inter-container traffic exposes data derived from production inferen
 This check ensures that an Amazon SageMaker Data Quality Job Definition enables inter-container traffic encryption, so that network traffic between the distributed compute instances running the monitoring job is encrypted in transit.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::SageMaker::DataQualityJobDefinition` (property `NetworkConfig/EnableInterContainerTrafficEncryption`), `aws_sagemaker_data_quality_job_definition` (attribute `network_config[0].enable_inter_container_traffic_encryption`)

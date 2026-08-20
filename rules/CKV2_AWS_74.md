@@ -9,6 +9,8 @@ A weak or missing TLS cipher/protocol policy on a load balancer listener allows 
 This check ensures that AWS Application/Network/Classic Load Balancer listeners terminate TLS with a strong, modern SSL security policy rather than using outdated or no security policy at all.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (implemented as a Checkov graph-based check, not a per-resource Python check).
 - **Resource types:** `aws_alb_listener`, `aws_lb_listener`.
 

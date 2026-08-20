@@ -8,6 +8,8 @@ An NSG rule that permits SSH (port 22) ingress from 0.0.0.0/0 exposes a remote a
 This check ensures that Azure Network Security Group (NSG) rules do not allow unrestricted inbound access to TCP port 22 (SSH) from the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_network_security_group`, `azurerm_network_security_rule`
 - **ARM/Bicep**: `Microsoft.Network/networkSecurityGroups`, `Microsoft.Network/networkSecurityGroups/securityRules`
 

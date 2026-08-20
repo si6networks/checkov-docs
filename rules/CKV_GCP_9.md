@@ -8,6 +8,8 @@ Automatic node repair is an availability/operational-resilience feature for unhe
 This check requires `google_container_node_pool` resources to enable node auto-repair (`management.auto_repair = true`), so GKE automatically repairs unhealthy nodes without manual intervention.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_container_node_pool`
 - **Check type:** resource (attribute-value check on the nested `management` block)

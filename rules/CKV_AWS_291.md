@@ -8,6 +8,8 @@ An MSK cluster with public broker access exposes the Kafka message bus directly 
 This check fails when an Amazon MSK (Managed Streaming for Kafka) cluster's broker nodes are configured with public connectivity via AWS-provided Elastic IPs (`PublicAccess.Type = "SERVICE_PROVIDED_EIPS"`), exposing Kafka brokers directly to the internet.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** Terraform, CloudFormation
 - **Resources:** `aws_msk_cluster` (Terraform), `AWS::MSK::Cluster` (CloudFormation)
 

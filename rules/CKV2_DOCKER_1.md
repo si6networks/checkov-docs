@@ -9,6 +9,8 @@ Invoking sudo inside a Dockerfile RUN step signals unnecessary privilege escalat
 This check verifies that no `RUN` instruction in a Dockerfile invokes `sudo`, since containers should not need privilege-escalation tooling baked into the image.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: any `RUN` instruction.
 
 This is a graph-based check that pattern-matches the literal text of `RUN` instruction values.

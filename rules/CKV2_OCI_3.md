@@ -9,6 +9,8 @@ An OKE cluster endpoint without Network Security Groups lacks fine-grained netwo
 This check ensures an OCI Container Engine for Kubernetes (OKE) cluster's `endpoint_config` specifies at least one Network Security Group (NSG) ID, so that access to the Kubernetes API endpoint is governed by explicit network security rules.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `oci_containerengine_cluster` resource, specifically its `endpoint_config.nsg_ids` attribute.
 
 ## Why it matters

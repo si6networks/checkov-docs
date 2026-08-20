@@ -8,6 +8,8 @@ Without the GKE Metadata Server, any Pod can query the raw node metadata server 
 This check ensures GKE node pools use the GKE Metadata Server (Workload Identity's metadata proxy) instead of exposing the raw GCE instance metadata server directly to Pods.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_container_cluster`, `google_container_node_pool`
 

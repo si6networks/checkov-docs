@@ -8,6 +8,8 @@ This check verifies a CloudFront distribution has a default root object configur
 This check ensures an `aws_cloudfront_distribution` resource sets a `default_root_object` (e.g., `index.html`) so requests to the distribution's root path return a specific, intended object rather than being unhandled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_cloudfront_distribution`
 

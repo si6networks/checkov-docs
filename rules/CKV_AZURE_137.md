@@ -8,6 +8,8 @@ The ACR admin account is a single shared, non-AAD credential that bypasses per-u
 This check ensures the admin user account is disabled on an Azure Container Registry (ACR), forcing image push/pull authentication to go through Azure AD identities/RBAC instead of a shared, static admin credential.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.ContainerRegistry/registries` resources, property `properties/adminUserEnabled`.
 - **Terraform**: `azurerm_container_registry` resource, attribute `admin_enabled`.
 - **Bicep**: compiles to the same ARM resource type.

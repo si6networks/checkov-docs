@@ -8,6 +8,8 @@ An enabled AKS local admin account provides a static-credential, non-AAD adminis
 This check ensures an Azure Kubernetes Service (AKS) cluster has local Kubernetes admin accounts disabled, forcing cluster authentication through Azure AD instead of the static `clusterAdmin`/`clusterUser` kubeconfig credentials.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.ContainerService/managedClusters` resources, property `properties/disableLocalAccounts`.
 - **Terraform**: `azurerm_kubernetes_cluster` resource, attribute `local_account_disabled`.
 - **Bicep**: compiles to the same ARM resource type.

@@ -8,6 +8,8 @@ This check verifies SSM documents are not shared publicly with all AWS accounts;
 This check ensures that an `aws_ssm_document` resource's first permissions block does not grant access to `account_ids = ["All"]`, which would make the SSM document publicly shared with every AWS account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_ssm_document`
 

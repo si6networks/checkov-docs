@@ -8,6 +8,8 @@ Unrestricted ability to create public repositories creates a real risk that prop
 This check enforces that a GitHub organization does not allow all members to create new public repositories.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated against the organization-level settings document (e.g., `members_can_create_public_repositories` in the org configuration).
 
 ## Why it matters

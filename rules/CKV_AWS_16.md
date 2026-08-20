@@ -8,6 +8,8 @@ RDS instances commonly hold core application and customer data, and disabling st
 This check verifies that a non-Aurora RDS instance has storage encryption (`storage_encrypted`) enabled at rest.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 Terraform (`aws_db_instance`) and CloudFormation (`AWS::RDS::DBInstance`). Aurora engines are exempted from this specific check (see below), since Aurora encryption is configured on the cluster resource rather than the instance.
 
 ## Why it matters

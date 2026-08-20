@@ -9,6 +9,8 @@ Keyspaces tables are encrypted at rest by an AWS-owned key even without this set
 This check ensures that an Amazon Keyspaces (for Apache Cassandra) table is encrypted using a customer-managed KMS key (CMK), rather than the AWS-owned default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_keyspaces_table`
 
 ## Why it matters

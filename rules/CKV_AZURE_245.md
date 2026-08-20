@@ -9,6 +9,8 @@ A publicly-addressed Azure Container Instance is directly reachable from the int
 This check ensures that an Azure Container Instance (ACI) container group does not receive a public IP address, forcing it to be reachable only from inside a private virtual network or with no exposed network endpoint at all.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_container_group`
 

@@ -8,6 +8,8 @@ This check verifies a WAF rule blocks JNDI/message-lookup patterns associated wi
 This check requires that an AWS WAFv2 Web ACL includes the AWS Managed Rule Group `AWSManagedRulesKnownBadInputsRuleSet` with its `Log4JRCE` rule active (not excluded/counted), so the WAF actively blocks Log4Shell (CVE-2021-44228) exploitation attempts.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource/entity types:** `AWS::WAFv2::WebACL` (CloudFormation); `aws_wafv2_web_acl` (Terraform)
 - **Check type:** resource (custom logic, `BaseResourceCheck`)

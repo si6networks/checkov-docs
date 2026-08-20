@@ -9,6 +9,8 @@ A short SQL Server audit log retention window (under 90 days) can cause loss of 
 This check ensures that Azure SQL Server auditing, once enabled, retains logs for at least 90 days rather than the default/short retention window.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: graph-based check over `azurerm_sql_server` / `azurerm_mssql_server`, examining either an inline `extended_auditing_policy.retention_in_days`, or a connected `azurerm_mssql_server_extended_auditing_policy` resource's `retention_in_days`.
 - **ARM**: `Microsoft.Sql/servers` resources, examining a nested `auditingSettings`/`auditingPolicies` child resource's `properties.retentionDays` and `properties.state`.
 - **Bicep**: graph-based check requiring a connected `Microsoft.Sql/servers/auditingSettings` resource with `properties.retentionDays >= 90` and `properties.state == "Enabled"`.

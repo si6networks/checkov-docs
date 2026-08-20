@@ -9,6 +9,8 @@ A missing authorization type on an API GatewayV2 route means the route can be in
 This check ensures that every AWS API Gateway v2 (HTTP/WebSocket API) route explicitly declares an `authorization_type`, preventing routes from being reachable with no access control.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_apigatewayv2_route`
 

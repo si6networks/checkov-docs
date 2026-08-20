@@ -8,6 +8,8 @@ A security group rule permitting unrestricted ingress from 0.0.0.0/0 to SSH (por
 This check fails any Alibaba Cloud security group ingress rule that opens SSH (port 22) to the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_security_group_rule` (only rules with `type = "ingress"` are evaluated; `egress` rules return `UNKNOWN`/not applicable)
 

@@ -9,6 +9,8 @@ An EKS public API endpoint reachable from 0.0.0.0/0 exposes the Kubernetes contr
 This check ensures that when an EKS cluster's public API endpoint is enabled, it is not left open to the entire internet (`0.0.0.0/0`) via `public_access_cidrs`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_eks_cluster`
 

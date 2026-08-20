@@ -8,6 +8,8 @@ Leaving profiling enabled exposes detailed runtime performance/debug data via pp
 This check verifies that a self-managed `kube-apiserver` container explicitly disables Go's runtime profiling endpoints via `--profiling=false`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. Relevant only to the container spec of a self-hosted `kube-apiserver` static pod/manifest.
 
 ## Why it matters

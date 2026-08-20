@@ -8,6 +8,8 @@ This guards against irrecoverable data loss from accidental key destruction (an 
 This check verifies that Terraform `google_kms_crypto_key` resources have a `lifecycle` block with `prevent_destroy = true`, so that a `terraform destroy`/`terraform apply` cannot silently disable the key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_kms_crypto_key`
 - **Check type:** resource (attribute-value check)

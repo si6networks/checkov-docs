@@ -9,6 +9,8 @@ Granting a cloud member the admin or editor role is equivalent to wildcard IAM a
 This check fails when a Yandex Cloud IAM binding/member resource grants the broad `admin` or `editor` role at the cloud level.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_resourcemanager_cloud_iam_binding`, `yandex_resourcemanager_cloud_iam_member`
 

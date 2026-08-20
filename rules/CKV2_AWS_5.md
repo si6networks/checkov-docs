@@ -8,6 +8,8 @@ An unattached security group poses no direct exposure by itself; it is a hygiene
 This check fails when an `aws_security_group` resource exists in the Terraform configuration but is not attached (via a graph connection) to any of a long list of supported networked resources such as EC2 instances, load balancers, RDS instances, Lambda functions, EKS clusters, and others.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_security_group` (checked for connections to `aws_alb`, `aws_instance`, `aws_db_instance`, `aws_lambda_function`, `aws_eks_cluster`, `aws_elb`, `aws_ecs_service`, `aws_lb`, `aws_rds_cluster`, `aws_launch_template`, and dozens of other networked AWS resource types)
 

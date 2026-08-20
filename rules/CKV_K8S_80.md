@@ -8,6 +8,8 @@ Without AlwaysPullImages, containers can reuse locally cached images without re-
 This check fails a `kube-apiserver` container manifest unless `AlwaysPullImages` is included in its `--enable-admission-plugins` value, meaning the API server does not force kubelets to always re-pull (and re-authenticate against) container images before running them.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests where a container's `command` runs `kube-apiserver`, evaluated across container-bearing kinds (`CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`) — in practice, a self-managed/on-prem control-plane static pod manifest for `kube-apiserver`.
 
 ## Why it matters

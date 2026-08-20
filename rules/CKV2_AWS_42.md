@@ -8,6 +8,8 @@ Relying on the default CloudFront certificate instead of a custom ACM/IAM certif
 This check fails when a CloudFront distribution's `viewer_certificate` block relies on the default CloudFront certificate instead of a custom certificate imported via IAM or issued/managed via ACM.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_cloudfront_distribution`
 

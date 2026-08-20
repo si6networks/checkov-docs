@@ -9,6 +9,8 @@ A WAF Web ACL with no rules attached provides zero actual filtering despite appe
 This check requires that an AWS WAF Web ACL (classic WAF, WAF Regional, or WAFv2) actually has at least one rule attached, rather than existing as an empty ACL that inspects traffic but blocks/allows nothing meaningfully.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_waf_web_acl`, `aws_wafregional_web_acl`, `aws_wafv2_web_acl`
 
 ## Why it matters

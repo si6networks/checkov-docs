@@ -8,6 +8,8 @@ Enabling public access on an Azure Machine Learning workspace exposes the worksp
 This check ensures an Azure Machine Learning Workspace has public network access disabled, restricting workspace management and data-plane operations to private network connectivity only.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_machine_learning_workspace` resource, attribute `public_network_access_enabled`.
 
 ## Why it matters

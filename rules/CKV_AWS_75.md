@@ -8,6 +8,8 @@ Missing flow logs on a Global Accelerator reduces the ability to detect anomalou
 This check fails when an AWS Global Accelerator accelerator does not have flow logs enabled, meaning connection-level network flow data through the accelerator's static anycast IPs is not being captured.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_globalaccelerator_accelerator`
 - **Check type:** resource

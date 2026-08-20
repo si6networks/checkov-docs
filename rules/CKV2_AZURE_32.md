@@ -8,6 +8,8 @@ Without a private endpoint, Key Vault remains reachable over the public endpoint
 This check verifies that an Azure Key Vault has an Azure Private Endpoint connected to it, ensuring the vault is reachable only over private network paths rather than the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource type involved:** `azurerm_key_vault`
 

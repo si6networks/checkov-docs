@@ -8,6 +8,8 @@ IAM policies granting unconstrained write access let a principal create, modify,
 This check fails when an IAM policy document grants write-level actions (create/update/delete data or resources) over an unconstrained `Resource` scope, per cloudsplaining's analysis, meaning the principal can modify or destroy data/resources broadly rather than within a defined boundary.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resources:** `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`
 

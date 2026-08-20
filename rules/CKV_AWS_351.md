@@ -8,6 +8,8 @@ Without in-transit encryption between EMR cluster nodes, data shuffled between m
 Ensures an EMR security configuration enables in-transit (TLS) encryption for data moving between cluster nodes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource type**: `aws_emr_security_configuration`
 

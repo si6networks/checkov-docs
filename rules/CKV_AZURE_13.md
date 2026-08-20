@@ -8,6 +8,8 @@ Disabling built-in App Service authentication removes the platform-enforced iden
 This check verifies that Azure App Service (Web App) has built-in authentication ("Easy Auth" / App Service Authentication) enabled, so requests to the app are authenticated at the platform level before reaching application code.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:**
   - Terraform: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app` (checks both the legacy `auth_settings` block and the modern `auth_settings_v2` block)

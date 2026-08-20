@@ -9,6 +9,8 @@ Reusing the same role for both ECS execution and task roles hands application co
 This check ensures that an ECS task definition uses distinct IAM roles for its `execution_role_arn` (used by the ECS agent to pull images/write logs) and `task_role_arn` (used by the running application code), rather than reusing the same role for both purposes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ecs_task_definition`
 

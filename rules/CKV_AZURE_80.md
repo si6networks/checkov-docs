@@ -9,6 +9,8 @@ Running an outdated .NET Framework version leaves the web app exposed to known, 
 This check ensures Azure App Service web apps running .NET Framework use a currently supported version — Checkov's current logic requires `v8.0`, `v9.0`, or `v10.0` — rather than an older, unsupported .NET version.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_windows_web_app`
 - **ARM/Bicep**: `Microsoft.Web/sites/config`
 

@@ -8,6 +8,8 @@ A ClusterRole able to create/update/patch admission webhook configurations can i
 This check flags any `ClusterRole` that grants `create`, `update`, or `patch` permissions on `mutatingwebhookconfigurations` or `validatingwebhookconfigurations` in the `admissionregistration.k8s.io` API group.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests of `kind: ClusterRole`. Inspects the role's `rules` for any rule combining `apiGroups: [admissionregistration.k8s.io]`, verbs including `create`/`update`/`patch`, and resources including `mutatingwebhookconfigurations` or `validatingwebhookconfigurations`.
 
 ## Why it matters

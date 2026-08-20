@@ -9,6 +9,8 @@ Missing vulnerability assessment on a Synapse workspace is a detective/monitorin
 This check ensures that an Azure Synapse Analytics workspace has vulnerability assessment enabled and configured with recurring scans, so security weaknesses in the underlying SQL pools/workspace are continuously detected.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform (graph-based check), ARM/Bicep (Python resource-value check)
 - **Resource types:** `Microsoft.Synapse/workspaces/vulnerabilityAssessments` (ARM/Bicep), `azurerm_synapse_workspace_security_alert_policy` + `azurerm_synapse_workspace_vulnerability_assessment` (Terraform)
 

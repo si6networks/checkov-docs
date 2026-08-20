@@ -9,6 +9,8 @@ If the Activity Log profile omits Write, Delete, or Action categories, security-
 This check verifies that an Azure Monitor Log Profile is configured to capture all three Activity Log event categories — `Write`, `Delete`, and `Action` — rather than a subset.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_monitor_log_profile`
 - **ARM templates**: `Microsoft.Insights/logprofiles`
 - **Bicep**: `Microsoft.Insights/logprofiles` (via the Terraform/ARM checks; same underlying resource)

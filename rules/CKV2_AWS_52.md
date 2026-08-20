@@ -8,6 +8,8 @@ Disabling fine-grained access control on OpenSearch/Elasticsearch removes authen
 This check fails when an Elasticsearch or OpenSearch domain does not have fine-grained access control enabled — specifically, neither `advanced_security_options.internal_user_database_enabled` nor `advanced_security_options.enabled` is set to `true`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_elasticsearch_domain`, `aws_opensearch_domain`
 

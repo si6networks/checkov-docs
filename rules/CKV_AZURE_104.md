@@ -8,6 +8,8 @@ Allowing public network access to Data Factory exposes an orchestration service 
 This check ensures that an Azure Data Factory instance's public network access is disabled, so the factory's management endpoint can only be reached through a private endpoint rather than the public internet.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_data_factory` (inspects `public_network_enabled`)
 - **ARM/Bicep**: `Microsoft.DataFactory/factories` (inspects `properties/publicNetworkAccess`)
 

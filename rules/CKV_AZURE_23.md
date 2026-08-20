@@ -9,6 +9,8 @@ Disabling SQL Server auditing removes the audit trail needed to detect and inves
 This check ensures that auditing is enabled for Azure SQL servers (and/or their databases), so that database events (logins, query execution, schema/data changes) are recorded for security monitoring and forensics.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: graph-based check across `azurerm_sql_server` / `azurerm_mssql_server`, in combination with either an inline `extended_auditing_policy` block or a separate connected `azurerm_mssql_server_extended_auditing_policy` resource.
 - **ARM**: `Microsoft.Sql/servers` and `Microsoft.Sql/servers/databases`, checking for a nested/associated `auditingSettings` sub-resource.
 - **Bicep**: graph-based check over the same `Microsoft.Sql/servers` / `Microsoft.Sql/servers/databases` resource types, following the connection to `Microsoft.Sql/servers/auditingSettings` or `Microsoft.Sql/servers/databases/auditingSettings`.

@@ -9,6 +9,8 @@ Disabling Stackdriver logging on a GKE cluster removes the audit trail needed to
 This check ensures that a `google_container_cluster` (GKE) resource has Stackdriver (Cloud Logging) enabled, rather than explicitly disabled via `logging_service = "none"`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_container_cluster`
 

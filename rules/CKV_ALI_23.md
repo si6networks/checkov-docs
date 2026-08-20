@@ -8,6 +8,8 @@ Allowing more than 5 failed login attempts before lockout weakens brute-force pr
 This check verifies that the Alibaba Cloud RAM account password policy caps failed login attempts at 5 or fewer before locking the account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `alicloud_ram_account_password_policy`
 

@@ -8,6 +8,8 @@ This check detects a hardcoded secret_key credential embedded directly in the Da
 This check ensures that an `aws_datasync_location_object_storage` resource does not have a hardcoded `secret_key` (the object storage secret access key) directly embedded in the Terraform configuration.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_datasync_location_object_storage`
 

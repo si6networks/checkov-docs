@@ -8,6 +8,8 @@ Allowing SSLv3 on a CloudFront custom origin permits a protocol with known crypt
 This check fails when a CloudFront distribution's custom origin configuration allows `SSLv3` as one of the accepted `origin_ssl_protocols` for connecting from CloudFront to the origin server.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_cloudfront_distribution`
 

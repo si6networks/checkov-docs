@@ -8,6 +8,8 @@ An S3 bucket ACL granting WRITE to Everyone/AllUsers lets any unauthenticated in
 This check fails when an S3 bucket's ACL grants public WRITE (or FULL_CONTROL/WRITE_ACP) access — either via the canned `public-read-write` ACL or via an explicit grant to the `AllUsers` group — allowing anyone on the internet to upload, overwrite, or delete objects in the bucket.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::S3::Bucket`, property `Properties/AccessControl`.
 - **Terraform**: graph-based check across `aws_s3_bucket` (attribute `acl`) and the separate `aws_s3_bucket_acl` resource (attributes `acl` and `access_control_policy.grant[*]`), since AWS provider v4+ moved ACL configuration out of `aws_s3_bucket` into its own resource.
 

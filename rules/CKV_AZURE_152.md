@@ -9,6 +9,8 @@ Failing to enforce client certificates on API Management removes an authenticati
 This check ensures that Azure API Management instances on the **Consumption** SKU tier require mutual TLS (client certificate authentication) for incoming requests to the gateway.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_api_management`
 

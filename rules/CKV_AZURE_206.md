@@ -9,6 +9,8 @@ Locally/zone-redundant-only replication is an availability and business-continui
 This check ensures an Azure Storage Account uses a geo-redundant replication SKU (GRS, RAGRS, GZRS, or RAGZRS) rather than a purely locally/zone-redundant option, so data survives a regional outage.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:** `azurerm_storage_account` (Terraform), `Microsoft.Storage/storageAccounts` (ARM/Bicep)
 

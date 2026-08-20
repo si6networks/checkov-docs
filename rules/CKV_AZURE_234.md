@@ -9,6 +9,8 @@ Disabling Azure Defender (Microsoft Defender for Cloud) for Resource Manager rem
 This check ensures that Microsoft Defender for Cloud's protection plan for Azure Resource Manager is enabled (`tier = "Standard"`), which detects suspicious ARM activity such as anomalous deployment and role-assignment patterns.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_security_center_subscription_pricing` resources — inspects the `resource_type` and `tier` attributes, specifically when `resource_type` is `"Arm"`.
 
 ## Why it matters

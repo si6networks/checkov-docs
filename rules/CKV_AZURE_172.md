@@ -9,6 +9,8 @@ Without autorotation, secrets synced from Key Vault into the cluster via the CSI
 This check ensures that AKS clusters using the Azure Key Vault Secrets Provider (Secrets Store CSI Driver add-on) have automatic secret rotation enabled, so secrets mounted into pods stay in sync with the source Key Vault.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_kubernetes_cluster` (`key_vault_secrets_provider.secret_rotation_enabled`).
 - **ARM/Bicep**: `Microsoft.ContainerService/managedClusters` (`properties.addonProfiles.azureKeyvaultSecretsProvider.config.enableSecretRotation`).
 

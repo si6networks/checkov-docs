@@ -8,6 +8,8 @@ A Vertex AI endpoint that is not restricted to a private network can be reached 
 This check ensures that a Vertex AI Endpoint resource is deployed into a VPC network (via the `network` attribute) rather than exposed as a public endpoint.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_vertex_ai_endpoint`
 

@@ -8,6 +8,8 @@ An OCI File System without a customer-managed encryption key relies solely on pr
 This check requires that an OCI `oci_file_storage_file_system` resource specifies a `kms_key_id`, meaning the file system is encrypted using a customer-managed key (CMK) from OCI Vault rather than relying solely on the provider's default (Oracle-managed) encryption key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `oci_file_storage_file_system`
 - **Check type:** resource (attribute-presence check using `ANY_VALUE`)

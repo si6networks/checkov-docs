@@ -8,6 +8,8 @@ Without a Web Application Firewall, internet-facing applications behind the gate
 This graph-based check verifies that an Azure Application Gateway has a Web Application Firewall (WAF) enabled, either via its own inline `waf_configuration` block or via an attached `azurerm_web_application_firewall_policy` with policy settings enabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource types:** `azurerm_application_gateway`, `azurerm_web_application_firewall_policy`
 

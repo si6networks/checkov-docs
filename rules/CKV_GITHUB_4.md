@@ -8,6 +8,8 @@ Unsigned commits let an attacker who gains push or history-rewrite access impers
 This check enforces that a protected branch's branch protection rule requires all commits pushed to it to be cryptographically signed (e.g., GPG, SSH, or S/MIME signatures).
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization/repository configuration (`github_configuration` IaC type, entity `*`), evaluated against branch protection settings, specifically the `required_signatures.enabled` field.
 
 ## Why it matters

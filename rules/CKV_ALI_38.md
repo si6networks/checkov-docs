@@ -8,6 +8,8 @@ Disabling RDS log audit removes centralized security logging for the database ti
 This check ensures that an Alibaba Cloud Log Service audit configuration (`alicloud_log_audit`) has RDS auditing enabled, so activity on RDS database instances is captured by the centralized log audit pipeline.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_log_audit`
 

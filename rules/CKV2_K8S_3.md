@@ -9,6 +9,8 @@ Impersonate permissions let a subject act as any other user, group, or service a
 This check ensures no Role/ClusterRole bound to a ServiceAccount or Node grants the `impersonate` (or `*`) verb on `groups`, `users`, or `serviceaccounts` resources, since impersonation lets the bound identity act as any other user, group, or service account in the cluster.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests. Applies to `Role`, `ClusterRole`, `RoleBinding`, and `ClusterRoleBinding` resource kinds, evaluated together as a connected RBAC graph.
 
 ## Why it matters

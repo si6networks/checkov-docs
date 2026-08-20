@@ -9,6 +9,8 @@ Without automatic node upgrades, GKE node pools can silently drift onto outdated
 This check ensures that a GKE node pool (`google_container_node_pool`) has automatic node upgrades enabled via its `management` block, so nodes are kept current with GKE-supported Kubernetes versions and patches automatically.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_container_node_pool`
 

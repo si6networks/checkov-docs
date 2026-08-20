@@ -9,6 +9,8 @@ A private key is a root-of-trust credential (SSH, TLS, or cloud service-account 
 This check scans file contents for embedded PEM-format private keys (RSA, DSA, EC, OpenSSH, PGP, etc.), flagging cryptographic private key material committed directly into source, config, or credential files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (JSON credential/service-account files, `.pem`/`.key` files, Terraform, YAML, scripts, Dockerfiles, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched key-block string within a file; findings are reported at the file/line level.
 

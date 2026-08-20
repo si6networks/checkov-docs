@@ -9,6 +9,8 @@ A blob container with public (Container or Blob) access lets anyone on the inter
 This check ensures Azure Storage blob containers do not allow anonymous public read access to blobs or container listings.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.Storage/storageAccounts/blobServices/containers`, `containers`, `blobServices/containers`, `azurerm_storage_container`
 

@@ -9,6 +9,8 @@ Publicly/anonymously accessible Container Registry storage buckets let anyone pu
 This check ensures that the underlying Cloud Storage bucket backing a `google_container_registry` (legacy GCR) has no IAM binding or member granting access to `allUsers` or `allAuthenticatedUsers`, which would expose all pushed container images to the public.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_container_registry`, `google_storage_bucket_iam_binding`, `google_storage_bucket_iam_member`
 

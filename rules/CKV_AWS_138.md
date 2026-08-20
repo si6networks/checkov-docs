@@ -9,6 +9,8 @@ Disabled cross-zone load balancing is an availability/traffic-distribution conce
 This check requires Classic Load Balancers (`aws_elb`) to enable cross-zone load balancing, so incoming traffic is distributed evenly across all registered instances in all enabled Availability Zones rather than being confined to instances in the same AZ as the receiving load balancer node.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_elb` (Classic Load Balancer)
 

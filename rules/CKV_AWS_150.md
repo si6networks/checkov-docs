@@ -8,6 +8,8 @@ Deletion protection guards against accidental or malicious removal of a load bal
 This check verifies that an Application/Network/Gateway Load Balancer (`aws_lb`/`aws_alb`) has `enable_deletion_protection` set to `true`, preventing the load balancer from being deleted without first disabling the flag.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `aws_lb` and `aws_alb` resources (both map to the same underlying AWS `elasticloadbalancingv2` resource).
 
 ## Why it matters

@@ -8,6 +8,8 @@ Disabling email notifications for high-severity Security Center alerts delays ad
 Ensures that Microsoft Defender for Cloud (Security Center) is configured to email account administrators automatically when a high-severity security alert is generated.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_security_center_contact` — inspects `alerts_to_admins`
 - **ARM**: `Microsoft.Security/securityContacts` — inspects `properties.alertsToAdmins` (case-insensitive match against `"on"`)
 - **Bicep**: compiles to the ARM resource type above

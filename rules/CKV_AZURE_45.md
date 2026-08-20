@@ -9,6 +9,8 @@ Embedding passwords, keys, or tokens in VM custom_data (cloud-init/user data) ex
 This check scans the `custom_data` (cloud-init/provisioning script) field of an Azure Virtual Machine's OS profile for hardcoded secrets such as passwords, API keys, or tokens.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_virtual_machine`
 - **ARM templates**: `Microsoft.Compute/virtualMachines`
 - **Bicep**: `Microsoft.Compute/virtualMachines` (via the underlying ARM/Terraform check logic)

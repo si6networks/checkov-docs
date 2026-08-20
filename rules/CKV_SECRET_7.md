@@ -9,6 +9,8 @@ An exposed IBM Cloud IAM API key grants direct, credentialed access to IAM-scope
 This check scans scanned files for strings matching the format of an IBM Cloud IAM API key, flagging any match as a hardcoded credential.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 This is a built-in Checkov **secrets scanning** check (framework: `secrets`) that runs against any text file included in a repository/directory scan — source code, configuration files, IaC templates (Terraform, CloudFormation, ARM/Bicep, Kubernetes manifests), CI/CD pipeline definitions, and plaintext files. It is pattern/content-based rather than tied to a specific resource type ("entities": `secrets`).
 
 ## Why it matters

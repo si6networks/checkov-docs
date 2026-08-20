@@ -8,6 +8,8 @@ IAM policies that allow retrieval or exposure of credentials (e.g. access keys, 
 This check fails when an IAM policy document grants actions that can expose or read other principals' credential material (e.g., IAM access keys, login profiles, service-specific credentials), a known category of IAM risk flagged by the cloudsplaining engine.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resources:** `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`
 

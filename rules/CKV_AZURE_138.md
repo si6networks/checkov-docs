@@ -8,6 +8,8 @@ Allowing anonymous pulls on Standard/Premium ACR SKUs exposes container images (
 This check ensures an Azure Container Registry on the Standard or Premium SKU does not allow anonymous (unauthenticated) pulling of images.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.ContainerRegistry/registries` resources, properties `properties/anonymousPullEnabled` and `sku`.
 - **Terraform**: `azurerm_container_registry` resource, attributes `anonymous_pull_enabled` and `sku`.
 - **Bicep**: compiles to the same ARM resource type.

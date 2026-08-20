@@ -8,6 +8,8 @@ A Load Balancer listener that does not use HTTPS transmits client traffic in pla
 This check requires that NCloud Load Balancer listeners (`ncloud_lb_listener`) use the `HTTPS` protocol rather than a plaintext protocol such as HTTP or TCP.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_lb_listener`
 - **Check type:** resource (single attribute value check)

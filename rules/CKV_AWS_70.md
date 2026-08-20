@@ -8,6 +8,8 @@ An S3 bucket policy that allows an action for any Principal (a wildcard "*" prin
 This check fails when an S3 bucket policy grants access to `Principal: "*"` (or `Principal.AWS: "*"`) without a condition clause that meaningfully restricts who `*` actually resolves to, effectively flagging S3 bucket policies that are open to any AWS principal (or the public).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_s3_bucket` (inline `policy` argument), `aws_s3_bucket_policy`
 - **Check type:** resource

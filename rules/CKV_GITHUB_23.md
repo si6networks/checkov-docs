@@ -8,6 +8,8 @@ Unrestricted internal repository creation broadens who can see and copy company-
 This check enforces that a GitHub Enterprise organization does not allow all members to freely create new internal (enterprise-wide visible) repositories.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated against the organization-level settings document (`members_can_create_internal_repositories`). This setting is specific to GitHub Enterprise, where "internal" is a visibility level between private and public, visible to all enterprise members across the org's parent enterprise account.
 
 ## Why it matters

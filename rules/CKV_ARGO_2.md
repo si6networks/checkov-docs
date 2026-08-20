@@ -8,6 +8,8 @@ Failing to enforce runAsNonRoot lets Workflow pods execute as root, increasing t
 This check ensures that Argo Workflows templates set `securityContext.runAsNonRoot: true` so that workflow pods cannot run their container processes as root.
 
 ## Applicability
+**Checkov framework(s):** `argo_workflows`
+
 Applies to Argo Workflows manifests (WorkflowTemplate, Workflow, CronWorkflow, etc.), specifically the `spec` object — checked for a `securityContext` block with `runAsNonRoot` set to `true`.
 
 ## Why it matters

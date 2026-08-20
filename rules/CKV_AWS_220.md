@@ -8,6 +8,8 @@ Failing to enforce HTTPS on a CloudSearch domain permits plaintext HTTP requests
 This check ensures that an Amazon CloudSearch domain (`aws_cloudsearch_domain`) enforces HTTPS for all requests to its search/document endpoints via the `enforce_https` setting.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_cloudsearch_domain`
 

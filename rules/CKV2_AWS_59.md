@@ -9,6 +9,8 @@ Lacking a dedicated master node is an operational-resilience best practice for c
 This check requires that `aws_elasticsearch_domain` and `aws_opensearch_domain` resources set `cluster_config.dedicated_master_enabled = true`, so cluster management tasks run on nodes separate from the data/query nodes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_opensearch_domain`, `aws_elasticsearch_domain`
 

@@ -8,6 +8,8 @@ An EMR cluster without a security configuration attached typically lacks at-rest
 This check fails when an `aws_emr_cluster` resource has no `security_configuration` attribute set, meaning the cluster runs without EMR's centralized encryption/authentication/authorization security configuration applied.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource/entity types:** `aws_emr_cluster`
 

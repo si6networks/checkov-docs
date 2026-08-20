@@ -8,6 +8,8 @@ Requiring fewer than 2 pull request approvals weakens the review control that gu
 This check ensures GitHub branch protection rules require at least two approving reviews before a pull request can be merged into a protected branch.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Applies to Terraform configurations using the `github` provider, specifically the `github_branch_protection` and `github_branch_protection_v3` resources, at the `required_pull_request_reviews[0].required_approving_review_count` attribute.
 
 ## Why it matters

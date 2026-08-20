@@ -8,6 +8,8 @@ Missing an SBOM attestation reduces supply-chain transparency and makes downstre
 This check fails when a GitHub Actions job builds a software artifact but never generates and attaches a signed SBOM (Software Bill of Materials) attestation via `cosign` (i.e., a `run:` command containing both `cosign` and `sbom`) afterward in that job.
 
 ## Applicability
+**Checkov framework(s):** `github_actions`
+
 - **Framework:** GitHub Actions workflow YAML
 - **Entities:** `jobs` (evaluated at the whole-job level, across all of its steps)
 

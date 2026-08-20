@@ -8,6 +8,8 @@ A subnet with no Network Security Group has no layer-3/4 traffic filtering, leav
 This check verifies that an Azure Virtual Network subnet has an associated Network Security Group, with built-in exceptions for special-purpose subnets that either don't support NSGs or are exempt by convention.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check)
 - **Resource type involved:** `azurerm_subnet`
 

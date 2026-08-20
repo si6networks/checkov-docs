@@ -9,6 +9,8 @@ An SNS topic policy open to any principal allows arbitrary external accounts to 
 This check requires that an SNS topic's resource policy does not grant unrestricted (effectively public) publish/subscribe access, by analyzing the policy for internet-accessible actions.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_sns_topic_policy`
 
 ## Why it matters

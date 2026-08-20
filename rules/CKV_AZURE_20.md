@@ -9,6 +9,8 @@ A missing security-contact phone number only delays human escalation during an i
 This check ensures an Azure Security Center (Microsoft Defender for Cloud) security contact configuration has a non-empty phone number set, so security teams can be reached urgently.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:** `azurerm_security_center_contact` (Terraform), `Microsoft.Security/securityContacts` (ARM/Bicep)
 

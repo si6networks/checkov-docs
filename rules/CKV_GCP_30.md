@@ -8,6 +8,8 @@ Instances using the default Compute Engine service account inherit its broad pro
 This check fails when a `google_compute_instance`, `google_compute_instance_from_template`, or `google_compute_instance_template` resource attaches the project's auto-created default Compute Engine service account (`<project-number>-compute@developer.gserviceaccount.com`) instead of a purpose-built one.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_instance`, `google_compute_instance_from_template`, `google_compute_instance_template`
 - **Check type:** resource

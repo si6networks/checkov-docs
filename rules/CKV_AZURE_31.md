@@ -9,6 +9,8 @@ Without connection logging, security-relevant events such as failed authenticati
 This check ensures the PostgreSQL server configuration parameter `log_connections` is turned on, so every client connection attempt is recorded in the server logs.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.DBforPostgreSQL/servers/configurations` (and generic `configurations` with `parent_type = Microsoft.DBforPostgreSQL/servers`), `azurerm_postgresql_configuration`
 

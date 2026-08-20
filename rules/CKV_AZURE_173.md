@@ -9,6 +9,8 @@ Allowing SSL3/TLS1.0/1.1 negotiation on an API gateway that handles auth tokens 
 This check ensures an Azure API Management instance does not have any legacy/weak transport protocols (SSL 3.0, TLS 1.0, TLS 1.1) explicitly enabled on either its frontend or backend connections.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_api_management` (`security` block flags).
 - **ARM/Bicep**: `Microsoft.ApiManagement/service` (`properties.customProperties` flags).
 

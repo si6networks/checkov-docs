@@ -8,6 +8,8 @@ Failing to drop the NET_RAW capability lets a compromised container craft raw so
 This check fails a `PodSecurityPolicy` unless `spec.requiredDropCapabilities` includes either `ALL` or `NET_RAW`, ensuring pods admitted under the policy cannot retain the `NET_RAW` Linux capability.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: `PodSecurityPolicy` kind.
 - **Terraform**: `kubernetes_pod_security_policy` resource.
 

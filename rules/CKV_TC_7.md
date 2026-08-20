@@ -9,6 +9,8 @@ A publicly reachable Kubernetes master or worker node exposes the cluster's cont
 This check ensures that Tencent Kubernetes Engine (TKE) cluster master and worker node configurations are not directly reachable from the public internet — neither via an explicitly assigned public IP nor via a non-zero internet outbound bandwidth allocation that implicitly provisions one.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `tencentcloud_kubernetes_cluster` (Tencent Cloud provider), specifically the `master_config` and `worker_config` blocks.
 
 ## Why it matters

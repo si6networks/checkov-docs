@@ -8,6 +8,8 @@ Detailed error logging is a server-side diagnostic setting that does not change 
 This check fails when an Azure App Service (or Web App) does not have detailed error message logging enabled, meaning verbose server-side error diagnostics for failed requests are not captured.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 Applies to Terraform (`azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`), ARM templates, and Bicep, for the resource type `Microsoft.Web/sites/config`.
 
 ## Why it matters

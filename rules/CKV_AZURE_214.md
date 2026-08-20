@@ -8,6 +8,8 @@ Disabling Always On only affects cold-start performance and request timeouts for
 Ensures that an Azure App Service Web App has the "Always On" setting enabled so the app is not unloaded due to idle timeouts.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_linux_web_app`, `azurerm_windows_web_app` — inspects `site_config[0].always_on`
 
 ## Why it matters

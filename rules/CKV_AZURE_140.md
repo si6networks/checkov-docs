@@ -8,6 +8,8 @@ Leaving local (key-based) authentication enabled on CosmosDB preserves a static-
 This check ensures a Cosmos DB account of kind `GlobalDocumentDB` (the SQL/Core API) has local authentication (primary/secondary account keys) disabled, requiring Azure AD-based authentication instead.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **ARM**: `Microsoft.DocumentDB/databaseAccounts` resources, property `properties/disableLocalAuth` — only evaluated when `kind` is `GlobalDocumentDB`.
 - **Terraform**: `azurerm_cosmosdb_account` resource, attribute `local_authentication_disabled` — only evaluated when `kind` is `GlobalDocumentDB`.
 - **Bicep**: compiles to the same ARM resource type.

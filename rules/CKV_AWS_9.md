@@ -9,6 +9,8 @@ Allowing passwords to remain valid beyond 90 days weakens the password-rotation 
 This check fails when an AWS account's IAM password policy either has no maximum password age configured, or sets `max_password_age` to a value greater than 90 days (or to `0`/an invalid value).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_iam_account_password_policy` resource — inspects the `max_password_age` argument.
 
 ## Why it matters

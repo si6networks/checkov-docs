@@ -8,6 +8,8 @@ Hardcoded PAN-OS api_key or password values in the Terraform provider block expo
 This check flags Terraform `panos` provider blocks that contain a hardcoded `password` or an `api_key` that matches a recognizable PAN-OS API key pattern, instead of sourcing those credentials externally.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, `provider "panos"` blocks (provider-level check for the Palo Alto Networks PAN-OS Terraform provider).
 
 ## Why it matters

@@ -9,6 +9,8 @@ Missing MWAA worker log shipping removes the only durable record of task executi
 This check ensures that an AWS Managed Workflows for Apache Airflow (MWAA) environment is configured to publish worker task logs to CloudWatch Logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_mwaa_environment`
 

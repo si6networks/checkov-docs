@@ -9,6 +9,8 @@ A VCN security list with no inbound rules defined is a configuration-completenes
 This check ensures that an OCI Virtual Cloud Network (VCN) security list (`oci_core_security_list`) defines at least one ingress security rule, rather than being an ingress-empty security list.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `oci_core_security_list`
 

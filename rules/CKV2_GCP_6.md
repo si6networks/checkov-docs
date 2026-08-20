@@ -9,6 +9,8 @@ A KMS crypto key IAM binding granting allUsers/allAuthenticatedUsers means anyon
 This check ensures that no IAM binding or IAM member on a `google_kms_crypto_key` grants access to `allUsers` or `allAuthenticatedUsers`, which would make the encryption key usable by anyone on the internet or anyone with a Google account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_kms_crypto_key`, `google_kms_crypto_key_iam_binding`, `google_kms_crypto_key_iam_member`
 

@@ -8,6 +8,8 @@ A policy statement allowing Action: '*' grants unrestricted API access (even if 
 This check fails when an IAM policy statement grants `Effect: Allow` with `Action: "*"`, i.e. permission to call every AWS API action, regardless of what `Resource` is scoped to.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::IAM::Policy`, `AWS::IAM::Group`, `AWS::IAM::Role`, `AWS::IAM::User` (standalone and inline policies).
 - **Terraform**: `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`.
 

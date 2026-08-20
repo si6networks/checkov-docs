@@ -9,6 +9,8 @@ A leaked Artifactory credential grants read/write access to the artifact reposit
 This check scans plaintext files (any file type Checkov's secrets scanner processes) for hardcoded JFrog Artifactory credentials — API keys or access tokens — committed directly into source, config, or script files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, which runs over all scanned files regardless of format (Terraform, YAML, scripts, config files, `.env` files, Dockerfiles, etc.), not a single resource type.
 - **Entities**: any file content matching the credential pattern; there is no "resource type" in the IaC-graph sense — the finding is reported against the file and line where the string appears.
 

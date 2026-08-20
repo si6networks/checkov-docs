@@ -8,6 +8,8 @@ This check verifies DMS S3 endpoints use a customer-managed KMS key; without it,
 This check ensures that an `aws_dms_s3_endpoint` resource specifies a `kms_key_arn`, so data migrated/replicated to the S3 target endpoint is encrypted with a customer-managed KMS key rather than the AWS-managed default.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_dms_s3_endpoint`
 

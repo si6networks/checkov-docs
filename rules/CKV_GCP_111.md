@@ -9,6 +9,8 @@ Failing to log DDL and data-modifying SQL statements removes an important audit 
 This check ensures that a Cloud SQL PostgreSQL instance's `log_statement` database flag is set to `ddl`, `mod`, or `all`, so that data-definition (or broader) SQL statements executed against the database are logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_sql_database_instance` (PostgreSQL engine)
 - **Attribute inspected**: a `database_flags` block with `name = "log_statement"` whose `value` is one of `ddl`, `mod`, or `all`

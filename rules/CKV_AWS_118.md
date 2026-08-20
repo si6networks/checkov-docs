@@ -9,6 +9,8 @@ Enhanced monitoring provides finer-grained OS-level performance metrics for an R
 Fails when an RDS DB instance (or RDS cluster instance) does not have Enhanced Monitoring configured with a valid granularity interval.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_db_instance`, `aws_rds_cluster_instance` resources.
 - **CloudFormation**: `AWS::RDS::DBInstance` (Enhanced Monitoring is not supported at the `AWS::RDS::DBCluster` level, so that resource type is excluded).
 

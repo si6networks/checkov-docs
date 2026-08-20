@@ -8,6 +8,8 @@ Without threat detection, suspicious database access patterns and potential SQL 
 This check verifies that an Azure Database for PostgreSQL server has its Advanced Threat Protection (threat detection policy) enabled, so anomalous or potentially malicious database activity is automatically detected and alerted on.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_postgresql_server`
 

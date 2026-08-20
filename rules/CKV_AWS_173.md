@@ -9,6 +9,8 @@ Lambda environment variables frequently carry API keys, database credentials, or
 This check requires that when a Lambda function defines environment variables, it also specifies a customer-managed KMS key (`kms_key_arn`/`KmsKeyArn`) to encrypt them, rather than relying solely on Lambda's default service-managed encryption.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_lambda_function`
 - **CloudFormation**: `AWS::Lambda::Function`, `AWS::Serverless::Function` (SAM)
 

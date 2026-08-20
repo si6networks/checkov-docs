@@ -8,6 +8,8 @@ SecureString SSM parameters are still encrypted by the AWS-managed KMS key even 
 This check requires that any `aws_ssm_parameter` of type `SecureString` sets `key_id` to a customer-managed KMS key, rather than relying on the AWS-managed default `alias/aws/ssm` key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ssm_parameter`
 - **Scope:** Only parameters with `type = "SecureString"` — `String` and `StringList` parameters are not encrypted and automatically pass this check.

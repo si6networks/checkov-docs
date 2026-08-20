@@ -8,6 +8,8 @@ Missing log_connections removes visibility into who is connecting to the databas
 This check ensures that the Alibaba Cloud RDS (PostgreSQL) database parameter `log_connections` is enabled, so every new session connection to the database is recorded in the database logs.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_db_instance`
 

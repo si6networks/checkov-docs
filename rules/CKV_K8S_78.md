@@ -8,6 +8,8 @@ Without the EventRateLimit admission plugin the API server has no throttling on 
 This check fails an `AdmissionConfiguration` resource unless it includes a plugin entry named `EventRateLimit`, which throttles the rate of requests the API server accepts, protecting it from being overwhelmed.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests of kind `AdmissionConfiguration` (the `apiserver.config.k8s.io` `AdmissionConfiguration` file that configures admission plugins, referenced via `kube-apiserver --admission-control-config-file`).
 
 ## Why it matters

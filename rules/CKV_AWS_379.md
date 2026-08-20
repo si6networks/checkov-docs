@@ -9,6 +9,8 @@ Without an enforced secure-transport (aws:SecureTransport) condition, an S3 buck
 This check ensures that an S3 bucket which is effectively public (via a public ACL or a public-access-block that does not restrict it) is not left without protection — specifically, it evaluates whether a publicly readable bucket is legitimately serving as a static website, otherwise it is treated as an unintended public exposure.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_s3_bucket_acl` (graph-aware: correlates with connected `aws_s3_bucket_public_access_block` and `aws_s3_bucket_website_configuration` resources)
 

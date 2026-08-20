@@ -8,6 +8,8 @@ Disabling encryption in transit and at rest for an MSK cluster exposes potential
 This check fails when an Amazon MSK cluster either has no `encryption_info`/`EncryptionInfo` configuration at all, or its in-transit encryption settings allow non-TLS broker communication or disable inter-broker cluster encryption.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::MSK::Cluster` (CloudFormation), `aws_msk_cluster` (Terraform)
 - **Check type:** resource

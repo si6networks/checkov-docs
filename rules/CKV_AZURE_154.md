@@ -9,6 +9,8 @@ Allowing an outdated minimum TLS version on an App Service slot weakens in-trans
 This check ensures that Azure App Service deployment slots enforce a minimum TLS version of 1.2 (or 1.3) for inbound connections, matching the hardening expected of production app services.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_app_service_slot`
 

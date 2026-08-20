@@ -9,6 +9,8 @@ An Azure Storage account key is a non-expiring master credential granting full r
 This check scans file contents for hardcoded Azure Storage Account access keys (the shared keys used for Storage account authentication), flagging static, full-control credentials committed directly into source or config files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (Terraform, ARM/Bicep templates, connection strings in app config/YAML/`.env` files, scripts, CI definitions, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched credential string within a file; findings are reported at the file/line level.
 

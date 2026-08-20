@@ -8,6 +8,8 @@ Enabling full request/response data tracing can leak sensitive payload data (e.g
 This check fails when an API Gateway stage's method settings have `data_trace_enabled` set to `true`, because full request/response data tracing in CloudWatch Logs can leak sensitive payload data.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_api_gateway_method_settings`
 

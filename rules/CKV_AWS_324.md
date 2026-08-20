@@ -9,6 +9,8 @@ Without CloudWatch log exports enabled, RDS cluster error and audit-relevant log
 This check ensures RDS clusters (e.g., Aurora) export at least one log type to CloudWatch Logs via `enabled_cloudwatch_logs_exports`, so database activity is captured for audit and troubleshooting.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_rds_cluster`
 

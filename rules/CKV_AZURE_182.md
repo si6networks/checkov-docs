@@ -9,6 +9,8 @@ A single DNS server configuration is a resiliency/single-point-of-failure issue 
 This check ensures a virtual network (or network interface) is configured with more than one custom DNS server, rather than a single one, to avoid a DNS single point of failure.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform (`azurerm` provider), ARM templates, Bicep (compiled to ARM)
 - **Resource types:**
   - ARM: `Microsoft.Network/networkInterfaces`, `Microsoft.Network/virtualNetworks`

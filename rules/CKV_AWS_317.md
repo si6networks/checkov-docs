@@ -9,6 +9,8 @@ Disabling audit logging on an Elasticsearch/OpenSearch domain removes the record
 This check ensures Amazon Elasticsearch/OpenSearch Service domains have audit logging enabled, so that fine-grained access-control events (authentication, authorization decisions, index/document access) are recorded.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** Terraform and CloudFormation
 - **Resource types:** `aws_elasticsearch_domain`, `aws_opensearch_domain` (Terraform); `AWS::Elasticsearch::Domain`, `AWS::OpenSearchService::Domain` (CloudFormation)
 

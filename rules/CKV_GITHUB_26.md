@@ -8,6 +8,8 @@ An excessive number of organization admins expands the attack surface for privil
 This check enforces that a GitHub organization has no more than 3 members holding the organization Owner/admin role, based on the organization's admin membership list.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization configuration (`github_configuration` IaC type, entity `*`), evaluated specifically against a configuration document whose file name contains `org_admins` (the exported list of organization owners/admins), validated against the `org_members` schema.
 
 ## Why it matters

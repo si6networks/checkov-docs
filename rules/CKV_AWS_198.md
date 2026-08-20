@@ -8,6 +8,8 @@ Legacy EC2-Classic RDS security groups indicate a database running outside a VPC
 Flags any use of the legacy `aws_db_security_group` resource, since RDS (DB) Security Groups are a deprecated, EC2-Classic-era construct that should not appear in a modern VPC-based RDS deployment.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_db_security_group` — this check unconditionally fails whenever this resource type is present, regardless of configuration.
 
 ## Why it matters

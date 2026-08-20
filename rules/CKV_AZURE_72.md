@@ -9,6 +9,8 @@ Remote debugging opens an additional network listener on the app service that ca
 This check ensures Azure App Service (Web/Function apps and slots) do not have remote debugging enabled in `site_config`, since a missing setting defaults to disabled (pass), but an explicit `true` fails.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_function_app`, `azurerm_linux_function_app_slot`, `azurerm_linux_web_app`, `azurerm_linux_web_app_slot`, `azurerm_windows_function_app`, `azurerm_windows_function_app_slot`, `azurerm_windows_web_app`, `azurerm_windows_web_app_slot`
 - **ARM/Bicep**: `Microsoft.Web/sites`
 

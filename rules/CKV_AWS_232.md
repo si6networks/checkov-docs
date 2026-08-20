@@ -9,6 +9,8 @@ Unrestricted 0.0.0.0/0 ingress to SSH (22) at the subnet-wide NACL layer exposes
 This check ensures that no AWS Network ACL (NACL) rule allows unrestricted (`0.0.0.0/0`) inbound access to TCP port 22 (SSH).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_network_acl` (inline `ingress` blocks) and `aws_network_acl_rule` (standalone rule resources)
 

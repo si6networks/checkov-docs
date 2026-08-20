@@ -9,6 +9,8 @@ log_lock_waits is a performance/diagnostic setting for identifying lock contenti
 This check fails when a `google_sql_database_instance` running PostgreSQL does not have the `log_lock_waits` database flag explicitly set to `on`, meaning sessions that wait longer than `deadlock_timeout` for a lock are not logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance` where `database_version` contains `POSTGRES`
 - **Check type:** resource check

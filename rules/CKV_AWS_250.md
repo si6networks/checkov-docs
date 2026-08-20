@@ -9,6 +9,8 @@ The check flags RDS/Aurora PostgreSQL engine versions carrying a disclosed, AWS-
 This check ensures RDS PostgreSQL and Aurora PostgreSQL instances run an engine version that is not affected by the `log_fdw` extension privilege-escalation vulnerability described in AWS Security Bulletin [AWS-2022-004](https://aws.amazon.com/security/security-bulletins/AWS-2022-004/).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource types:** `aws_db_instance`, `aws_rds_cluster`
 

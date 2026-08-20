@@ -9,6 +9,8 @@ Enabling public network access exposes the APIM gateway and its management/devel
 This check ensures that an Azure API Management instance does not have public network access enabled, forcing all access through private networking (VNet integration / Private Endpoint).
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_api_management` (`public_network_access_enabled`).
 - **ARM/Bicep**: `Microsoft.ApiManagement/service` (`properties.publicNetworkAccess`).
 

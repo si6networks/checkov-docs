@@ -8,6 +8,8 @@ Missing a Log4Shell WAF rule on an internet-facing load balancer removes an edge
 This check ensures a `google_compute_security_policy` (Cloud Armor) has an active, enforcing WAF rule blocking the Log4Shell (CVE-2021-44228) exploit pattern before it reaches backend services.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_security_policy`
 

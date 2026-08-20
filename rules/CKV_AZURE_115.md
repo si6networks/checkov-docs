@@ -8,6 +8,8 @@ A publicly reachable Kubernetes API server exposes the AKS control plane to inte
 This check verifies that an Azure Kubernetes Service (AKS) cluster's control plane (API server) is deployed as a private cluster, so the Kubernetes API is only reachable over a private network rather than a public endpoint.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (Azure provider)
 - **Resource type:** `azurerm_kubernetes_cluster`
 

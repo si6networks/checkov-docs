@@ -8,6 +8,8 @@ BigQuery tables remain encrypted at rest under Google-managed keys without CMEK;
 This check ensures a `google_bigquery_table` is configured with a customer-managed KMS key for encryption, rather than relying solely on Google's default encryption-at-rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_bigquery_table`
 

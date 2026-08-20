@@ -9,6 +9,8 @@ An API Gateway method with no authorization and no API key (and no compensating 
 This check flags `aws_api_gateway_method` resources that use the `OPTIONS` HTTP method with `authorization = "NONE"` and no `api_key_required`, unless the parent REST API is restricted to `PRIVATE` endpoint access or is protected by a resource policy that denies/restricts unauthenticated `execute-api:Invoke` calls.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_api_gateway_method` (evaluation also inspects the connected `aws_api_gateway_rest_api` and, optionally, `aws_api_gateway_rest_api_policy`)
 

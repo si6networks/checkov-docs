@@ -9,6 +9,8 @@ Without dropping invalid HTTP headers, an ALB can be desynchronized from backend
 This check requires Application Load Balancers to enable `drop_invalid_header_fields` (Terraform) / `routing.http.drop_invalid_header_fields.enabled` (CloudFormation) so the ALB rejects HTTP requests containing invalid header fields before forwarding them to backend targets.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** Terraform (AWS provider), CloudFormation
 - **Resource types:**
   - Terraform: `aws_lb`, `aws_alb` (only when `load_balancer_type` is not `"gateway"` or `"network"` — those return UNKNOWN since the setting doesn't apply to NLB/GWLB)

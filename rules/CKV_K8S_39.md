@@ -9,6 +9,8 @@ SYS_ADMIN is widely regarded as equivalent to root on the host and is a common v
 This check ensures containers do not explicitly add the `SYS_ADMIN` Linux capability via `securityContext.capabilities.add`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: container-level check across kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`, at `spec.container[].security_context.capabilities.add`.
 

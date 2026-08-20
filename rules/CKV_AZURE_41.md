@@ -9,6 +9,8 @@ Secrets lacking an expiration date can be used indefinitely once created, so a l
 This check verifies that every Azure Key Vault secret has an expiration date configured, rather than remaining valid indefinitely.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_key_vault_secret`
 - **ARM templates**: `Microsoft.KeyVault/vaults/secrets`
 - **Bicep**: `Microsoft.KeyVault/vaults/secrets`

@@ -9,6 +9,8 @@ Disabling Certificate Transparency logging removes a detective control that help
 This check ensures that `aws_acm_certificate` resources have Certificate Transparency (CT) logging enabled, rather than opted out.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_acm_certificate`
 

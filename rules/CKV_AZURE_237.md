@@ -9,6 +9,8 @@ Dedicated data endpoints for ACR reduce network exposure surface for a private r
 This check ensures an Azure Container Registry has dedicated data endpoints enabled, giving each registry's data (image layers/manifests) its own dedicated hostname per region rather than a shared wildcard endpoint.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_container_registry` resources — inspects the `data_endpoint_enabled` attribute.
 
 ## Why it matters

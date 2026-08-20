@@ -8,6 +8,8 @@ Disabling at-rest encryption on an ElastiCache Replication Group leaves cached d
 This check fails when an ElastiCache Replication Group does not enable at-rest encryption, leaving cached data unprotected against unauthorized access to the underlying storage.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** Terraform, CloudFormation
 - **Resources:** `aws_elasticache_replication_group` (Terraform), `AWS::ElastiCache::ReplicationGroup` (CloudFormation)
 

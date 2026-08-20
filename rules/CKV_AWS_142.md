@@ -9,6 +9,8 @@ An unencrypted Redshift cluster stores data warehouse contents — often sensiti
 This check requires `aws_redshift_cluster` resources to set a `kms_key_id`, ensuring the cluster's at-rest encryption uses a customer-specified KMS key rather than being left unencrypted or using only default settings.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_redshift_cluster`
 

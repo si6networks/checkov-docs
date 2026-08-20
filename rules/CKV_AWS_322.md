@@ -9,6 +9,8 @@ Disabling automatic minor version upgrades leaves the ElastiCache Redis cluster 
 This check ensures ElastiCache Redis cache clusters have `auto_minor_version_upgrade` enabled so security and bug-fix patches released in minor engine versions are applied automatically during the maintenance window.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (AWS provider)
 - **Resource type:** `aws_elasticache_cluster` (Redis engine only — Memcached clusters are exempted, see below)
 

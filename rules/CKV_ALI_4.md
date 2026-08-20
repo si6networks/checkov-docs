@@ -8,6 +8,8 @@ Restricting ActionTrail logging to only some regions creates blind spots where a
 This check ensures that an Alibaba Cloud ActionTrail trail is configured to capture events from all regions (`trail_region = "All"`), not just a single region.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_actiontrail_trail`
 

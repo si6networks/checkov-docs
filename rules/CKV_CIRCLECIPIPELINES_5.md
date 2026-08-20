@@ -9,6 +9,8 @@ A netcat invocation against a raw IP address inside a CI run step is a classic r
 This check flags any CircleCI `run` step whose command invokes `nc`/`netcat` directly against a literal IP address, a pattern strongly associated with reverse shells and data exfiltration rather than legitimate diagnostics.
 
 ## Applicability
+**Checkov framework(s):** `circleci_pipelines`
+
 Applies to CircleCI Pipeline configuration files (`.circleci/config.yml`), specifically every step under `jobs.*.steps[]` that is a `run` step (either the shorthand string form or the `run: {command: ...}` map form).
 
 ## Why it matters

@@ -8,6 +8,8 @@ DocumentDB commonly stores application/customer data, and while this check is li
 This check requires that an `aws_docdb_cluster` resource specify a customer-managed KMS key (`kms_key_id`) for storage encryption instead of the AWS-managed default key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_docdb_cluster`
 - **Check type:** resource (attribute-value check)

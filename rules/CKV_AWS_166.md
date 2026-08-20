@@ -9,6 +9,8 @@ An unencrypted-at-rest Backup Vault means that backup data (often a copy of prod
 This check requires that AWS Backup Vaults specify a KMS key (a customer managed key, or at minimum any explicit key ARN) used to encrypt the backups stored within them, rather than relying on implicit/default encryption behavior.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_backup_vault`
 - **CloudFormation**: `AWS::Backup::BackupVault`
 

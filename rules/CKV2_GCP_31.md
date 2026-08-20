@@ -8,6 +8,8 @@ Disabled logging on a Dialogflow CX webhook removes an audit trail for webhook i
 This check ensures that Dialogflow CX webhook resources have `enable_stackdriver_logging` set to `true`, so calls to fulfillment webhooks are logged.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dialogflow_cx_webhook`
 

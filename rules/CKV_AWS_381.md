@@ -9,6 +9,8 @@ Missing customer-managed KMS encryption for CodeGuru repository associations red
 This check ensures an Amazon CodeGuru Reviewer repository association is encrypted with a customer-managed KMS key (CMK) rather than relying on AWS-owned/default encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_codegurureviewer_repository_association`
 

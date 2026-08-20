@@ -9,6 +9,8 @@ A completely empty global 'security' field means the document defines no default
 The document-level (global) `security` field in an OpenAPI/Swagger document must be present and non-empty, meaning at least one authentication/authorization mechanism is required by default for the whole API.
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (both Swagger 2.0 and OpenAPI 3.x specification files — this is a "generic" check not tied to a specific version).
 - **Entity:** the top-level `security` field of the document.
 

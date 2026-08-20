@@ -8,6 +8,8 @@ Allowing inbound access from 0.0.0.0/0 on port 22 exposes SSH management access 
 This check fails any NCloud Access Control Group rule (`ncloud_access_control_group_rule`) that permits inbound SSH traffic on port 22 from the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_access_control_group_rule`
 - **Check type:** resource (subclass of the shared `AccessControlGroupInboundRule` base check, parameterized with `port=22`)

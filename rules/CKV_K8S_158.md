@@ -8,6 +8,8 @@ Granting the RBAC `escalate` verb lets a subject directly modify Roles/ClusterRo
 This check fails any Kubernetes `Role` or `ClusterRole` that grants the `escalate` verb on `roles` or `clusterroles` resources, since that permission lets a subject modify a Role/ClusterRole to grant itself permissions it does not currently hold, bypassing RBAC's normal escalation guard.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 - **IaC framework:** Kubernetes manifests (YAML/JSON)
 - **Resource/entity types:** `ClusterRole`, `Role`
 

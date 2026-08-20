@@ -8,6 +8,8 @@ Missing bucket versioning removes recovery capability after accidental or malici
 This check ensures a `google_storage_bucket` has object versioning enabled, so prior versions of objects are retained rather than being permanently overwritten or deleted.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_storage_bucket`
 

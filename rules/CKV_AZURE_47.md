@@ -9,6 +9,8 @@ Disabling SSL enforcement on MariaDB servers allows database traffic, including 
 This check verifies that an Azure Database for MariaDB server requires SSL/TLS for all client connections, rejecting unencrypted database connections.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mariadb_server`
 - **ARM templates**: `Microsoft.DBforMariaDB/servers`
 - **Bicep**: `Microsoft.DBforMariaDB/servers`

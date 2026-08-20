@@ -9,6 +9,8 @@ Enabling the serial console on a compute instance opens an out-of-band, network-
 This check ensures Yandex Cloud Compute instances do not have the serial port/console enabled via instance metadata, since an enabled serial console provides an additional, less-monitored access path into the VM.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_compute_instance`
 - **Check type:** resource (negative value check)

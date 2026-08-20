@@ -9,6 +9,8 @@ A wildcard ACM certificate broadens the scope of what a single compromised priva
 This check requires that ACM certificates neither specify a wildcard (`*`) in their primary `DomainName`/`domain_name` nor in any entry of `SubjectAlternativeNames`/`subject_alternative_names`.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::CertificateManager::Certificate` (CloudFormation), `aws_acm_certificate` (Terraform)
 

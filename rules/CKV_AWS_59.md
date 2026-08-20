@@ -8,6 +8,8 @@ An API Gateway method with no authorization exposes the backend integration dire
 This check fails when an API Gateway method (other than `OPTIONS`) has no authorization configured (`AuthorizationType: NONE`) and also does not require an API key, meaning the endpoint is fully open to unauthenticated, unmetered public callers.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::ApiGateway::Method`, properties `HttpMethod`, `AuthorizationType`, `ApiKeyRequired`.
 - **Terraform**: `aws_api_gateway_method` resource, attributes `http_method`, `authorization`, `api_key_required`.
 

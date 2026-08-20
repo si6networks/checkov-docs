@@ -8,6 +8,8 @@ Without BlockPublicPolicy, a single overly-permissive bucket policy statement ta
 This check verifies that an S3 bucket's Public Access Block configuration has `BlockPublicPolicy` (CloudFormation) / `block_public_policy` (Terraform) set to `true`, preventing bucket policies that grant public access from taking effect.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::S3::Bucket` resources (specifically the `Properties/PublicAccessBlockConfiguration/BlockPublicPolicy` property).
 - **Terraform**: `aws_s3_bucket_public_access_block` resource, attribute `block_public_policy`.
 

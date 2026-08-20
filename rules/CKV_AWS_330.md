@@ -8,6 +8,8 @@ Failing to enforce a POSIX user identity on an EFS access point means files crea
 This check requires that EFS access points configure a `posix_user` block (specifically a `gid`), so that all NFS operations through the access point are performed under an enforced POSIX user/group identity rather than whatever identity the client's OS process happens to run as.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_efs_access_point`
 

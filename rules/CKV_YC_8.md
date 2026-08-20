@@ -9,6 +9,8 @@ Disabling auto-upgrade on Kubernetes worker node groups leaves node OS and kubel
 This check ensures that Yandex Managed Service for Kubernetes node groups have auto-upgrade enabled in their maintenance policy, so worker node OS/kubelet versions are kept automatically patched.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_kubernetes_node_group`
 - **Check type:** resource (negative value check)

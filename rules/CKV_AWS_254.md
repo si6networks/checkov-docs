@@ -9,6 +9,8 @@ The cross-region copy is already required to be encrypted by this point; using t
 This check ensures that AWS Data Lifecycle Manager (DLM) `cross_region_copy` actions are encrypted using a customer-managed KMS key (CMK), not just "encryption enabled" with the default AWS-managed key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_dlm_lifecycle_policy`
 

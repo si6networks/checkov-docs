@@ -9,6 +9,8 @@ Without log file validation an attacker who compromises the CloudTrail S3 bucket
 This check ensures that CloudTrail trails have log file integrity validation enabled, so that CloudTrail log files are cryptographically signed and any tampering or deletion after delivery to S3 can be detected.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Check type:** resource check
 - **Entities:** `AWS::CloudTrail::Trail` (CloudFormation property `EnableLogFileValidation`), `aws_cloudtrail` (Terraform attribute `enable_log_file_validation`)

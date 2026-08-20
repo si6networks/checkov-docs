@@ -8,6 +8,8 @@ Merging a branch that isn't up to date with the target can silently reintroduce 
 This check enforces that a repository's branch protection rule requires branches to be up-to-date with the base branch (strict status checks) before they can be merged.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization/repository configuration (`github_configuration` IaC type, entity `*`), evaluated against branch protection settings (e.g., the `github_branch_protection` Terraform resource or equivalent exported GitHub API configuration).
 
 ## Why it matters

@@ -8,6 +8,8 @@ API Gateway method caching is primarily a performance/cost optimization (categor
 This check ensures that an `aws_api_gateway_method_settings` resource has response caching enabled (`caching_enabled = true`) for the associated API Gateway method.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_api_gateway_method_settings`
 

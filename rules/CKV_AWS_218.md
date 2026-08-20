@@ -8,6 +8,8 @@ Allowing a CloudSearch domain to negotiate below TLS 1.2 exposes search queries 
 This check ensures that an Amazon CloudSearch domain (`aws_cloudsearch_domain`) enforces the modern TLS security policy `Policy-Min-TLS-1-2-2019-07` for its HTTPS endpoint.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_cloudsearch_domain`
 

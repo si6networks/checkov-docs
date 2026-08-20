@@ -8,6 +8,8 @@ Disabling Transparent Data Encryption leaves database files, backups, and logs u
 This check verifies that an Azure SQL Database (`azurerm_mssql_database`) does not have Transparent Data Encryption explicitly disabled.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based attribute check)
 - **Resource type involved:** `azurerm_mssql_database`
 

@@ -9,6 +9,8 @@ A leaked npm publish token enables a supply-chain attack: an attacker can push a
 This check scans file contents for hardcoded npm registry authentication tokens, flagging static publish/install credentials committed directly into source, `.npmrc`, or CI config files.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 - **IaC/file type**: `secrets` — Checkov's regex/entropy-based secrets scanner, applied to any scanned file (`.npmrc`, CI pipeline YAML, Dockerfiles, shell scripts, application config, etc.), not limited to a single IaC resource type.
 - **Entities**: the matched credential string within a file; findings are reported at the file/line level.
 

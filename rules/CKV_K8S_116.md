@@ -8,6 +8,8 @@ Etcd is the datastore backing every Kubernetes Secret and cluster object, and wi
 This check verifies that the `etcd` server is configured with both `--cert-file` and `--key-file` arguments, enabling TLS encryption for client-to-server communication with etcd.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests defining a Pod-carrying workload whose container `command` invokes `etcd` — applicable entity kinds are `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice it only meaningfully evaluates the static Pod manifest for the `etcd` component (typically `/etc/kubernetes/manifests/etcd.yaml` on kubeadm clusters, per CIS Kubernetes Benchmark 2.1).
 
 ## Why it matters

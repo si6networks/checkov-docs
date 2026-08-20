@@ -8,6 +8,8 @@ Vertex AI datasets are encrypted by default, so lacking a CMK weakens customer c
 This check requires `google_vertex_ai_dataset` resources to set `encryption_spec.kms_key_name`, so training/evaluation datasets managed in Vertex AI are encrypted at rest with a customer-managed Cloud KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_vertex_ai_dataset`
 - **Check type:** resource (attribute-value check on the nested `encryption_spec` block)

@@ -8,6 +8,8 @@ An unencrypted EFS file system leaves data at rest exposed to anyone who gains a
 This check ensures Amazon EFS (Elastic File System) file systems have encryption at rest enabled.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::EFS::FileSystem` (CloudFormation), `aws_efs_file_system` (Terraform)
 

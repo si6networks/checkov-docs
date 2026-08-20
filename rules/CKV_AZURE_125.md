@@ -8,6 +8,8 @@ Weak Service Fabric protection levels (below EncryptAndSign) allow cluster node-
 This check verifies that an Azure Service Fabric cluster's security setting is configured to `EncryptAndSign`, the strongest of Service Fabric's cluster protection levels, ensuring node-to-node communication is both encrypted and integrity-signed.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:**
   - Terraform: `azurerm_service_fabric_cluster`

@@ -9,6 +9,8 @@ Disabling in-transit encryption for EFS volumes mounted into ECS tasks allows fi
 This check fails when an ECS task definition mounts an EFS volume without setting `TransitEncryption`/`transit_encryption` to `ENABLED` on the `EFSVolumeConfiguration`, leaving traffic between the ECS task and the EFS file system unencrypted.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_ecs_task_definition` resource — inspects each `volume[].efs_volume_configuration[].transit_encryption`.
 - **CloudFormation**: `AWS::ECS::TaskDefinition` resource — inspects each `Properties.Volumes[].EFSVolumeConfiguration.TransitEncryption`.
 

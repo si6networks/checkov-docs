@@ -8,6 +8,8 @@ Disabling Transparent Data Encryption leaves MongoDB data at rest unencrypted, s
 This check ensures that an Alibaba Cloud ApsaraDB for MongoDB instance has Transparent Data Encryption (TDE) enabled (`tde_status = "enabled"`) to encrypt data at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `alicloud_mongodb_instance`
 

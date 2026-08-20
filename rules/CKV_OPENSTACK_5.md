@@ -8,6 +8,8 @@ A firewall rule left without a specific destination_ip_address (or set to 0.0.0.
 This check ensures OpenStack FWaaS (Firewall-as-a-Service v1) rules explicitly define a `destination_ip_address`, and that it is not set to an unrestricted `0.0.0.0/0` (or bare `0.0.0.0`), so that firewall rules don't implicitly or explicitly permit traffic to any destination.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform, resource type `openstack_fw_rule_v1` (OpenStack Networking FWaaS v1 firewall rule).
 
 ## Why it matters

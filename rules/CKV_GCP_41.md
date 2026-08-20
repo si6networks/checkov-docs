@@ -9,6 +9,8 @@ The Service Account User/Token Creator roles let a principal impersonate service
 This check fails when a `google_project_iam_binding` or `google_project_iam_member` resource grants `roles/iam.serviceAccountUser` or `roles/iam.serviceAccountTokenCreator` at the project (rather than a specific service-account-scoped) level.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_project_iam_binding` and `google_project_iam_member`.
 
 ## Why it matters

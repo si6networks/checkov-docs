@@ -8,6 +8,8 @@ Permitting root-UID containers (including a MustRunAs range starting at 0) remov
 This check fails a `PodSecurityPolicy` unless `spec.runAsUser.rule` is set to `MustRunAsNonRoot`, or is `MustRunAs` with a UID range whose minimum is strictly greater than 0 (i.e., root, UID 0, is never a permitted user).
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: `PodSecurityPolicy` kind.
 - **Terraform**: `kubernetes_pod_security_policy` resource.
 

@@ -8,6 +8,8 @@ Allowing an IMDS hop limit greater than 1 lets traffic proxied through the insta
 Checks that EC2 launch templates and launch configurations restrict the Instance Metadata Service (IMDS) HTTP PUT response hop limit to `1`, preventing metadata responses from being relayed off the instance.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource types**: `aws_launch_configuration`, `aws_launch_template`
 

@@ -8,6 +8,8 @@ When an EKS node group enables SSH remote access without restricting source secu
 This check ensures that EKS managed node groups configured with an SSH key for remote access also restrict that SSH access to specific security groups, rather than implicitly allowing SSH from anywhere on the internet.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::EKS::Nodegroup` resources.
 - **Terraform**: `aws_eks_node_group` resources.
 

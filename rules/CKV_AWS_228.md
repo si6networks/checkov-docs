@@ -9,6 +9,8 @@ An outdated TLS security policy permits legacy TLS versions and weak cipher suit
 This check ensures that an AWS Elasticsearch/OpenSearch domain's HTTPS endpoint is configured to require a modern, secure TLS security policy rather than an outdated or default one.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_elasticsearch_domain`, `aws_opensearch_domain`
 

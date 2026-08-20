@@ -8,6 +8,8 @@ A trust policy allowing sts:AssumeRole from any AWS service or principal (wildca
 This check flags IAM role trust policies whose `Principal.AWS` value is a raw 12-digit AWS account ID or an `arn:aws:iam::<account-id>:root` ARN, which grants the assume-role permission to the entire target AWS account rather than a specific IAM principal within it.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::IAM::Role`, property `Properties/AssumeRolePolicyDocument`.
 - **Terraform**: `aws_iam_role` resource, attribute `assume_role_policy`.
 

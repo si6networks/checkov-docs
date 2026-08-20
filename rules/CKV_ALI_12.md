@@ -9,6 +9,8 @@ Missing access logging on an OSS bucket removes the audit trail needed to detect
 This check ensures Alibaba Cloud OSS buckets have server access logging configured (a non-empty `logging` block), so that requests made against the bucket are recorded for audit and incident-response purposes.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `alicloud_oss_bucket` resource, specifically its `logging` attribute (checked for any non-empty/present value via Checkov's `ANY_VALUE` sentinel).
 
 ## Why it matters

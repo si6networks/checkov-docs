@@ -8,6 +8,8 @@ Disabling audit-log export for RDS MySQL/Aurora clusters removes a security-crit
 This check requires that RDS clusters running a MySQL-compatible engine (Aurora, Aurora-MySQL, or MySQL) export their audit log to CloudWatch Logs via `enabled_cloudwatch_logs_exports`.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_rds_cluster`
 

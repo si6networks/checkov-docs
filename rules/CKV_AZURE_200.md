@@ -9,6 +9,8 @@ Allowing TLS 1.0 (or no explicit version) on a CDN custom domain permits negotia
 This check ensures that HTTPS custom domain configurations on an Azure CDN endpoint use TLS 1.2 (not TLS 1.0 or no explicit version), whether HTTPS is provided via CDN-managed or user-managed certificates.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_cdn_endpoint_custom_domain`
 

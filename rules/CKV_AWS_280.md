@@ -8,6 +8,8 @@ Like other CMK-vs-default-key checks, the underlying Neptune snapshot is already
 This check fails when an `aws_neptune_cluster_snapshot` resource does not set a `kms_key_id`, meaning the snapshot's encryption key management is not confirmed to use a customer-managed key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_neptune_cluster_snapshot`
 

@@ -9,6 +9,8 @@ A publicly accessible storage container holding Azure activity logs can leak det
 This check verifies that a storage container used to hold Azure Activity Log exports is not configured for public (blob/container) access, protecting the confidentiality of the audit trail itself.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_storage_container` connected to an `azurerm_storage_account`, which in turn may be connected to an `azurerm_monitor_activity_log_alert`.
 
 This is a graph-based connection/attribute check spanning three resource types.

@@ -9,6 +9,8 @@ MAINTAINER vs. LABEL maintainer is a deprecated-syntax/metadata convention with 
 This check always fails when a Dockerfile uses the deprecated `MAINTAINER` instruction, since Docker recommends using a `LABEL maintainer="..."` instead.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Dockerfiles — specifically the `MAINTAINER` instruction.
 
 ## Why it matters

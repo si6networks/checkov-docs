@@ -8,6 +8,8 @@ An unencrypted Neptune snapshot stores a full copy of graph database contents in
 This check fails when an `aws_neptune_cluster_snapshot` resource does not set `storage_encrypted` to a truthy value, meaning the manual snapshot of a Neptune graph database cluster is not confirmed to be encrypted at rest.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource:** `aws_neptune_cluster_snapshot`
 

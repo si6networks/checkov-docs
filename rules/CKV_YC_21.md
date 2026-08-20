@@ -9,6 +9,8 @@ Granting admin/owner-level roles at the organization level is a wildcard-style p
 This check fails when a Yandex Cloud Organization Manager IAM binding/member resource grants a broad organization-level administrative role (`admin`, `editor`, or organization owner/admin roles) to a member.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `yandex_organizationmanager_organization_iam_binding`, `yandex_organizationmanager_organization_iam_member`
 

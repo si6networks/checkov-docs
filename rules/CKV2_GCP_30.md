@@ -8,6 +8,8 @@ Disabled Stackdriver logging on a Dialogflow CX agent removes visibility into ag
 This check ensures that Dialogflow CX agents have `enable_stackdriver_logging` set to `true`, so conversation and interaction events are sent to Cloud Logging (formerly Stackdriver).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_dialogflow_cx_agent`
 

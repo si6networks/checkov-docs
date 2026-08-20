@@ -8,6 +8,8 @@ An unencrypted Redshift cluster stores data warehouse contents (often sensitive 
 This check verifies that an Amazon Redshift cluster has encryption at rest enabled (`Encrypted`/`encrypted` = `true`), so that data stored on the cluster's disks is encrypted rather than stored in plaintext.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **CloudFormation**: `AWS::Redshift::Cluster`, property `Properties/Encrypted`.
 - **Terraform**: `aws_redshift_cluster` resource, attribute `encrypted`.
 

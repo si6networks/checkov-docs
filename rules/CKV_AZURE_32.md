@@ -9,6 +9,8 @@ Disabling connection throttling removes a control that slows down repeated faile
 This check ensures the PostgreSQL server configuration parameter `connection_throttling` is turned on, enabling protection against rapid repeated failed-login attempts.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, ARM, Bicep (via shared entities)
 - **Resource types:** `Microsoft.DBforPostgreSQL/servers/configurations` (and generic `configurations` with `parent_type = Microsoft.DBforPostgreSQL/servers`), `azurerm_postgresql_configuration`
 

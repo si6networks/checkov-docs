@@ -9,6 +9,8 @@ RDS Cluster Activity Streams carry near-real-time database activity (including S
 This check ensures that an RDS Cluster Database Activity Stream (`aws_rds_cluster_activity_stream`) is encrypted with a customer-managed KMS key.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_rds_cluster_activity_stream`
 

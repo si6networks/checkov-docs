@@ -9,6 +9,8 @@ Missing access logging on a classic ELB removes visibility into request traffic 
 This check fails when a "classic" Elastic Load Balancer (ELB, i.e. the original ELB generation, not ALB/NLB) does not have access logging enabled.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_elb` resource — inspects `access_logs[0].enabled`.
 - **CloudFormation**: `AWS::ElasticLoadBalancing::LoadBalancer` resource — inspects `Properties/AccessLoggingPolicy/Enabled`.
 

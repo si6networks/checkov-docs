@@ -9,6 +9,8 @@ Allowing TLS versions below 1.2 for Service Bus client connections permits weake
 This check ensures an Azure Service Bus namespace enforces TLS 1.2 as its minimum TLS version for client connections.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `azurerm_servicebus_namespace`
 

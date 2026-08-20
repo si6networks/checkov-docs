@@ -9,6 +9,8 @@ Without a Log Forwarding profile, traffic matched by the rule never reaches the 
 This check fails a Palo Alto Networks (PAN-OS) security policy rule that does not have a Log Forwarding profile (`log_setting`) attached, meaning traffic matched by that rule is not forwarded to an external logging/SIEM destination.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 - **Terraform**: resource types `panos_security_policy` and `panos_security_rule_group` (each `rule` block, attribute `log_setting`).
 - **Ansible**: task `tasks.paloaltonetworks.panos.panos_security_rule` (attribute `log_setting`), evaluated via a Checkov graph check.
 

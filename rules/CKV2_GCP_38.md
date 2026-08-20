@@ -9,6 +9,8 @@ Same as the regional variant: an externally-facing global forwarding rule pointe
 This check flags global forwarding rules that point at an HTTP (not HTTPS) target proxy while using an `EXTERNAL` load-balancing scheme, since that configuration exposes a global load balancer's plaintext HTTP listener to the public internet.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_compute_global_forwarding_rule`
 

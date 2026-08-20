@@ -9,6 +9,8 @@ Disabling scan-on-push means known-vulnerable or malicious container images can 
 This check requires that Elastic Container Registry (ECR) repositories automatically scan container images for known OS/package vulnerabilities every time an image is pushed.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **Terraform**: `aws_ecr_repository`
 - **CloudFormation**: `AWS::ECR::Repository`
 

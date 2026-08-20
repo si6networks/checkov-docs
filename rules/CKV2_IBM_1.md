@@ -9,6 +9,8 @@ A publicly-typed VPC load balancer exposes backend application/service traffic d
 This check ensures that an IBM Cloud VPC load balancer (`ibm_is_lb`) is configured with `type` set to `private` or `private_path`, rather than being publicly reachable.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ibm_is_lb`
 

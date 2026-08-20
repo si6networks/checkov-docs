@@ -9,6 +9,8 @@ Roles allowing impersonation/management of all service accounts at the folder le
 This check fails when a `google_folder_iam_member` or `google_folder_iam_binding` resource grants a role that lets the bound principal impersonate or manage all service accounts within that folder (e.g., broad service-account-admin/impersonation roles such as `roles/iam.serviceAccountUser`, `roles/iam.serviceAccountTokenCreator`, or `roles/iam.serviceAccountAdmin`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform only. Applies to `google_folder_iam_member` and `google_folder_iam_binding`.
 
 **Note on source:** Checkov implements this as `GoogleFolderImpersonationRoles`, a thin subclass of the shared `AbsGoogleImpersonationRoles` base class (the abstract base's implementation was not included in the extracted source set for this doc, so the exact role list/regex below is inferred from the check's name, its sibling check CKV_GCP_45 which shares the same base class at organization scope, and the closely related project-level check CKV_GCP_41 which enumerates `roles/iam.serviceAccountUser` and `roles/iam.serviceAccountTokenCreator` as impersonation-enabling roles).

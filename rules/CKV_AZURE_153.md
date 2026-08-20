@@ -9,6 +9,8 @@ Not forcing HTTPS on an App Service slot allows plaintext HTTP traffic, exposing
 This check ensures that Azure App Service deployment slots enforce HTTPS-only traffic (`httpsOnly` / `https_only`), so plain HTTP requests are redirected to HTTPS rather than served in the clear.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_app_service_slot`, `azurerm_linux_web_app_slot`, `azurerm_windows_web_app_slot`

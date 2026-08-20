@@ -8,6 +8,8 @@ Lacking WAF protection on a globally distributed edge entry point leaves backend
 This check verifies that an Azure Front Door (classic) frontend endpoint has a Web Application Firewall policy linked to it, so traffic passing through Front Door is inspected for common web attacks.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform, ARM templates, Bicep
 - **Resource types:**
   - Terraform: `azurerm_frontdoor`

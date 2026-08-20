@@ -9,6 +9,8 @@ An individual security group rule permitting all ports/protocols from 0.0.0.0/0 
 This check fails when a standalone Yandex VPC security group *rule* (`yandex_vpc_security_group_rule`) is an ingress rule allowing all ports from the entire internet (`0.0.0.0/0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `yandex_vpc_security_group_rule`
 

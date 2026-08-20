@@ -8,6 +8,8 @@ Bigtable data is encrypted by default with Google-managed keys, so missing CMK c
 This check requires each cluster in a `google_bigtable_instance` Terraform resource to set `kms_key_name`, so Bigtable data at rest is protected by a customer-managed Cloud KMS key rather than Google's default encryption.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_bigtable_instance`
 - **Check type:** resource (attribute-value check on the nested `cluster` block)

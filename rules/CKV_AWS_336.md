@@ -8,6 +8,8 @@ A writable root filesystem lets an attacker who compromises a container tamper w
 This check requires that every container definition in an `aws_ecs_task_definition` sets `readonlyRootFilesystem: true`, so the container's root filesystem cannot be written to at runtime.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_ecs_task_definition` (inspects the `container_definitions` JSON)
 

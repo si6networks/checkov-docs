@@ -9,6 +9,8 @@ Disabling Shielded VM's virtual TPM removes a defense-in-depth boot-integrity co
 This check fails when a `google_notebooks_instance` (Vertex AI Workbench notebook) does not have the Shielded VM virtual TPM (`enable_vtpm`) enabled in its `shielded_instance_config`, leaving the notebook VM without boot-integrity protections.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_notebooks_instance`
 - **Check type:** resource (negative value check)

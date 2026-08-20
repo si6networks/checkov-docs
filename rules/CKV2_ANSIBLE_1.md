@@ -9,6 +9,8 @@ Allowing non-HTTPS URLs with the uri module exposes requests to interception and
 This check ensures that Ansible `uri` module tasks only fetch URLs over HTTPS, not plaintext HTTP or other insecure schemes.
 
 ## Applicability
+**Checkov framework(s):** `ansible`
+
 Ansible playbooks/roles. Applies to tasks using `ansible.builtin.uri` or the legacy short module name `uri`.
 
 ## Why it matters

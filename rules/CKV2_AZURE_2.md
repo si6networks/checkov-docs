@@ -9,6 +9,8 @@ Without vulnerability assessment scanning, misconfigurations and vulnerabilities
 This check ensures an Azure SQL Server has a Security Alert Policy attached and enabled, which underpins the Vulnerability Assessment feature that scans databases for misconfigurations and stores results in a linked storage account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (graph-based check).
 - **Resource types:** `azurerm_sql_server` and `azurerm_mssql_server`, connected via `azurerm_mssql_server_security_alert_policy`.
 

@@ -8,6 +8,8 @@ This check verifies RDS instance deletion protection is enabled; its absence is 
 This check ensures every `aws_db_instance` (RDS instance) has `deletion_protection` set to `true` so it cannot be accidentally or maliciously deleted.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_db_instance`
 

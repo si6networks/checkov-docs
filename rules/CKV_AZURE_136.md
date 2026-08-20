@@ -8,6 +8,8 @@ Missing geo-redundant backups for PostgreSQL Flexible Server is a data-durabilit
 This check ensures an Azure Database for PostgreSQL Flexible Server has geo-redundant backups enabled, so backup data is replicated to a paired Azure region rather than kept only in the primary region.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_postgresql_flexible_server` resource, attribute `geo_redundant_backup_enabled`.
 
 ## Why it matters

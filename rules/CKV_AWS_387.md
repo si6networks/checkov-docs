@@ -9,6 +9,8 @@ An SQS queue policy allowing a wildcard principal without a restricting conditio
 This check flags an SQS queue policy that grants `Allow` on SQS actions to a wildcard principal (`Principal = "*"` or `Principal.AWS = "*"`) without a `Condition` clause restricting who can actually invoke it.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `aws_sqs_queue_policy`
 

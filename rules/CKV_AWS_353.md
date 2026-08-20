@@ -8,6 +8,8 @@ RDS Performance Insights is primarily a query-performance diagnostics feature; i
 Requires RDS database instances and Aurora cluster instances to have Performance Insights enabled, with awareness of engine/instance-class combinations where the feature isn't supported.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource types**: `aws_db_instance`, `aws_rds_cluster_instance`
 

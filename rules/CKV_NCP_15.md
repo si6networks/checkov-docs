@@ -9,6 +9,8 @@ A load balancer target group using plain HTTP instead of HTTPS transmits applica
 This check ensures that Naver Cloud Platform (NCP) Load Balancer target groups (`ncloud_lb_target_group`) do not use the plaintext `HTTP` protocol for backend communication.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_lb_target_group`
 - **Check type:** resource-configuration check (Python)

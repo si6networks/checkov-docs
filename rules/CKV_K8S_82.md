@@ -8,6 +8,8 @@ Without the ServiceAccount admission controller enabled, Kubernetes will not enf
 This check verifies that any pod-spec running the `kube-apiserver` binary explicitly enables the `ServiceAccount` admission controller via `--enable-admission-plugins`.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`
+
 Kubernetes manifests only. Applies to pod-spec-bearing resources: `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`. In practice this check is only meaningful for the container spec of a self-managed `kube-apiserver` static pod/manifest (e.g., `/etc/kubernetes/manifests/kube-apiserver.yaml` on a kubeadm control-plane node), not for regular application workloads.
 
 ## Why it matters

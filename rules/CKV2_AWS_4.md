@@ -8,6 +8,8 @@ Missing or insufficient API Gateway logging limits the ability to detect and inv
 This check ensures that every `aws_api_gateway_stage` has an associated `aws_api_gateway_method_settings` resource that sets a valid `logging_level` (`ERROR` or `INFO`) and enables `metrics_enabled`, so execution logging and CloudWatch metrics are actually turned on for the stage.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `aws_api_gateway_stage` (connected `aws_api_gateway_method_settings`)
 - **Category:** Logging

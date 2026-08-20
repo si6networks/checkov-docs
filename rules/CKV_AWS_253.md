@@ -9,6 +9,8 @@ EBS snapshots cross-region-copied by a DLM action without requesting encryption 
 This check ensures that AWS Data Lifecycle Manager (DLM) policies which copy snapshots to another region (`cross_region_copy` actions) encrypt the copied snapshots.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_dlm_lifecycle_policy`
 

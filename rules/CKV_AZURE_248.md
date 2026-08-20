@@ -9,6 +9,8 @@ Allowing public network access to a Batch account without a default-deny policy 
 This check ensures that when an Azure Batch account has public network access enabled, its account-access network profile does not use a default action of "allow" — i.e., public exposure must still be gated by an explicit deny-by-default posture with allow-listed exceptions.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM (`arm`)
 - **Resource types:** `azurerm_batch_account` (Terraform), `Microsoft.Batch/batchAccounts` (ARM/Bicep)
 

@@ -9,6 +9,8 @@ Failing to explicitly drop ALL Linux capabilities leaves a container with the ru
 This check ensures each container's `securityContext.capabilities.drop` explicitly includes `ALL`, so the container starts with no Linux capabilities rather than the runtime default set.
 
 ## Applicability
+**Checkov framework(s):** `kubernetes`, `terraform`
+
 - **Kubernetes manifests**: container-level check across kinds `CronJob`, `DaemonSet`, `Deployment`, `DeploymentConfig`, `Job`, `Pod`, `PodTemplate`, `ReplicaSet`, `ReplicationController`, `StatefulSet`.
 - **Terraform**: resource types `kubernetes_pod`, `kubernetes_pod_v1`, `kubernetes_deployment`, `kubernetes_deployment_v1`, at `spec.container[].security_context.capabilities.drop`.
 

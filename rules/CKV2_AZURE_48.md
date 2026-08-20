@@ -9,6 +9,8 @@ Databricks DBFS root storage is still encrypted with a Microsoft-managed key by 
 This check ensures an Azure Databricks workspace on the Premium SKU is configured to encrypt its root DBFS (Databricks File System) storage using a customer-managed key (CMK) rather than relying solely on Microsoft-managed keys.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **IaC frameworks:** Terraform (graph-based check), ARM/Bicep (Python resource check)
 - **Resource types:** `Microsoft.Databricks/workspaces` (ARM/Bicep), `azurerm_databricks_workspace` + `azurerm_databricks_workspace_root_dbfs_customer_managed_key` (Terraform)
 

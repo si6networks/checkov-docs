@@ -9,6 +9,8 @@ Missing zone redundancy for Azure SQL Database is an availability/resilience gap
 This check ensures that an Azure SQL Database is configured for zone redundancy, so that the database's compute and storage are replicated across multiple Azure Availability Zones within the region.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_mssql_database` resources — inspects the `zone_redundant` attribute.
 - **ARM/Bicep**: `Microsoft.Sql/servers/databases` resources — inspects `properties.zoneRedundant`.
 

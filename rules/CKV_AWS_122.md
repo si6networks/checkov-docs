@@ -9,6 +9,8 @@ A SageMaker notebook instance with direct internet access removes network isolat
 Fails when an `aws_sagemaker_notebook_instance` allows direct internet access instead of routing all traffic through a customer-managed VPC.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_sagemaker_notebook_instance` resource.
 
 ## Why it matters

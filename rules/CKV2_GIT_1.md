@@ -9,6 +9,8 @@ Lacking branch protection allows force-pushes, unreviewed merges, or history rew
 This check ensures that every `github_repository` resource managed in Terraform has an associated branch protection configuration (via `github_branch_protection`, `github_branch_protection_v3`, or `github_repository_ruleset`), so that at least one branch (typically the default branch) is protected from unreviewed direct pushes or deletion.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GitHub provider)
 - **Resource type:** `github_repository` (connection checked against `github_branch_protection`, `github_branch_protection_v3`, `github_repository_ruleset`)
 

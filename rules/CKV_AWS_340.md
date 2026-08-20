@@ -8,6 +8,8 @@ Disabling Elastic Beanstalk managed platform updates prevents automatic applicat
 This check requires that `aws_elastic_beanstalk_environment` resources configure the `aws:elasticbeanstalk:managedactions` namespace's `ManagedActionsEnabled` setting to `true`, so the environment automatically applies platform updates.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform
 - **Resource type:** `aws_elastic_beanstalk_environment`
 

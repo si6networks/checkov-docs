@@ -9,6 +9,8 @@ This check only flags a Kusto (Data Explorer) cluster SKU that lacks an availabi
 This check ensures an Azure Data Explorer (Kusto) cluster is not deployed on a "Dev (No SLA)" SKU, so that the cluster is backed by a production SLA.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (`azurerm` provider)
 - **Resource type:** `azurerm_kusto_cluster`
 

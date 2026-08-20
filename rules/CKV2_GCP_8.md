@@ -9,6 +9,8 @@ Public IAM bindings (allUsers/allAuthenticatedUsers) on a KMS key ring let unaut
 This check ensures that no IAM binding or IAM member on a `google_kms_key_ring` grants access to `allUsers` or `allAuthenticatedUsers`, which would make every crypto key in that key ring usable by anyone on the internet or anyone with a Google account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource types:** `google_kms_key_ring`, `google_kms_key_ring_iam_binding`, `google_kms_key_ring_iam_member`
 

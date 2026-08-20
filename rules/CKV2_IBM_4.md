@@ -9,6 +9,8 @@ Disabling account-level MFA removes a critical control against credential-based 
 This check ensures that IBM Cloud account-level IAM settings (`ibm_iam_account_settings`) have the `mfa` attribute set to something other than `"None"`, meaning multi-factor authentication is required for users in the account.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ibm_iam_account_settings`
 

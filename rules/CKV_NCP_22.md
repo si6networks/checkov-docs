@@ -9,6 +9,8 @@ Disabling audit logging on the NKS control plane removes the record of API-serve
 This check ensures that a Naver Kubernetes Service (NKS) cluster (`ncloud_nks_cluster`) has control-plane audit logging enabled, so administrative and API-level actions against the cluster are recorded.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `ncloud_nks_cluster` (primary implementation); the associated graph-check metadata in the Checkov source also references `ncloud_route_table` / `ncloud_subnet` connections, but the resource-level Python check (`NKSControlPlaneLogging.py`) — which matches this rule's documented policy — is what enforces the audit-logging requirement described here.
 - **Check type:** resource-configuration attribute check (Python)

@@ -9,6 +9,8 @@ Allowing automatic version upgrades on Redshift is an operational/change-managem
 This check requires `aws_redshift_cluster` resources to have `allow_version_upgrade` enabled (or left unset, which defaults to enabled), so the cluster automatically receives maintenance-track version upgrades rather than being pinned indefinitely to its current engine version.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework:** Terraform (AWS provider)
 - **Resource type:** `aws_redshift_cluster`
 

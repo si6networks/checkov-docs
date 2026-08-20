@@ -8,6 +8,8 @@ An IAM policy that grants restrictable, privilege-sensitive actions against a wi
 Flags IAM policy resources whose policy document grants "restrictable" (i.e., resource-scopable) IAM actions against a wildcard `"*"` resource, using the `cloudsplaining` library's privilege-escalation/over-permissioning analysis.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Resource types**: `aws_iam_group_policy`, `aws_iam_policy`, `aws_iam_role_policy`, `aws_iam_user_policy`, `aws_ssoadmin_permission_set_inline_policy`
 - **Type**: resource check (evaluates the policy document embedded/attached directly in these resources)

@@ -9,6 +9,8 @@ Failing to enable all SQL threat-detection alert types delays detection of activ
 This check ensures Azure SQL Server / database threat detection (Advanced Threat Protection security alert policy) is enabled with no threat-detection alert types disabled.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep (graph-based check), ARM
 - **Resource types:** `Microsoft.Sql/servers`, `Microsoft.Sql/servers/databases`, `Microsoft.Sql/servers/databases/securityAlertPolicies`, `Microsoft.Sql/servers/securityAlertPolicies`, `azurerm_mssql_server_security_alert_policy`
 

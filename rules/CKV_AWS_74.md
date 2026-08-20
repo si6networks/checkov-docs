@@ -8,6 +8,8 @@ An unencrypted DocumentDB cluster leaves data at rest (potentially including sen
 This check fails when an Amazon DocumentDB cluster does not have storage encryption enabled, which is important because DocumentDB clusters are **unencrypted by default**.
 
 ## Applicability
+**Checkov framework(s):** `cloudformation`, `terraform`
+
 - **IaC frameworks:** CloudFormation, Terraform
 - **Resource types:** `AWS::DocDB::DBCluster` (CloudFormation), `aws_docdb_cluster` (Terraform)
 - **Check type:** resource

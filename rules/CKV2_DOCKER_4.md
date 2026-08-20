@@ -8,6 +8,8 @@ pip's --trusted-host flag bypasses TLS certificate verification for Python packa
 This check fails a Dockerfile if any `RUN` instruction invokes `pip`/`pip3` with the `--trusted-host` option, which tells pip to skip TLS certificate verification for the named package index host.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds. Implemented as a Checkov graph-based JSON policy scanning `RUN` instructions (`resource_types: ["RUN"]`).
 
 ## Why it matters

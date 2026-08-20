@@ -8,6 +8,8 @@ User-managed GCP service account keys are long-lived, exportable credential mate
 This check ensures that service account keys are GCP-managed (system-generated) rather than user-managed keys with externally supplied public key material.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform
 - **Resource type:** `google_service_account_key`
 

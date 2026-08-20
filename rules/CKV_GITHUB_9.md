@@ -8,6 +8,8 @@ Relying on a single repository admin creates a single point of failure for incid
 This check enforces that a GitHub repository has at least two collaborators with admin permission, avoiding a single point of failure/control over the repository.
 
 ## Applicability
+**Checkov framework(s):** `github_configuration`
+
 Applies to GitHub organization/repository configuration (`github_configuration` IaC type, entity `*`), evaluated against the repository collaborators document (files matching `repository_collaborators`), where each collaborator entry has a `permissions` object with an `admin` boolean.
 
 ## Why it matters

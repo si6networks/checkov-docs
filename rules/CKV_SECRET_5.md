@@ -9,6 +9,8 @@ A detected Cloudant credential is a live, typically full read/write database cre
 This check scans plaintext files and IaC source for embedded IBM Cloudant database credentials (URLs/keys that follow the IBM Cloudant credential pattern), flagging any occurrence as a hardcoded secret.
 
 ## Applicability
+**Checkov framework(s):** `secrets`
+
 This is one of Checkov's built-in **secrets scanning** checks (framework: `secrets`), not a resource-attribute check. It runs against any text file Checkov scans as part of a repository/directory scan — source code, configuration files, IaC templates (Terraform, YAML, JSON, Dockerfiles, etc.), and plain text files — looking for the Cloudant credential pattern regardless of file type or resource type ("entities": `secrets`).
 
 ## Why it matters

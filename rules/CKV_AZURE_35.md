@@ -9,6 +9,8 @@ Leaving the storage account's default network action at Allow exposes blob/file/
 This check verifies that an Azure Storage Account's network rule set defaults to denying traffic, so that only explicitly allowed networks (VNets, IP ranges, or trusted Azure services) can reach the account.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_storage_account` (inline `network_rules` block) and `azurerm_storage_account_network_rules` (standalone resource)
 - **ARM templates**: `Microsoft.Storage/storageAccounts`
 - **Bicep**: `Microsoft.Storage/storageAccounts`

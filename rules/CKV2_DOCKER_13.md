@@ -9,6 +9,8 @@ Setting npm/yarn strict-ssl to false removes certificate validation on package d
 This check verifies that no `RUN` instruction in a Dockerfile disables TLS certificate validation for `npm` or `yarn` by running `npm config set strict-ssl false` (or the yarn equivalent).
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 - **Dockerfile**: any `RUN` instruction.
 
 This is a graph-based check using regex matching against the `RUN` instruction's command text.

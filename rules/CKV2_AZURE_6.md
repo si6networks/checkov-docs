@@ -9,6 +9,8 @@ Allowing broad Azure-services access (effectively an any-Azure-tenant 0.0.0.0 fi
 This check verifies that a SQL/PostgreSQL server's firewall does not have the special "Allow access to Azure services" rule enabled (represented in Terraform as a firewall rule spanning `0.0.0.0` to `0.0.0.0`).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `azurerm_sql_server` (evaluated in connection with any `azurerm_sql_firewall_rule` resources attached to it)
 
 This is a graph-based connection/attribute check. Despite the policy title mentioning PostgreSQL, the underlying entities checked are the legacy `azurerm_sql_server`/`azurerm_sql_firewall_rule` (Azure SQL) resource types.

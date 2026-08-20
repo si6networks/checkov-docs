@@ -9,6 +9,8 @@ Assigning a Cloud SQL instance a public IP puts a data store directly on the int
 This check fails when a `google_sql_database_instance` has `ipv4_enabled = true` in its `ip_configuration`, meaning the instance is assigned a publicly routable IPv4 address.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework:** Terraform (GCP provider)
 - **Resource type:** `google_sql_database_instance`
 - **Check type:** resource check

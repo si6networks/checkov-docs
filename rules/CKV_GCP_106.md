@@ -9,6 +9,8 @@ Unrestricted ingress on port 80 exposes the associated service to unauthenticate
 This check ensures that a `google_compute_firewall` ingress rule does not permit unrestricted (`0.0.0.0/0`) inbound access to TCP port 80 (HTTP).
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **IaC framework**: Terraform
 - **Resource type**: `google_compute_firewall`
 - Evaluates ingress rules (`direction = "INGRESS"` or default) with `allow` blocks and their `source_ranges`.

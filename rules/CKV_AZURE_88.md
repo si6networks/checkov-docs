@@ -8,6 +8,8 @@ This check is about App Service using managed Azure Files storage for content pe
 This check verifies that an Azure App Service (Web App) is configured with an Azure Files storage mount (`type == "AzureFiles"`) rather than relying purely on the ephemeral local file system.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app` (inspects the `storage_account` block's `type` attribute)
 - **ARM templates**: `Microsoft.Web/sites/config` (inspects `properties.azureStorageAccounts.<name>.type`)
 - **Bicep**: resources compiling to `Microsoft.Web/sites/config`

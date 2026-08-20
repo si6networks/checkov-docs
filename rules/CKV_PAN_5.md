@@ -9,6 +9,8 @@ Setting `applications` to `any` disables App-ID enforcement for the rule, allowi
 This check fails any Palo Alto Networks (PAN-OS) security policy rule whose `applications` field permits `any`, since that disables application-layer identification and control for the rule.
 
 ## Applicability
+**Checkov framework(s):** `ansible`, `terraform`
+
 - **Terraform**: resource types `panos_security_policy` and `panos_security_rule_group` (each `rule` block within them).
 - **Ansible**: task `tasks.paloaltonetworks.panos.panos_security_rule` (attribute `application`), evaluated via a Checkov graph check.
 

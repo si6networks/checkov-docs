@@ -8,6 +8,8 @@ Same underlying risk as the resource-level check: an aws_iam_policy_document tha
 Flags `aws_iam_policy_document` **data sources** whose rendered policy JSON grants "restrictable" IAM actions against a wildcard `"*"` resource, using the `cloudsplaining` over-permissioning analysis engine. This is the data-source counterpart to CKV_AWS_355.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Framework**: Terraform
 - **Entity type**: `aws_iam_policy_document` (a Terraform `data` source, not a `resource`)
 - **Type**: data check

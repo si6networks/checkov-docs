@@ -8,6 +8,8 @@ Leaving Azure Firewall threat intelligence mode in Alert (instead of Deny) means
 Ensures that a classic (non-Firewall-Policy-managed) Azure Firewall has its Threat Intelligence-based filtering mode set to `Deny` rather than `Alert` (or off), so traffic matching known-malicious IP addresses and domains is actually blocked instead of merely logged.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_firewall` — inspects `threat_intel_mode`
 - **ARM**: `Microsoft.Network/azureFirewalls` — inspects `properties.threatIntelMode`
 - **Bicep**: compiles to the ARM resource type above

@@ -9,6 +9,8 @@ A Comprehend recognizer's trained model can indirectly encode signal from sensit
 This check ensures that an Amazon Comprehend custom entity recognizer specifies a KMS key (`model_kms_key_id`) to encrypt the trained model artifact.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: resource `aws_comprehend_entity_recognizer`
 
 ## Why it matters

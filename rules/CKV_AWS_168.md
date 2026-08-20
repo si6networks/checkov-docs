@@ -9,6 +9,8 @@ An SQS queue policy allowing any principal lets unauthenticated or unrelated AWS
 This check requires that an SQS queue's resource policy does not grant unrestricted (effectively public) access to send/receive/manage messages, by analyzing the policy for internet-accessible actions granted without adequate principal/condition restrictions.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 - **Terraform**: `aws_sqs_queue` (inline `policy` attribute) and `aws_sqs_queue_policy` (standalone policy resource)
 
 ## Why it matters

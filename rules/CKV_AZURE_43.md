@@ -9,6 +9,8 @@ Storage account naming convention violations are a hygiene/operational concern w
 This check verifies that an Azure Storage Account's name conforms to Azure's naming constraints: 3–24 characters, lowercase letters and digits only.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Terraform**: `azurerm_storage_account`
 - **ARM templates**: `Microsoft.Storage/storageAccounts`
 - **Bicep**: `Microsoft.Storage/storageAccounts`

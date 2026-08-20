@@ -9,6 +9,8 @@ Permitting outdated TLS versions on a web app weakens in-transit encryption and 
 This check ensures that an Azure App Service / Web App enforces a minimum TLS version of 1.2 (or 1.3) for inbound HTTPS connections, rather than allowing older, insecure TLS versions.
 
 ## Applicability
+**Checkov framework(s):** `arm`, `bicep`, `terraform`
+
 - **Frameworks:** Terraform, Bicep, ARM
 - **Resource types:**
   - Terraform: `azurerm_app_service`, `azurerm_linux_web_app`, `azurerm_windows_web_app`

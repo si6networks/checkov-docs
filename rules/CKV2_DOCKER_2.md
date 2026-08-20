@@ -8,6 +8,8 @@ Disabling curl's TLS certificate validation during a Dockerfile build exposes pa
 This check fails a Dockerfile if any `RUN` instruction invokes `curl` with the `--insecure` (or short `-k`) flag, which disables TLS certificate validation for the request.
 
 ## Applicability
+**Checkov framework(s):** `dockerfile`
+
 Applies to `Dockerfile` builds. It is implemented as a Checkov graph-based check (a JSON policy) that scans `RUN` instructions (`resource_types: ["RUN"]`); it is not tied to any cloud provider.
 
 ## Why it matters

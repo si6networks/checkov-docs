@@ -9,6 +9,8 @@ Declaring 'http' among the global schemes means the entire API, including any cr
 For Swagger 2.0 documents, if a global `schemes` field is declared, it must not include `http` — all globally advertised transport protocols must be encrypted (`https`, and by implication `wss` over `ws`).
 
 ## Applicability
+**Checkov framework(s):** `openapi`
+
 - **IaC framework:** OpenAPI (Swagger 2.0 specification files, JSON or YAML).
 - **Entity:** `schemes` (document root).
 

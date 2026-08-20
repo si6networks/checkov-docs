@@ -9,6 +9,8 @@ Transfer Acceleration is primarily a performance/reliability feature for geograp
 This check ensures Alibaba Cloud OSS buckets have Transfer Acceleration enabled (`transfer_acceleration[0].enabled = true`), which routes object upload/download traffic over Alibaba Cloud's global accelerated network edge rather than the public internet path directly to the bucket's region.
 
 ## Applicability
+**Checkov framework(s):** `terraform`
+
 Terraform. Applies to the `alicloud_oss_bucket` resource, specifically its `transfer_acceleration[0].enabled` attribute.
 
 ## Why it matters
